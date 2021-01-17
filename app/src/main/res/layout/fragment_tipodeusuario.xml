@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="¿Eres persona natural o jurídica?"
+    android:fontFamily="@font/sweet_shine_dafont"
+    android:textSize="30sp"
+    android:textColor="@color/negro"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="70dp">
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:id="@+id/acvpersonanaturaldorado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="15dp"
+            app:background_Gradient_ColorEnd="@color/dorado"
+            app:background_Gradient_Color0="@color/blanco"
+            app:background_Gradient_Angle="80"
+            app:background_ColorType="gradient_linear"
+            app:cornerRadius="25dp" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/persona_natural"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:padding="20dp"
+                 />
+
+        </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
+
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:id="@+id/acvpersonanaturalblanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="15dp"
+            app:background_ColorType="solid"
+            app:background_Color="@color/blanco"
+            app:stroke_Color="@color/dorado"
+            app:stroke_ColorType="solid"
+            app:stroke_Width="3dp"
+            app:background_Type="stroke"
+            android:visibility="gone"
+            app:cornerRadius="25dp" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/persona_natural"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:padding="20dp"
+                />
+
+        </com.sinaseyfi.advancedcardview.AdvancedCardView>
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:id="@+id/acvpersonajuridicadorado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="15dp"
+            app:background_Gradient_ColorEnd="@color/dorado"
+            app:background_Gradient_Color0="@color/blanco"
+            app:background_Gradient_Angle="80"
+            app:background_ColorType="gradient_linear"
+            app:cornerRadius="25dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/persona_juridica"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:padding="20dp"
+                />
+
+        </com.sinaseyfi.advancedcardview.AdvancedCardView>
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:id="@+id/acvpersonajuridicablanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="15dp"
+            app:background_ColorType="solid"
+            app:background_Color="@color/blanco"
+            app:stroke_Color="@color/dorado"
+            app:stroke_ColorType="solid"
+            app:stroke_Width="3dp"
+            app:background_Type="stroke"
+            android:visibility="visible"
+            app:cornerRadius="25dp" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/persona_juridica"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:padding="20dp"
+                />
+
+        </com.sinaseyfi.advancedcardview.AdvancedCardView>
+    </LinearLayout>
+</LinearLayout>
