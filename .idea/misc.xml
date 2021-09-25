@@ -5,9 +5,10 @@
       <map>
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadifertilizantes.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadiganaderia.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_principal.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutofertilizantes.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutoganaderia.xml" value="0.25416666666666665" />
@@ -17,6 +18,7 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutopesticidas.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_ubicanos.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/fragment_comprarovender.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/fragment_tipodeusuario.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/item_tutorial.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/itemcategorias.xml" value="0.13020833333333334" />

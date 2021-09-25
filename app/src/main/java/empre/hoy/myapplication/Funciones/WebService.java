@@ -206,6 +206,11 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         TutoPesticidas.mostrarCategorias(categoriaAdapter);
                     }
                     break;
+                case "registro_usuario":
+                    if (correcto) {
+
+                    }
+                    break;
             }
         } catch (Exception e) {
             e.printStackTrace();

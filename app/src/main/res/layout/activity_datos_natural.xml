@@ -67,7 +67,7 @@
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
                 android:background="#1a1a1a"
-
+                android:id="@+id/tietDni"
                 />
 
 
@@ -87,7 +87,8 @@
                 android:drawableEnd="@drawable/persona1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="@color/marron"/>
+                android:background="@color/marron"
+                android:id="@+id/tietApellidos" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -106,7 +107,8 @@
                 android:drawableEnd="@drawable/persona1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="#1a1a1a"/>
+                android:background="#1a1a1a"
+                android:id="@+id/tietNombres"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -123,7 +125,8 @@
                 android:drawableEnd="@drawable/celular1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="@color/marron"/>
+                android:background="@color/marron"
+                android:id="@+id/tietCelular"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -140,7 +143,8 @@
                 android:drawableEnd="@drawable/correo1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="#1a1a1a"/>
+                android:background="#1a1a1a"
+                android:id="@+id/tietCorreo" />
              </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -158,7 +162,8 @@
                 android:drawableEnd="@drawable/ubicacion1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="@color/marron"/>
+                android:background="@color/marron"
+                android:id="@+id/tietUbicacion" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

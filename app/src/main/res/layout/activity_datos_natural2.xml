@@ -38,6 +38,7 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
@@ -59,6 +60,7 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietClave1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Contraseña"
@@ -79,6 +81,7 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietClave2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Repetir Contraseña"
