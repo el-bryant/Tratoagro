@@ -59,24 +59,35 @@
         android:background="@color/color20"
         android:layout_marginTop="50dp"
         />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btseleccionar5"
-        android:text="seleccionar"
-        android:drawableEnd="@drawable/ic_flechaabajo"
-        android:drawablePadding="40dp"
-        android:layout_gravity="center"
-        android:drawableTint="@color/blanco"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/boton7"
-        android:paddingHorizontal="60dp"
-        android:textColor="@color/blanco"
-        android:textAllCaps="false"/>
-    <androidx.recyclerview.widget.RecyclerView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ruvcategoriaspesca"
-        android:visibility="gone"/>
+        android:background="@drawable/boton7"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp" >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btseleccionar1"
+            android:text="seleccionar"
+            android:drawableEnd="@drawable/ic_flechaabajo"
+            android:drawablePadding="40dp"
+            android:drawableTint="@color/blanco"
+            android:textColor="@color/blanco"
+            android:textAllCaps="false"
+            android:background="@null"
+            android:textAlignment="textStart"
+            android:layout_marginHorizontal="15dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ruvcategoriaspesca"
+            android:visibility="gone"
+            android:layout_marginBottom="15dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

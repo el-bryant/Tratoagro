@@ -25,6 +25,11 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import empre.hoy.myapplication.TutoFertilzantes;
+import empre.hoy.myapplication.TutoGanaderia;
+import empre.hoy.myapplication.TutoInsumos;
+import empre.hoy.myapplication.TutoMaquinaria;
+import empre.hoy.myapplication.TutoPesca;
+import empre.hoy.myapplication.TutoPesticidas;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
 import empre.hoy.myapplication.entity.Categoria;
 
@@ -93,7 +98,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
             consulta = jsonObject.getString("consulta");
             correcto = jsonObject.getBoolean("correcto");
             switch (accion) {
-                case "obtener_categorias":
+                case "obtener_categorias_fertilizantes":
                     if (correcto) {
                         categorias = new ArrayList<>();
                         jsonArray=jsonObject. getJSONArray("data");
@@ -109,7 +114,96 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                         CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
                         TutoFertilzantes.mostrarCategorias(categoriaAdapter);
-
+                    }
+                    break;
+                case "obtener_categorias_ganaderia":
+                    if (correcto) {
+                        categorias = new ArrayList<>();
+                        jsonArray=jsonObject. getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++ ) {
+                            Categoria categoria = new Categoria();
+                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
+                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            categoria.setIdCategoria(id);
+                            categoria.setNombre(nombre);
+                            categoria.setIcono(icono);
+                            categorias.add(categoria);
+                        }
+                        CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
+                        TutoGanaderia.mostrarCategorias(categoriaAdapter);
+                    }
+                    break;
+                case "obtener_categorias_insumos":
+                    if (correcto) {
+                        categorias = new ArrayList<>();
+                        jsonArray=jsonObject. getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++ ) {
+                            Categoria categoria = new Categoria();
+                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
+                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            categoria.setIdCategoria(id);
+                            categoria.setNombre(nombre);
+                            categoria.setIcono(icono);
+                            categorias.add(categoria);
+                        }
+                        CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
+                        TutoInsumos.mostrarCategorias(categoriaAdapter);
+                    }
+                    break;
+                case "obtener_categorias_maquinaria":
+                    if (correcto) {
+                        categorias = new ArrayList<>();
+                        jsonArray=jsonObject. getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++ ) {
+                            Categoria categoria = new Categoria();
+                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
+                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            categoria.setIdCategoria(id);
+                            categoria.setNombre(nombre);
+                            categoria.setIcono(icono);
+                            categorias.add(categoria);
+                        }
+                        CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
+                        TutoMaquinaria.mostrarCategorias(categoriaAdapter);
+                    }
+                    break;
+                case "obtener_categorias_pesca":
+                    if (correcto) {
+                        categorias = new ArrayList<>();
+                        jsonArray=jsonObject. getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++ ) {
+                            Categoria categoria = new Categoria();
+                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
+                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            categoria.setIdCategoria(id);
+                            categoria.setNombre(nombre);
+                            categoria.setIcono(icono);
+                            categorias.add(categoria);
+                        }
+                        CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
+                        TutoPesca.mostrarCategorias(categoriaAdapter);
+                    }
+                    break;
+                case "obtener_categorias_pesticidas":
+                    if (correcto) {
+                        categorias = new ArrayList<>();
+                        jsonArray=jsonObject. getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++ ) {
+                            Categoria categoria = new Categoria();
+                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
+                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            categoria.setIdCategoria(id);
+                            categoria.setNombre(nombre);
+                            categoria.setIcono(icono);
+                            categorias.add(categoria);
+                        }
+                        CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
+                        TutoPesticidas.mostrarCategorias(categoriaAdapter);
                     }
                     break;
             }

@@ -42,8 +42,9 @@ public class TutoFertilzantes extends AppCompatActivity {
     public void obtenerCategorias() {
         Log.i("obtenerCategorias", "TutoFertilzantes");
         params = new HashMap<>();
-        webservice.consulta(params,"obtener_categorias.php");
+        webservice.consulta(params,"obtener_categorias_fertilizantes.php");
     }
+
     public static void mostrarCategorias(CategoriaAdapter categoriaAdapter) {
         Log.i("mostrarCategorias", "TutoFertilzantes");
         ruvcategoriasfertilizantes.setAdapter(categoriaAdapter);

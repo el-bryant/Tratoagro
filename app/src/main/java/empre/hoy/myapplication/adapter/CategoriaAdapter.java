@@ -1,6 +1,7 @@
 package empre.hoy.myapplication.adapter;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,13 +28,15 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.view
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(activity).inflate(R.layout.itemcategorias, parent, false);
+        View v = LayoutInflater.from(activity).inflate(R.layout.item_tutorial, parent, false);
         return new CategoriaAdapter.viewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-
+        Categoria categoria = categorias.get(position);
+        String nombreCategoria = categoria.getNombre();
+        holder.tuvnombrecategoria.setText(nombreCategoria);
     }
 
     @Override
@@ -42,11 +45,11 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.view
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        ImageView ivcategoria;
         TextView  tuvnombrecategoria;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
+            tuvnombrecategoria = (TextView) itemView.findViewById(R.id.tuvnombrecategoria);
         }
     }
 
