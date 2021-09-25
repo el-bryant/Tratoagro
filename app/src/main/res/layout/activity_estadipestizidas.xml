@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color20">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas Pesticida"
+        android:fontFamily="@font/hind"
+        android:textColor="@color/blanco"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="50dp"
+        android:background="#1a1a1a"
+        android:drawableEnd="@drawable/ic_estapesticidas"
+        android:drawableTint="@color/blanco"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="DESCRIPCIÓN"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="30dp"
+        android:background="@color/color2"
+        android:layout_marginVertical="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="En este apartado te mostraremos las fluctuaciones de la demanda y oferta"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="30dp"
+        android:layout_marginVertical="15dp"/>
+</LinearLayout>

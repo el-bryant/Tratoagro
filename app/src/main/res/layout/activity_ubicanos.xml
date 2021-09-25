@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DatosNaturalActivity"
+    android:theme="@style/Material"
+    android:background="@color/color20"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubícanos"
+            android:fontFamily="@font/hind_medium"
+            android:textColor="@color/blanco"
+            android:layout_marginTop="60dp"
+            android:background="#1a1a1a"
+            android:drawableEnd="@drawable/ic_ubicanos"
+            android:drawableTint="@color/blanco"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:fontFamily="@font/hind"
+                 android:textSize="15sp"
+                 android:textColor="@color/negro"
+                 android:text="Síguenos en nuestras redes sociales"
+                 android:layout_marginHorizontal="30dp"
+                 android:textAlignment="textStart"
+                 android:shadowColor="@color/negro"
+                 android:layout_marginTop="30dp"
+                 android:layout_marginVertical="15dp"/>
+
+             <Button
+                 android:id="@+id/btnaceptar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginHorizontal="50dp"
+                 android:layout_marginTop="30dp"
+                 android:background="@drawable/boton4"
+                 android:drawableStart="@drawable/ic_facebook"
+                 android:fontFamily="@font/hind_semibold"
+                 android:text="/tratoagro.tratoagro/"
+                 android:textAllCaps="false"
+                 android:textColor="@color/blanco"
+                 android:textSize="15sp"
+                               />
+
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="/tratoagro/"
+                 android:background="@drawable/boton5"
+                 android:textColor="@color/blanco"
+                 android:layout_marginTop="30dp"
+                 android:layout_marginHorizontal="50dp"
+                 android:fontFamily="@font/hind"
+                 android:textSize="15sp"
+                 android:textAllCaps="false"
+                 android:id="@+id/btnaceptar"
+                 android:drawableStart="@drawable/ic_instagram__1_"
+
+                 />
+
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="tratoagro2021@gmail.com"
+                 android:background="@drawable/boton6"
+                 android:textColor="@color/blanco"
+                 android:layout_marginTop="30dp"
+                 android:layout_marginHorizontal="50dp"
+                 android:fontFamily="@font/hind"
+                 android:textSize="15sp"
+                 android:textAllCaps="false"
+                 android:id="@+id/btnaceptar"
+                 android:drawableStart="@drawable/ic_google"
+                 />
+         </LinearLayout>
+    </ScrollView>
+</LinearLayout>

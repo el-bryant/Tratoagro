@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color20">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estadísticas Maquinaria"
+        android:fontFamily="@font/hind"
+        android:textColor="@color/negro"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="50dp"
+        android:background="@color/color2"
+        android:drawableEnd="@drawable/ic_ico_tractor2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/blanco"
+        android:background="#1a1a1a"
+        android:text="DESCRIPCIÓN"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="30dp"
+        android:layout_marginVertical="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="Una máquina es un conjunto de elementos móviles y fijos cuyo funcionamiento posibilita aprovechar, dirigir, regular o transformar energía, o realizar un trabajo con un fin determinado."
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="30dp"
+        android:layout_marginVertical="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="Haz click para ver las diferentes categorías"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="50dp"
+        android:background="@color/color20"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btseleccionar6"
+        android:text="seleccionar"
+        android:drawableEnd="@drawable/ic_flechaabajo"
+        android:drawableTint="@color/blanco"
+        android:drawablePadding="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/boton7"
+        android:paddingHorizontal="60dp"
+        android:textColor="@color/blanco"
+        android:textAllCaps="false"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ruvcategoriasmaquinaria"
+        android:visibility="gone"/>
+
+</LinearLayout>

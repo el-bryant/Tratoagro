@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color20">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="#1a1a1a"
+        android:fontFamily="@font/hind"
+        android:shadowColor="@color/negro"
+        android:text="Tutorial"
+        android:textAlignment="center"
+        android:textColor="@color/blanco" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="En este apartado aprenderás que significa cada uno de los sectores agroindustriales que tenemos para ti"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="30dp"
+        android:layout_marginVertical="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvvacadorado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_Gradient_ColorEnd="@color/marron"
+                    app:background_Gradient_Color0="#1a1a1a"
+                    app:background_Gradient_Angle="-50"
+                    app:background_ColorType="gradient_sweep"
+                    app:cornerRadius="25dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_vaca2"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
+
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvvacablanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_ColorType="solid"
+                    app:background_Color="@color/marron"
+                    app:stroke_Color="#1a1a1a"
+                    app:stroke_ColorType="solid"
+                    app:stroke_Width="2dp"
+                    app:background_Type="stroke"
+                    android:visibility="gone"
+                    app:cornerRadius="25dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_vaca"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvpescadorado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_Gradient_ColorEnd="#1a1a1a"
+                    app:background_Gradient_Color0="@color/marron"
+                    app:background_Gradient_Angle="-50"
+                    app:background_ColorType="gradient_sweep"
+                    app:cornerRadius="25dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_pez2"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvpescablanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_ColorType="solid"
+                    app:background_Color="@color/azul"
+                    app:stroke_Color="#1a1a1a"
+                    app:stroke_ColorType="solid"
+                    app:stroke_Width="2dp"
+                    app:background_Type="stroke"
+                    android:visibility="gone"
+                    app:cornerRadius="25dp"
+                   >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_pez"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="30dp">
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvvegetalesdorado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_Gradient_ColorEnd="#1a1a1a"
+                    app:background_Gradient_Color0="@color/marron"
+                    app:background_Gradient_Angle="-50"
+                    app:background_ColorType="gradient_sweep"
+                    app:cornerRadius="25dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        android:src="@drawable/ic_ico_insumos2" />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
+
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvvegetalesblanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_ColorType="solid"
+                    app:background_Color="@color/color12"
+                    app:stroke_Color="#1a1a1a"
+                    app:stroke_ColorType="solid"
+                    app:stroke_Width="2dp"
+                    app:background_Type="stroke"
+                    android:visibility="gone"
+                    app:cornerRadius="25dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_tuber"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="20dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvmaquinariadorado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_Gradient_ColorEnd="#1a1a1a"
+                    app:background_Gradient_Color0="@color/marron"
+                    app:background_Gradient_Angle="-50"
+                    app:background_ColorType="gradient_sweep"
+                    app:cornerRadius="25dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_tractor2"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvmaquinariablanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_ColorType="solid"
+                    app:background_Color="@color/dorado1"
+                    app:stroke_Color="#1a1a1a"
+                    app:stroke_ColorType="solid"
+                    app:stroke_Width="2dp"
+                    app:background_Type="stroke"
+                    android:visibility="gone"
+                    app:cornerRadius="25dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_tractor"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="70dp">
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvpesticidadorado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_Gradient_ColorEnd="#1a1a1a"
+                    app:background_Gradient_Color0="@color/marron"
+                    app:background_Gradient_Angle="-50"
+                    app:background_ColorType="gradient_sweep"
+                    app:cornerRadius="25dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_pesticidas2"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
+
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvpesticidablanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_ColorType="solid"
+                    app:background_Color="#D50000"
+                    app:stroke_Color="#1a1a1a"
+                    app:stroke_ColorType="solid"
+                    app:stroke_Width="2dp"
+                    app:background_Type="stroke"
+                    android:visibility="gone"
+                    app:cornerRadius="25dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        android:src="@drawable/ic_ico_pesticidas2" />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvfertilizantedorado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_Gradient_ColorEnd="#1a1a1a"
+                    app:background_Gradient_Color0="@color/marron"
+                    app:background_Gradient_Angle="-50"
+                    app:background_ColorType="gradient_sweep"
+                    app:cornerRadius="25dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_fertelizantes2"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+                <com.sinaseyfi.advancedcardview.AdvancedCardView
+                    android:id="@+id/acvfertilizanteblanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="15dp"
+                    app:background_ColorType="solid"
+                    app:background_Color="#AA00FF"
+                    app:stroke_Color="#1a1a1a"
+                    app:stroke_ColorType="solid"
+                    app:stroke_Width="3dp"
+                    app:background_Type="stroke"
+                    android:visibility="gone"
+                    app:cornerRadius="25dp" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_ico_fertelizantes"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:padding="0dp"
+                        />
+
+                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

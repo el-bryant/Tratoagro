@@ -4,4 +4,25 @@
     <color name="dorado">#ad9031</color>
     <color name="marron">#584819</color>
     <color name="blanco">#FFFFFF</color>
-</resources>
+    <color name="verde">#2ECC71</color>
+    <color name="dorado1">#F1C40F</color>
+    <color name="azul">#1e81b0</color>
+    <color name="color1">#37aecc</color>
+    <color name="color2">#eee3c7</color>
+    <color name="color3">#fae5ac</color>
+    <color name="color4">#fcd586</color>
+    <color name="color5">#fffcec</color>
+    <color name="color6">#e0cdaf</color>
+    <color name="color7">#f4c984</color>
+    <color name="color8">#29b585</color>
+    <color name="color9">#1e969d</color>
+    <color name="color10">#48be6a</color>
+    <color name="color11">#76FF03</color>
+    <color name="color12">#C6FF00</color>
+    <color name="color13">#FFD600</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="verde2"> #519a4a</color>
+    <color name="marronclaro"> #eab676</color>
+    <color name="colororiginal"> #1a1a1a</color>
+    <color name="color20"> #FFC107</color>
+   </resources>

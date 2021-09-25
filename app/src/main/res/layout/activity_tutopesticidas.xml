@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color20">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria Pesticidas"
+        android:fontFamily="@font/hind"
+        android:textColor="@color/negro"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="50dp"
+        android:background="@color/color2"
+        android:drawableEnd="@drawable/ic_ico_pesticidas2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/blanco"
+        android:text="DESCRIPCIÓN"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="30dp"
+        android:background="#1a1a1a"
+        android:layout_marginVertical="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="Un plaguicida o pesticida, es cualquier sustancia destinada a prevenir, destruir, atraer, repeler o combatir cualquier plaga, incluidas las especies indeseadas de plantas o animales, durante la producción, almacenamiento, transporte, distribución y elaboración de alimentos, productos agrícolas o alimentos para animales, o que pueda administrarse a los animales para combatir ectoparásitos."
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="30dp"
+        android:layout_marginVertical="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hind"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="Haz click para ver las diferentes categorías"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="textStart"
+        android:shadowColor="@color/negro"
+        android:background="@color/color20"
+        android:layout_marginTop="50dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btseleccionar2"
+        android:text="seleccionar"
+        android:drawableEnd="@drawable/ic_flechaabajo"
+        android:drawablePadding="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:drawableTint="@color/blanco"
+        android:background="@drawable/boton7"
+        android:paddingHorizontal="60dp"
+        android:textColor="@color/blanco"
+        android:textAllCaps="false"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ruvcategoriaspesticidas"
+        android:visibility="gone"/>
+
+</LinearLayout>
