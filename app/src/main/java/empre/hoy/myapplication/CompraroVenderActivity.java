@@ -19,31 +19,31 @@ public class CompraroVenderActivity extends AppCompatActivity {
         acvvenderblanco = (AdvancedCardView) findViewById(R.id.acvvenderverde);
         acvcomprardorado = (AdvancedCardView) findViewById(R.id.acvcomprardorado);
         acvcomprarblanco = (AdvancedCardView) findViewById(R.id.acvcomprarverde);
-        acvvenderblanco.setOnClickListener(new View.OnClickListener()
-        {
-        @Override
-        public void onClick(View v) {
-            acvvenderdorado.setVisibility(View.VISIBLE);
-            acvvenderblanco.setVisibility(View.GONE);
-            acvcomprardorado.setVisibility(View.GONE);
-            acvcomprarblanco.setVisibility(View.VISIBLE);
-        Intent intent = new Intent(CompraroVenderActivity.this,TipodeAccionActivity.class);
-        startActivity(intent);
-        finish();
-        }});
+        acvvenderblanco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                acvvenderdorado.setVisibility(View.VISIBLE);
+                acvvenderblanco.setVisibility(View.GONE);
+                acvcomprardorado.setVisibility(View.GONE);
+                acvcomprarblanco.setVisibility(View.VISIBLE);
+                Intent intent = new Intent(CompraroVenderActivity.this, TipodeAccionActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
-        acvcomprarblanco.setOnClickListener(new View.OnClickListener()
-        {
+        acvcomprarblanco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 acvvenderdorado.setVisibility(View.GONE);
                 acvvenderblanco.setVisibility(View.VISIBLE);
                 acvcomprardorado.setVisibility(View.VISIBLE);
                 acvcomprarblanco.setVisibility(View.GONE);
-                Intent intent = new Intent(CompraroVenderActivity.this,TipodeAccionActivity.class);
+                Intent intent = new Intent(CompraroVenderActivity.this, TipodeAccionActivity.class);
                 startActivity(intent);
                 finish();
-            }});
+            }
+        });
     }
 
 }

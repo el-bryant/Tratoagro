@@ -60,14 +60,13 @@
                     app:cornerRadius="25dp" >
 
                     <ImageView
-                        android:layout_width="100dp"
+                        android:layout_width="112dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/ic_estaganaderia"
                         android:layout_gravity="center"
-                        android:tint="@color/blanco"
                         android:layout_margin="15dp"
                         android:padding="0dp"
-                        />
+                        android:src="@drawable/ic_estaganaderia"
+                        android:tint="@color/blanco" />
 
                 </com.sinaseyfi.advancedcardview.AdvancedCardView>
 

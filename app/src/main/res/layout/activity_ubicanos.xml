@@ -44,7 +44,7 @@
                  android:layout_marginVertical="15dp"/>
 
              <Button
-                 android:id="@+id/btnaceptar"
+                 android:id="@+id/btnFacebook"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:layout_marginHorizontal="50dp"
@@ -69,7 +69,7 @@
                  android:fontFamily="@font/hind"
                  android:textSize="15sp"
                  android:textAllCaps="false"
-                 android:id="@+id/btnaceptar"
+                 android:id="@+id/btnInstagram"
                  android:drawableStart="@drawable/ic_instagram__1_"
 
                  />
@@ -85,7 +85,7 @@
                  android:fontFamily="@font/hind"
                  android:textSize="15sp"
                  android:textAllCaps="false"
-                 android:id="@+id/btnaceptar"
+                 android:id="@+id/btnGmail"
                  android:drawableStart="@drawable/ic_google"
                  />
          </LinearLayout>

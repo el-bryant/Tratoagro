@@ -20,27 +20,26 @@ import com.sinaseyfi.advancedcardview.AdvancedCardView;
             acvpersonajuridicadorado = (AdvancedCardView) findViewById(R.id.acvpersonajuridicadorado);
             acvpersonanaturalverde = (AdvancedCardView) findViewById(R.id.acvpersonanaturalverde);
             acvpersonanaturaldorado = (AdvancedCardView) findViewById(R.id.acvpersonanaturaldorado);
-            acvpersonanaturaldorado.setOnClickListener(new View.OnClickListener()
-            {
+            acvpersonanaturaldorado.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     acvpersonanaturaldorado.setVisibility(View.GONE);
                     acvpersonanaturalverde.setVisibility(View.VISIBLE);
                     acvpersonajuridicadorado.setVisibility(View.GONE);
                     acvpersonajuridicaverde.setVisibility(View.VISIBLE);
-                    Intent intent= new Intent(TipodeUsuarioActivity.this,DatosNaturalActivity.class);
+                    Intent intent= new Intent(TipodeUsuarioActivity.this, DatosNaturalActivity.class);
                     startActivity(intent);
                     finish();
                 }
             });
-            acvpersonajuridicaverde.setOnClickListener(new View.OnClickListener() {
+            acvpersonajuridicadorado.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     acvpersonajuridicaverde.setVisibility(View.GONE);
                     acvpersonajuridicadorado.setVisibility(View.VISIBLE);
                     acvpersonanaturaldorado.setVisibility(View.GONE);
                     acvpersonanaturalverde.setVisibility(View.VISIBLE);
-                    Intent intent= new Intent(TipodeUsuarioActivity.this,DatosJuridicoActivity.class);
+                    Intent intent= new Intent(TipodeUsuarioActivity.this, DatosJuridicoActivity.class);
                     startActivity(intent);
                     finish();
 

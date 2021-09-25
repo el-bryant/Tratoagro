@@ -38,7 +38,19 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
+        llyestadisticas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PrincipalActivity.this, EstadisticasGeneralActivity.class);
+                startActivity(intent);
+            }
+        });
+        llyubicanos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

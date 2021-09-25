@@ -24,6 +24,14 @@
         <activity android:name=".TutoPesca" />
         <activity android:name=".TutoPesticidas" />
         <activity android:name=".TutorialActivity" />
+        <activity android:name=".EstadisticasGeneralActivity" />
+        <activity android:name=".EstadiFertilizantesActivity" />
+        <activity android:name=".EstadiGanaderiaActivity" />
+        <activity android:name=".EstadiInsumosActivity" />
+        <activity android:name=".EstadiMaquinariaActivity" />
+        <activity android:name=".EstadiPescaActivity" />
+        <activity android:name=".EstadiPesticidasActivity" />
+        <activity android:name=".UbicanosActivity" />
         <activity android:name=".PrincipalActivity">
 
 
