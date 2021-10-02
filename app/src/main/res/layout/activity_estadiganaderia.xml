@@ -46,4 +46,10 @@
         android:shadowColor="@color/negro"
         android:layout_marginTop="30dp"
         android:layout_marginVertical="15dp"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bchVentas"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
 </LinearLayout>

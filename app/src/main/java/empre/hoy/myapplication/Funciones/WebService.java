@@ -24,6 +24,12 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Map;
 
+import empre.hoy.myapplication.EstadiFertilizantesActivity;
+import empre.hoy.myapplication.EstadiGanaderiaActivity;
+import empre.hoy.myapplication.EstadiInsumosActivity;
+import empre.hoy.myapplication.EstadiMaquinariaActivity;
+import empre.hoy.myapplication.EstadiPescaActivity;
+import empre.hoy.myapplication.EstadiPesticidasActivity;
 import empre.hoy.myapplication.TutoFertilzantes;
 import empre.hoy.myapplication.TutoGanaderia;
 import empre.hoy.myapplication.TutoInsumos;
@@ -32,12 +38,14 @@ import empre.hoy.myapplication.TutoPesca;
 import empre.hoy.myapplication.TutoPesticidas;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
 import empre.hoy.myapplication.entity.Categoria;
+import empre.hoy.myapplication.entity.VentasReporte;
 
 public class WebService implements Response.Listener, Response.ErrorListener {
-   private Activity activity;
-   private Fragment fragment;
-   private RequestQueue requestQueue;
-   ArrayList<Categoria> categorias;
+    private Activity activity;
+    private Fragment fragment;
+    private RequestQueue requestQueue;
+    ArrayList<Categoria> categorias;
+    ArrayList<VentasReporte> ventas;
     JSONObject jsonObject;
     JSONArray jsonArray;
     String accion;
@@ -211,11 +219,99 @@ public class WebService implements Response.Listener, Response.ErrorListener {
 
                     }
                     break;
+                case "obtener_cantidad_ventas_fertilizantes":
+                    if (correcto) {
+                        Log.i("obtener_ventas_fertiliz", consulta);
+                        ventas = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            if (jsonArray.getJSONObject(i).getString("id_categoria").equals("5")) {
+                                VentasReporte venta = new VentasReporte();
+                                venta.setCantidad(jsonArray.getJSONObject(i).getInt("cant"));
+                                ventas.add(venta);
+                            }
+                        }
+                        EstadiFertilizantesActivity.obtenerVentas(ventas);
+                    }
+                    break;
+                case "obtener_cantidad_ventas_ganaderia":
+                    if (correcto) {
+                        Log.i("obtener_ventas_ganaderi", consulta);
+                        ventas = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            if (jsonArray.getJSONObject(i).getString("id_categoria").equals("1")) {
+                                VentasReporte venta = new VentasReporte();
+                                venta.setCantidad(jsonArray.getJSONObject(i).getInt("cant"));
+                                ventas.add(venta);
+                            }
+                        }
+                        EstadiGanaderiaActivity.obtenerVentas(ventas);
+                    }
+                    break;
+                case "obtener_cantidad_ventas_insumos":
+                    if (correcto) {
+                        Log.i("obtener_ventas_insumos", consulta);
+                        ventas = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            if (jsonArray.getJSONObject(i).getString("id_categoria").equals("3")) {
+                                VentasReporte venta = new VentasReporte();
+                                venta.setCantidad(jsonArray.getJSONObject(i).getInt("cant"));
+                                ventas.add(venta);
+                            }
+                        }
+                        EstadiInsumosActivity.obtenerVentas(ventas);
+                    }
+                    break;
+                case "obtener_cantidad_ventas_maquinaria":
+                    if (correcto) {
+                        Log.i("obtener_ventas_maquinar", consulta);
+                        ventas = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            if (jsonArray.getJSONObject(i).getString("id_categoria").equals("2")) {
+                                VentasReporte venta = new VentasReporte();
+                                venta.setCantidad(jsonArray.getJSONObject(i).getInt("cant"));
+                                ventas.add(venta);
+                            }
+                        }
+                        EstadiMaquinariaActivity.obtenerVentas(ventas);
+                    }
+                    break;
+                case "obtener_cantidad_ventas_pesca":
+                    if (correcto) {
+                        Log.i("obtener_ventas_pesca", consulta);
+                        ventas = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            if (jsonArray.getJSONObject(i).getString("id_categoria").equals("6")) {
+                                VentasReporte venta = new VentasReporte();
+                                venta.setCantidad(jsonArray.getJSONObject(i).getInt("cant"));
+                                ventas.add(venta);
+                            }
+                        }
+                        EstadiPescaActivity.obtenerVentas(ventas);
+                    }
+                    break;
+                case "obtener_cantidad_ventas_pesticidas":
+                    if (correcto) {
+                        Log.i("obtener_ventas_pesticid", consulta);
+                        ventas = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            if (jsonArray.getJSONObject(i).getString("id_categoria").equals("4")) {
+                                VentasReporte venta = new VentasReporte();
+                                venta.setCantidad(jsonArray.getJSONObject(i).getInt("cant"));
+                                ventas.add(venta);
+                            }
+                        }
+                        EstadiPesticidasActivity.obtenerVentas(ventas);
+                    }
+                    break;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
     }
 }
