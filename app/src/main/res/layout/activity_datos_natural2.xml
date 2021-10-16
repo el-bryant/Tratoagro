@@ -8,18 +8,18 @@
     android:orientation="vertical"
     tools:context=".DatosNaturalActivity"
     android:theme="@style/Material"
-    android:background="@color/color20"
-    >
+    android:background="@color/color20" >
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="30dp">
+            android:layout_marginHorizontal="30dp" >
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,26 +29,27 @@
                 android:background="@color/marron"
                 android:gravity="center"
                 android:textSize="20sp"
-                android:layout_marginTop="60dp"/>
+                android:layout_marginTop="60dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="@color/negro"
-                >
-
+                android:textColorHint="@color/negro" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
+                    android:hint="Usuario"
+                    android:textColorHint="@color/blanco"
                     android:fontFamily="@font/hind"
                     android:textSize="15sp"
                     android:background="@color/marron1"
                     android:textColor="@color/blanco"
                     android:drawableTint="#1a1a1a"
-                    android:drawableEnd="@drawable/correo"/>
+                    android:drawableEnd="@drawable/correo"
+                    android:inputType="text" />
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -56,9 +57,7 @@
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/negro"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/blanco">
-
-
+                app:passwordToggleTint="@color/blanco" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietClave1"
@@ -68,7 +67,8 @@
                     android:fontFamily="@font/hind"
                     android:textSize="15sp"
                     android:background="@color/color2"
-                    android:drawableTint="@color/dorado1"/>
+                    android:drawableTint="@color/dorado1"
+                    android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -79,8 +79,6 @@
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/blanco">
 
-
-
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietClave2"
                     android:layout_width="match_parent"
@@ -89,7 +87,8 @@
                     android:fontFamily="@font/hind"
                     android:textSize="15sp"
                     android:background="@color/color2"
-                    android:drawableTint="@color/verde"/>
+                    android:drawableTint="@color/verde"
+                    android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,18 +103,10 @@
                 android:fontFamily="@font/hind"
                 android:textSize="15sp"
                 android:textAllCaps="false"
-                android:id="@+id/btnaceptar"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="15dp">
-
-            </LinearLayout>
+                android:id="@+id/btnaceptar" />
 
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 
 </LinearLayout>

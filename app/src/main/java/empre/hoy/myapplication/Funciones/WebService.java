@@ -1,6 +1,7 @@
 package empre.hoy.myapplication.Funciones;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -24,12 +25,15 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Map;
 
+import empre.hoy.myapplication.DatosNatural2Activity;
+import empre.hoy.myapplication.DatosNaturalActivity;
 import empre.hoy.myapplication.EstadiFertilizantesActivity;
 import empre.hoy.myapplication.EstadiGanaderiaActivity;
 import empre.hoy.myapplication.EstadiInsumosActivity;
 import empre.hoy.myapplication.EstadiMaquinariaActivity;
 import empre.hoy.myapplication.EstadiPescaActivity;
 import empre.hoy.myapplication.EstadiPesticidasActivity;
+import empre.hoy.myapplication.IniciarSesionActivity;
 import empre.hoy.myapplication.TutoFertilzantes;
 import empre.hoy.myapplication.TutoGanaderia;
 import empre.hoy.myapplication.TutoInsumos;
@@ -74,10 +78,10 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT
         ));
         requestQueue.add(stringRequestApp);
-        }
+    }
+
     @Override
     public void onErrorResponse(VolleyError error) {
-
         String message = "";
         if (error instanceof NetworkError) {
             message = "No se puede conectar a Internet. Por favor, ¡compruebe su conexión!";
@@ -216,7 +220,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                     break;
                 case "registro_usuario":
                     if (correcto) {
-
+                        DatosNatural2Activity.obtenerIdUsuario();
                     }
                     break;
                 case "obtener_cantidad_ventas_fertilizantes":
@@ -307,6 +311,29 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             }
                         }
                         EstadiPesticidasActivity.obtenerVentas(ventas);
+                    }
+                    break;
+                case "registro_natural":
+                    if (correcto) {
+                        Log.i("registro_natural", consulta);
+                        DatosNaturalActivity.registrado(activity);
+                    }
+                    break;
+                case "obtener_id_usuario":
+                    if (correcto) {
+                        Log.i("obtener_id_usuario", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        if (jsonArray.length() > 0) {
+                            String idUsuario = jsonArray.getJSONObject(0).getString("id_usuario");
+                            DatosNatural2Activity.enlazar(idUsuario);
+                        }
+                    }
+                    break;
+                case "enlazar_natural_usuario":
+                    if (correcto) {
+                        Intent intent = new Intent(activity, IniciarSesionActivity.class);
+                        activity.startActivity(intent);
+                        activity.finish();
                     }
                     break;
             }

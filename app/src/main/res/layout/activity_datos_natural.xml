@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DatosNaturalActivity"
     android:theme="@style/Material"
-    android:background="@color/color20">
-
+    android:background="@color/color20"
+    tools:context=".DatosNaturalActivity" >
 
     <TextView
         android:layout_width="match_parent"
@@ -23,10 +22,7 @@
         android:textColor="@color/blanco"
         android:layout_marginBottom="30dp"
         android:textAlignment="center"
-        android:background="@color/marron"
-         />
-
-
+        android:background="@color/marron" />
 
     <TextView
         android:layout_width="match_parent"
@@ -37,138 +33,146 @@
         android:fontFamily="@font/hind_medium"
         android:textColor="@color/negro"
         android:layout_marginBottom="30dp"
-        android:gravity="start"
-        />
+        android:gravity="start" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="30dp"
-            >
+            android:layout_marginHorizontal="30dp" >
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               >
+                android:textColorHint="@color/blanco" >
 
+                <EditText
+                    android:id="@+id/tietDni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="DNI"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:drawableEnd="@drawable/dni1"
+                    android:drawableTint="@color/color20"
+                    android:drawablePadding="10dp"
+                    android:background="@color/marron1"
+                    android:inputType="number" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="DNI"
-                android:textColor="@color/blanco"
-                android:fontFamily="@font/hind"
-                android:textSize="15sp"
-                android:drawableEnd="@drawable/dni1"
-                android:drawableTint="@color/color20"
-                android:drawablePadding="10dp"
-                android:background="@color/marron1"
-                android:id="@+id/tietDni"
-                />
-
-
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Apellidos"
-                android:textColor="@color/blanco"
-                android:fontFamily="@font/hind"
-                android:textSize="15sp"
-                android:drawableEnd="@drawable/persona1"
-                android:drawableTint="@color/color20"
-                android:drawablePadding="10dp"
-                android:background="@color/marron"
-                android:id="@+id/tietApellidos" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               >
+                android:textColorHint="@color/blanco" >
 
+                <EditText
+                    android:id="@+id/tietApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellidos"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:drawableEnd="@drawable/persona1"
+                    android:drawableTint="@color/color20"
+                    android:drawablePadding="10dp"
+                    android:background="@color/marron"
+                    android:inputType="textCapWords" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nombres"
-                android:textColor="@color/blanco"
-                android:fontFamily="@font/hind"
-                android:textSize="15sp"
-                android:drawableEnd="@drawable/persona1"
-                android:drawableTint="@color/color20"
-                android:drawablePadding="10dp"
-                android:background="@color/marron1"
-                android:id="@+id/tietNombres"/>
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:textColorHint="@color/blanco" >
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Celular"
-                android:textColor="@color/blanco"
-                android:fontFamily="@font/hind"
-                android:textSize="15sp"
-                android:drawableEnd="@drawable/celular1"
-                android:drawableTint="@color/color20"
-                android:drawablePadding="10dp"
-                android:background="@color/marron"
-                android:id="@+id/tietCelular"/>
+                <EditText
+                    android:id="@+id/tietNombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombres"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:drawableEnd="@drawable/persona1"
+                    android:drawableTint="@color/color20"
+                    android:drawablePadding="10dp"
+                    android:background="@color/marron1"
+                    android:inputType="textCapWords" />
+
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               >
+                android:textColorHint="@color/blanco" >
 
-            <com.google.android.material.textfield.TextInputEditText
+                <EditText
+                    android:id="@+id/tietCelular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Celular"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:drawableEnd="@drawable/celular1"
+                    android:drawableTint="@color/color20"
+                    android:drawablePadding="10dp"
+                    android:background="@color/marron"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Correo electrónico"
-                android:textColor="@color/blanco"
-                android:fontFamily="@font/hind"
-                android:textSize="15sp"
-                android:drawableEnd="@drawable/correo1"
-                android:drawableTint="@color/color20"
-                android:drawablePadding="10dp"
-                android:background="@color/marron1"
-                android:id="@+id/tietCorreo" />
+                android:textColorHint="@color/blanco" >
+
+                <EditText
+                    android:id="@+id/tietCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo electrónico"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:drawableEnd="@drawable/correo1"
+                    android:drawableTint="@color/color20"
+                    android:drawablePadding="10dp"
+                    android:background="@color/marron1"
+                    android:inputType="textEmailAddress" />
+
              </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:textColorHint="@color/blanco" >
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ubicación"
-                android:textColor="@color/blanco"
-                android:fontFamily="@font/hind"
-                android:textSize="15sp"
-                android:drawableEnd="@drawable/ubicacion1"
-                android:drawableTint="@color/color20"
-                android:drawablePadding="10dp"
-                android:background="@color/marron"
-                android:id="@+id/tietUbicacion" />
+                <EditText
+                    android:id="@+id/tietUbicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ubicación"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:drawableEnd="@drawable/ubicacion1"
+                    android:drawableTint="@color/color20"
+                    android:drawablePadding="10dp"
+                    android:background="@color/marron"
+                    android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btnaceptar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Siguiente"
@@ -178,11 +182,10 @@
                 android:layout_marginHorizontal="50dp"
                 android:fontFamily="@font/hind"
                 android:textSize="15sp"
-                android:textAllCaps="false"
-                android:id="@+id/btnaceptar"/>
+                android:textAllCaps="false" />
 
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 
 </LinearLayout>

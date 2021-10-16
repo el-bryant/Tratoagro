@@ -7,5 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/Material"
-    android:background="@color/color20">
+    android:background="@color/color20" >
 
+</LinearLayout>

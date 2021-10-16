@@ -17,9 +17,9 @@ public class StringRequestApp extends StringRequest {
         super(url, listener, errorListener);
     }
 
-    public Map<String, String> getParametros() {
-        Map<String, String> parans = parametros;
-        return parans;
+    public Map<String, String> getParams() {
+        Map<String, String> params = parametros;
+        return params;
     }
 
     public void setParametros(Map parametros) {

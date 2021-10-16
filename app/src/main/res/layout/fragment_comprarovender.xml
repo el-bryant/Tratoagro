@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color20">
+    android:background="@color/color20" >
 
     <TextView
         android:layout_width="match_parent"
@@ -17,8 +18,8 @@
         android:text="Bienvenido"
         android:textAlignment="center"
         android:background="@color/marron1"
-        android:textColor="@color/blanco"
-        />
+        android:textColor="@color/blanco" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,30 +30,27 @@
         android:textAlignment="textStart"
         android:layout_marginHorizontal="30dp"
         android:shadowColor="@color/negro"
-
         android:layout_marginTop="15dp"
-        android:id="@+id/subtitulo"/>
+        android:id="@+id/subtitulo" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/subtitulo"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp" >
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginBottom="70dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal" >
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
-
+                android:layout_weight="1" >
 
                 <com.sinaseyfi.advancedcardview.AdvancedCardView
                     android:id="@+id/acvcomprardorado"
@@ -64,14 +62,14 @@
                     app:background_Gradient_Angle="-0"
                     app:background_Gradient_Color0="@color/marron"
                     app:background_Gradient_ColorEnd="@color/marron1"
-                    app:cornerRadius="25dp">
+                    app:cornerRadius="25dp" >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:layout_marginVertical="15dp">
+                        android:layout_marginVertical="15dp" >
 
                         <TextView
                             android:layout_width="match_parent"
@@ -81,7 +79,8 @@
                             android:textColor="@color/blanco"
                             android:gravity="center"
                             android:textSize="15sp"
-                            android:background="@color/marron1"/>
+                            android:background="@color/marron1" />
+
                         <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
@@ -89,10 +88,9 @@
                             android:layout_marginHorizontal="15dp"
                             android:layout_marginVertical="15dp"
                             android:padding="20dp"
-                            android:src="@drawable/ic_ico_carrito2"
-                            />
-                    </LinearLayout>
+                            android:src="@drawable/ic_ico_carrito2" />
 
+                    </LinearLayout>
 
                 </com.sinaseyfi.advancedcardview.AdvancedCardView>
 
@@ -109,19 +107,21 @@
                     app:cornerRadius="25dp"
                     app:stroke_Color="@color/color8"
                     app:stroke_ColorType="solid"
-                    app:stroke_Width="2dp">
+                    app:stroke_Width="2dp" >
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_marginVertical="15dp">
+                        android:layout_marginVertical="15dp" >
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Comprar"
                             android:textColor="@color/blanco"
-                            android:textAlignment="center"/>
+                            android:textAlignment="center" />
+
                         <ImageView
                             android:layout_width="150dp"
                             android:layout_height="150dp"
@@ -129,8 +129,8 @@
                             android:layout_margin="15dp"
                             android:padding="20dp"
                             android:src="@drawable/ic_ico_carrito" />
-                    </LinearLayout>
 
+                    </LinearLayout>
 
                 </com.sinaseyfi.advancedcardview.AdvancedCardView>
 
@@ -140,7 +140,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_weight="1" >
 
                 <com.sinaseyfi.advancedcardview.AdvancedCardView
                     android:id="@+id/acvvenderdorado"
@@ -152,13 +152,14 @@
                     app:background_Gradient_Angle="-0"
                     app:background_Gradient_Color0="@color/marron"
                     app:background_Gradient_ColorEnd="@color/marron1"
-                    app:cornerRadius="25dp">
+                    app:cornerRadius="25dp" >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:layout_marginVertical="15dp">
+                        android:layout_marginVertical="15dp" >
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -166,7 +167,7 @@
                             android:textColor="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
                             android:textAlignment="center"
-                            android:background="@color/marron1"/>
+                            android:background="@color/marron1" />
 
                         <ImageView
                             android:layout_width="150dp"
@@ -174,15 +175,13 @@
                             android:layout_gravity="center"
                             android:layout_margin="15dp"
                             android:padding="20dp"
-
                             android:src="@drawable/ic_ico_dolar2" />
-                    </LinearLayout>
 
+                    </LinearLayout>
 
                 </com.sinaseyfi.advancedcardview.AdvancedCardView>
 
                 <com.sinaseyfi.advancedcardview.AdvancedCardView
-
                     android:id="@+id/acvvenderverde"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -195,13 +194,13 @@
                     app:cornerRadius="25dp"
                     app:stroke_Color="@color/blanco"
                     app:stroke_ColorType="solid"
-                    app:stroke_Width="2dp">
+                    app:stroke_Width="2dp" >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="15dp"
-                        android:orientation="vertical">
+                        android:orientation="vertical" >
 
                         <TextView
                             android:layout_width="match_parent"
@@ -210,7 +209,7 @@
                             android:textColor="@color/blanco"
                             android:textAlignment="center"
                             android:textSize="15sp"
-                            android:fontFamily="@font/hind_semibold"/>
+                            android:fontFamily="@font/hind_semibold" />
 
                         <ImageView
                             android:layout_width="150dp"
@@ -218,16 +217,16 @@
                             android:layout_gravity="center"
                             android:layout_margin="15dp"
                             android:padding="20dp"
-                            android:src="@drawable/ic_ico_dolar"/>
+                            android:src="@drawable/ic_ico_dolar" />
 
                     </LinearLayout>
 
                 </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
             </LinearLayout>
 
-
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 
 </LinearLayout>

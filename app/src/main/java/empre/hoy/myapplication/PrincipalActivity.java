@@ -52,5 +52,12 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        llyparati.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PrincipalActivity.this, TutorialActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -15,14 +15,11 @@ public class IniciarSesionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iniciar_sesion);
-        btnaceptar=(Button) findViewById(R.id.btnaceptar);
-        btnaceptar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(IniciarSesionActivity.this, TutorialActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        btnaceptar = (Button) findViewById(R.id.btnaceptar);
+        btnaceptar.setOnClickListener(v -> {
+            Intent intent = new Intent(IniciarSesionActivity.this, TutorialActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 }

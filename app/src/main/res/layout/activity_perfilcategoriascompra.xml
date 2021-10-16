@@ -7,25 +7,25 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:theme="@style/Material"
-    android:background="@color/color20">
+    android:background="@color/color20" >
 
-<FrameLayout
-    android:id="@+id/flaycategoria"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/boton3"
-    android:layout_marginHorizontal="15dp">
+    <FrameLayout
+        android:id="@+id/flaycategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton3"
+        android:layout_marginHorizontal="15dp" >
 
-    <ImageView
-        android:id="@+id/ivcategoria"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/ic_ico_vaca2"
-        android:padding="0dp"/>
+        <ImageView
+            android:id="@+id/ivcategoria"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_ico_vaca2"
+            android:padding="0dp" />
 
+    </FrameLayout>
 
-</FrameLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,6 +34,7 @@
         android:fontFamily="@font/aleo_bold"
         android:textAlignment="center"
         android:background="@color/marron1"
-        android:id="@+id/tuvnombrecategoria"/>
+        android:id="@+id/tuvnombrecategoria" />
+
 </LinearLayout>
 

@@ -3,6 +3,7 @@ package empre.hoy.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import com.sinaseyfi.advancedcardview.AdvancedCardView;
 
 public class TutorialActivity extends AppCompatActivity {
     AdvancedCardView acvvacadorado, acvpescadorado, acvvegetalesdorado, acvmaquinariadorado, acvpesticidadorado, acvfertilizantedorado;
+    Button btnSiguiente;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -22,47 +24,34 @@ public class TutorialActivity extends AppCompatActivity {
         acvmaquinariadorado = (AdvancedCardView) findViewById(R.id.acvmaquinariadorado);
         acvpesticidadorado = (AdvancedCardView) findViewById(R.id.acvpesticidadorado);
         acvfertilizantedorado = (AdvancedCardView) findViewById(R.id.acvfertilizantedorado);
-        acvvacadorado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TutorialActivity.this, TutoGanaderia.class);
-                startActivity(intent);
-            }
+        btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
+        acvvacadorado.setOnClickListener(v -> {
+            Intent intent = new Intent(TutorialActivity.this, TutoGanaderia.class);
+            startActivity(intent);
         });
-        acvpescadorado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TutorialActivity.this, TutoPesca.class);
-                startActivity(intent);
-            }
+        acvpescadorado.setOnClickListener(v -> {
+            Intent intent = new Intent(TutorialActivity.this, TutoPesca.class);
+            startActivity(intent);
         });
-        acvvegetalesdorado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TutorialActivity.this, TutoInsumos.class);
-                startActivity(intent);
-            }
+        acvvegetalesdorado.setOnClickListener(v -> {
+            Intent intent = new Intent(TutorialActivity.this, TutoInsumos.class);
+            startActivity(intent);
         });
-        acvmaquinariadorado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TutorialActivity.this, TutoMaquinaria.class);
-                startActivity(intent);
-            }
+        acvmaquinariadorado.setOnClickListener(v -> {
+            Intent intent = new Intent(TutorialActivity.this, TutoMaquinaria.class);
+            startActivity(intent);
         });
-        acvpesticidadorado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TutorialActivity.this, TutoPesticidas.class);
-                startActivity(intent);
-            }
+        acvpesticidadorado.setOnClickListener(v -> {
+            Intent intent = new Intent(TutorialActivity.this, TutoPesticidas.class);
+            startActivity(intent);
         });
-        acvfertilizantedorado.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TutorialActivity.this, TutoFertilzantes.class);
-                startActivity(intent);
-            }
+        acvfertilizantedorado.setOnClickListener(v -> {
+            Intent intent = new Intent(TutorialActivity.this, TutoFertilzantes.class);
+            startActivity(intent);
+        });
+        btnSiguiente.setOnClickListener(v -> {
+            Intent intent = new Intent(TutorialActivity.this, PerfilUsuarioCompraActivity.class);
+            startActivity(intent);
         });
     }
 }

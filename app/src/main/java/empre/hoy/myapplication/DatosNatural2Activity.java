@@ -18,8 +18,8 @@ import empre.hoy.myapplication.Funciones.WebService;
 public class DatosNatural2Activity extends AppCompatActivity {
     Button btnAceptar;
     public static Map<String, String> params;
-    public static String dni, nombres, apellidos, celular, correo, ubicacion;
-    TextInputEditText tietUsuario, tietClave1, tietClave2;
+    public static String dni;
+    public static TextInputEditText tietUsuario, tietClave1, tietClave2;
     public static WebService webService;
 
     @Override
@@ -33,39 +33,34 @@ public class DatosNatural2Activity extends AppCompatActivity {
         webService = new WebService(this);
         if (getIntent().getExtras() != null) {
             dni = getIntent().getStringExtra("dni");
-            nombres = getIntent().getStringExtra("nombres");
-            apellidos = getIntent().getStringExtra("apellidos");
-            celular = getIntent().getStringExtra("celular");
-            correo = getIntent().getStringExtra("correo");
-            ubicacion = getIntent().getStringExtra("ubicacion");
         }
-        btnAceptar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (tietClave1.getText().length() > 0 && tietClave2.getText().length() > 0) {
-                    if (tietClave1.getText().toString().equals(tietClave2.getText().toString())) {
-                        params = new HashMap<>();
-                        params.put("usuario", tietUsuario.getText().toString());
-                        params.put("clave", tietClave1.getText().toString());
-                        webService.consulta(params, "registro_usuario.php");
-                    } else {
-                        Toast.makeText(DatosNatural2Activity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
-                    }
+        btnAceptar.setOnClickListener(v -> {
+            if (tietClave1.getText().length() > 0 && tietClave2.getText().length() > 0) {
+                if (tietClave1.getText().toString().equals(tietClave2.getText().toString())) {
+                    params = new HashMap<>();
+                    params.put("usuario", tietUsuario.getText().toString());
+                    params.put("clave", tietClave1.getText().toString());
+                    webService.consulta(params, "registro_usuario.php");
                 } else {
-                    Toast.makeText(DatosNatural2Activity.this, "Debe indicar una contraseña", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DatosNatural2Activity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
                 }
+            } else {
+                Toast.makeText(DatosNatural2Activity.this, "Debe indicar una contraseña", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
-    public static void registroPersonaNatural() {
+    public static void obtenerIdUsuario() {
+        params = new HashMap<>();
+        params.put("usuario", tietUsuario.getText().toString());
+        params.put("clave", tietClave1.getText().toString());
+        webService.consulta(params, "obtener_id_usuario.php");
+    }
+
+    public static void enlazar(String id_usuario) {
         params = new HashMap<>();
         params.put("dni", dni);
-        params.put("nombres", nombres);
-        params.put("apellidos", apellidos);
-        params.put("celular", celular);
-        params.put("correo", correo);
-        params.put("ubicacion", ubicacion);
-        webService.consulta(params, "registro_persona_natural.php");
+        params.put("id_usuario", id_usuario);
+        webService.consulta(params, "enlazar_natural_usuario.php");
     }
 }
