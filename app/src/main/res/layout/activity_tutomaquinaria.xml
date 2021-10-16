@@ -10,22 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Estadísticas Maquinaria"
-        android:fontFamily="@font/hind"
-        android:textColor="@color/negro"
+        android:fontFamily="@font/aleo_bold"
+        android:textColor="@color/color20"
         android:layout_marginHorizontal="30dp"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:shadowColor="@color/negro"
         android:layout_marginTop="50dp"
-        android:background="@color/color2"
+        android:textSize="23.4sp"
+        android:background="@color/marron1"
         android:drawableEnd="@drawable/ic_ico_tractor2"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/blanco"
-        android:background="#1a1a1a"
+        android:background="@color/marron1"
         android:text="DESCRIPCIÓN"
         android:layout_marginHorizontal="30dp"
         android:textAlignment="textStart"
@@ -36,7 +37,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/negro"
         android:text="Una máquina es un conjunto de elementos móviles y fijos cuyo funcionamiento posibilita aprovechar, dirigir, regular o transformar energía, o realizar un trabajo con un fin determinado."
@@ -49,7 +50,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/negro"
         android:text="Haz click para ver las diferentes categorías"
@@ -63,7 +64,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton7"
+        android:background="@drawable/boton3"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >

@@ -11,22 +11,23 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="50dp"
-        android:background="@color/color2"
+        android:background="@color/marron1"
         android:drawableEnd="@drawable/ic_ico_vaca2"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:shadowColor="@color/negro"
         android:text="Categoría Ganadería"
-        android:textAlignment="textStart"
-        android:textColor="@color/negro" />
+        android:textAlignment="center"
+        android:textSize="23.4sp"
+        android:textColor="@color/color20" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/blanco"
         android:text="DESCRIPCIÓN"
-        android:background="#1a1a1a"
+        android:background="@color/marron1"
         android:layout_marginHorizontal="30dp"
         android:textAlignment="textStart"
         android:shadowColor="@color/negro"
@@ -36,7 +37,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/negro"
         android:text="Consiste en la cría de animales domésticos para el consumo humano y la obtención de carne, leche, lana, pieles, miel entre otros."
@@ -49,7 +50,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/negro"
         android:text="Haz click para ver las diferentes categorías"
@@ -63,7 +64,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton7"
+        android:background="@drawable/boton3"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >

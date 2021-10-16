@@ -10,12 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ESTADÍSTICAS"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textColor="@color/blanco"
         android:layout_marginHorizontal="30dp"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:shadowColor="@color/negro"
-        android:background="#1a1a1a"
+        android:background="@color/marron1"
+        android:textSize="20sp"
         android:layout_marginTop="50dp"/>
 
     <TextView
@@ -53,9 +54,9 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/marron1"
                     app:background_Gradient_Color0="@color/marron"
-                    app:background_Gradient_Angle="-50"
+                    app:background_Gradient_Angle="-0"
                     app:background_ColorType="gradient_sweep"
                     app:cornerRadius="25dp" >
 
@@ -101,9 +102,9 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/marron1"
                     app:background_Gradient_Color0="@color/marron"
-                    app:background_Gradient_Angle="-50"
+                    app:background_Gradient_Angle="-0"
                     app:background_ColorType="gradient_sweep"
                     app:cornerRadius="25dp"
                     android:visibility="visible">
@@ -159,9 +160,9 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/marron1"
                     app:background_Gradient_Color0="@color/marron"
-                    app:background_Gradient_Angle="-50"
+                    app:background_Gradient_Angle="-0"
                     app:background_ColorType="gradient_sweep"
                     app:cornerRadius="25dp"
                     android:visibility="visible">
@@ -208,9 +209,9 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/marron1"
                     app:background_Gradient_Color0="@color/marron"
-                    app:background_Gradient_Angle="-50"
+                    app:background_Gradient_Angle="-0"
                     app:background_ColorType="gradient_sweep"
                     app:cornerRadius="25dp"
                     android:visibility="visible">
@@ -265,9 +266,9 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/marron1"
                     app:background_Gradient_Color0="@color/marron"
-                    app:background_Gradient_Angle="-50"
+                    app:background_Gradient_Angle="-0"
                     app:background_ColorType="gradient_sweep"
                     app:cornerRadius="25dp"
                     android:visibility="visible">
@@ -315,9 +316,9 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/marron1"
                     app:background_Gradient_Color0="@color/marron"
-                    app:background_Gradient_Angle="-50"
+                    app:background_Gradient_Angle="-0"
                     app:background_ColorType="gradient_sweep"
                     app:cornerRadius="25dp"
                     android:visibility="visible">

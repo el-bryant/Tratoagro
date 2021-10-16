@@ -14,15 +14,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="RESGISTRA TUS DATOS - PERSONA NATURAL"
+        android:text="REGISTRA TUS DATOS - PERSONA NATURAL"
         android:layout_marginTop="60dp"
         android:layout_marginStart="25dp"
+        android:textSize="20sp"
         android:layout_marginEnd="25dp"
-        android:fontFamily="@font/hind_medium"
+        android:fontFamily="@font/aleo_bold"
         android:textColor="@color/blanco"
         android:layout_marginBottom="30dp"
-        android:gravity="start"
-        android:background="#1a1a1a"
+        android:textAlignment="center"
+        android:background="@color/marron"
          />
 
 
@@ -66,7 +67,7 @@
                 android:drawableEnd="@drawable/dni1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="#1a1a1a"
+                android:background="@color/marron1"
                 android:id="@+id/tietDni"
                 />
 
@@ -107,7 +108,7 @@
                 android:drawableEnd="@drawable/persona1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="#1a1a1a"
+                android:background="@color/marron1"
                 android:id="@+id/tietNombres"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -143,7 +144,7 @@
                 android:drawableEnd="@drawable/correo1"
                 android:drawableTint="@color/color20"
                 android:drawablePadding="10dp"
-                android:background="#1a1a1a"
+                android:background="@color/marron1"
                 android:id="@+id/tietCorreo" />
              </com.google.android.material.textfield.TextInputLayout>
 
@@ -171,7 +172,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Siguiente"
-                android:background="@drawable/boton7"
+                android:background="@drawable/boton3"
                 android:textColor="@color/blanco"
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="50dp"

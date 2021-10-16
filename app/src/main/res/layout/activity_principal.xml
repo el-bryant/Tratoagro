@@ -58,23 +58,23 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:id="@+id/llayingresar"
-                        android:background="@color/marron"
+                        android:background="@color/marron1"
                         android:gravity="center">
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_ingresar"
-                            android:tint="@color/blanco"/>
+                            />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Ingresar"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"
                             android:textSize="15sp"
                             android:textAlignment="center"
                             android:layout_marginTop="15dp"
-                            android:background="#1a1a1a"/>
+                            android:background="@color/marron"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -82,23 +82,23 @@
                         android:orientation="vertical"
                         android:gravity="center"
                         android:id="@+id/llyparati"
-                        android:background="#1a1a1a"
+                        android:background="@color/marron"
                         android:layout_marginTop="30dp">
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_parati"
-                            android:tint="@color/blanco"/>
+                           />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Para ti"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"
                             android:textSize="15sp"
                             android:textAlignment="center"
                             android:layout_marginTop="15dp"
-                            android:background="@color/marron"/>
+                            android:background="@color/marron1"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -121,23 +121,23 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:id="@+id/llyregistrarse"
-                        android:background="#1a1a1a"
+                        android:background="@color/marron"
                         android:gravity="center">
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_registrarse"
-                            android:tint="@color/blanco"/>
+                            />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Registrarse"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"
                             android:textSize="15sp"
                             android:textAlignment="center"
                             android:layout_marginTop="15dp"
-                            android:background="@color/marron"/>
+                            android:background="@color/marron1"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -145,25 +145,25 @@
                         android:orientation="vertical"
                         android:gravity="center"
                         android:id="@+id/llyubicanos"
-                        android:background="@color/marron"
+                        android:background="@color/marron1"
                         android:layout_marginTop="30dp">
 
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_ubicanos"
-                            android:tint="@color/blanco"/>
+                            />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Ubicanos"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"
                             android:textSize="15sp"
                             android:textAlignment="center"
                             android:layout_marginTop="15dp"
-                            android:background="#1a1a1a"/>
+                            android:background="@color/marron"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -185,46 +185,46 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:id="@+id/llyespacioalcliente"
-                        android:background="@color/marron"
+                        android:background="@color/marron1"
                         android:gravity="center">
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_espacioalcliente"
-                            android:tint="@color/blanco"/>
+                           />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Espacio al cliente"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"                            android:textSize="15sp"
                             android:textAlignment="center"
                             android:layout_marginTop="15dp"
-                            android:background="#1a1a1a"/>
+                            android:background="@color/marron"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:background="#1a1a1a"
+                        android:background="@color/marron"
                         android:id="@+id/llyestadisticas"
                         android:layout_marginTop="30dp">
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:src="@drawable/ic_estaganaderia"
-                            android:tint="@color/blanco"/>
+                            />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Estadísticas"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"
                             android:textSize="15sp"
                             android:textAlignment="center"
                             android:layout_marginTop="15dp"
-                            android:background="@color/marron"/>
+                            android:background="@color/marron1"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

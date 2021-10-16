@@ -24,10 +24,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Recuperar mi cuenta"
-                android:fontFamily="@font/hind_medium"
+                android:fontFamily="@font/aleo_bold"
+                android:textAlignment="center"
+                android:textSize="23.4sp"
                 android:textColor="@color/blanco"
                 android:layout_marginTop="60dp"
-                android:background="#1a1a1a"/>
+                android:background="@color/marron1"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -40,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Ingresar el código ####"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:background="@color/color2"
                     android:textColor="@color/negro"
@@ -61,7 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nueva contraseña"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:background="@color/color2"
                     android:textColor="@color/negro"
@@ -81,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Ingrese otra vez la nueva contraseña"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:background="@color/color2"
 
@@ -93,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Aceptar"
-                android:background="@drawable/boton7"
+                android:background="@drawable/boton3"
                 android:textColor="@color/blanco"
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="50dp"

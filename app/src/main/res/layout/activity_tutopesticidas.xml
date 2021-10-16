@@ -10,19 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Categoria Pesticidas"
-        android:fontFamily="@font/hind"
-        android:textColor="@color/negro"
+        android:fontFamily="@font/aleo_bold"
+        android:textColor="@color/color20"
         android:layout_marginHorizontal="30dp"
-        android:textAlignment="textStart"
+        android:textSize="23.4sp"
+        android:textAlignment="center"
         android:shadowColor="@color/negro"
         android:layout_marginTop="50dp"
-        android:background="@color/color2"
+        android:background="@color/marron1"
         android:drawableEnd="@drawable/ic_ico_pesticidas2"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/blanco"
         android:text="DESCRIPCIÓN"
@@ -30,13 +31,13 @@
         android:textAlignment="textStart"
         android:shadowColor="@color/negro"
         android:layout_marginTop="30dp"
-        android:background="#1a1a1a"
+        android:background="@color/marron1"
         android:layout_marginVertical="15dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/negro"
         android:text="Un plaguicida o pesticida, es cualquier sustancia destinada a prevenir, destruir, atraer, repeler o combatir cualquier plaga, incluidas las especies indeseadas de plantas o animales, durante la producción, almacenamiento, transporte, distribución y elaboración de alimentos, productos agrícolas o alimentos para animales, o que pueda administrarse a los animales para combatir ectoparásitos."
@@ -49,7 +50,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/negro"
         android:text="Haz click para ver las diferentes categorías"
@@ -63,7 +64,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton7"
+        android:background="@drawable/boton3"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >
