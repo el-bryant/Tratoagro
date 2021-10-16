@@ -17,7 +17,7 @@ public class IniciarSesionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_iniciar_sesion);
         btnaceptar = (Button) findViewById(R.id.btnaceptar);
         btnaceptar.setOnClickListener(v -> {
-            Intent intent = new Intent(IniciarSesionActivity.this, TutorialActivity.class);
+            Intent intent = new Intent(IniciarSesionActivity.this, PerfilCategoriasCompra.class);
             startActivity(intent);
             finish();
         });
