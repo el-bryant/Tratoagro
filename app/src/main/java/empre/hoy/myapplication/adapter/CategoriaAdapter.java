@@ -12,13 +12,19 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
+import empre.hoy.myapplication.Funciones.WebService;
+import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
 import empre.hoy.myapplication.entity.Categoria;
 
 public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.viewHolder> {
     Activity activity;
     ArrayList<Categoria> categorias;
+    Map<String, String> params;
+    WebService webService;
 
     public CategoriaAdapter(Activity activity, ArrayList<Categoria> categorias) {
         this.activity = activity;
@@ -35,8 +41,24 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.view
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         Categoria categoria = categorias.get(position);
+        String idCategoria = categoria.getIdCategoria();
         String nombreCategoria = categoria.getNombre();
         holder.tuvnombrecategoria.setText(nombreCategoria);
+        holder.tuvnombrecategoria.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cargar(idCategoria);
+            }
+        });
+    }
+
+    public void cargar(String idProducto) {
+        if (activity instanceof PerfilVentaProductosActivity) {
+            webService = new WebService(activity);
+            params = new HashMap<>();
+            params.put("categoria", idProducto);
+            webService.consulta(params, "obtener_productos_proveedor.php");
+        }
     }
 
     @Override

@@ -21,8 +21,6 @@ public class PrincipalActivity extends AppCompatActivity {
         llyubicanos=(LinearLayout) findViewById(R.id.llyubicanos);
         llyespacioalcliente=(LinearLayout) findViewById(R.id.llyespacioalcliente);
         llyestadisticas=(LinearLayout) findViewById(R.id.llyestadisticas);
-
-
         llayingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

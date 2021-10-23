@@ -34,6 +34,7 @@ import empre.hoy.myapplication.EstadiMaquinariaActivity;
 import empre.hoy.myapplication.EstadiPescaActivity;
 import empre.hoy.myapplication.EstadiPesticidasActivity;
 import empre.hoy.myapplication.IniciarSesionActivity;
+import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.TutoFertilzantes;
 import empre.hoy.myapplication.TutoGanaderia;
 import empre.hoy.myapplication.TutoInsumos;
@@ -41,7 +42,9 @@ import empre.hoy.myapplication.TutoMaquinaria;
 import empre.hoy.myapplication.TutoPesca;
 import empre.hoy.myapplication.TutoPesticidas;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
+import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.entity.Categoria;
+import empre.hoy.myapplication.entity.Producto;
 import empre.hoy.myapplication.entity.VentasReporte;
 
 public class WebService implements Response.Listener, Response.ErrorListener {
@@ -49,6 +52,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
     private Fragment fragment;
     private RequestQueue requestQueue;
     ArrayList<Categoria> categorias;
+    ArrayList<Producto> productos;
     ArrayList<VentasReporte> ventas;
     JSONObject jsonObject;
     JSONArray jsonArray;
@@ -334,6 +338,25 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         Intent intent = new Intent(activity, IniciarSesionActivity.class);
                         activity.startActivity(intent);
                         activity.finish();
+                    }
+                    break;
+                case "obtener_productos_categoria":
+                    if (correcto) {
+                        Log.i("obtener_productos_categ", consulta);
+                        categorias = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i ++) {
+                            String idProducto = jsonArray.getJSONObject(i).getString("id_producto");
+                            String nombre = jsonArray.getJSONObject(i).getString("nombre");
+                            String imagen = jsonArray.getJSONObject(i).getString("imagen");
+                            Categoria categoria = new Categoria();
+                            categoria.setIdCategoria(idProducto);
+                            categoria.setNombre(nombre);
+                            categoria.setIcono(imagen);
+                            categorias.add(categoria);
+                        }
+                        CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
+                        PerfilVentaProductosActivity.cargarProductos(categoriaAdapter);
                     }
                     break;
             }

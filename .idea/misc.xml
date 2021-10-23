@@ -8,8 +8,10 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_logo.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/representantelegal.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural.xml" value="0.25" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_espacio_venta.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_espacioalcliente.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadifertilizantes.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadiganaderia.xml" value="0.25416666666666665" />
@@ -18,8 +20,10 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipesca.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipestizidas.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_formulario.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.264" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_miganaderia.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_mimaquinaria.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_mipesca.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_misfertilizantes.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_misinsumos.xml" value="0.13020833333333334" />
@@ -32,7 +36,7 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventadeproductosmaquinaria.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventadeproductospesca.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventadeproductospesticidas.xml" value="0.13020833333333334" />
-        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductos.xml" value="0.176" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductos.xml" value="0.2" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductosganaderia.xml" value="0.25" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_principal.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutofertilizantes.xml" value="0.25416666666666665" />
