@@ -42,9 +42,9 @@
                     android:layout_height="wrap_content"
                     android:hint="Usuario"
                     android:textColorHint="@color/blanco"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/marron1"
+                    android:background="@color/color20"
                     android:textColor="@color/blanco"
                     android:drawableTint="#1a1a1a"
                     android:drawableEnd="@drawable/correo"
@@ -64,9 +64,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Contraseña"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color2"
+                    android:background="@color/color20"
                     android:drawableTint="@color/dorado1"
                     android:inputType="textPassword" />
 
@@ -84,9 +84,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Repetir Contraseña"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color2"
+                    android:background="@color/color20"
                     android:drawableTint="@color/verde"
                     android:inputType="textPassword" />
 

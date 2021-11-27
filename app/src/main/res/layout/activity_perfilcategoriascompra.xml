@@ -50,11 +50,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/negro"
                         android:text="GANADERÍA"
                         android:fontFamily="@font/aleo_bold"
                         android:textAlignment="center"
-                        android:background="@color/marron1"
+                        android:background="@color/color20"
                         android:id="@+id/tvGanaderia" />
 
                     <Button
@@ -106,11 +106,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/negro"
                         android:text="PESCA"
                         android:fontFamily="@font/aleo_bold"
                         android:textAlignment="center"
-                        android:background="@color/marron1"
+                        android:background="@color/color20"
                         android:id="@+id/tvPesca" />
 
                     <Button
@@ -162,11 +162,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/negro"
                         android:text="MAQUINARIA"
                         android:fontFamily="@font/aleo_bold"
                         android:textAlignment="center"
-                        android:background="@color/marron1"
+                        android:background="@color/color20"
                         android:id="@+id/tvMaquinaria" />
 
                     <Button
@@ -218,11 +218,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/negro"
                         android:text="INSUMOS"
                         android:fontFamily="@font/aleo_bold"
                         android:textAlignment="center"
-                        android:background="@color/marron1"
+                        android:background="@color/color20"
                         android:id="@+id/tvInsumos" />
 
                     <Button
@@ -274,11 +274,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/negro"
                         android:text="PESTICIDAS"
                         android:fontFamily="@font/aleo_bold"
                         android:textAlignment="center"
-                        android:background="@color/marron1"
+                        android:background="@color/color20"
                         android:id="@+id/tvPesticidas" />
 
                     <Button
@@ -330,11 +330,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/negro"
                         android:text="FERTILIZANTES"
                         android:fontFamily="@font/aleo_bold"
                         android:textAlignment="center"
-                        android:background="@color/marron1"
+                        android:background="@color/color20"
                         android:id="@+id/tvFertilizantes" />
 
                     <Button

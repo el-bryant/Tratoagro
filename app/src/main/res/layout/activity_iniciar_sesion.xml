@@ -42,9 +42,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/marron"
+                    android:background="@color/color20"
                     android:textColor="@color/negro"
                     android:drawableEnd="@drawable/correo1"
                     android:drawableTint="@color/negro" />
@@ -63,9 +63,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Contraseña"
-                    android:fontFamily="@font/hind"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color2"
+                    android:background="@color/color20"
                     android:drawableTint="@color/negro"/>
 
             </com.google.android.material.textfield.TextInputLayout>

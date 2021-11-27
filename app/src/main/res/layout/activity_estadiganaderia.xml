@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/color2"
         android:text="Descripción"
@@ -38,7 +38,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/hind"
+        android:fontFamily="@font/aleo_bold"
         android:textSize="16sp"
         android:textColor="@color/negro"
         android:text="En este apartado te mostraremos las fluctuaciones de la demanda y oferta"

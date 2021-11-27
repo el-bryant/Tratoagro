@@ -41,7 +41,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/color2"
+                    android:background="@color/color20"
                     android:drawableEnd="@drawable/correo1"
                     android:drawableTint="@color/negro"
                     android:fontFamily="@font/aleo_bold"
@@ -64,7 +64,7 @@
                     android:hint="Número de celular"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color2"
+                    android:background="@color/color20"
                     android:drawableEnd="@drawable/celular1"
                     android:drawableTint="@color/negro"
                     />
@@ -79,7 +79,7 @@
                 android:textColor="@color/blanco"
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="50dp"
-                android:fontFamily="@font/hind"
+                android:fontFamily="@font/aleo_bold"
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:id="@+id/btnaceptar"/>

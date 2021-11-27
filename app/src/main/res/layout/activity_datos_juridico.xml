@@ -33,7 +33,7 @@
         android:text="Ingresa tus datos en los casilleros presetandos  a continuación"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="27dp"
-        android:fontFamily="@font/hind_medium"
+        android:fontFamily="@font/aleo_bold"
         android:textColor="@color/negro"
         android:layout_marginBottom="20dp"
         android:gravity="start"
@@ -59,13 +59,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="RUC"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/hind"
+                    android:textColor="@color/negro"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/empresa1"
-                    android:drawableTint="@color/color20"
+                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/marron1"/>
+                    android:background="@color/color20"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -76,13 +76,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Razón Social"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/hind"
+                    android:textColor="@color/negro"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/empresa1"
-                    android:drawableTint="@color/color20"
+                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/marron"/>
+                    android:background="@color/color20"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -93,13 +93,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Representante legal"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/hind"
+                    android:textColor="@color/negro"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/representantelegal"
-                    android:drawableTint="@color/color20"
+                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/marron1"/>
+                    android:background="@color/color20"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -109,13 +109,13 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:background="@color/marron"
-                    android:fontFamily="@font/hind"
+                    android:background="@color/color20"
+                    android:fontFamily="@font/aleo_bold"
                     android:drawableEnd="@drawable/celular1"
-                    android:drawableTint="@color/color20"
+                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
                     android:text="Celular"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:textSize="15sp" />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -126,13 +126,13 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:background="@color/marron1"
-                    android:fontFamily="@font/hind"
+                    android:background="@color/color20"
+                    android:fontFamily="@font/aleo_bold"
                     android:drawableEnd="@drawable/celular1"
-                    android:drawableTint="@color/color20"
+                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
                     android:text="Domicilio Fiscal"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:textSize="15sp" />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -144,13 +144,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Correo electrónico"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/hind"
+                    android:textColor="@color/negro"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/correo1"
-                    android:drawableTint="@color/color20"
+                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/marron"/>
+                    android:background="@color/color20"/>
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -161,13 +161,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ubicación"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/hind"
+                    android:textColor="@color/negro"
+                    android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/ubicacion1"
-                    android:drawableTint="@color/color20"
+                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/marron1"/>
+                    android:background="@color/color20"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -177,7 +177,7 @@
                 android:layout_marginHorizontal="50dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/boton3"
-                android:fontFamily="@font/hind"
+                android:fontFamily="@font/aleo_bold"
                 android:text="Siguiente"
                 android:textAllCaps="false"
                 android:textColor="@color/blanco"

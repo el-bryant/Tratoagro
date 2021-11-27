@@ -15,7 +15,7 @@ public class CompraroVenderActivity extends AppCompatActivity {
     AdvancedCardView acvvenderdorado, acvvenderblanco, acvcomprardorado, acvcomprarblanco;
     Intent intent;
     PrefUtil prefUtil;
-    String tipo;
+    String tipo = "";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

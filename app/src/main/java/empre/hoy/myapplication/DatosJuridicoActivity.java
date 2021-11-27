@@ -18,7 +18,7 @@ public class DatosJuridicoActivity extends AppCompatActivity {
         btnaceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DatosJuridicoActivity.this, CompraroVenderActivity.class);
+                Intent intent = new Intent(DatosJuridicoActivity.this, DatosNatural2Activity.class);
                 startActivity(intent);
                 finish();
             }
