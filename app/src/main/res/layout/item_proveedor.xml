@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/boton7" >
+        android:background="@drawable/boton7"
+        android:gravity="center" >
 
         <ImageView
             android:id="@+id/ivFotoProducto"
@@ -21,52 +22,62 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="15dp" >
 
             <TextView
                 android:id="@+id/tvNombreProveedor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color2"
-                android:textColor="@color/negro"
-                android:textAlignment="center"
+                android:textColor="@color/blanco"
                 android:fontFamily="@font/aleo_bold"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:layout_marginVertical="7.5dp" />
 
             <TextView
-                android:id="@+id/tvDescripcionProducto"
+                android:id="@+id/tvPrecio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color20"
-                android:textColor="@color/negro"
+                android:textColor="@color/blanco"
                 android:fontFamily="@font/aleo_bold"
-                android:textSize="20dp" />
+                android:textSize="15sp"
+                android:layout_marginVertical="7.5dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:gravity="center|end"
+                android:layout_marginVertical="7.5dp" >
+
+                <ImageView
+                    android:id="@+id/ivMenos"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/redondo_blanco"
+                    android:src="@drawable/ic_menos"
+                    android:tint="@color/negro"
+                    android:padding="2.5dp" />
 
                 <TextView
-                    android:id="@+id/tvPrecio"
+                    android:id="@+id/tvCantidad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/color2"
-                    android:textColor="@color/negro"
-                    android:fontFamily="@font/aleo_bold"
+                    android:text="00"
                     android:textSize="15sp"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/btnComprar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="COMPRAR"
-                    android:background="@drawable/botonnegro"
+                    android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textAllCaps="false"
-                    android:paddingHorizontal="30dp" />
+                    android:layout_marginHorizontal="15dp" />
+
+                <ImageView
+                    android:id="@+id/ivMas"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/redondo_blanco"
+                    android:src="@drawable/ic_agregar"
+                    android:tint="@color/negro"
+                    android:padding="2.5dp" />
 
             </LinearLayout>
 

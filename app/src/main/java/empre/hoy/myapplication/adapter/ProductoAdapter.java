@@ -1,6 +1,7 @@
 package empre.hoy.myapplication.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,8 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
+
+import empre.hoy.myapplication.ListaProveedoresActivity;
 import empre.hoy.myapplication.R;
 import empre.hoy.myapplication.entity.Producto;
 
@@ -33,12 +36,8 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHo
         String idProducto = producto.getIdProducto();
         String nombre = producto.getNombre();
         holder.btnProducto.setText(nombre);
-        holder.btnProducto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+        holder.btnProducto.setOnClickListener(v -> activity.startActivity(new
+                Intent(activity, ListaProveedoresActivity.class).putExtra("idProducto", idProducto)));
     }
 
     @Override

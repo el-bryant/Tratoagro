@@ -29,6 +29,7 @@ import empre.hoy.myapplication.EstadiMaquinariaActivity;
 import empre.hoy.myapplication.EstadiPescaActivity;
 import empre.hoy.myapplication.EstadiPesticidasActivity;
 import empre.hoy.myapplication.IniciarSesionActivity;
+import empre.hoy.myapplication.ListaProveedoresActivity;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.TutoFertilzantes;
 import empre.hoy.myapplication.TutoGanaderia;
@@ -38,6 +39,7 @@ import empre.hoy.myapplication.TutoPesca;
 import empre.hoy.myapplication.TutoPesticidas;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
 import empre.hoy.myapplication.adapter.ProductoAdapter;
+import empre.hoy.myapplication.adapter.ProveedorAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 import empre.hoy.myapplication.entity.Categoria;
 import empre.hoy.myapplication.entity.Producto;
@@ -372,6 +374,27 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                         ProductoAdapter productoAdapter = new ProductoAdapter(activity, productos);
                         PerfilVentaProductosActivity.cargarProductos(productoAdapter);
+                    }
+                    break;
+                case "obtener_proveedores_producto":
+                    if (correcto) {
+                        Log.i("obtener_proveedores_pro", consulta);
+                        productos = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i ++) {
+                            String idStock = jsonArray.getJSONObject(i).getString("id_stock");
+                            String imagen = jsonArray.getJSONObject(i).getString("imagen");
+                            String nombreProveedor = jsonArray.getJSONObject(i).getString("nombre");
+                            Double precio = jsonArray.getJSONObject(i).getDouble("precio");
+                            Producto producto = new Producto();
+                            producto.setIdProducto(idStock);
+                            producto.setImagen(imagen);
+                            producto.setNombre(nombreProveedor);
+                            producto.setPrecio(precio);
+                            productos.add(producto);
+                        }
+                        ProveedorAdapter proveedorAdapter = new ProveedorAdapter(activity, productos);
+                        ListaProveedoresActivity.cargarProveedores(proveedorAdapter);
                     }
                     break;
             }
