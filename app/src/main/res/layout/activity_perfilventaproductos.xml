@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/boton3"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
+        android:layout_marginVertical="20dp"
         android:layout_marginHorizontal="30dp" >
 
         <Button

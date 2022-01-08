@@ -49,7 +49,7 @@ public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapte
         if (activity instanceof PerfilVentaProductosActivity) {
             webService = new WebService(activity);
             params = new HashMap<>();
-            params.put("categoria", idSubcategoria);
+            params.put("subcategoria", idSubcategoria);
             webService.consulta(params, "obtener_productos_subcategoria.php");
         }
     }

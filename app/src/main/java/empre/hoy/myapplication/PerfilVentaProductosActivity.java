@@ -14,6 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import empre.hoy.myapplication.Funciones.WebService;
+import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class PerfilVentaProductosActivity extends AppCompatActivity {
@@ -49,8 +50,13 @@ public class PerfilVentaProductosActivity extends AppCompatActivity {
         webService.consulta(params, "obtener_subcategorias.php");
     }
 
-    public static void cargarProductos(SubcategoriaAdapter subcategoriaAdapter) {
+    public static void cargarSubcategorias(SubcategoriaAdapter subcategoriaAdapter) {
         rvSubcategorias.setAdapter(subcategoriaAdapter);
         rvSubcategorias.setVisibility(View.VISIBLE);
+    }
+
+    public static void cargarProductos(ProductoAdapter productoAdapter) {
+        rvProductos.setAdapter(productoAdapter);
+        rvProductos.setVisibility(View.VISIBLE);
     }
 }

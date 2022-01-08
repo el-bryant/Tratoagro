@@ -11,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ListaProductosActivity"
+            android:exported="true" />
         <activity android:name=".CompraroVenderActivity" />
         <activity android:name=".DatosNaturalActivity" />
         <activity android:name=".DatosNatural2Activity" />
@@ -22,7 +25,7 @@
         <activity android:name=".EstadiPescaActivity" />
         <activity android:name=".EstadiPesticidasActivity" />
         <activity android:name=".EstadisticasGeneralActivity" />
-        <activity android:name=".IniciarSesionActivity"/>
+        <activity android:name=".IniciarSesionActivity" />
         <activity android:name=".PerfilCategoriasCompra" />
         <activity android:name=".PerfilUsuarioCompraActivity" />
         <activity android:name=".PerfilVentaProductosActivity" />

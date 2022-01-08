@@ -354,7 +354,24 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             subcategorias.add(subcategoria);
                         }
                         SubcategoriaAdapter subcategoriaAdapter = new SubcategoriaAdapter(activity, subcategorias);
-                        PerfilVentaProductosActivity.cargarProductos(subcategoriaAdapter);
+                        PerfilVentaProductosActivity.cargarSubcategorias(subcategoriaAdapter);
+                    }
+                    break;
+                case "obtener_productos_subcategoria":
+                    if (correcto) {
+                        Log.i("obtener_productos_sub", consulta);
+                        productos = new ArrayList<>();
+                        jsonArray = jsonObject.getJSONArray("data");
+                        for (int i = 0; i < jsonArray.length(); i ++) {
+                            String idProducto = jsonArray.getJSONObject(i).getString("id_producto");
+                            String nombre = jsonArray.getJSONObject(i).getString("nombre");
+                            Producto producto = new Producto();
+                            producto.setIdProducto(idProducto);
+                            producto.setNombre(nombre);
+                            productos.add(producto);
+                        }
+                        ProductoAdapter productoAdapter = new ProductoAdapter(activity, productos);
+                        PerfilVentaProductosActivity.cargarProductos(productoAdapter);
                     }
                     break;
             }
