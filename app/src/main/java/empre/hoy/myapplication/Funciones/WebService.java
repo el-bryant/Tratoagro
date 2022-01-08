@@ -4,9 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
-
 import androidx.fragment.app.Fragment;
-
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.NetworkError;
@@ -18,13 +16,10 @@ import com.android.volley.ServerError;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.Map;
-
 import empre.hoy.myapplication.DatosNatural2Activity;
 import empre.hoy.myapplication.DatosNaturalActivity;
 import empre.hoy.myapplication.EstadiFertilizantesActivity;
@@ -43,8 +38,10 @@ import empre.hoy.myapplication.TutoPesca;
 import empre.hoy.myapplication.TutoPesticidas;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
 import empre.hoy.myapplication.adapter.ProductoAdapter;
+import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 import empre.hoy.myapplication.entity.Categoria;
 import empre.hoy.myapplication.entity.Producto;
+import empre.hoy.myapplication.entity.Subcategoria;
 import empre.hoy.myapplication.entity.VentasReporte;
 
 public class WebService implements Response.Listener, Response.ErrorListener {
@@ -52,6 +49,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
     private Fragment fragment;
     private RequestQueue requestQueue;
     ArrayList<Categoria> categorias;
+    ArrayList<Subcategoria> subcategorias;
     ArrayList<Producto> productos;
     ArrayList<VentasReporte> ventas;
     JSONObject jsonObject;
@@ -59,7 +57,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
     String accion;
     String consulta;
     boolean correcto;
-    public static String url = "https://aplicacionesperu.com/tratoagro/ws/";
+    public static String url = "https://tratoagro.com/tratoagro/ws/";
 
     public WebService(Activity activity) {
         this. activity = activity;
@@ -340,23 +338,23 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         activity.finish();
                     }
                     break;
-                case "obtener_productos_categoria":
+                case "obtener_subcategorias":
                     if (correcto) {
-                        Log.i("obtener_productos_categ", consulta);
-                        categorias = new ArrayList<>();
+                        Log.i("obtener_subcategorias", consulta);
+                        subcategorias = new ArrayList<>();
                         jsonArray = jsonObject.getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i ++) {
-                            String idProducto = jsonArray.getJSONObject(i).getString("id_producto");
+                            String idSubcategoria = jsonArray.getJSONObject(i).getString("id_subcategoria");
                             String nombre = jsonArray.getJSONObject(i).getString("nombre");
-                            String imagen = jsonArray.getJSONObject(i).getString("imagen");
-                            Categoria categoria = new Categoria();
-                            categoria.setIdCategoria(idProducto);
-                            categoria.setNombre(nombre);
-                            categoria.setIcono(imagen);
-                            categorias.add(categoria);
+                            String idCategoria = jsonArray.getJSONObject(i).getString("id_categoria");
+                            Subcategoria subcategoria = new Subcategoria();
+                            subcategoria.setIdSubcategoria(idSubcategoria);
+                            subcategoria.setNombre(nombre);
+                            subcategoria.setIdCategoria(idCategoria);
+                            subcategorias.add(subcategoria);
                         }
-                        CategoriaAdapter categoriaAdapter = new CategoriaAdapter(activity, categorias);
-                        PerfilVentaProductosActivity.cargarProductos(categoriaAdapter);
+                        SubcategoriaAdapter subcategoriaAdapter = new SubcategoriaAdapter(activity, subcategorias);
+                        PerfilVentaProductosActivity.cargarProductos(subcategoriaAdapter);
                     }
                     break;
             }

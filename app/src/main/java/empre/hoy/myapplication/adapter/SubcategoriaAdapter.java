@@ -1,11 +1,9 @@
 package empre.hoy.myapplication.adapter;
 
 import android.app.Activity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,56 +16,51 @@ import java.util.Map;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
-import empre.hoy.myapplication.entity.Categoria;
+import empre.hoy.myapplication.entity.Subcategoria;
 
-public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.viewHolder> {
+public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapter.viewHolder> {
     Activity activity;
-    ArrayList<Categoria> categorias;
+    ArrayList<Subcategoria> subcategorias;
     Map<String, String> params;
     WebService webService;
 
-    public CategoriaAdapter(Activity activity, ArrayList<Categoria> categorias) {
+    public SubcategoriaAdapter(Activity activity, ArrayList<Subcategoria> subcategorias) {
         this.activity = activity;
-        this.categorias = categorias;
+        this.subcategorias = subcategorias;
     }
 
     @NonNull
     @Override
-    public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SubcategoriaAdapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(activity).inflate(R.layout.item_tutorial, parent, false);
-        return new CategoriaAdapter.viewHolder(v);
+        return new SubcategoriaAdapter.viewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        Categoria categoria = categorias.get(position);
-        String idCategoria = categoria.getIdCategoria();
-        String nombreCategoria = categoria.getNombre();
+    public void onBindViewHolder(@NonNull SubcategoriaAdapter.viewHolder holder, int position) {
+        Subcategoria subcategoria = subcategorias.get(position);
+        String idSubcategoria = subcategoria.getIdSubcategoria();
+        String nombreCategoria = subcategoria.getNombre();
         holder.tuvnombrecategoria.setText(nombreCategoria);
-        holder.tuvnombrecategoria.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cargar(idCategoria);
-            }
-        });
+        holder.tuvnombrecategoria.setOnClickListener(v -> cargar(idSubcategoria));
     }
 
-    public void cargar(String idProducto) {
+    public void cargar(String idSubcategoria) {
         if (activity instanceof PerfilVentaProductosActivity) {
             webService = new WebService(activity);
             params = new HashMap<>();
-            params.put("categoria", idProducto);
-            webService.consulta(params, "obtener_productos_proveedor.php");
+            params.put("categoria", idSubcategoria);
+            webService.consulta(params, "obtener_productos_subcategoria.php");
         }
     }
 
     @Override
     public int getItemCount() {
-        return categorias.size();
+        return subcategorias.size();
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        TextView  tuvnombrecategoria;
+        TextView tuvnombrecategoria;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,4 +68,3 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.view
         }
     }
 }
-

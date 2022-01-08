@@ -14,13 +14,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import empre.hoy.myapplication.Funciones.WebService;
-import empre.hoy.myapplication.adapter.CategoriaAdapter;
-import empre.hoy.myapplication.adapter.ProductoAdapter;
+import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class PerfilVentaProductosActivity extends AppCompatActivity {
     Button btnSeleccionar;
     Map<String, String> params;
-    public static RecyclerView rvProductos, ruvCategoriasGanaderia;
+    public static RecyclerView rvProductos, rvSubcategorias;
     String categoria = "0";
     WebService webService;
 
@@ -33,28 +32,25 @@ public class PerfilVentaProductosActivity extends AppCompatActivity {
         }
         btnSeleccionar = (Button) findViewById(R.id.btnSeleccionarProducto);
         rvProductos = (RecyclerView) findViewById(R.id.rvProductos);
-        ruvCategoriasGanaderia = (RecyclerView) findViewById(R.id.ruvcategoriasganaderia);
-        btnSeleccionar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rvProductos.setVisibility(View.VISIBLE);
-            }
+        rvSubcategorias = (RecyclerView) findViewById(R.id.rvSubcategorias);
+        btnSeleccionar.setOnClickListener(v -> {
+            obtenerSubcategorias(categoria);
+            rvProductos.setVisibility(View.VISIBLE);
         });
-        ruvCategoriasGanaderia.setLayoutManager(new LinearLayoutManager(this));
+        rvSubcategorias.setLayoutManager(new LinearLayoutManager(this));
         rvProductos.setLayoutManager(new LinearLayoutManager(this));
         webService = new WebService(this);
-        obtenerProductos(categoria);
     }
 
-    public void obtenerProductos(String categoria) {
-        Log.i("obtenerProductos", "PerfilVentaProductosActivity");
+    public void obtenerSubcategorias(String categoria) {
+        Log.i("obtenerSubcategorias", "PerfilVentaProductosActivity");
         params = new HashMap<>();
         params.put("categoria", categoria);
-        webService.consulta(params, "obtener_productos_categoria.php");
+        webService.consulta(params, "obtener_subcategorias.php");
     }
 
-    public static void cargarProductos(CategoriaAdapter categoriaAdapter) {
-        ruvCategoriasGanaderia.setAdapter(categoriaAdapter);
-        ruvCategoriasGanaderia.setVisibility(View.VISIBLE);
+    public static void cargarProductos(SubcategoriaAdapter subcategoriaAdapter) {
+        rvSubcategorias.setAdapter(subcategoriaAdapter);
+        rvSubcategorias.setVisibility(View.VISIBLE);
     }
 }
