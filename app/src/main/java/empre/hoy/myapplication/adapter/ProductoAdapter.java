@@ -37,7 +37,10 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHo
         String nombre = producto.getNombre();
         holder.btnProducto.setText(nombre);
         holder.btnProducto.setOnClickListener(v -> activity.startActivity(new
-                Intent(activity, ListaProveedoresActivity.class).putExtra("idProducto", idProducto)));
+                Intent(activity, ListaProveedoresActivity.class)
+                .putExtra("idProducto", idProducto)
+                .putExtra("nombreProducto", nombre)
+        ));
     }
 
     @Override

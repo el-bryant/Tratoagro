@@ -14,6 +14,7 @@ import empre.hoy.myapplication.adapter.ProveedorAdapter;
 public class ListaProveedoresActivity extends AppCompatActivity {
     Map<String, String> params;
     public static RecyclerView rvProveedores;
+    public static String idProducto, nombreProducto;
     WebService webService;
 
     @Override
@@ -24,7 +25,8 @@ public class ListaProveedoresActivity extends AppCompatActivity {
         rvProveedores.setLayoutManager(new LinearLayoutManager(this));
         webService = new WebService(this);
         if (getIntent().getExtras() != null) {
-            String idProducto = getIntent().getStringExtra("idProducto");
+            idProducto = getIntent().getStringExtra("idProducto");
+            nombreProducto = getIntent().getStringExtra("nombreProducto");
             buscarProveedores(idProducto);
         }
     }

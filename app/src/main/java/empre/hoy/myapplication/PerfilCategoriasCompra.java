@@ -6,13 +6,19 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
+import empre.hoy.myapplication.entity.ItemCarrito;
+
 public class PerfilCategoriasCompra extends AppCompatActivity {
     Button btnGanaderia, btnPesca, btnMaquinaria, btnInsumos, btnPesticidas, btnFertilizantes;
+    public static ArrayList<ItemCarrito> itemsCarrito;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfilcategoriascompra);
+        itemsCarrito = new ArrayList<>();
         btnGanaderia = (Button) findViewById(R.id.btnGanaderia);
         btnPesca = (Button) findViewById(R.id.btnPesca);
         btnMaquinaria = (Button) findViewById(R.id.btnMaquinaria);

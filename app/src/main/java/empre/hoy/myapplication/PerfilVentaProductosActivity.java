@@ -10,12 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
+import empre.hoy.myapplication.entity.ItemCarrito;
 
 public class PerfilVentaProductosActivity extends AppCompatActivity {
     Button btnSeleccionar;
