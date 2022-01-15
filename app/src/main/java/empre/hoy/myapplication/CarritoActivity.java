@@ -26,23 +26,26 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.CarritoAdapter;
 import empre.hoy.myapplication.config.Config;
 
 public class CarritoActivity extends AppCompatActivity {
     Button btnTotal;
-    Map<String, String> params;
+    static Map<String, String> params;
     private static PayPalConfiguration config = new PayPalConfiguration().environment(PayPalConfiguration.ENVIRONMENT_SANDBOX).clientId(Config.PAYPAL_CLIENT_ID);
     private static final int PAYPAL_REQUEST_CODE = 7777;
+    public static PrefUtil prefUtil;
     RecyclerView rvCarrito;
     String amount = "";
-    WebService webService;
+    public static WebService webService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carrito);
+        prefUtil = new PrefUtil(this);
         webService = new WebService(this);
         btnTotal = (Button) findViewById(R.id.btnTotal);
         rvCarrito = (RecyclerView) findViewById(R.id.rvCarrito);
@@ -65,8 +68,24 @@ public class CarritoActivity extends AppCompatActivity {
         params = new HashMap<>();
         params.put("fecha", formatoFecha.format(date));
         params.put("hora", formatoHora.format(date));
-//        params.put("id_usuario_compra", );
+        params.put("id_usuario_compra", prefUtil.getStringValue("id_usuario"));
         webService.consulta(params, "registrar_venta.php");
+    }
+
+    public static void llenarDetalles(String idVenta) {
+        for (int i = 0; i < itemsCarrito.size(); i++) {
+            params = new HashMap<>();
+            params.put("cantidad", "" + itemsCarrito.get(i).getCantidad());
+            params.put("id_stock", itemsCarrito.get(i).getIdProveedor());
+            params.put("id_venta", idVenta);
+            webService.consulta(params, "insertar_detalles_venta.php");
+        }
+    }
+
+    public static void obtenerIdVenta() {
+        params = new HashMap<>();
+        params.put("id_usuario_compra", prefUtil.getStringValue("id_usuario"));
+        webService.consulta(params, "obtener_id_venta.php");
     }
 
     public void cargarItemsCarrito() {

@@ -21,9 +21,14 @@
     <color name="color12">#C6FF00</color>
     <color name="color13">#FFD600</color>
     <color name="amarillo">#FFFF00</color>
-    <color name="verde2"> #519a4a</color>
-    <color name="marronclaro"> #eab676</color>
-    <color name="colororiginal"> #1a1a1a</color>
-    <color name="color20"> #FFC107</color>
-    <color name="marron1"> #4c2f06</color>
-   </resources>
+    <color name="verde2">#519a4a</color>
+    <color name="marronclaro">#eab676</color>
+    <color name="colororiginal">#1a1a1a</color>
+    <color name="color20">#FFC107</color>
+    <color name="marron1">#4c2f06</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

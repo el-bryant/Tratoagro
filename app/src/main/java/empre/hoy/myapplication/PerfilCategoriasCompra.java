@@ -58,4 +58,9 @@ public class PerfilCategoriasCompra extends AppCompatActivity {
             startActivity(intent);
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
+    }
 }

@@ -2,6 +2,7 @@ package empre.hoy.myapplication.entity;
 
 public class Producto {
     String idProducto;
+    String idStock;
     String nombre;
     String descripcion;
     double precio;
@@ -10,8 +11,9 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(String idProducto, String nombre, String descripcion, double precio, String imagen) {
+    public Producto(String idProducto, String idStock, String nombre, String descripcion, double precio, String imagen) {
         this.idProducto = idProducto;
+        this.idStock = idStock;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -24,6 +26,14 @@ public class Producto {
 
     public void setIdProducto(String idProducto) {
         this.idProducto = idProducto;
+    }
+
+    public String getIdStock() {
+        return idStock;
+    }
+
+    public void setIdStock(String idStock) {
+        this.idStock = idStock;
     }
 
     public String getNombre() {

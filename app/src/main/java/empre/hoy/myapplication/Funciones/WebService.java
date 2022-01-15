@@ -20,6 +20,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Map;
+
+import empre.hoy.myapplication.CarritoActivity;
 import empre.hoy.myapplication.DatosNatural2Activity;
 import empre.hoy.myapplication.DatosNaturalActivity;
 import empre.hoy.myapplication.EstadiFertilizantesActivity;
@@ -30,7 +32,9 @@ import empre.hoy.myapplication.EstadiPescaActivity;
 import empre.hoy.myapplication.EstadiPesticidasActivity;
 import empre.hoy.myapplication.IniciarSesionActivity;
 import empre.hoy.myapplication.ListaProveedoresActivity;
+import empre.hoy.myapplication.PerfilCategoriasCompra;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
+import empre.hoy.myapplication.PrincipalActivity;
 import empre.hoy.myapplication.TutoFertilzantes;
 import empre.hoy.myapplication.TutoGanaderia;
 import empre.hoy.myapplication.TutoInsumos;
@@ -56,6 +60,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
     ArrayList<VentasReporte> ventas;
     JSONObject jsonObject;
     JSONArray jsonArray;
+    PrefUtil prefUtil;
     String accion;
     String consulta;
     boolean correcto;
@@ -64,13 +69,15 @@ public class WebService implements Response.Listener, Response.ErrorListener {
     public WebService(Activity activity) {
         this. activity = activity;
         requestQueue = Volley. newRequestQueue(activity);
+        prefUtil = new PrefUtil(activity);
     }
 
     public WebService(Fragment fragment) {
         this. fragment = fragment;
         activity = fragment.getActivity();
         if (activity !=null) {
-            requestQueue=Volley.newRequestQueue(activity);
+            requestQueue = Volley.newRequestQueue(activity);
+            prefUtil = new PrefUtil(activity);
         }
     }
 
@@ -395,6 +402,51 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                         ProveedorAdapter proveedorAdapter = new ProveedorAdapter(activity, productos);
                         ListaProveedoresActivity.cargarProveedores(proveedorAdapter);
+                    }
+                    break;
+                case "iniciar_sesion":
+                    if (correcto) {
+                        Log.i("iniciar_sesion", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        if (jsonArray.length() > 0) {
+                            String idUsuario = jsonArray.getJSONObject(0).getString("id_usuario");
+                            String estado = jsonArray.getJSONObject(0).getString("estado");
+                            if (estado.equals("D")) {
+                                prefUtil.saveGenericValue("id_usuario", idUsuario);
+                                prefUtil.saveGenericValue(PrefUtil.LOGIN_STATUS, "1");
+                                activity.startActivity(new Intent(activity, PerfilCategoriasCompra.class));
+                                activity.finish();
+                            } else {
+                                Toast.makeText(activity, "Su cuenta ha sido suspendida, comuníquese con nosotros para recuperarla", Toast.LENGTH_LONG).show();
+                            }
+                        } else {
+                            Toast.makeText(activity, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                        }
+                    } else {
+                        Toast.makeText(activity, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                    }
+                    break;
+                case "registrar_venta":
+                    if (correcto) {
+                        Log.i("registrar_venta", consulta);
+                        CarritoActivity.obtenerIdVenta();
+                    }
+                    break;
+                case "obtener_id_venta":
+                    if (correcto) {
+                        Log.i("obtener_id_venta", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        if (jsonArray.length() > 0) {
+                            String idVenta = jsonArray.getJSONObject(0).getString("id_venta");
+                            CarritoActivity.llenarDetalles(idVenta);
+                            activity.startActivity(new Intent(activity, PerfilCategoriasCompra.class));
+                            Toast.makeText(activity, "Venta registrada satisfactoriamente", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    break;
+                case "insertar_detalles_venta":
+                    if (correcto) {
+                        Log.i("insertar_detalle_venta", consulta);
                     }
                     break;
             }

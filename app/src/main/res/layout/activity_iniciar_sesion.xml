@@ -8,8 +8,7 @@
     android:orientation="vertical"
     tools:context=".DatosNaturalActivity"
     android:theme="@style/Material"
-    android:background="@color/color20"
-    >
+    android:background="@color/color20" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,7 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="30dp">
+            android:layout_marginHorizontal="30dp" >
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,11 +34,10 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="@color/negro"
-                >
-
+                android:textColorHint="@color/negro" >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
@@ -48,6 +47,7 @@
                     android:textColor="@color/negro"
                     android:drawableEnd="@drawable/correo1"
                     android:drawableTint="@color/negro" />
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -57,9 +57,8 @@
                app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/negro">
 
-
-
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tietClave"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Contraseña"
@@ -69,6 +68,7 @@
                     android:drawableTint="@color/negro"/>
 
             </com.google.android.material.textfield.TextInputLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,22 +97,25 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_marginTop="15dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="No tienes una cuenta "
                     android:textColor="@color/negro"
                     android:fontFamily="@font/hind_medium"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="crear ahora"
                     android:textColor="@color/negro"
                     android:fontFamily="@font/hind_medium"/>
+
             </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 
 </LinearLayout>

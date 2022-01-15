@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/AppTheme.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".CarritoActivity"
             android:exported="true" />
         <activity
@@ -32,13 +43,7 @@
         <activity android:name=".PerfilCategoriasCompra" />
         <activity android:name=".PerfilUsuarioCompraActivity" />
         <activity android:name=".PerfilVentaProductosActivity" />
-        <activity android:name=".PrincipalActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".PrincipalActivity" />
         <activity android:name=".TipodeAccionActivity" />
         <activity android:name=".TipodeUsuarioActivity" />
         <activity android:name=".TutoFertilzantes" />

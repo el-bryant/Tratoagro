@@ -6,17 +6,19 @@ public class ItemCarrito {
     String nombreProveedor;
     String idProducto;
     String nombreProducto;
+    String idStock;
     int cantidad;
 
     public ItemCarrito() {
     }
 
-    public ItemCarrito(String foto, String idProveedor, String nombreProveedor, String idProducto, String nombreProducto, int cantidad) {
+    public ItemCarrito(String foto, String idProveedor, String nombreProveedor, String idProducto, String nombreProducto, String idStock, int cantidad) {
         this.foto = foto;
         this.idProveedor = idProveedor;
         this.nombreProveedor = nombreProveedor;
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
+        this.idStock = idStock;
         this.cantidad = cantidad;
     }
 
@@ -58,6 +60,14 @@ public class ItemCarrito {
 
     public void setNombreProducto(String nombreProducto) {
         this.nombreProducto = nombreProducto;
+    }
+
+    public String getIdStock() {
+        return idStock;
+    }
+
+    public void setIdStock(String idStock) {
+        this.idStock = idStock;
     }
 
     public int getCantidad() {

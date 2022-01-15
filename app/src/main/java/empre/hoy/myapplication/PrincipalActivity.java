@@ -21,41 +21,26 @@ public class PrincipalActivity extends AppCompatActivity {
         llyubicanos=(LinearLayout) findViewById(R.id.llyubicanos);
         llyespacioalcliente=(LinearLayout) findViewById(R.id.llyespacioalcliente);
         llyestadisticas=(LinearLayout) findViewById(R.id.llyestadisticas);
-        llayingresar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(PrincipalActivity.this, IniciarSesionActivity.class);
-                startActivity(intent);
-            }
+        llayingresar.setOnClickListener(v -> {
+            Intent intent = new Intent(PrincipalActivity.this, IniciarSesionActivity.class);
+            startActivity(intent);
         });
 
-        llyregistrarse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(PrincipalActivity.this, TipodeUsuarioActivity.class);
-                startActivity(intent);
-            }
+        llyregistrarse.setOnClickListener(v -> {
+            Intent intent = new Intent(PrincipalActivity.this, TipodeUsuarioActivity.class);
+            startActivity(intent);
         });
-        llyestadisticas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PrincipalActivity.this, EstadisticasGeneralActivity.class);
-                startActivity(intent);
-            }
+        llyestadisticas.setOnClickListener(v -> {
+            Intent intent = new Intent(PrincipalActivity.this, EstadisticasGeneralActivity.class);
+            startActivity(intent);
         });
-        llyubicanos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
-                startActivity(intent);
-            }
+        llyubicanos.setOnClickListener(v -> {
+            Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
+            startActivity(intent);
         });
-        llyparati.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(PrincipalActivity.this, TutorialActivity.class);
-                startActivity(intent);
-            }
+        llyparati.setOnClickListener(v -> {
+            Intent intent = new Intent(PrincipalActivity.this, TutorialActivity.class);
+            startActivity(intent);
         });
     }
 }
