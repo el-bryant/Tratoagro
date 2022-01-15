@@ -44,15 +44,17 @@ public class EstadiGanaderiaActivity extends AppCompatActivity {
         webService = new WebService(this);
         Date date = new Date();
         fecha = dateFormat.format(date);
-        colores.add(Color.rgb(2, 124, 130));
-        colores.add(Color.rgb(213, 213, 82));
-        colores.add(Color.rgb(124, 63, 96));
-        colores.add(Color.rgb(23, 24, 145));
-        colores.add(Color.rgb(75, 78, 85));
-        colores.add(Color.rgb(5, 86, 93));
-        colores.add(Color.rgb(46, 95, 68));
-        colores.add(Color.rgb(25, 100, 35));
-        colores.add(Color.rgb(36, 20, 75));
+        for (int i = 0; i < 10; i++) {
+            colores.add(Color.rgb(235, 64, 52));
+            colores.add(Color.rgb(61, 52, 235));
+            colores.add(Color.rgb(7, 105, 36));
+            colores.add(Color.rgb(23, 24, 145));
+            colores.add(Color.rgb(75, 78, 85));
+            colores.add(Color.rgb(5, 86, 93));
+            colores.add(Color.rgb(46, 95, 68));
+            colores.add(Color.rgb(25, 100, 35));
+            colores.add(Color.rgb(36, 20, 75));
+        }
         mostrarCuadro();
     }
 
