@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".CarritoActivity"
+            android:exported="true" />
+        <activity
             android:name=".ListaProveedoresActivity"
             android:exported="true" />
         <activity android:name=".CompraroVenderActivity" />

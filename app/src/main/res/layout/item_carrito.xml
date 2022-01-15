@@ -52,15 +52,6 @@
                 android:gravity="center|end"
                 android:layout_marginVertical="7.5dp" >
 
-                <ImageView
-                    android:id="@+id/ivMenos"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/redondo_blanco"
-                    android:src="@drawable/ic_menos"
-                    android:tint="@color/negro"
-                    android:padding="2.5dp" />
-
                 <TextView
                     android:id="@+id/tvCantidad"
                     android:layout_width="wrap_content"
@@ -70,15 +61,6 @@
                     android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
                     android:layout_marginHorizontal="15dp" />
-
-                <ImageView
-                    android:id="@+id/ivMas"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/redondo_blanco"
-                    android:src="@drawable/ic_agregar"
-                    android:tint="@color/negro"
-                    android:padding="2.5dp" />
 
             </LinearLayout>
 

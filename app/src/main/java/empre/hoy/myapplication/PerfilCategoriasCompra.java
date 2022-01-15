@@ -13,12 +13,14 @@ import empre.hoy.myapplication.entity.ItemCarrito;
 public class PerfilCategoriasCompra extends AppCompatActivity {
     Button btnGanaderia, btnPesca, btnMaquinaria, btnInsumos, btnPesticidas, btnFertilizantes;
     public static ArrayList<ItemCarrito> itemsCarrito;
+    public static double total;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfilcategoriascompra);
         itemsCarrito = new ArrayList<>();
+        total = 0.0;
         btnGanaderia = (Button) findViewById(R.id.btnGanaderia);
         btnPesca = (Button) findViewById(R.id.btnPesca);
         btnMaquinaria = (Button) findViewById(R.id.btnMaquinaria);
