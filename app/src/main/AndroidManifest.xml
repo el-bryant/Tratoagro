@@ -33,6 +33,7 @@
         <activity android:name=".DatosNaturalActivity" />
         <activity android:name=".DatosNatural2Activity" />
         <activity android:name=".DatosJuridicoActivity" />
+        <activity android:name=".DatosJuridico2Activity" />
         <activity android:name=".EstadiFertilizantesActivity" />
         <activity android:name=".EstadiGanaderiaActivity" />
         <activity android:name=".EstadiInsumosActivity" />

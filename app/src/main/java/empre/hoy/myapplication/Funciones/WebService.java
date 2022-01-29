@@ -22,6 +22,8 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import empre.hoy.myapplication.CarritoActivity;
+import empre.hoy.myapplication.DatosJuridico2Activity;
+import empre.hoy.myapplication.DatosJuridicoActivity;
 import empre.hoy.myapplication.DatosNatural2Activity;
 import empre.hoy.myapplication.DatosNaturalActivity;
 import empre.hoy.myapplication.EstadiFertilizantesActivity;
@@ -234,6 +236,11 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         DatosNatural2Activity.obtenerIdUsuario();
                     }
                     break;
+                case "registro_usuario_juridico":
+                    if (correcto) {
+                        DatosJuridico2Activity.obtenerIdUsuario();
+                    }
+                    break;
                 case "obtener_cantidad_ventas_fertilizantes":
                     if (correcto) {
                         Log.i("obtener_ventas_fertiliz", consulta);
@@ -330,6 +337,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         DatosNaturalActivity.registrado(activity);
                     }
                     break;
+                case "registro_juridico":
+                    if (correcto) {
+                        Log.i("registro_juridico", consulta);
+                        DatosJuridicoActivity.registrado(activity);
+                    }
+                    break;
                 case "obtener_id_usuario":
                     if (correcto) {
                         Log.i("obtener_id_usuario", consulta);
@@ -340,8 +353,27 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                     }
                     break;
+                case "obtener_id_usuario_juridico":
+                    if (correcto) {
+                        Log.i("obtener_id_usuario", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        if (jsonArray.length() > 0) {
+                            String idUsuario = jsonArray.getJSONObject(0).getString("id_usuario");
+                            DatosJuridico2Activity.enlazar(idUsuario);
+                        }
+                    }
+                    break;
                 case "enlazar_natural_usuario":
                     if (correcto) {
+                        Log.i("enlazar_natural_usuario", "OK");
+                        Intent intent = new Intent(activity, IniciarSesionActivity.class);
+                        activity.startActivity(intent);
+                        activity.finish();
+                    }
+                    break;
+                case "enlazar_juridico_usuario":
+                    if (correcto) {
+                        Log.i("enlazar_juridico_usu", "OK");
                         Intent intent = new Intent(activity, IniciarSesionActivity.class);
                         activity.startActivity(intent);
                         activity.finish();
