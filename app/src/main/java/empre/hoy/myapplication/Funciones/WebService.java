@@ -449,6 +449,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         Log.i("insertar_detalle_venta", consulta);
                     }
                     break;
+                case "buscar_dni":
+                    Log.i("buscar_dni", consulta);
+                    String apellidos = jsonObject.getString("apellido_paterno") + " " + jsonObject.getString("apellido_materno");
+                    String nombres = jsonObject.getString("nombres");
+                    DatosNaturalActivity.cargarDatosDni(apellidos, nombres);
+                    break;
             }
         } catch (Exception e) {
             e.printStackTrace();

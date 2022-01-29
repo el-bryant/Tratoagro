@@ -30,6 +30,7 @@ public class CompraroVenderActivity extends AppCompatActivity {
         acvcomprardorado = (AdvancedCardView) findViewById(R.id.acvcomprardorado);
         acvcomprarblanco = (AdvancedCardView) findViewById(R.id.acvcomprarverde);
         acvvenderdorado.setOnClickListener(v -> {
+            prefUtil.saveGenericValue("comprar_vender", "V");
             acvvenderdorado.setVisibility(View.GONE);
             acvvenderblanco.setVisibility(View.VISIBLE);
             acvcomprardorado.setVisibility(View.VISIBLE);
@@ -43,11 +44,12 @@ public class CompraroVenderActivity extends AppCompatActivity {
                     break;
             }
             intent.putExtra("tipo", tipo);
-            prefUtil.saveGenericValue("comprar_vender", "v");
+            intent.putExtra("comprar_vender", "V");
             startActivity(intent);
             finish();
         });
         acvcomprardorado.setOnClickListener(v -> {
+            prefUtil.saveGenericValue("comprar_vender", "C");
             acvvenderdorado.setVisibility(View.VISIBLE);
             acvvenderblanco.setVisibility(View.GONE);
             acvcomprardorado.setVisibility(View.GONE);
@@ -61,7 +63,7 @@ public class CompraroVenderActivity extends AppCompatActivity {
                     break;
             }
             intent.putExtra("tipo", tipo);
-            prefUtil.saveGenericValue("comprar_vender", "c");
+            intent.putExtra("comprar_vender", "C");
             startActivity(intent);
             finish();
         });

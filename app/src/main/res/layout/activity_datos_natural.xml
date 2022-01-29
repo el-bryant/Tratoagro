@@ -139,7 +139,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Correo electrónico"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/correo1"
