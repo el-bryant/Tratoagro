@@ -21,8 +21,16 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if (prefUtil.getStringValue(PrefUtil.LOGIN_STATUS).equals("1")) {
-                    startActivity(new Intent(SplashScreenActivity.this, PerfilCategoriasCompra.class));
-                    finish();
+                    switch (prefUtil.getStringValue("tipo_usuario")) {
+                        case "C":
+                            startActivity(new Intent(SplashScreenActivity.this, PerfilCategoriasCompra.class));
+                            finish();
+                            break;
+                        case "V":
+                            startActivity(new Intent(SplashScreenActivity.this, EspacioVentaActivity.class));
+                            finish();
+                            break;
+                    }
                 } else {
                     startActivity(new Intent(SplashScreenActivity.this, PrincipalActivity.class));
                 }

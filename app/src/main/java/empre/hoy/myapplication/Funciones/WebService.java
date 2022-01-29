@@ -26,6 +26,7 @@ import empre.hoy.myapplication.DatosJuridico2Activity;
 import empre.hoy.myapplication.DatosJuridicoActivity;
 import empre.hoy.myapplication.DatosNatural2Activity;
 import empre.hoy.myapplication.DatosNaturalActivity;
+import empre.hoy.myapplication.EspacioVentaActivity;
 import empre.hoy.myapplication.EstadiFertilizantesActivity;
 import empre.hoy.myapplication.EstadiGanaderiaActivity;
 import empre.hoy.myapplication.EstadiInsumosActivity;
@@ -443,11 +444,24 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         if (jsonArray.length() > 0) {
                             String idUsuario = jsonArray.getJSONObject(0).getString("id_usuario");
                             String estado = jsonArray.getJSONObject(0).getString("estado");
+                            String nombre = jsonArray.getJSONObject(0).getString("nombre");
+                            String tipoUsuario = jsonArray.getJSONObject(0).getString("tipo_usuario");
                             if (estado.equals("D")) {
                                 prefUtil.saveGenericValue("id_usuario", idUsuario);
                                 prefUtil.saveGenericValue(PrefUtil.LOGIN_STATUS, "1");
-                                activity.startActivity(new Intent(activity, PerfilCategoriasCompra.class));
-                                activity.finish();
+                                prefUtil.saveGenericValue("tipo_usuario", tipoUsuario);
+                                switch (tipoUsuario) {
+                                    case "C":
+                                        prefUtil.saveGenericValue("nombre", nombre);
+                                        activity.startActivity(new Intent(activity, PerfilCategoriasCompra.class));
+                                        activity.finish();
+                                        break;
+                                    case "V":
+                                        prefUtil.saveGenericValue("razon_social", nombre);
+                                        activity.startActivity(new Intent(activity, EspacioVentaActivity.class));
+                                        activity.finish();
+                                        break;
+                                }
                             } else {
                                 Toast.makeText(activity, "Su cuenta ha sido suspendida, comuníquese con nosotros para recuperarla", Toast.LENGTH_LONG).show();
                             }
