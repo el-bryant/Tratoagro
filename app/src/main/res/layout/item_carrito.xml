@@ -32,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/blanco"
+                android:background="@color/color20"
                 android:fontFamily="@font/aleo_bold"
                 android:textSize="18sp"
                 android:layout_marginVertical="7.5dp" />
@@ -42,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/blanco"
                 android:fontFamily="@font/aleo_bold"
+                android:background="@color/negro"
                 android:textSize="15sp"
                 android:layout_marginVertical="7.5dp" />
 
@@ -57,9 +59,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="00"
-                    android:textSize="15sp"
+                    android:textSize="20sp"
+                    android:background="@color/color20"
                     android:fontFamily="@font/hind"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:layout_marginHorizontal="15dp" />
 
             </LinearLayout>
