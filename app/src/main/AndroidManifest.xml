@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="empre.hoy.myapplication">
+    package="empre.hoy.myapplication" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -11,29 +11,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".SplashScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="true"
-            android:theme="@style/AppTheme.Fullscreen">
+            android:theme="@style/AppTheme.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".CarritoActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ListaProveedoresActivity"
-            android:exported="true" />
-        <activity android:name=".CompraroVenderActivity" />
-        <activity android:name=".DatosNaturalActivity" />
-        <activity android:name=".DatosNatural2Activity" />
+        <activity android:name=".CarritoActivity" />
+        <activity android:name=".Comprar1Activity" />
+        <activity android:name=".Comprar2Activity" />
+        <activity android:name=".ComprarVenderActivity" />
         <activity android:name=".DatosJuridicoActivity" />
         <activity android:name=".DatosJuridico2Activity" />
+        <activity android:name=".DatosNatural1Activity" />
+        <activity android:name=".DatosNatural2Activity" />
         <activity android:name=".EspacioVentaActivity" />
         <activity android:name=".EstadiFertilizantesActivity" />
         <activity android:name=".EstadiGanaderiaActivity" />
@@ -43,12 +40,14 @@
         <activity android:name=".EstadiPesticidasActivity" />
         <activity android:name=".EstadisticasGeneralActivity" />
         <activity android:name=".IniciarSesionActivity" />
-        <activity android:name=".PerfilCategoriasCompra" />
+        <activity android:name=".Inicio1Activity" />
+        <activity android:name=".Inicio2Activity" />
+        <activity android:name=".ListaProveedoresActivity" />
         <activity android:name=".PerfilUsuarioCompraActivity" />
         <activity android:name=".PerfilVentaProductosActivity" />
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".TipodeAccionActivity" />
-        <activity android:name=".TipodeUsuarioActivity" />
+        <activity android:name=".TipoUsuarioActivity" />
         <activity android:name=".TutoFertilzantes" />
         <activity android:name=".TutoGanaderia" />
         <activity android:name=".TutoInsumos" />

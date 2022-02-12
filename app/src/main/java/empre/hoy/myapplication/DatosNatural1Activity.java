@@ -2,7 +2,6 @@ package empre.hoy.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
@@ -19,44 +18,33 @@ import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
-
-import com.google.android.material.textfield.TextInputEditText;
-
-import org.w3c.dom.Text;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
 import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.Funciones.WebService;
-import empre.hoy.myapplication.databinding.ActivityDatosNaturalBinding;
+import empre.hoy.myapplication.databinding.ActivityDatosNatural1Binding;
 
-public class DatosNaturalActivity extends AppCompatActivity {
-    public static ActivityDatosNaturalBinding binding;
+public class DatosNatural1Activity extends AppCompatActivity {
+    public static ActivityDatosNatural1Binding binding;
     Map<String, String> params;
     PrefUtil prefUtil;
     public static String dni;
     WebService webService;
     double latitud = 0.0, longitud = 0.0;
     String direccion;
-    static String comprarVender;
     boolean ubicacionObtenida;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityDatosNaturalBinding.inflate(getLayoutInflater());
+        binding = ActivityDatosNatural1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         prefUtil = new PrefUtil(this);
         webService = new WebService(this);
-        comprarVender = getIntent().getStringExtra("comprar_vender");
         binding.tietDni.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -81,7 +69,6 @@ public class DatosNaturalActivity extends AppCompatActivity {
             params.put("celular", binding.tietCelular.getText().toString());
             params.put("correo", binding.tietCorreo.getText().toString());
             params.put("direccion", binding.tietUbicacion.getText().toString());
-            params.put("comprar_vender", comprarVender);
             webService.consulta(params, "registro_natural.php");
         });
         ubicacionObtenida = false;
@@ -140,11 +127,11 @@ public class DatosNaturalActivity extends AppCompatActivity {
     }
 
     public class Localizacion implements LocationListener {
-        DatosNaturalActivity mainActivity;
-        public DatosNaturalActivity getMainActivity() {
+        DatosNatural1Activity mainActivity;
+        public DatosNatural1Activity getMainActivity() {
             return mainActivity;
         }
-        public void setMainActivity(DatosNaturalActivity mainActivity) {
+        public void setMainActivity(DatosNatural1Activity mainActivity) {
             this.mainActivity = mainActivity;
         }
         @Override
@@ -160,7 +147,7 @@ public class DatosNaturalActivity extends AppCompatActivity {
         @Override
         public void onProviderDisabled(String provider) {
             // Este metodo se ejecuta cuando el GPS es desactivado
-            Toast.makeText(DatosNaturalActivity.this, "GPS Desactivado", Toast.LENGTH_LONG).show();
+            Toast.makeText(DatosNatural1Activity.this, "GPS Desactivado", Toast.LENGTH_LONG).show();
         }
         @Override
         public void onProviderEnabled(String provider) {
@@ -196,7 +183,6 @@ public class DatosNaturalActivity extends AppCompatActivity {
     public static void registrado(Activity activity) {
         Intent intent = new Intent(activity, DatosNatural2Activity.class);
         intent.putExtra("dni", dni);
-        intent.putExtra("comprar_vender", comprarVender);
         activity.startActivity(intent);
         activity.finish();
     }

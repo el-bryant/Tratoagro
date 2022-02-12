@@ -1,6 +1,6 @@
 package empre.hoy.myapplication.adapter;
 
-import static empre.hoy.myapplication.PerfilCategoriasCompra.itemsCarrito;
+import static empre.hoy.myapplication.Comprar1Activity.itemsCarrito;
 import android.app.Activity;
 import android.graphics.Color;
 import android.view.LayoutInflater;

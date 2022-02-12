@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:theme="@style/Material"
     android:background="@color/color20"
-    tools:context=".DatosNaturalActivity" >
+    tools:context=".DatosNatural1Activity" >
 
    <TextView
         android:layout_width="match_parent"

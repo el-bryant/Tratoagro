@@ -1,7 +1,7 @@
 package empre.hoy.myapplication;
 
-import static empre.hoy.myapplication.PerfilCategoriasCompra.itemsCarrito;
-import static empre.hoy.myapplication.PerfilCategoriasCompra.total;
+import static empre.hoy.myapplication.Comprar1Activity.itemsCarrito;
+import static empre.hoy.myapplication.Comprar1Activity.total;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
@@ -21,7 +20,6 @@ import org.json.JSONException;
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;

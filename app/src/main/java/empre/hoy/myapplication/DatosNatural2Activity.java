@@ -44,7 +44,6 @@ public class DatosNatural2Activity extends AppCompatActivity {
                     params.put("usuario", tietUsuario.getText().toString());
                     params.put("clave", tietClave1.getText().toString());
                     params.put("nombre", prefUtil.getStringValue("nombres"));
-                    params.put("tipo_usuario", getIntent().getStringExtra("comprar_vender"));
                     webService.consulta(params, "registro_usuario.php");
                 } else {
                     Toast.makeText(DatosNatural2Activity.this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();

@@ -22,11 +22,11 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import empre.hoy.myapplication.CarritoActivity;
+import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.DatosJuridico2Activity;
 import empre.hoy.myapplication.DatosJuridicoActivity;
 import empre.hoy.myapplication.DatosNatural2Activity;
-import empre.hoy.myapplication.DatosNaturalActivity;
-import empre.hoy.myapplication.EspacioVentaActivity;
+import empre.hoy.myapplication.DatosNatural1Activity;
 import empre.hoy.myapplication.EstadiFertilizantesActivity;
 import empre.hoy.myapplication.EstadiGanaderiaActivity;
 import empre.hoy.myapplication.EstadiInsumosActivity;
@@ -34,10 +34,10 @@ import empre.hoy.myapplication.EstadiMaquinariaActivity;
 import empre.hoy.myapplication.EstadiPescaActivity;
 import empre.hoy.myapplication.EstadiPesticidasActivity;
 import empre.hoy.myapplication.IniciarSesionActivity;
+import empre.hoy.myapplication.Inicio2Activity;
 import empre.hoy.myapplication.ListaProveedoresActivity;
-import empre.hoy.myapplication.PerfilCategoriasCompra;
+import empre.hoy.myapplication.Comprar1Activity;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
-import empre.hoy.myapplication.PrincipalActivity;
 import empre.hoy.myapplication.TutoFertilzantes;
 import empre.hoy.myapplication.TutoGanaderia;
 import empre.hoy.myapplication.TutoInsumos;
@@ -45,8 +45,11 @@ import empre.hoy.myapplication.TutoMaquinaria;
 import empre.hoy.myapplication.TutoPesca;
 import empre.hoy.myapplication.TutoPesticidas;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
+import empre.hoy.myapplication.adapter.DepartamentoAdapter;
+import empre.hoy.myapplication.adapter.DistritoAdapter;
 import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.ProveedorAdapter;
+import empre.hoy.myapplication.adapter.ProvinciaAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 import empre.hoy.myapplication.entity.Categoria;
 import empre.hoy.myapplication.entity.Producto;
@@ -335,7 +338,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                 case "registro_natural":
                     if (correcto) {
                         Log.i("registro_natural", consulta);
-                        DatosNaturalActivity.registrado(activity);
+                        DatosNatural1Activity.registrado(activity);
                     }
                     break;
                 case "registro_juridico":
@@ -445,23 +448,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             String idUsuario = jsonArray.getJSONObject(0).getString("id_usuario");
                             String estado = jsonArray.getJSONObject(0).getString("estado");
                             String nombre = jsonArray.getJSONObject(0).getString("nombre");
-                            String tipoUsuario = jsonArray.getJSONObject(0).getString("tipo_usuario");
                             if (estado.equals("D")) {
                                 prefUtil.saveGenericValue("id_usuario", idUsuario);
                                 prefUtil.saveGenericValue(PrefUtil.LOGIN_STATUS, "1");
-                                prefUtil.saveGenericValue("tipo_usuario", tipoUsuario);
-                                switch (tipoUsuario) {
-                                    case "C":
-                                        prefUtil.saveGenericValue("nombre", nombre);
-                                        activity.startActivity(new Intent(activity, PerfilCategoriasCompra.class));
-                                        activity.finish();
-                                        break;
-                                    case "V":
-                                        prefUtil.saveGenericValue("razon_social", nombre);
-                                        activity.startActivity(new Intent(activity, EspacioVentaActivity.class));
-                                        activity.finish();
-                                        break;
-                                }
+                                prefUtil.saveGenericValue("nombre", nombre);
+                                activity.startActivity(new Intent(activity, Inicio2Activity.class));
+                                activity.finish();
                             } else {
                                 Toast.makeText(activity, "Su cuenta ha sido suspendida, comuníquese con nosotros para recuperarla", Toast.LENGTH_LONG).show();
                             }
@@ -485,7 +477,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         if (jsonArray.length() > 0) {
                             String idVenta = jsonArray.getJSONObject(0).getString("id_venta");
                             CarritoActivity.llenarDetalles(idVenta);
-                            activity.startActivity(new Intent(activity, PerfilCategoriasCompra.class));
+                            activity.startActivity(new Intent(activity, Comprar1Activity.class));
                             Toast.makeText(activity, "Venta registrada satisfactoriamente", Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -499,7 +491,52 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                     Log.i("buscar_dni", consulta);
                     String apellidos = jsonObject.getString("apellido_paterno") + " " + jsonObject.getString("apellido_materno");
                     String nombres = jsonObject.getString("nombres");
-                    DatosNaturalActivity.cargarDatosDni(apellidos, nombres);
+                    DatosNatural1Activity.cargarDatosDni(apellidos, nombres);
+                    break;
+                case "buscar_departamentos":
+                    if (correcto) {
+                        Log.i("buscar_departamentos", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        categorias = new ArrayList<>();
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            Categoria categoria = new Categoria();
+                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getString("id_departamento"));
+                            categoria.setNombre(jsonArray.getJSONObject(i).getString("nombre"));
+                            categorias.add(categoria);
+                        }
+                        DepartamentoAdapter departamentoAdapter = new DepartamentoAdapter(activity, categorias);
+                        Comprar2Activity.cargarDepartamentos(departamentoAdapter);
+                    }
+                    break;
+                case "buscar_provincias":
+                    if (correcto) {
+                        Log.i("buscar_provincias", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        categorias = new ArrayList<>();
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            Categoria categoria = new Categoria();
+                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getString("id_provincia"));
+                            categoria.setNombre(jsonArray.getJSONObject(i).getString("nombre"));
+                            categorias.add(categoria);
+                        }
+                        ProvinciaAdapter provinciaAdapter = new ProvinciaAdapter(activity, categorias);
+                        Comprar2Activity.cargarProvincias(provinciaAdapter);
+                    }
+                    break;
+                case "buscar_distritos":
+                    if (correcto) {
+                        Log.i("buscar_distritos", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        categorias = new ArrayList<>();
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            Categoria categoria = new Categoria();
+                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getString("id_distrito"));
+                            categoria.setNombre(jsonArray.getJSONObject(i).getString("nombre"));
+                            categorias.add(categoria);
+                        }
+                    }
+                    DistritoAdapter distritoAdapter = new DistritoAdapter(activity, categorias);
+                    Comprar2Activity.cargarDistritos(distritoAdapter);
                     break;
             }
         } catch (Exception e) {

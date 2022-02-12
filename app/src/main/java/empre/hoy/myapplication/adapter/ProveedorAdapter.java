@@ -1,11 +1,10 @@
 package empre.hoy.myapplication.adapter;
 
 import static empre.hoy.myapplication.ListaProveedoresActivity.nombreProducto;
-import static empre.hoy.myapplication.PerfilCategoriasCompra.itemsCarrito;
-import static empre.hoy.myapplication.PerfilCategoriasCompra.total;
+import static empre.hoy.myapplication.Comprar1Activity.itemsCarrito;
+import static empre.hoy.myapplication.Comprar1Activity.total;
 import android.app.Activity;
 import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
