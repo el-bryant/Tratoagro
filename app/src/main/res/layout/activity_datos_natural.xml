@@ -10,29 +10,16 @@
     android:background="@color/color20"
     tools:context=".DatosNaturalActivity" >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="REGISTRA TUS DATOS - PERSONA NATURAL"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="25dp"
-        android:textSize="20sp"
-        android:layout_marginEnd="25dp"
-        android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/blanco"
-        android:layout_marginBottom="30dp"
-        android:textAlignment="center"
-        android:background="@color/marron" />
-
-    <TextView
+   <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ingresa tus datos en los casilleros presetandos  a continuación"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="27dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="@font/aleo_bold"
         android:textColor="@color/negro"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:gravity="start" />
 
     <ScrollView

@@ -18,18 +18,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="30dp" >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="USUARIO Y CONTRASEÑA"
-                android:fontFamily="@font/aleo_bold"
-                android:textColor="@color/blanco"
-                android:background="@color/marron"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:layout_marginTop="60dp" />
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="60dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -95,7 +85,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Entrar"
+                android:text="Listo"
                 android:background="@drawable/boton3"
                 android:textColor="@color/blanco"
                 android:layout_marginTop="30dp"
