@@ -28,7 +28,7 @@
             android:layout_height="250dp"
             android:layout_marginHorizontal="20dp"
             android:src="@drawable/ic_logo"
-            android:layout_marginTop="-50dp"
+            android:layout_marginTop="-50dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                         <ImageView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/ic_ico_carrito3"
+                            android:src="@drawable/ic_ico_carrito2"
                             />
                         <TextView
                             android:layout_width="match_parent"

@@ -74,3 +74,6 @@
             android:drawableTop="@drawable/ic_ico_recurso_2"
             android:drawablePadding="10dp"
             />
+
+    </LinearLayout>
+</RelativeLayout>

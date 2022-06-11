@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginHorizontal="15dp"
         android:padding="0dp"
-        android:src="@drawable/ic_ico_carrito2"
+        android:src="@drawable/ic_ico_carrito2" />
 
     <TextView
         android:layout_width="match_parent"

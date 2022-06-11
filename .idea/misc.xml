@@ -3,222 +3,53 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/boton2.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/boton3.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/boton4.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/boton5.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/boton6.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/boton7.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/botonnegro.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/celular.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_bandera.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_carrito.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_casa.xml" value="0.20185185185185187" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_comerciante.xml" value="0.18888888888888888" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_deslizar_hacia_abajo.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_documento.xml" value="0.20185185185185187" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_dolar.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_empresablack.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_estafertilizantes.xml" value="0.2169230769230769" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_estaganaderia.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_estapesca.xml" value="0.21203703703703702" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_facebook.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_google.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_carrito2.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_carrito3.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_dolar2.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_dolar3.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_fertelizantes3.xml" value="0.16018518518518518" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_insumos3.xml" value="0.16018518518518518" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_pesticidas3.xml" value="0.16018518518518518" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_pez3.xml" value="0.16018518518518518" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_recurso_1.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_recurso_2.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_recurso_3.xml" value="0.2169230769230769" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_tractor3.xml" value="0.16018518518518518" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_vaca3.xml" value="0.16018518518518518" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_idea.xml" value="0.18611111111111112" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_instagram__1_.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_logo.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_logo2.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_logo3.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_me_gusta.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_noticias.xml" value="0.2169230769230769" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_noticias2.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_oportunidad.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_peru.xml" value="0.18888888888888888" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_power.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ic_ruc.xml" value="0.20185185185185187" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ico_personblack.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/persona1.xml" value="0.18703703703703703" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/drawable/ubicacion1.xml" value="0.2203125" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_1.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_10_1_empezar_tutorial_2_3_info_1_insumos.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_10_2_empezar_tutorial_2_3_info_2_insumos.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_11_1_empezar_tutorial_2_4_info_1_maquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_11_2_empezar_tutorial_2_4_info_2_maquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_12_1_empezar_tutorial_2_5_info_1_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_12_2_empezar_tutorial_2_5_info_2_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_13_1_empezar_tutorial_2_6_info_1_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_13_2_empezar_tutorial_2_6_info_2_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_3.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_4_registro_tipo_de_usuario.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_5_datos_juridico_1.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_5_datos_juridico_2.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_5_datos_juridico_3.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_6_datos_natural_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_6_datos_natural_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_6_datos_natural_3.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_7_empezar_tutorial_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_1_empezar_tutorial_2_1_info_1_fertilizantes.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_2_empezar_tutorial_2_1_info_2_fertilizantes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_9_1_empezar_tutorial_2_2_info_1_ganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_9_2_empezar_tutorial_2_2_info_2_ganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_9_3_empezar_tutorial_2_3_info_2_insumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_carrito.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_carrito_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar1.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar2.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_0.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_1.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_1_lista_proveedores_fertilizantes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_2_lista_proveedores_ganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_3_lista_proveedores_insumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_4_lista_proveedores_maquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_5_lista_proveedores_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_6_lista_proveedores_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_ganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutoria_fertilizantes.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_3.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_ganaderia.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_insumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_maquinaria.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_tutorial_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_vender.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico2.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico_3.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural1.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural2.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural3.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural_1.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_natural_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datosjuridico3.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_datosjuridico_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_1_info_1_fertilizantes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_1_info_2_fertilizantes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_1_info_fertilizantes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_2_info_1_ganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_2_info_ganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_3_info_1_insumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_3_info_2_insumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_5_info_2_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_6_info_1_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_2_6_info_2_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_3_1_comprar_tutorial_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_3_2_comprar_tutorial_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezar_tutorial_3_3_comprar_tutorial_3.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_empezartutorial.xml" value="0.2" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_espacio_venta.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_espacioalcliente.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadifertilizantes.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadiganaderia.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadiinsumos.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadimaquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipesca.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipestizidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral2.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral3.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral_segunda_opción.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticiasgeneral2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_formulario.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_info_fertilizantes.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_info_ganaderia.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_info_insumos.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_info_maquinaria.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_info_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_info_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_información.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_inicio1.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_inicio2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_inicio_sesion2.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_lista_proveedores.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_lista_proveedores_fertilizantes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_lista_proveedores_ganaderia.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_lista_proveedores_insumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_lista_proveedores_maquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_lista_proveedores_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_lista_proveedores_pesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_miganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_mimaquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_mipesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_misfertilizantes.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_misinsumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_mispesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_payment_details.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_perfildelusuariodecompra.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_perfildelusuariodeventa.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_principal.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_principal2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_principal_segunda_opción.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperarcontra.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperarcontra2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_redes_sociales.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_registro_tipo_de_usuario.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_splash_screen.xml" value="0.17" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tipo_usuario.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutofertilizantes.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutoganaderia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutoinsumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutomaquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutopesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutopesticidas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial_descripcion_fertilizantes.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial_descripcion_ganaderia.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial_descripcion_insumos.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial_descripcion_maquinaria.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial_descripcion_pesca.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial_descripcion_pesticidas.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_ubicanos.xml" value="0.25" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_vender_0.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_vender_1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_vender_tutorial.xml" value="0.2" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_vendertutorial.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/activity_ventana_de_venta_producto.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/item_carrito.xml" value="0.21" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/item_carrito_2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/item_producto.xml" value="0.22" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/item_proveedor.xml" value="0.13722826086956522" />
-        <entry key="..\:/Users/Renzo Alcantara L/AndroidStudioProjects/Tratoagro/app/src/main/res/layout/item_tutorial.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton5.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_carrito.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_flechaabajo.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_carrito2.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_pez2.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_tractor2.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_ico_vaca.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_logo.xml" value="0.9" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ic_logo3.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/redondo_blanco.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/representantelegal.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_1.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_10_1_empezar_tutorial_2_3_info_1_insumos.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_10_2_empezar_tutorial_2_3_info_2_insumos.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_11_1_empezar_tutorial_2_4_info_1_maquinaria.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_11_2_empezar_tutorial_2_4_info_2_maquinaria.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_12_1_empezar_tutorial_2_5_info_1_pesca.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_12_2_empezar_tutorial_2_5_info_2_pesca.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_13_1_empezar_tutorial_2_6_info_1_pesticidas.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_13_2_empezar_tutorial_2_6_info_2_pesticidas.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_2.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_3.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_4_registro_tipo_de_usuario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_5_datos_juridico_1.xml" value="0.25582901554404147" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_5_datos_juridico_2.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_5_datos_juridico_3.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_6_datos_natural_1.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_6_datos_natural_2.xml" value="0.2598684210526316" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_6_datos_natural_3.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_7_empezar_tutorial_1.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_1_empezar_tutorial_2_1_info_1_fertilizantes.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_2_empezar_tutorial_2_1_info_2_fertilizantes.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_9_1_empezar_tutorial_2_2_info_1_ganaderia.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_9_2_empezar_tutorial_2_2_info_2_ganaderia.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_carrito.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_carrito_1.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar1.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar2.xml" value="0.3490740740740741" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_0.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_1.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_1_lista_proveedores_fertilizantes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_2_lista_proveedores_ganaderia.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_3_lista_proveedores_insumos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_4_lista_proveedores_maquinaria.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_5_lista_proveedores_pesca.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_6_lista_proveedores_pesticidas.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_vender.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico.xml" value="0.3527777777777778" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_datos_juridico2.xml" value="0.25416666666666665" />
@@ -233,7 +64,10 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipesca.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipestizidas.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticiasgeneral2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_formulario.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_informacion.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_información.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.264" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_inicio1.xml" value="0.3490740740740741" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_inicio2.xml" value="0.3490740740740741" />
@@ -257,6 +91,9 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductos.xml" value="0.2" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductosganaderia.xml" value="0.25" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_principal.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_1.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_2.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_redes_sociales.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_splash_screen.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutofertilizantes.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutoganaderia.xml" value="0.25416666666666665" />
@@ -266,9 +103,12 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutopesticidas.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_tutorial.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_ubicanos.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_vender_0.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_vender_1.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/fragment_comprarovender.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/fragment_tipodeusuario.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/item_carrito.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/item_carrito_2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/item_producto.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/item_proveedor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/item_tutorial.xml" value="0.25416666666666665" />

@@ -82,7 +82,6 @@
                     android:text="AÑADIR DESCRIPCIÓN"
                     android:background="@drawable/boton3"
                     android:textColor="@color/blanco"
-                    android:layout_marginEnd=""
                     android:fontFamily="@font/aleo_bold"
                     android:textAllCaps="false"
                     android:paddingHorizontal="30dp" />

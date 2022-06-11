@@ -59,7 +59,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btseleccionar1"
+            android:id="@+id/btnSubcategoriasMaquinaria"
             android:text="sub categorías"
             android:drawableEnd="@drawable/ic_flechaabajo"
             android:drawablePadding="40dp"
@@ -73,7 +73,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ruvcategoriasmaquinaria"
+            android:id="@+id/rvSubcategoriasMaquinaria"
             android:visibility="gone"
             android:layout_marginBottom="15dp" />
 
@@ -103,7 +103,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btseleccionar1"
+            android:id="@+id/btnProductosMaquinaria"
             android:text="productos"
             android:drawableEnd="@drawable/ic_flechaabajo"
             android:drawablePadding="40dp"
@@ -117,7 +117,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ruvcategoriasmaquinaria"
+            android:id="@+id/rvProductosMaquinaria"
             android:visibility="gone"
             android:layout_marginBottom="15dp" />
 
@@ -129,7 +129,7 @@
         android:layout_marginHorizontal="15dp"
         android:padding="0dp"
         android:layout_marginTop="60dp"
-        android:src="@drawable/ic_logo"
+        android:src="@drawable/ic_logo" />
 
     <Button
         android:id="@+id/btnaceptar"

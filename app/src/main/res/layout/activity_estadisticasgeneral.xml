@@ -67,7 +67,7 @@
                         android:layout_marginTop="58dp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
-                        android:gravity="center">
+                        android:gravity="center" />
 
                     <ImageView
                         android:layout_width="112dp"
@@ -125,7 +125,7 @@
                         android:layout_marginTop="58dp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
-                        android:gravity="center">
+                        android:gravity="center" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -192,7 +192,7 @@
                         android:layout_marginTop="58dp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
-                        android:gravity="center">
+                        android:gravity="center" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -250,7 +250,7 @@
                         android:layout_marginTop="58dp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
-                        android:gravity="center">
+                        android:gravity="center" />
 
                     <ImageView
                         android:layout_width="103dp"
@@ -316,7 +316,7 @@
                         android:layout_marginTop="58dp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
-                        android:gravity="center">
+                        android:gravity="center" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -375,7 +375,7 @@
                         android:layout_marginTop="58dp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
-                        android:gravity="center">
+                        android:gravity="center" />
 
                     <ImageView
                         android:layout_width="100dp"
