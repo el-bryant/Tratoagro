@@ -3,6 +3,8 @@ package empre.hoy.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.FrameLayout;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
@@ -10,7 +12,7 @@ import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.entity.ItemCarrito;
 
 public class Comprar1Activity extends AppCompatActivity {
-    Button btnGanaderia, btnPesca, btnMaquinaria, btnInsumos, btnPesticidas, btnFertilizantes;
+    FrameLayout btnGanaderia, btnPesca, btnMaquinaria, btnInsumos, btnPesticidas, btnFertilizantes;
     public static ArrayList<ItemCarrito> itemsCarrito;
     public static double total;
     PrefUtil prefUtil;
@@ -22,12 +24,12 @@ public class Comprar1Activity extends AppCompatActivity {
         prefUtil = new PrefUtil(this);
         itemsCarrito = new ArrayList<>();
         total = 0.0;
-        btnGanaderia = (Button) findViewById(R.id.btnGanaderia);
-        btnPesca = (Button) findViewById(R.id.btnPesca);
-        btnMaquinaria = (Button) findViewById(R.id.btnMaquinaria);
-        btnInsumos = (Button) findViewById(R.id.btnInsumos);
-        btnPesticidas = (Button) findViewById(R.id.btnPesticidas);
-        btnFertilizantes = (Button) findViewById(R.id.btnFertilizantes);
+        btnGanaderia = (FrameLayout) findViewById(R.id.flayGanaderia);
+        btnPesca = (FrameLayout) findViewById(R.id.flayPesca);
+        btnMaquinaria = (FrameLayout) findViewById(R.id.flayMaquinaria);
+        btnInsumos = (FrameLayout) findViewById(R.id.flayInsumos);
+        btnPesticidas = (FrameLayout) findViewById(R.id.flayPesticidas);
+        btnFertilizantes = (FrameLayout) findViewById(R.id.flayFertilizantes);
         btnGanaderia.setOnClickListener(v -> {
             Intent intent = new Intent(Comprar1Activity.this, Comprar2Activity.class);
             intent.putExtra("categoria", "1");

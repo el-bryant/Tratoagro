@@ -20,7 +20,7 @@ import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 import empre.hoy.myapplication.entity.ItemCarrito;
 
 public class PerfilVentaProductosActivity extends AppCompatActivity {
-    Button btnSeleccionar;
+//    Button btnSeleccionar;
     Map<String, String> params;
     public static RecyclerView rvProductos, rvSubcategorias;
     String categoria = "0";
@@ -29,17 +29,17 @@ public class PerfilVentaProductosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfilventaproductos);
+        setContentView(R.layout.activity_vender_1);
         if (getIntent().getExtras() != null) {
             categoria = getIntent().getStringExtra("categoria");
         }
-        btnSeleccionar = (Button) findViewById(R.id.btnSeleccionarProducto);
+//        btnSeleccionar = (Button) findViewById(R.id.btnSeleccionarProducto);
         rvProductos = (RecyclerView) findViewById(R.id.rvProductos);
         rvSubcategorias = (RecyclerView) findViewById(R.id.rvSubcategorias);
-        btnSeleccionar.setOnClickListener(v -> {
-            obtenerSubcategorias(categoria);
-            rvProductos.setVisibility(View.VISIBLE);
-        });
+//        btnSeleccionar.setOnClickListener(v -> {
+//            obtenerSubcategorias(categoria);
+//            rvProductos.setVisibility(View.VISIBLE);
+//        });
         rvSubcategorias.setLayoutManager(new LinearLayoutManager(this));
         rvProductos.setLayoutManager(new LinearLayoutManager(this));
         webService = new WebService(this);

@@ -26,10 +26,10 @@ import java.util.Locale;
 import java.util.Map;
 import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.Funciones.WebService;
-import empre.hoy.myapplication.databinding.ActivityDatosNatural1Binding;
+import empre.hoy.myapplication.databinding.ActivityBienvenida6DatosNatural1Binding;
 
 public class DatosNatural1Activity extends AppCompatActivity {
-    public static ActivityDatosNatural1Binding binding;
+    public static ActivityBienvenida6DatosNatural1Binding binding;
     Map<String, String> params;
     PrefUtil prefUtil;
     public static String dni;
@@ -41,7 +41,7 @@ public class DatosNatural1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityDatosNatural1Binding.inflate(getLayoutInflater());
+        binding = ActivityBienvenida6DatosNatural1Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         prefUtil = new PrefUtil(this);
         webService = new WebService(this);

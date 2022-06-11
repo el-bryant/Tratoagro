@@ -11,19 +11,19 @@ import com.sinaseyfi.advancedcardview.AdvancedCardView;
 
 public class TutorialActivity extends AppCompatActivity {
     AdvancedCardView acvvacadorado, acvpescadorado, acvvegetalesdorado, acvmaquinariadorado, acvpesticidadorado, acvfertilizantedorado;
-    Button btnSiguiente;
+//    Button btnSiguiente;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Información);
+        setContentView(R.layout.activity_informacion);
         acvvacadorado = (AdvancedCardView) findViewById(R.id.acvvacadorado);
         acvpescadorado = (AdvancedCardView) findViewById(R.id.acvpescadorado);
         acvvegetalesdorado = (AdvancedCardView) findViewById(R.id.acvvegetalesdorado);
         acvmaquinariadorado = (AdvancedCardView) findViewById(R.id.acvmaquinariadorado);
         acvpesticidadorado = (AdvancedCardView) findViewById(R.id.acvpesticidadorado);
         acvfertilizantedorado = (AdvancedCardView) findViewById(R.id.acvfertilizantedorado);
-        btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
+//        btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
         acvvacadorado.setOnClickListener(v -> {
             Intent intent = new Intent(TutorialActivity.this, TutoGanaderia.class);
             startActivity(intent);
@@ -48,9 +48,9 @@ public class TutorialActivity extends AppCompatActivity {
             Intent intent = new Intent(TutorialActivity.this, TutoFertilzantes.class);
             startActivity(intent);
         });
-        btnSiguiente.setOnClickListener(v -> {
-            Intent intent = new Intent(TutorialActivity.this, PerfilUsuarioCompraActivity.class);
-            startActivity(intent);
-        });
+//        btnSiguiente.setOnClickListener(v -> {
+//            Intent intent = new Intent(TutorialActivity.this, PerfilUsuarioCompraActivity.class);
+//            startActivity(intent);
+//        });
     }
 }

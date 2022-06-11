@@ -19,24 +19,24 @@ import empre.hoy.myapplication.adapter.CategoriaAdapter;
 public class TutoGanaderia extends AppCompatActivity {
     WebService webservice;
     Map<String, String> params;
-    Button btseleccionar3;
-    public static RecyclerView ruvcategoriasganaderia;
+//    Button btseleccionar3;
+//    public static RecyclerView ruvcategoriasganaderia;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_9_1_empezar_tutorial_2_2_info_1_ganaderia);
         webservice = new WebService( this);
-        btseleccionar3=(Button)findViewById(R.id.btseleccionar1);
-        ruvcategoriasganaderia=(RecyclerView)findViewById(R.id.ruvcategoriasganaderia);
-        ruvcategoriasganaderia.setLayoutManager(new LinearLayoutManager(this));
-        btseleccionar3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ruvcategoriasganaderia.setVisibility(View.VISIBLE);
-                obtenerCategorias();
-            }
-        });
+//        btseleccionar3=(Button)findViewById(R.id.btseleccionar1);
+//        ruvcategoriasganaderia=(RecyclerView)findViewById(R.id.ruvcategoriasganaderia);
+//        ruvcategoriasganaderia.setLayoutManager(new LinearLayoutManager(this));
+//        btseleccionar3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ruvcategoriasganaderia.setVisibility(View.VISIBLE);
+//                obtenerCategorias();
+//            }
+//        });
     }
 
     public void obtenerCategorias() {
@@ -47,6 +47,6 @@ public class TutoGanaderia extends AppCompatActivity {
 
     public static void mostrarCategorias(CategoriaAdapter categoriaAdapter) {
         Log.i("mostrarCategorias", "TutoGanaderia");
-        ruvcategoriasganaderia.setAdapter(categoriaAdapter);
+//        ruvcategoriasganaderia.setAdapter(categoriaAdapter);
     }
 }

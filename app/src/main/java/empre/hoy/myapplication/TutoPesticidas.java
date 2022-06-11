@@ -19,24 +19,24 @@ import empre.hoy.myapplication.adapter.CategoriaAdapter;
 public class TutoPesticidas extends AppCompatActivity {
     WebService webservice;
     Map<String, String> params;
-    Button btseleccionar2;
-    public static RecyclerView ruvcategoriaspesticidas;
+//    Button btseleccionar2;
+//    public static RecyclerView ruvcategoriaspesticidas;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_13_1_empezar_tutorial_2_6_info_1_pesticidas);
         webservice = new WebService( this);
-        btseleccionar2=(Button)findViewById(R.id.btseleccionar1);
-        ruvcategoriaspesticidas=(RecyclerView)findViewById(R.id.ruvcategoriaspesticidas);
-        ruvcategoriaspesticidas.setLayoutManager(new LinearLayoutManager(this));
-        btseleccionar2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ruvcategoriaspesticidas.setVisibility(View.VISIBLE);
-                obtenerCategorias();
-            }
-        });
+//        btseleccionar2=(Button)findViewById(R.id.btseleccionar1);
+//        ruvcategoriaspesticidas=(RecyclerView)findViewById(R.id.ruvcategoriaspesticidas);
+//        ruvcategoriaspesticidas.setLayoutManager(new LinearLayoutManager(this));
+//        btseleccionar2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ruvcategoriaspesticidas.setVisibility(View.VISIBLE);
+//                obtenerCategorias();
+//            }
+//        });
     }
 
     public void obtenerCategorias() {
@@ -47,6 +47,6 @@ public class TutoPesticidas extends AppCompatActivity {
 
     public static void mostrarCategorias(CategoriaAdapter categoriaAdapter) {
         Log.i("mostrarCategorias", "TutoPesticidas");
-        ruvcategoriaspesticidas.setAdapter(categoriaAdapter);
+//        ruvcategoriaspesticidas.setAdapter(categoriaAdapter);
     }
 }

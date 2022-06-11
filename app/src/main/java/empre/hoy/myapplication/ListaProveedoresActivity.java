@@ -16,20 +16,20 @@ import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.ProveedorAdapter;
 
 public class ListaProveedoresActivity extends AppCompatActivity {
-    FloatingActionButton fabCarrito;
+//    FloatingActionButton fabCarrito;
     Map<String, String> params;
-    public static RecyclerView rvProveedores;
+//    public static RecyclerView rvProveedores;
     public static String idProducto, nombreProducto;
     WebService webService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_proveedores);
-        fabCarrito = (FloatingActionButton) findViewById(R.id.fabCarrito);
-        rvProveedores = (RecyclerView) findViewById(R.id.rvProveedores);
-        fabCarrito.setOnClickListener(v -> startActivity(new Intent(ListaProveedoresActivity.this, CarritoActivity.class)));
-        rvProveedores.setLayoutManager(new LinearLayoutManager(this));
+        setContentView(R.layout.activity_comprar_2_1_lista_proveedores_fertilizantes);
+//        fabCarrito = (FloatingActionButton) findViewById(R.id.fabCarrito);
+//        rvProveedores = (RecyclerView) findViewById(R.id.rvProveedores);
+//        fabCarrito.setOnClickListener(v -> startActivity(new Intent(ListaProveedoresActivity.this, CarritoActivity.class)));
+//        rvProveedores.setLayoutManager(new LinearLayoutManager(this));
         webService = new WebService(this);
         if (getIntent().getExtras() != null) {
             idProducto = getIntent().getStringExtra("idProducto");
@@ -45,7 +45,7 @@ public class ListaProveedoresActivity extends AppCompatActivity {
     }
 
     public static void cargarProveedores(ProveedorAdapter proveedorAdapter) {
-        rvProveedores.setAdapter(proveedorAdapter);
-        rvProveedores.setVisibility(View.VISIBLE);
+//        rvProveedores.setAdapter(proveedorAdapter);
+//        rvProveedores.setVisibility(View.VISIBLE);
     }
 }
