@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import empre.hoy.myapplication.Funciones.WebService;
-import empre.hoy.myapplication.adapter.CategoriaAdapter;
 import empre.hoy.myapplication.adapter.DepartamentoAdapter;
 import empre.hoy.myapplication.adapter.DistritoAdapter;
 import empre.hoy.myapplication.adapter.ProvinciaAdapter;
@@ -27,7 +26,7 @@ public class Comprar2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_comprar2);
+        setContentView(R.layout.activity_comprar_2);
         webService = new WebService(this);
         tvTipoUsuario = (TextView) findViewById(R.id.tvTipoUsuario);
         tvPersonaNatural = (TextView) findViewById(R.id.tvPersonaNatural);

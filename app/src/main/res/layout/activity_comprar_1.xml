@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Material"
+    android:gravity="center"
+    android:background="@color/dorado1" >
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="15dp"
+        android:padding="0dp"
+        android:src="@drawable/ic_ico_carrito2"
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Porfavor selecciona la categoría donde quieres ir a comprar"
+        android:fontFamily="@font/aleo_bold"
+        android:textColor="@color/negro"
+        android:textSize="15sp"
+        android:textAlignment="textStart"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                android:background="@color/dorado1"
+                android:layout_marginVertical="2dp" >
+
+                <FrameLayout
+                    android:id="@+id/flayGanaderia"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton5"
+                    android:layout_marginHorizontal="15dp" >
+
+                    <ImageView
+                        android:id="@+id/ivGanaderia"
+                        android:layout_width="75dp"
+                        android:layout_gravity="center"
+                        android:layout_height="75dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ico_vaca3"
+                        android:padding="0dp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/dorado1"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                android:layout_marginVertical="2dp" >
+
+                <FrameLayout
+                    android:id="@+id/flayPesca"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton5"
+                    android:layout_marginHorizontal="15dp" >
+
+                    <ImageView
+                        android:id="@+id/ivPesca"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ico_pez3"
+                        android:padding="0dp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/dorado1"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                android:layout_marginVertical="2dp" >
+
+                <FrameLayout
+                    android:id="@+id/flayMaquinaria"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton5"
+                    android:layout_marginHorizontal="15dp" >
+
+                    <ImageView
+                        android:id="@+id/ivMaquinaria"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ico_tractor3"
+                        android:padding="0dp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/dorado1"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                android:layout_marginVertical="2dp" >
+
+                <FrameLayout
+                    android:id="@+id/flayInsumos"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton5"
+
+                    android:layout_marginHorizontal="15dp" >
+
+                    <ImageView
+                        android:id="@+id/ivInsumos"
+                        android:layout_width="75dp"
+                        android:layout_gravity="center"
+                        android:layout_height="75dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ico_insumos3"
+                        android:padding="0dp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                android:background="@color/dorado1"
+                android:layout_marginVertical="2dp" >
+
+                <FrameLayout
+                    android:id="@+id/flayPesticidas"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton5"
+                    android:layout_marginHorizontal="15dp" >
+
+                    <ImageView
+                        android:id="@+id/ivPesticidas"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ico_pesticidas3"
+                        android:padding="0dp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/dorado1"
+                android:paddingStart="12dp"
+                android:paddingEnd="40dp"
+                android:layout_marginVertical="2dp" >
+
+                <FrameLayout
+                    android:id="@+id/flayFertilizantes"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton5"
+                    android:layout_marginHorizontal="15dp" >
+
+                    <ImageView
+                        android:id="@+id/ivFertilizantes"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_ico_fertelizantes3"
+                        android:padding="0dp" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

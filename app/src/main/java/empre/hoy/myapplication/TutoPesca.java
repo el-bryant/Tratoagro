@@ -1,6 +1,5 @@
 package empre.hoy.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +25,7 @@ public class TutoPesca extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutopesca);
+        setContentView(R.layout.activity_bienvenida_12_1_empezar_tutorial_2_5_info_1_pesca);
         webservice = new WebService(this);
         btseleccionar5=(Button)findViewById(R.id.btseleccionar1);
         ruvcategoriaspesca=(RecyclerView)findViewById(R.id.ruvcategoriaspesca);

@@ -1,7 +1,6 @@
 package empre.hoy.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -27,7 +26,7 @@ public class DatosNatural2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_datos_natural2);
+        setContentView(R.layout.activity_bienvenida_6_datos_natural_3);
         prefUtil = new PrefUtil(this);
         btnAceptar = (Button) findViewById(R.id.btnaceptar);
         tietUsuario = (TextInputEditText) findViewById(R.id.tietUsuario);

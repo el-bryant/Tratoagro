@@ -1,6 +1,5 @@
 package empre.hoy.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,7 +24,7 @@ public class TutoFertilzantes extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutofertilizantes);
+        setContentView(R.layout.activity_bienvenida_8_1_empezar_tutorial_2_1_info_1_fertilizantes);
         webservice = new WebService( this);
         btseleccionar1=(Button)findViewById(R.id.btseleccionar1);
         ruvcategoriasfertilizantes=(RecyclerView)findViewById(R.id.ruvcategoriasfertilizantes);

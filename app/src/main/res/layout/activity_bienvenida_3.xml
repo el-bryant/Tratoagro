@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color20"
+    tools:context=".Inicio1Activity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo"
+        android:layout_marginHorizontal="30dp" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="75dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/boton3"
+        android:fontFamily="@font/aleo_bold"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="@color/dorado1"
+        android:textSize="15sp"
+        android:drawableTop="@drawable/ic_ico_recurso_2"
+        android:drawablePadding="10dp"/>
+
+</RelativeLayout>

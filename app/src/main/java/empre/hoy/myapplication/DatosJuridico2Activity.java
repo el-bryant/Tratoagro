@@ -22,7 +22,7 @@ public class DatosJuridico2Activity  extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_datos_juridico2);
+        setContentView(R.layout.activity_bienvenida_5_datos_juridico_3);
         prefUtil = new PrefUtil(this);
         btnAceptar = (Button) findViewById(R.id.btnaceptar);
         tietUsuario = (TextInputEditText) findViewById(R.id.tietUsuario);

@@ -9,7 +9,7 @@
         android:endColor="@color/negro"
         android:angle="90"/>
     <stroke
-        android:color="@color/blanco"
+        android:color="@color/marron1"
         android:width="2dp"/>
 
 </shape>

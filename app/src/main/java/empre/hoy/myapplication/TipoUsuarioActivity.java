@@ -12,7 +12,7 @@ public class TipoUsuarioActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tipo_usuario);
+        setContentView(R.layout.activity_bienvenida_4_registro_tipo_de_usuario);
         acvPersonaNatural = (AdvancedCardView) findViewById(R.id.acvPersonaNatural);
         acvPersonaJuridica = (AdvancedCardView) findViewById(R.id.acvPersonaJuridica);
         acvPersonaNatural.setOnClickListener(v -> {

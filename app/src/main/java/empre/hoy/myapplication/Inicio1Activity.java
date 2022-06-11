@@ -12,7 +12,7 @@ public class Inicio1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio1);
+        setContentView(R.layout.activity_bienvenida_3);
         btnRegistro = (Button) findViewById(R.id.btnRegistrar);
         btnRegistro.setOnClickListener(v -> {
             startActivity(new Intent(Inicio1Activity.this, TipoUsuarioActivity.class));

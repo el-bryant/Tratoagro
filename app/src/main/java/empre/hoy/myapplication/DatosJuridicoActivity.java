@@ -16,7 +16,6 @@ import android.location.LocationProvider;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
@@ -42,7 +41,7 @@ public class DatosJuridicoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_datos_juridico);
+        setContentView(R.layout.activity_bienvenida_5_datos_juridico_1);
         prefUtil = new PrefUtil(this);
         webService = new WebService(this);
         comprarVender = getIntent().getStringExtra("comprar_vender");

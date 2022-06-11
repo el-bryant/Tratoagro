@@ -5,11 +5,11 @@
     <corners
         android:radius="25dp"/>
     <gradient
-        android:startColor="#00000000"
+        android:startColor="@color/marron1"
         android:endColor="@color/negro"
         android:angle="90"/>
     <stroke
-        android:color="@color/material_on_background_disabled"
-        android:width="9dp"/>
+        android:color="@color/negro"
+        android:width="2dp"/>
 
 </shape>

@@ -11,7 +11,7 @@ public class Inicio2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio2);
+        setContentView(R.layout.activity_bienvenida_7_empezar_tutorial_1);
         llayIniciarTutorial = (LinearLayout) findViewById(R.id.llayIniciarTutorial);
         llayIniciarTutorial.setOnClickListener(v -> {
             startActivity(new Intent(Inicio2Activity.this, ComprarVenderActivity.class));

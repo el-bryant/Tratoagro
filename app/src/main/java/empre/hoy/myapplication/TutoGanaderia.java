@@ -1,6 +1,5 @@
 package empre.hoy.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +25,7 @@ public class TutoGanaderia extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutoganaderia);
+        setContentView(R.layout.activity_bienvenida_9_1_empezar_tutorial_2_2_info_1_ganaderia);
         webservice = new WebService( this);
         btseleccionar3=(Button)findViewById(R.id.btseleccionar1);
         ruvcategoriasganaderia=(RecyclerView)findViewById(R.id.ruvcategoriasganaderia);

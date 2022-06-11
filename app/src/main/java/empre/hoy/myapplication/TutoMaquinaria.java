@@ -1,6 +1,5 @@
 package empre.hoy.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +25,7 @@ public class TutoMaquinaria extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutomaquinaria);
+        setContentView(R.layout.activity_bienvenida_11_1_empezar_tutorial_2_4_info_1_maquinaria);
         webservice = new WebService( this);
         btseleccionar6=(Button)findViewById(R.id.btseleccionar1);
         ruvcategoriasmaquinaria=(RecyclerView)findViewById(R.id.ruvcategoriasmaquinaria);

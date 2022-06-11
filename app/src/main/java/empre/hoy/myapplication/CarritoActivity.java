@@ -42,7 +42,7 @@ public class CarritoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carrito);
+        setContentView(R.layout.activity_carrito_1);
         prefUtil = new PrefUtil(this);
         webService = new WebService(this);
         btnTotal = (Button) findViewById(R.id.btnTotal);
