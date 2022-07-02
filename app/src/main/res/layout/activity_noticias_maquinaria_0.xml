@@ -1,0 +1,351 @@
+?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/maquinaria_tratoagro" >
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_logo"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvRazonSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/rojo"
+                android:fontFamily="@font/aleo_bold"
+                android:textColor="@color/blanco"
+                android:textSize="15sp"
+                android:text="Noticias, Revistas, Publicidad"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Porfavor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/blanco"
+                        android:layout_marginTop="-3dp"
+                        android:textAlignment="textStart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/boton7"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp">
+
+                            <TextView
+                                android:id="@+id/tvTipoUsuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_abajo"
+                                android:drawableTint="@color/blanco"
+                                android:text="TIPO DE USUARIO"
+                                android:gravity="center"
+                                android:fontFamily="@font/aleo_bold"
+                                android:drawableStart="@drawable/representantelegal"
+                                android:textColor="@color/color20"
+                                android:paddingStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/tvPersonaNatural"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Persona natural"
+                                android:textColor="@color/blanco"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tvPersonaJuridica"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Persona jurídica"
+                                android:textColor="@color/blanco"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/boton7"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="15dp"
+                            android:paddingVertical="10dp">
+
+                            <TextView
+                                android:id="@+id/tvTipoComerciante"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_abajo"
+                                android:drawableTint="@color/blanco"
+                                android:fontFamily="@font/aleo_bold"
+                                android:gravity="center"
+                                android:text="MAYORITA/MINORISTA"
+                                android:drawableStart="@drawable/ic_comerciante"
+                                android:textColor="@color/color20"
+                                android:paddingStart="10dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMayorista"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mayorista"
+                                android:textColor="@color/blanco"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tvMinorista"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Minorista"
+                                android:textColor="@color/blanco"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/boton7"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp" >
+
+                            <TextView
+                                android:id="@+id/tvDepartamento"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_abajo"
+                                android:drawableTint="@color/blanco"
+                                android:text="DEPARTAMENTO"
+                                android:fontFamily="@font/aleo_bold"
+                                android:drawableStart="@drawable/ic_peru"
+                                android:paddingStart="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/color20"
+                                android:layout_marginHorizontal="15dp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvDepartamento"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/boton7"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp" >
+
+                            <TextView
+                                android:id="@+id/tvProvincia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_abajo"
+                                android:drawableTint="@color/blanco"
+                                android:text="PROVINCIA"
+                                android:fontFamily="@font/aleo_bold"
+                                android:paddingStart="10dp"
+                                android:gravity="center"
+                                android:drawableStart="@drawable/ic_peru"
+                                android:textColor="@color/color20"
+                                android:layout_marginHorizontal="15dp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvProvincia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/boton7"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp" >
+
+                            <TextView
+                                android:id="@+id/tvDistrito"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_abajo"
+                                android:drawableTint="@color/blanco"
+                                android:text="DISTRITO"
+                                android:gravity="center"
+                                android:fontFamily="@font/aleo_bold"
+                                android:paddingStart="10dp"
+                                android:drawableStart="@drawable/ic_peru"
+                                android:textColor="@color/color20"
+                                android:layout_marginHorizontal="15dp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvDistrito"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/boton7"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp" >
+
+                            <TextView
+                                android:id="@+id/tvSubcategoria"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_abajo"
+                                android:drawableTint="@color/blanco"
+                                android:text="  SUBCATEGORIA"
+                                android:fontFamily="@font/aleo_bold"
+                                android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:drawableStart="@drawable/ic_ico_recurso_2"
+                                android:textColor="@color/color20"
+                                android:layout_marginHorizontal="15dp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvSubcategoria"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="12dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/boton7"
+                            android:orientation="vertical"
+                            android:paddingVertical="10dp" >
+
+                            <TextView
+                                android:id="@+id/tvProducto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_abajo"
+                                android:drawableTint="@color/blanco"
+                                android:text=" PRODUCTO"
+                                android:gravity="center"
+                                android:fontFamily="@font/aleo_bold"
+                                android:paddingStart="10dp"
+                                android:drawableStart="@drawable/ic_ico_recurso_1"
+                                android:textColor="@color/color20"
+                                android:layout_marginHorizontal="15dp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvProducto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>

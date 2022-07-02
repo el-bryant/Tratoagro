@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ganaderia_tratoagro" />
+
+
+
+    <LinearLayout
+        android:layout_width="900dp"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/boton3" >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginHorizontal="15dp"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="-320dp"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/aleo_bold"
+                android:text="USUARIO"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:drawableStart="@drawable/ic_ico_vaca3"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="20dp"
+                android:background="@color/blanco"
+                android:textColor="@color/color20"
+                android:text="COLOCAR MARCA"
+                android:gravity="center"
+                android:fontFamily="@font/aleo_bold"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color20"
+                    android:textColor="@color/negro"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="15sp"
+                    android:text="PRECIO"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" + información"
+                    android:layout_marginTop="3dp"
+                    android:textSize="10sp"
+                    android:background="@drawable/boton5"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textAllCaps="false"
+                    android:paddingHorizontal="0dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

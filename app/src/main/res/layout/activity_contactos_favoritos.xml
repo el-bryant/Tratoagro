@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/llama_tratoagro"
+    tools:context=".CarritoActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACTOS FAVORITOS"
+        android:fontFamily="@font/aleo_bold"
+        android:textColor="@color/color20"
+        android:layout_marginHorizontal="30dp"
+        android:textAlignment="center"
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="20dp"
+        android:textSize="23.4sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingTop="100dp" />
+
+
+    <Button
+        android:id="@+id/btnTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/boton3"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/aleo_bold"
+        android:text="Pagar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/dorado1"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>
