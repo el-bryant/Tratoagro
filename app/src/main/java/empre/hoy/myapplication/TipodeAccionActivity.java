@@ -14,7 +14,7 @@ public class TipodeAccionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_estadisticasgeneral);
+        setContentView(R.layout.activity_estadisticiasgeneral);
         acvvacadorado = (AdvancedCardView) findViewById(R.id.acvvacadorado);
         acvvacablanco = (AdvancedCardView) findViewById(R.id.acvvacablanco);
         acvpescadorado = (AdvancedCardView) findViewById(R.id.acvpescadorado);

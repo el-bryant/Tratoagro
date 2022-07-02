@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/fertilizantes2_tratoagro" />
-
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" >
 
     <LinearLayout
-        android:layout_width="900dp"
-        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/boton3"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="300dp"
+            android:id="@+id/ivFotoProducto"
+            android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginHorizontal="15dp"
             android:padding="10dp" />
@@ -53,6 +46,7 @@
                     android:textSize="10sp" />
 
                 <TextView
+                    android:id="@+id/tvCantidad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -65,6 +59,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tvNombreProveedor"
                 android:layout_width="280dp"
                 android:layout_height="20dp"
                 android:background="@color/blanco"
@@ -75,6 +70,7 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:id="@+id/tvPrecio"
                 android:layout_width="280dp"
                 android:layout_height="20dp"
                 android:drawableStart="@drawable/ic_ico_fertelizantes3"
@@ -88,4 +84,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
