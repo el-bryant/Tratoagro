@@ -56,10 +56,8 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_marginVertical="10dp"
                 android:layout_weight="1"
-                app:background_ColorType="gradient_sweep"
-                app:background_Gradient_Angle="90"
-                app:background_Gradient_Color0=""
-                app:background_Gradient_ColorEnd="@color/negro"
+                app:background_ColorType="solid"
+                app:background_Color="#00000000"
                 app:cornerRadius="1dp" >
 
                 <LinearLayout
@@ -105,10 +103,8 @@
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginVertical="10dp"
                     android:layout_weight="1"
-                    app:background_ColorType="gradient_sweep"
-                    app:background_Gradient_Angle="90"
-                    app:background_Gradient_Color0=""
-                    app:background_Gradient_ColorEnd="@color/negro"
+                    app:background_ColorType="solid"
+                    app:background_Color="#00000000"
                     app:cornerRadius="85dp" >
 
                     <LinearLayout

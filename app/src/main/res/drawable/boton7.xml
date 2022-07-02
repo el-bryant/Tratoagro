@@ -4,11 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <corners
         android:radius="25dp"/>
-    <gradient
-        android:startColor=""
-        android:endColor=""
-        android:angle="0"
-        />
+    <solid
+        android:color="#00000000" />
     <stroke
         android:color="@color/rojo"
         android:width="3dp"/>
