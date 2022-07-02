@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color20"
+    android:background="@mipmap/llama_tratoagro"
     tools:context=".Comprar2Activity" >
 
     <ScrollView
@@ -26,8 +26,7 @@
                 android:fontFamily="@font/aleo_bold"
                 android:textSize="20sp"
                 android:textAlignment="center"
-                android:background="@color/negro"
-                android:textColor="@color/dorado1" />
+                android:textColor="@color/color20" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -35,13 +34,14 @@
                 android:text="Porfavor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
                 android:fontFamily="@font/aleo_bold"
                 android:textSize="13sp"
-                android:textColor="@color/negro"
-                android:layout_marginTop="11.5dp"
-                android:textAlignment="textStart" />
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="11.5dp"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginVertical="20dp"
                 android:orientation="horizontal">
 
@@ -49,7 +49,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton3"
+                    android:background="@drawable/boton7"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="10dp">
@@ -58,11 +58,11 @@
                         android:id="@+id/tvEditarmiperfil"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/dorado1"
+                        android:drawableTint="@color/blanco"
                         android:gravity="center"
                         android:text="EDITAR MI PERFIL"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/dorado1"
+                        android:textColor="@color/color20"
                         android:paddingStart="10dp"
                         android:drawableEnd="@drawable/persona1"/>
 
@@ -87,8 +87,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginVertical="2dp"
                 android:orientation="horizontal">
 
@@ -96,7 +97,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton3"
+                    android:background="@drawable/boton7"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="10dp">
@@ -105,11 +106,11 @@
                         android:id="@+id/tvMistratocompras"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/dorado1"
+                        android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:text="MIS TRATOCOMPRAS"
                         android:gravity="center"
-                        android:textColor="@color/dorado1"
+                        android:textColor="@color/color20"
                         android:paddingStart="10dp"
                         android:drawableEnd="@drawable/ic_carrito"/>
 
@@ -134,8 +135,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
                 android:orientation="horizontal">
 
@@ -143,7 +145,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton3"
+                    android:background="@drawable/boton7"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -151,12 +153,12 @@
                         android:id="@+id/tvMistratoventas"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/dorado1"
+                        android:drawableTint="@color/blanco"
                         android:text="MIS TRATOVENTAS"
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
                         android:gravity="center"
-                        android:textColor="@color/dorado1"
+                        android:textColor="@color/color20"
                         android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_dolar"/>
 
@@ -171,8 +173,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
                 android:orientation="horizontal">
 
@@ -180,7 +183,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton3"
+                    android:background="@drawable/boton7"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -188,13 +191,13 @@
                         android:id="@+id/tvPublicaranuncio"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/dorado1"
-                        android:text="PUBLICAR ANUNCIO"
+                        android:drawableTint="@color/blanco"
+                        android:text="MIS TRATOANUNCIOS"
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
                         android:gravity="center"
                         android:drawableEnd="@drawable/ic_noticias2"
-                        android:textColor="@color/dorado1"
+                        android:textColor="@color/color20"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -208,8 +211,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
                 android:orientation="horizontal">
 
@@ -217,7 +221,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton3"
+                    android:background="@drawable/boton7"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -225,12 +229,12 @@
                         android:id="@+id/tvContactosfavoritos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/dorado1"
+                        android:drawableTint="@color/blanco"
                         android:text="CONTACTOS FAVORITOS"
                         android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
-                        android:textColor="@color/dorado1"
+                        android:textColor="@color/color20"
                         android:drawableEnd="@drawable/ic_me_gusta"
                         android:layout_marginHorizontal="15dp" />
 
@@ -245,8 +249,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
                 android:orientation="horizontal">
 
@@ -254,7 +259,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton3"
+                    android:background="@drawable/boton7"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -262,12 +267,12 @@
                         android:id="@+id/tvDenunciar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/dorado1"
+                        android:drawableTint="@color/blanco"
                         android:text="DENUNCIAR"
                         android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
-                        android:textColor="@color/dorado1"
+                        android:textColor="@color/color20"
                         android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_bandera"/>
 
@@ -282,8 +287,9 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
                 android:orientation="horizontal">
 
@@ -291,7 +297,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton3"
+                    android:background="@drawable/boton7"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -299,13 +305,13 @@
                         android:id="@+id/tvDesactivarmicuenta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/dorado1"
+                        android:drawableTint="@color/blanco"
                         android:text="DESACTIVAR MI CUENTA"
                         android:fontFamily="@font/aleo_bold"
                         android:drawableEnd="@drawable/ic_deslizar_hacia_abajo"
                         android:gravity="center"
                         android:paddingStart="10dp"
-                        android:textColor="@color/dorado1"
+                        android:textColor="@color/color20"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView

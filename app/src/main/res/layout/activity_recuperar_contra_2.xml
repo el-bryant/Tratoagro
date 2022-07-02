@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".DatosNatural1Activity"
     android:theme="@style/Material"
-    android:background="@color/color20"
+    android:background="@mipmap/llama_tratoagro"
     >
 
     <ScrollView
@@ -23,13 +23,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Recuperar mi cuenta"
+                android:text="RECUPERAR MI CUENTA"
                 android:fontFamily="@font/aleo_bold"
                 android:textAlignment="center"
                 android:textSize="23.4sp"
-                android:textColor="@color/dorado1"
-                android:layout_marginTop="60dp"
-                android:background="@color/negro"/>
+                android:textColor="@color/color20"
+                android:layout_marginTop="60dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -44,8 +43,7 @@
                     android:hint="Ingresar el código ####"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color20"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/marron1"
                      />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -65,8 +63,7 @@
                     android:hint="Nueva contraseña"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color20"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/marron1"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,7 +82,7 @@
                     android:hint="Ingrese otra vez la nueva contraseña"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color20"
+                    android:textColor="@color/marron1"
 
                     />
 
@@ -103,7 +100,6 @@
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:id="@+id/btnaceptar"
-                android:drawableTop="@drawable/ic_ico_recurso_2"
                 android:drawablePadding="10dp"/>
 
             <ImageView

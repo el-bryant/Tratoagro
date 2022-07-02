@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".DatosNatural1Activity"
     android:theme="@style/Material"
-    android:background="@color/color20"
+    android:background="@mipmap/llama_tratoagro"
     >
 
     <ScrollView
@@ -23,13 +23,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Recuperar mi cuenta"
+                android:text="RECUPERAR MI CUENTA"
                 android:fontFamily="@font/aleo_bold"
-                android:textColor="@color/dorado1"
+                android:textColor="@color/color20"
                 android:textSize="23.4sp"
                 android:layout_marginTop="60dp"
-                android:textAlignment="center"
-                android:background="@color/negro"/>
+                android:textAlignment="center"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -41,12 +40,11 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/color20"
                     android:drawableEnd="@drawable/correo1"
-                    android:drawableTint="@color/negro"
+                    android:drawableTint="@color/color20"
                     android:fontFamily="@font/aleo_bold"
                     android:hint="Email"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/marron1"
                     android:textSize="15sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,9 +62,9 @@
                     android:hint="Número de celular"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:background="@color/color20"
+                    android:textColor="@color/marron1"
                     android:drawableEnd="@drawable/celular1"
-                    android:drawableTint="@color/negro"
+                    android:drawableTint="@color/color20"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -83,7 +81,6 @@
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:id="@+id/btnaceptar"
-                android:drawableTop="@drawable/ic_ico_recurso_2"
                 android:drawablePadding="10dp"/>
 
             <ImageView

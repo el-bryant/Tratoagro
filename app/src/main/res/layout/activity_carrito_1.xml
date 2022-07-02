@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color20"
+    android:background="@mipmap/llama_tratoagro"
     tools:context=".CarritoActivity" >
 
     <TextView
@@ -19,7 +19,6 @@
         android:textAlignment="center"
         android:shadowColor="@color/negro"
         android:layout_marginTop="20dp"
-        android:background="@color/negro"
         android:textSize="23.4sp"
         android:drawableEnd="@drawable/ic_ico_carrito2"/>
 
@@ -42,7 +41,6 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/boton3"
-        android:drawableTop="@drawable/ic_ico_recurso_2"
         android:drawablePadding="10dp"
         android:fontFamily="@font/aleo_bold"
         android:text="Pagar"

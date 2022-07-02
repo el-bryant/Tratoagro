@@ -6,25 +6,17 @@
     android:orientation="vertical"
     android:theme="@style/Material"
     android:gravity="center"
-    android:background="@color/dorado1" >
-
-    <ImageView
-        android:layout_width="360dp"
-        android:layout_height="65dp"
-        android:layout_gravity="center"
-        android:layout_marginHorizontal="15dp"
-        android:padding="0dp"
-        android:src="@drawable/ic_ico_carrito2" />
+    android:background="@mipmap/llama_tratoagro" >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Porfavor selecciona la categoría donde quieres ir a comprar"
         android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/negro"
+        android:textColor="@color/blanco"
         android:textSize="15sp"
-        android:textAlignment="textStart"
-        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="50dp"/>
 
 
@@ -36,7 +28,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:layout_marginTop="18dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,14 +37,13 @@
                 android:orientation="horizontal"
                 android:paddingStart="12dp"
                 android:paddingEnd="40dp"
-                android:background="@color/dorado1"
                 android:layout_marginVertical="2dp" >
 
                 <FrameLayout
                     android:id="@+id/flayGanaderia"
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton5"
+                    android:background="@drawable/boton7"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -72,7 +64,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@color/dorado1"
                 android:paddingStart="12dp"
                 android:paddingEnd="40dp"
                 android:layout_marginVertical="2dp" >
@@ -81,7 +72,7 @@
                     android:id="@+id/flayPesca"
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton5"
+                    android:background="@drawable/boton7"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -102,7 +93,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@color/dorado1"
                 android:paddingStart="12dp"
                 android:paddingEnd="40dp"
                 android:layout_marginVertical="2dp" >
@@ -111,7 +101,7 @@
                     android:id="@+id/flayMaquinaria"
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton5"
+                    android:background="@drawable/boton7"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -132,7 +122,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@color/dorado1"
                 android:paddingStart="12dp"
                 android:paddingEnd="40dp"
                 android:layout_marginVertical="2dp" >
@@ -141,7 +130,7 @@
                     android:id="@+id/flayInsumos"
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton5"
+                    android:background="@drawable/boton7"
 
                     android:layout_marginHorizontal="15dp" >
 
@@ -165,14 +154,13 @@
                 android:orientation="horizontal"
                 android:paddingStart="12dp"
                 android:paddingEnd="40dp"
-                android:background="@color/dorado1"
                 android:layout_marginVertical="2dp" >
 
                 <FrameLayout
                     android:id="@+id/flayPesticidas"
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton5"
+                    android:background="@drawable/boton7"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -193,7 +181,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="@color/dorado1"
                 android:paddingStart="12dp"
                 android:paddingEnd="40dp"
                 android:layout_marginVertical="2dp" >
@@ -202,7 +189,7 @@
                     android:id="@+id/flayFertilizantes"
                     android:layout_width="345dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton5"
+                    android:background="@drawable/boton7"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView

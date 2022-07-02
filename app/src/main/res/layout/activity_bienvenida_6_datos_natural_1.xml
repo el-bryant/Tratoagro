@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/Material"
-    android:background="@color/color20"
+    android:background="@mipmap/llama_tratoagro"
     tools:context=".DatosNatural1Activity" >
 
    <TextView
@@ -18,7 +18,7 @@
         android:layout_marginEnd="27dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/negro"
+        android:textColor="@color/blanco"
         android:layout_marginBottom="20dp"
         android:gravity="start" />
 
@@ -42,13 +42,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="DNI"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
+                    android:drawableTint="@color/blanco"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/ic_ruc"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -62,15 +61,14 @@
                     android:id="@+id/tietApellidos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Apellidos"
-                    android:textColor="@color/negro"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
                     android:drawableEnd="@drawable/representantelegal"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
-                    android:inputType="textCapWords" />
+                    android:fontFamily="@font/aleo_bold"
+                    android:hint="Apellidos"
+                    android:drawableTint="@color/blanco"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -84,13 +82,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nombres"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
+                    android:drawableTint="@color/blanco"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/representantelegal"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="textCapWords" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -105,13 +102,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Celular"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
+                    android:drawableTint="@color/blanco"
                     android:drawableEnd="@drawable/celular1"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="phone" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -126,13 +122,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Correo electrónico"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
+                    android:drawableTint="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/correo1"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="textEmailAddress" />
 
              </com.google.android.material.textfield.TextInputLayout>
@@ -147,13 +142,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Ubicación"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
+                    android:drawableTint="@color/blanco"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/ubicacion1"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -179,7 +173,6 @@
                 android:fontFamily="@font/aleo_bold"
                 android:textSize="15sp"
                 android:textAllCaps="false"
-                android:drawableTop="@drawable/ic_ico_recurso_2"
                 android:drawablePadding="10dp"/>
 
 

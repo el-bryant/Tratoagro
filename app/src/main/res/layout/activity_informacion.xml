@@ -5,27 +5,26 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color20" >
+    android:background="@mipmap/llama_tratoagro" >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="30dp"
-        android:background="@color/negro"
         android:fontFamily="@font/aleo_bold"
         android:shadowColor="@color/negro"
         android:textSize="20sp"
-        android:text="TUTORIAL"
+        android:text="INFORMACIÓN"
         android:textAlignment="center"
-        android:textColor="@color/dorado1" />
+        android:textColor="@color/color20" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
-        android:textColor="@color/negro"
+        android:textColor="@color/blanco"
         android:text="En este apartado aprenderás que significa cada uno de los sectores agroindustriales que tenemos para ti"
         android:layout_marginHorizontal="30dp"
         android:textAlignment="textStart"
@@ -56,11 +55,11 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/marron1"
-                    app:background_Gradient_Color0="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/rojo"
+                    app:background_Gradient_Color0="@color/blanco"
                     app:background_Gradient_Angle="-50"
                     app:background_ColorType="gradient_sweep"
-                    app:cornerRadius="25dp" >
+                    app:cornerRadius="155dp" >
 
                     <ImageView
                         android:layout_width="100dp"
@@ -103,11 +102,11 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/marron1"
-                    app:background_Gradient_Color0="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/rojo"
+                    app:background_Gradient_Color0="@color/blanco"
                     app:background_Gradient_Angle="-50"
                     app:background_ColorType="gradient_sweep"
-                    app:cornerRadius="25dp"
+                    app:cornerRadius="155dp"
                     android:visibility="visible">
 
                     <ImageView
@@ -161,11 +160,11 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/marron1"
-                    app:background_Gradient_Color0="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/rojo"
+                    app:background_Gradient_Color0="@color/blanco"
                     app:background_Gradient_Angle="-50"
                     app:background_ColorType="gradient_sweep"
-                    app:cornerRadius="25dp"
+                    app:cornerRadius="155dp"
                     android:visibility="visible" >
 
                     <ImageView
@@ -209,11 +208,11 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/marron1"
-                    app:background_Gradient_Color0="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/rojo"
+                    app:background_Gradient_Color0="@color/blanco"
                     app:background_Gradient_Angle="-50"
                     app:background_ColorType="gradient_sweep"
-                    app:cornerRadius="25dp"
+                    app:cornerRadius="155dp"
                     android:visibility="visible" >
 
                     <ImageView
@@ -266,11 +265,11 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/marron1"
-                    app:background_Gradient_Color0="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/rojo"
+                    app:background_Gradient_Color0="@color/blanco"
                     app:background_Gradient_Angle="-50"
                     app:background_ColorType="gradient_sweep"
-                    app:cornerRadius="25dp"
+                    app:cornerRadius="155dp"
                     android:visibility="visible" >
 
                     <ImageView
@@ -314,11 +313,11 @@
                     android:layout_height="150dp"
                     android:layout_weight="1"
                     android:layout_marginHorizontal="15dp"
-                    app:background_Gradient_ColorEnd="@color/marron1"
-                    app:background_Gradient_Color0="@color/negro"
+                    app:background_Gradient_ColorEnd="@color/rojo"
+                    app:background_Gradient_Color0="@color/blanco"
                     app:background_Gradient_Angle="-50"
                     app:background_ColorType="gradient_sweep"
-                    app:cornerRadius="25dp"
+                    app:cornerRadius="155dp"
                     android:visibility="visible" >
 
                     <ImageView
@@ -357,21 +356,6 @@
                 </com.sinaseyfi.advancedcardview.AdvancedCardView>
 
             </LinearLayout>
-
-            <Button
-                android:id="@+id/btnaceptar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="50dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/boton3"
-                android:drawableTop="@drawable/ic_ico_recurso_2"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/hind"
-                android:text="Entrar"
-                android:textAllCaps="false"
-                android:textColor="@color/dorado1"
-                android:textSize="15sp" />
 
         </LinearLayout>
 

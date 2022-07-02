@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color20">
+    android:background="@mipmap/maquinaria_tratoagro">
 
     <TextView
         android:layout_width="match_parent"
@@ -18,16 +18,16 @@
         android:shadowColor="@color/negro"
         android:layout_marginTop="50dp"
         android:textSize="23.4sp"
-        android:background="@color/negro"
         android:drawableEnd="@drawable/ic_ico_tractor2"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="411dp"
+        android:layout_marginEnd="50dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
-        android:textColor="@color/dorado1"
-        android:background="@color/negro"
+        android:textColor="@color/blanco"
+        android:background="@color/rojo"
         android:text="DESCRIPCIÓN"
         android:layout_marginHorizontal="30dp"
         android:textAlignment="center"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
-        android:textColor="@color/negro"
+        android:textColor="@color/blanco"
         android:text="Estimado usuario esta categoría hace referencia a una máquina es un conjunto de elementos móviles y fijos cuyo funcionamiento posibilita aprovechar, dirigir, regular o transformar energía, o realizar un trabajo con un fin determinado."
         android:layout_marginHorizontal="30dp"
         android:textAlignment="textStart"
@@ -53,24 +53,25 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
-        android:textColor="@color/negro"
-        android:text="Haz click para ver las diferentes categorías"
+        android:textColor="@color/color20"
+        android:text="Haz click para ir"
+        android:gravity="center"
         android:layout_marginHorizontal="30dp"
-        android:textAlignment="textStart"
         android:shadowColor="@color/negro"
         android:layout_marginTop="50dp"
-        android:background="@color/color20"
         />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/aleo_bold"
         android:id="@+id/btnEstadisticas"
         android:text="ESTADISTICAS"
-        android:drawableEnd="@drawable/ic_estamaquinaria"
+        android:drawableEnd="@drawable/ic_estamaquinaria2"
         android:drawablePadding="40dp"
-        android:drawableTint="@color/dorado1"
-        android:paddingHorizontal="40dp"
+        android:drawableTint="@color/blanco"
+        android:paddingHorizontal="20dp"
         android:textColor="@color/dorado1"
         android:textAllCaps="false"
         android:layout_marginTop="20dp"
@@ -79,15 +80,17 @@
         android:layout_marginHorizontal="15dp" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/aleo_bold"
         android:id="@+id/btnNoticias"
         android:text="NOTICIAS"
-        android:drawableEnd="@drawable/ic_noticias"
+        android:drawableEnd="@drawable/ic_noticias2"
         android:drawablePadding="40dp"
-        android:drawableTint="@color/dorado1"
+        android:drawableTint="@color/blanco"
         android:textColor="@color/dorado1"
-        android:paddingHorizontal="40dp"
+        android:paddingHorizontal="20dp"
         android:textAllCaps="false"
         android:layout_marginTop="15dp"
         android:background="@drawable/boton3"
@@ -95,19 +98,21 @@
         android:layout_marginHorizontal="15dp" />
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/aleo_bold"
         android:id="@+id/btnMenu"
         android:text="MENU PRINCIPAL"
         android:drawableEnd="@drawable/ic_ico_recurso_3"
         android:drawablePadding="40dp"
-        android:drawableTint="@color/dorado1"
+        android:drawableTint="@color/blanco"
         android:textColor="@color/dorado1"
         android:textAllCaps="false"
         android:layout_marginTop="15dp"
         android:background="@drawable/boton3"
         android:textAlignment="center"
-        android:paddingHorizontal="40dp"
+        android:paddingHorizontal="20dp"
         android:layout_marginHorizontal="15dp" />
 
     <ImageView

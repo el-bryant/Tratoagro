@@ -7,7 +7,7 @@
     <gradient
         android:startColor="@color/marron1"
         android:endColor="@color/dorado1"
-        android:angle="-90"
+        android:angle="150"
        />
     <stroke
         android:color="@color/marron1"

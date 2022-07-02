@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".DatosJuridicoActivity"
     android:theme="@style/Material"
-    android:background="@color/color20" >
+    android:background="@mipmap/llama_tratoagro" >
 
 
 
@@ -20,7 +20,7 @@
         android:layout_marginEnd="27dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/negro"
+        android:textColor="@color/blanco"
         android:layout_marginBottom="20dp"
         android:gravity="start" />
 
@@ -42,15 +42,14 @@
                     android:id="@+id/tietRuc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="RUC"
-                    android:textColor="@color/negro"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
                     android:drawableEnd="@drawable/ic_ruc"
-                    android:drawableTint="@color/negro"
+                    android:drawableTint="@color/blanco"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
-                    android:inputType="phone" />
+                    android:fontFamily="@font/aleo_bold"
+                    android:hint="RUC"
+                    android:inputType="phone"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,13 +62,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Razón Social"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
+                    android:drawableTint="@color/blanco"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/empresa1"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="textCapWords" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -82,14 +80,13 @@
                     android:id="@+id/tietRepresentanteLegal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableTint="@color/blanco"
                     android:hint="Representante legal"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/representantelegal"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="textCapWords" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -102,13 +99,12 @@
                     android:id="@+id/tietCelular"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
-                    android:background="@color/color20"
+                    android:drawableTint="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
                     android:drawableEnd="@drawable/celular1"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
                     android:hint="Celular"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:textSize="15sp"
                     android:inputType="phone" />
 
@@ -121,14 +117,13 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietDomicilioFiscal"
                     android:layout_width="match_parent"
+                    android:drawableTint="@color/blanco"
                     android:layout_height="55dp"
-                    android:background="@color/color20"
                     android:fontFamily="@font/aleo_bold"
                     android:drawableEnd="@drawable/ic_casa"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
                     android:hint="Domicilio Fiscal"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:textSize="15sp"
                     android:inputType="textPostalAddress" />
 
@@ -142,14 +137,13 @@
                     android:id="@+id/tietCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableTint="@color/blanco"
                     android:hint="Correo electrónico"
-                    android:textColor="@color/negro"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/correo1"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -163,13 +157,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Ubicación"
-                    android:textColor="@color/negro"
+                    android:drawableTint="@color/blanco"
+                    android:textColor="@color/blanco"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/ubicacion1"
-                    android:drawableTint="@color/negro"
                     android:drawablePadding="10dp"
-                    android:background="@color/color20"
                     android:inputType="textPostalAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -195,7 +188,6 @@
                 android:textAllCaps="false"
                 android:textColor="@color/dorado1"
                 android:textSize="15sp"
-                android:drawableTop="@drawable/ic_ico_recurso_2"
                 android:drawablePadding="10dp"
                 />
 
