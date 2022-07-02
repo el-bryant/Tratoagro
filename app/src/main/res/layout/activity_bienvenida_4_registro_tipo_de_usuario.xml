@@ -1,109 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/llama_tratoagro" >
+    android:layout_height="match_parent" >
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/llama_tratoagro"
+        android:scaleType="centerCrop" />
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Porfavor seleccione una de las opciones."
-        android:fontFamily="@font/aleo_bold"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
-        android:textAlignment="center"
-        android:layout_marginHorizontal="30dp"
-        android:shadowColor="@color/negro"
-        android:layout_marginTop="45dp"
-        android:id="@+id/tvSubtitulo" />
+        android:orientation="vertical" >
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp" >
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginBottom="50dp"
-            android:gravity="center"
-            android:orientation="vertical" >
+            android:text="Porfavor seleccione una de las opciones."
+            android:fontFamily="@font/aleo_bold"
+            android:textSize="15sp"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="30dp"
+            android:shadowColor="@color/negro"
+            android:layout_marginTop="45dp"
+            android:id="@+id/tvSubtitulo" />
 
-            <TextView
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" >
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PERSONA NATURAL"
-                android:fontFamily="@font/aleo_bold"
-                android:background="@color/rojo"
-                android:textSize="15sp"
-                android:textColor="@color/blanco"
-                android:textAlignment="center"
-                android:layout_marginHorizontal="30dp"
-                android:shadowColor="@color/negro"
-                android:layout_marginTop="10dp" />
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:orientation="vertical" >
 
-            <com.sinaseyfi.advancedcardview.AdvancedCardView
-                android:id="@+id/acvPersonaNatural"
-                android:layout_width="345dp"
-                android:layout_height="80dp"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginVertical="10dp"
-                android:layout_weight="1"
-                app:background_ColorType="solid"
-                app:background_Color="#00000000"
-                app:cornerRadius="1dp" >
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_marginVertical="15dp" >
+                    android:text="PERSONA NATURAL"
+                    android:fontFamily="@font/aleo_bold"
+                    android:background="@color/rojo"
+                    android:textSize="15sp"
+                    android:textColor="@color/blanco"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:shadowColor="@color/negro"
+                    android:layout_marginTop="10dp" />
 
-                    <ImageView
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="15dp"
-                        android:layout_marginVertical="15dp"
-                        android:padding="20dp"
-                        android:src="@drawable/ico_personblack" />
-
-
-
-                </LinearLayout>
-
-            </com.sinaseyfi.advancedcardview.AdvancedCardView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="PERSONA JURÍDICA"
-                android:fontFamily="@font/aleo_bold"
-                android:textSize="15sp"
-                android:background="@color/rojo"
-                android:textColor="@color/blanco"
-                android:textAlignment="center"
-                android:layout_marginHorizontal="30dp"
-                android:shadowColor="@color/negro"
-                android:layout_marginTop="50dp" />
-
-                <com.sinaseyfi.advancedcardview.AdvancedCardView
-                    android:id="@+id/acvPersonaJuridica"
-                    android:layout_width="345dp"
+                <FrameLayout
+                    android:id="@+id/flayPersonaNatural"
+                    android:layout_width="match_parent"
                     android:layout_height="80dp"
+                    android:background="@drawable/boton7"
                     android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="10dp"
-                    android:layout_weight="1"
-                    app:background_ColorType="solid"
-                    app:background_Color="#00000000"
-                    app:cornerRadius="85dp" >
+                    android:layout_marginTop="15dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginVertical="15dp" >
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginVertical="15dp"
+                            android:padding="20dp"
+                            android:src="@drawable/ico_personblack" />
+
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PERSONA JURÍDICA"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="15sp"
+                    android:background="@color/rojo"
+                    android:textColor="@color/blanco"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:shadowColor="@color/negro"
+                    android:layout_marginTop="50dp" />
+
+                <FrameLayout
+                    android:id="@+id/flayPersonaJuridica"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/boton7"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp" >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -125,10 +126,12 @@
 
                     </LinearLayout>
 
-                </com.sinaseyfi.advancedcardview.AdvancedCardView>
+                </FrameLayout>
 
-        </LinearLayout>
+            </LinearLayout>
 
-    </ScrollView>
+        </ScrollView>
 
-</LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

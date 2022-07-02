@@ -5,14 +5,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/llama_tratoagro"
     tools:context=".Inicio1Activity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/llama_tratoagro"
+        android:scaleType="centerCrop" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:src="@drawable/ic_logo" />
+        android:src="@drawable/ic_logo"
+        android:tint="@color/dorado1"/>
 
     <Button
         android:id="@+id/btnRegistrar"
