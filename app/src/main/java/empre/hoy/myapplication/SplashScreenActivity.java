@@ -19,7 +19,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_1);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load("https://static.nationalgeographic.es/files/styles/image_3200/public/1920px-llamalyingdown.jpg").into(ivFondo);
+        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/machu_picchu.jpg").into(ivFondo);
         prefUtil = new PrefUtil(this);
         new CountDownTimer(3000, 1000) {
             @Override
