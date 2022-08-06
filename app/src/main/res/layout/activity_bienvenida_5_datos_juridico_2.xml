@@ -1,136 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".DatosJuridicoActivity"
-    android:theme="@style/Material"
-    android:background="@mipmap/machupichu2" >
+    android:theme="@style/Material" >
 
-
-
-    <TextView
+    <ImageView
+        android:id="@+id/ivFondo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ingresa tus datos sociodemográficos en los casilleros presetandos  a continuación"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/negro"
-        android:layout_marginBottom="20dp"
-        android:textAlignment="center"
-        android:gravity="start" />
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
 
-    <ScrollView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="#40FFFFFF" />
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="30dp" >
+            android:text="Ingresa tus datos sociodemográficos en los casilleros presetandos  a continuación"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/aleo_bold"
+            android:textColor="@color/negro"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:gravity="start" />
 
-            <com.google.android.material.textfield.TextInputLayout
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietTipodecomerciante"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Tipo de Comerciante"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableEnd="@drawable/ic_comerciante"
-                    android:drawableTint="@color/rojo"
-                    android:drawablePadding="10dp"
-                    android:inputType="phone" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietDepartamento"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Departameto"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableTint="@color/rojo"
-                    android:drawableEnd="@drawable/ic_peru"
-                    android:drawablePadding="10dp"
-                    android:inputType="textCapWords" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietProvincia"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Provincia"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:drawableTint="@color/rojo"
-                    android:textSize="15sp"
-                    android:drawableEnd="@drawable/ic_peru"
-                    android:drawablePadding="10dp"
-                    android:inputType="textCapWords" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietDistrito"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:fontFamily="@font/aleo_bold"
-                    android:drawableEnd="@drawable/ic_peru"
-                    android:drawablePadding="10dp"
-                    android:drawableTint="@color/rojo"
-                    android:hint="Distrito"
-                    android:textColor="@color/blanco"
-                    android:textSize="15sp"
-                    android:inputType="phone" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-
-            <Button
-                android:id="@+id/btnaceptar"
-                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:layout_marginHorizontal="50dp"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/boton6"
-                android:fontFamily="@font/aleo_bold"
-                android:text="Continuar"
-                android:textAllCaps="false"
-                android:textColor="@color/dorado1"
-                android:textSize="15sp"
-                android:drawablePadding="10dp"/>
+                android:orientation="vertical"
+                android:layout_marginHorizontal="30dp" >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietTipodecomerciante"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tipo de Comerciante"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableEnd="@drawable/ic_comerciante"
+                        android:drawableTint="@color/rojo"
+                        android:drawablePadding="10dp"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietDepartamento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Departameto"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableTint="@color/rojo"
+                        android:drawableEnd="@drawable/ic_peru"
+                        android:drawablePadding="10dp"
+                        android:inputType="textCapWords" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietProvincia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Provincia"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:drawableTint="@color/rojo"
+                        android:textSize="15sp"
+                        android:drawableEnd="@drawable/ic_peru"
+                        android:drawablePadding="10dp"
+                        android:inputType="textCapWords" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietDistrito"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:drawableEnd="@drawable/ic_peru"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/rojo"
+                        android:hint="Distrito"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
 
-        </LinearLayout>
 
-    </ScrollView>
+                <Button
+                    android:id="@+id/btnContinuar"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/boton6"
+                    android:fontFamily="@font/aleo_bold"
+                    android:text="Continuar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dorado1"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"/>
 
-</LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
