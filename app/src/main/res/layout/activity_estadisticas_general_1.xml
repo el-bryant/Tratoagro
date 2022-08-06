@@ -5,18 +5,12 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@mipmap/insumos4_tratoagro" >
-
-
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_logo"
-        android:layout_gravity="center"/>
+    android:background="@mipmap/machupichu2">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,13 +47,14 @@
                         android:text="Porfavor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
                         android:fontFamily="@font/aleo_bold"
                         android:textSize="13sp"
-                        android:textColor="@color/blanco"
-                        android:layout_marginTop="-3dp"
+                        android:textColor="@color/negro"
+                        android:layout_marginTop="-2dp"
                         android:textAlignment="textStart" />
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="280dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
                         android:layout_marginVertical="20dp"
                         android:orientation="horizontal">
 
@@ -67,7 +62,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/boton7"
+                            android:background="@drawable/boton6"
                             android:orientation="vertical"
                             android:paddingHorizontal="15dp"
                             android:paddingVertical="10dp">
@@ -106,8 +101,9 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="280dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
                         android:layout_marginVertical="2dp"
                         android:orientation="horizontal">
 
@@ -115,7 +111,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/boton7"
+                            android:background="@drawable/boton6"
                             android:orientation="vertical"
                             android:paddingHorizontal="15dp"
                             android:paddingVertical="10dp">
@@ -154,8 +150,9 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="280dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
                         android:layout_marginVertical="12dp"
                         android:orientation="horizontal">
 
@@ -163,7 +160,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/boton7"
+                            android:background="@drawable/boton6"
                             android:orientation="vertical"
                             android:paddingVertical="10dp" >
 
@@ -192,8 +189,9 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="280dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
                         android:layout_marginVertical="12dp"
                         android:orientation="horizontal">
 
@@ -201,7 +199,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/boton7"
+                            android:background="@drawable/boton6"
                             android:orientation="vertical"
                             android:paddingVertical="10dp" >
 
@@ -230,8 +228,9 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="280dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
                         android:layout_marginVertical="12dp"
                         android:orientation="horizontal">
 
@@ -239,7 +238,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/boton7"
+                            android:background="@drawable/boton6"
                             android:orientation="vertical"
                             android:paddingVertical="10dp" >
 
@@ -268,8 +267,9 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="280dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
                         android:layout_marginVertical="12dp"
                         android:orientation="horizontal">
 
@@ -277,7 +277,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/boton7"
+                            android:background="@drawable/boton6"
                             android:orientation="vertical"
                             android:paddingVertical="10dp" >
 
@@ -306,8 +306,9 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="280dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
                         android:layout_marginVertical="12dp"
                         android:orientation="horizontal">
 
@@ -315,7 +316,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:background="@drawable/boton7"
+                            android:background="@drawable/boton6"
                             android:orientation="vertical"
                             android:paddingVertical="10dp" >
 

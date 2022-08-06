@@ -2,7 +2,6 @@ package empre.hoy.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +15,7 @@ public class TutorialActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_informacion);
+        setContentView(R.layout.activity_bienvenida_7_empezar_tutorial_2);
         acvvacadorado = (AdvancedCardView) findViewById(R.id.acvvacadorado);
         acvpescadorado = (AdvancedCardView) findViewById(R.id.acvpescadorado);
         acvvegetalesdorado = (AdvancedCardView) findViewById(R.id.acvvegetalesdorado);

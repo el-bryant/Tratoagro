@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".DatosNatural1Activity"
     android:theme="@style/Material"
-    android:background="@mipmap/llama_tratoagro" >
+    android:background="@mipmap/machupichu2" >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="Porfavor ingresa tu usuario y tu contraseña"
             android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/blanco"
+            android:textColor="@color/marron1"
             android:textSize="15sp"
             android:textAlignment="center"
             android:layout_marginTop="60dp"/>
@@ -73,17 +73,18 @@
                 android:layout_height="wrap_content"
                 android:text="Olvidaste la contraseña"
                 android:textAlignment="textEnd"
-                android:textColor="@color/blanco"
+                android:textColor="@color/marron1"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/hind_medium" />
 
             <Button
                 android:id="@+id/btnaceptar"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
                 android:layout_marginHorizontal="50dp"
                 android:layout_marginTop="100dp"
-                android:background="@drawable/boton3"
+                android:background="@drawable/boton6"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/hind"
                 android:text="Entrar"
@@ -113,15 +114,6 @@
                     android:fontFamily="@font/hind_medium" />
 
             </LinearLayout>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="65dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="15dp"
-                android:padding="0dp"
-                android:layout_marginVertical="30dp"
-                android:src="@drawable/ic_logo" />
 
         </LinearLayout>
 

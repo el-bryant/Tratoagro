@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/Material"
-    android:background="@mipmap/llama_tratoagro" >
+    android:background="@mipmap/machupichu2" >
 
     <TextView
         android:layout_width="match_parent"
@@ -17,8 +17,9 @@
         android:layout_marginEnd="27dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/blanco"
+        android:textColor="@color/negro"
         android:layout_marginBottom="20dp"
+        android:textAlignment="center"
         android:gravity="start" />
 
     <ScrollView
@@ -47,7 +48,7 @@
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:textColor="@color/blanco"
-                    android:drawableTint="@color/blanco"
+                    android:drawableTint="@color/rojo"
                     android:drawableEnd="@drawable/persona1" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -94,10 +95,11 @@
 
             <Button
                 android:id="@+id/btnaceptar"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
                 android:text="Listo"
-                android:background="@drawable/boton3"
+                android:background="@drawable/boton6"
                 android:textColor="@color/dorado1"
                 android:layout_marginTop="60dp"
                 android:layout_marginHorizontal="50dp"
@@ -105,18 +107,6 @@
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:drawablePadding="10dp"/>
-
-
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="65dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="15dp"
-                android:padding="0dp"
-                android:layout_marginTop="25dp"
-                android:src="@drawable/ic_logo" />
-
 
 
             <LinearLayout

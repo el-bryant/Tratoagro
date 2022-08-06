@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/llama_tratoagro"
+    android:background="@mipmap/machupichu2"
     tools:context=".Comprar2Activity" >
 
     <ScrollView
@@ -19,14 +19,6 @@
             android:orientation="vertical">
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ESPACIO AL CLIENTE"
-                android:fontFamily="@font/aleo_bold"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:textColor="@color/color20" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -35,7 +27,7 @@
                 android:fontFamily="@font/aleo_bold"
                 android:textSize="13sp"
                 android:gravity="center"
-                android:textColor="@color/blanco"
+                android:textColor="@color/marron1"
                 android:layout_marginTop="11.5dp"/>
 
             <LinearLayout
@@ -49,7 +41,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="10dp">
@@ -97,7 +89,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="10dp">
@@ -145,7 +137,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -183,7 +175,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -221,7 +213,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -259,7 +251,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -297,7 +289,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -324,14 +316,6 @@
 
 
             </LinearLayout>
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="65dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="15dp"
-                android:padding="0dp"
-                android:src="@drawable/ic_logo" />
 
         </LinearLayout>
 

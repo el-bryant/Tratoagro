@@ -15,7 +15,7 @@ public class EstadisticasGeneralActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_estadisticiasgeneral);
+        setContentView(R.layout.activity_estadisticas_general_2);
         acvvacadorado = (AdvancedCardView) findViewById(R.id.acvvacadorado);
         acvpescadorado = (AdvancedCardView) findViewById(R.id.acvpescadorado);
         acvvegetalesdorado = (AdvancedCardView) findViewById(R.id.acvvegetalesdorado);

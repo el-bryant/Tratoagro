@@ -5,22 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:theme="@style/Material"
-    android:gravity="center"
-    android:background="@mipmap/llama_tratoagro" >
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ESTADÍSTICAS"
-        android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/color20"
-        android:layout_marginHorizontal="30dp"
-        android:textAlignment="center"
-        android:shadowColor="@color/negro"
-        android:textSize="20sp"
-        android:layout_marginTop="-50dp"/>
-
+    android:background="@mipmap/machupichu2"
+    android:gravity="center">
 
 
     <TextView
@@ -28,7 +14,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
-        android:textColor="@color/blanco"
+        android:textColor="@color/marron1"
         android:text="En este apartado te mostraremos las estadísticas de la demanda y oferta tu mercado digital"
         android:layout_marginHorizontal="30dp"
         android:textAlignment="textStart"
@@ -56,7 +42,7 @@
                     android:id="@+id/flayGanaderia"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -85,7 +71,7 @@
                     android:id="@+id/flayPesca"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -114,7 +100,7 @@
                     android:id="@+id/flayMaquinaria"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -143,7 +129,7 @@
                     android:id="@+id/flayInsumos"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
 
                     android:layout_marginHorizontal="15dp" >
 
@@ -173,7 +159,7 @@
                     android:id="@+id/flayPesticidas"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -202,7 +188,7 @@
                     android:id="@+id/flayFertilizantes"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton7"
+                    android:background="@drawable/boton6"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView

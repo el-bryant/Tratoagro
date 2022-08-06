@@ -10,24 +10,25 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/llama_tratoagro"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@mipmap/machupichu2" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:src="@drawable/ic_logo"
-        android:tint="@color/dorado1"/>
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo2" />
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="75dp"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/boton3"
+        android:background="@drawable/boton6"
         android:drawablePadding="10dp"
         android:fontFamily="@font/aleo_bold"
         android:text="Registrarse"
