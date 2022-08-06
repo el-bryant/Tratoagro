@@ -15,7 +15,7 @@ public class TutorialActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bienvenida_7_empezar_tutorial_2);
+        setContentView(R.layout.activity_bienvenida_7_empezar_tutorial_1);
         acvvacadorado = (AdvancedCardView) findViewById(R.id.acvvacadorado);
         acvpescadorado = (AdvancedCardView) findViewById(R.id.acvpescadorado);
         acvvegetalesdorado = (AdvancedCardView) findViewById(R.id.acvvegetalesdorado);

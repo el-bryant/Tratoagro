@@ -34,14 +34,14 @@ public class PerfilVentaProductosActivity extends AppCompatActivity {
             categoria = getIntent().getStringExtra("categoria");
         }
 //        btnSeleccionar = (Button) findViewById(R.id.btnSeleccionarProducto);
-        rvProductos = (RecyclerView) findViewById(R.id.rvProductos);
-        rvSubcategorias = (RecyclerView) findViewById(R.id.rvSubcategorias);
+//        rvProductos = (RecyclerView) findViewById(R.id.rvProductos);
+//        rvSubcategorias = (RecyclerView) findViewById(R.id.rvSubcategorias);
 //        btnSeleccionar.setOnClickListener(v -> {
 //            obtenerSubcategorias(categoria);
 //            rvProductos.setVisibility(View.VISIBLE);
 //        });
-        rvSubcategorias.setLayoutManager(new LinearLayoutManager(this));
-        rvProductos.setLayoutManager(new LinearLayoutManager(this));
+//        rvSubcategorias.setLayoutManager(new LinearLayoutManager(this));
+//        rvProductos.setLayoutManager(new LinearLayoutManager(this));
         webService = new WebService(this);
     }
 

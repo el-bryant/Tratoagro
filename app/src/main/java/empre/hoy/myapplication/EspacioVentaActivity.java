@@ -16,13 +16,13 @@ public class EspacioVentaActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vender_1);
         prefUtil = new PrefUtil(this);
-        tvCerrar = (TextView) findViewById(R.id.tvCerrar);
+//        tvCerrar = (TextView) findViewById(R.id.tvCerrar);
         tvRazonSocial = (TextView) findViewById(R.id.tvRazonSocial);
-        tvCerrar.setOnClickListener(v -> {
-            prefUtil.clearAll();
-            startActivity(new Intent(EspacioVentaActivity.this, PrincipalActivity.class));
-            finish();
-        });
+//        tvCerrar.setOnClickListener(v -> {
+//            prefUtil.clearAll();
+//            startActivity(new Intent(EspacioVentaActivity.this, PrincipalActivity.class));
+//            finish();
+//        });
         tvRazonSocial.setText(prefUtil.getStringValue("razon_social"));
     }
 

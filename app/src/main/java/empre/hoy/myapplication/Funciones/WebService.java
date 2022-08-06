@@ -399,7 +399,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             subcategorias.add(subcategoria);
                         }
                         SubcategoriaAdapter subcategoriaAdapter = new SubcategoriaAdapter(activity, subcategorias);
-                        PerfilVentaProductosActivity.cargarSubcategorias(subcategoriaAdapter);
+//                        PerfilVentaProductosActivity.cargarSubcategorias(subcategoriaAdapter);
                     }
                     break;
                 case "obtener_productos_subcategoria":
@@ -416,7 +416,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             productos.add(producto);
                         }
                         ProductoAdapter productoAdapter = new ProductoAdapter(activity, productos);
-                        PerfilVentaProductosActivity.cargarProductos(productoAdapter);
+//                        PerfilVentaProductosActivity.cargarProductos(productoAdapter);
                     }
                     break;
                 case "obtener_proveedores_producto":

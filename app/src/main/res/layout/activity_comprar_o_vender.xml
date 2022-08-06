@@ -57,7 +57,7 @@
                     android:layout_marginTop="10dp" />
 
                 <FrameLayout
-                    android:id="@+id/flayPersonaNatural"
+                    android:id="@+id/flayComprar"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:background="@drawable/boton6"
@@ -99,7 +99,7 @@
                     android:layout_marginTop="50dp" />
 
                 <FrameLayout
-                    android:id="@+id/flayPersonaJuridica"
+                    android:id="@+id/flayVender"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:background="@drawable/boton6"

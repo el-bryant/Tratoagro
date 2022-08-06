@@ -1,193 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".DatosJuridicoActivity"
     android:theme="@style/Material"
     android:background="@mipmap/machupichu2" >
 
-
-
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Porfavor ingresa tus datos en los casilleros presetandos  a continuación"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/negro"
-        android:layout_marginBottom="20dp"
-        android:textAlignment="center"
-        android:gravity="start" />
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="30dp" >
+            android:text="Porfavor ingresa tus datos en los casilleros presetandos  a continuación"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/aleo_bold"
+            android:textColor="@color/negro"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:gravity="start" />
 
-            <com.google.android.material.textfield.TextInputLayout
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietRuc"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/ic_ruc"
-                    android:drawableTint="@color/rojo"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/aleo_bold"
-                    android:hint="RUC"
-                    android:inputType="phone"
-                    android:textColor="@color/negro"
-                    android:textSize="15sp" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietRazonSocial"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Razón Social"
-                    android:textColor="@color/marron1"
-                    android:fontFamily="@font/aleo_bold"
-                    android:drawableTint="@color/rojo"
-                    android:textSize="15sp"
-                    android:drawableEnd="@drawable/empresa1"
-                    android:drawablePadding="10dp"
-                    android:inputType="textCapWords" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietRepresentanteLegal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableTint="@color/rojo"
-                    android:hint="Representante legal"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableEnd="@drawable/representantelegal"
-                    android:drawablePadding="10dp"
-                    android:inputType="textCapWords" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietCelular"
-                    android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:drawableTint="@color/rojo"
-                    android:fontFamily="@font/aleo_bold"
-                    android:drawableEnd="@drawable/celular1"
-                    android:drawablePadding="10dp"
-                    android:hint="Celular"
-                    android:textColor="@color/blanco"
-                    android:textSize="15sp"
-                    android:inputType="phone" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietDomicilioFiscal"
-                    android:layout_width="match_parent"
-                    android:drawableTint="@color/rojo"
-                    android:layout_height="55dp"
-                    android:fontFamily="@font/aleo_bold"
-                    android:drawableEnd="@drawable/ic_casa"
-                    android:drawablePadding="10dp"
-                    android:hint="Domicilio Fiscal"
-                    android:textColor="@color/blanco"
-                    android:textSize="15sp"
-                    android:inputType="textPostalAddress" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietCorreo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableTint="@color/rojo"
-                    android:hint="Correo electrónico"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableEnd="@drawable/correo1"
-                    android:drawablePadding="10dp"
-                    android:inputType="textEmailAddress" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietUbicacion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Ubicación"
-                    android:drawableTint="@color/rojo"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableEnd="@drawable/ubicacion1"
-                    android:drawablePadding="10dp"
-                    android:inputType="textPostalAddress" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-           <Button
-                android:id="@+id/btnaceptar"
-                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="50dp"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/boton6"
-                android:fontFamily="@font/aleo_bold"
-                android:text="Continuar"
-                android:textAllCaps="false"
-                android:textColor="@color/dorado1"
-                android:textSize="15sp"
-                android:drawablePadding="10dp"
-                android:layout_marginStart="80dp"
-                />
+                android:orientation="vertical"
+                android:layout_marginHorizontal="30dp" >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietRuc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_ruc"
+                        android:drawableTint="@color/rojo"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:hint="RUC"
+                        android:inputType="phone"
+                        android:textColor="@color/negro"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietRazonSocial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Razón Social"
+                        android:textColor="@color/negro"
+                        android:fontFamily="@font/aleo_bold"
+                        android:drawableTint="@color/rojo"
+                        android:textSize="15sp"
+                        android:drawableEnd="@drawable/empresa1"
+                        android:drawablePadding="10dp"
+                        android:inputType="textCapWords" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietRepresentanteLegal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/rojo"
+                        android:hint="Representante legal"
+                        android:textColor="@color/negro"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableEnd="@drawable/representantelegal"
+                        android:drawablePadding="10dp"
+                        android:inputType="textCapWords" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietCelular"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:drawableTint="@color/rojo"
+                        android:fontFamily="@font/aleo_bold"
+                        android:drawableEnd="@drawable/celular1"
+                        android:drawablePadding="10dp"
+                        android:hint="Celular"
+                        android:textColor="@color/negro"
+                        android:textSize="15sp"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietDomicilioFiscal"
+                        android:layout_width="match_parent"
+                        android:drawableTint="@color/rojo"
+                        android:layout_height="55dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:drawableEnd="@drawable/ic_casa"
+                        android:drawablePadding="10dp"
+                        android:hint="Domicilio Fiscal"
+                        android:textColor="@color/negro"
+                        android:textSize="15sp"
+                        android:inputType="textPostalAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/rojo"
+                        android:hint="Correo electrónico"
+                        android:textColor="@color/negro"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableEnd="@drawable/correo1"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietUbicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ubicación"
+                        android:drawableTint="@color/rojo"
+                        android:textColor="@color/negro"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableEnd="@drawable/ubicacion1"
+                        android:drawablePadding="10dp"
+                        android:inputType="textPostalAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnaceptar"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/boton6"
+                    android:fontFamily="@font/aleo_bold"
+                    android:text="Continuar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dorado1"
+                    android:textSize="15sp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginStart="80dp"
+                    />
 
 
 
-        </LinearLayout>
+            </LinearLayout>
 
-    </ScrollView>
+        </ScrollView>
 
-</LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

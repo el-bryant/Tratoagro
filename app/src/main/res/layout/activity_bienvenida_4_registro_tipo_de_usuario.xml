@@ -46,9 +46,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="P E R S O N A
-
-                     N A T U R A L"
+                    android:text="P E R S O N A\nN A T U R A L"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="21sp"
                     android:textColor="@color/negro"
@@ -90,9 +88,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="P E R S O N A
-
-                    J U R Í D I C A"
+                    android:text="P E R S O N A\nJ U R Í D I C A"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="21sp"
                     android:textColor="@color/negro"
