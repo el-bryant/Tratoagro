@@ -7,9 +7,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import empre.hoy.myapplication.Funciones.PrefUtil;
+import empre.hoy.myapplication.databinding.ActivityEspacioalclienteBinding;
 
 public class PrincipalActivity extends AppCompatActivity {
-    LinearLayout llayingresar, llyparati, llyubicanos, llyespacioalcliente, llyestadisticas, llayCerrarSesion;
+    LinearLayout llaycomprarovender, llyparati, llynoticias, llyespacioalcliente, llyestadisticas, llyconfiguracion, llayCerrarSesion;
     PrefUtil prefUtil;
 
     @Override
@@ -17,13 +18,13 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         prefUtil = new PrefUtil(this);
-        llayingresar = (LinearLayout) findViewById(R.id.llayingresar);
-        llyparati = (LinearLayout) findViewById(R.id.llyparati);
-        llayCerrarSesion = (LinearLayout) findViewById(R.id.llayCerrarSesion);
-        llyubicanos = (LinearLayout) findViewById(R.id.llyubicanos);
-        llyespacioalcliente = (LinearLayout) findViewById(R.id.llyespacioalcliente);
+        llaycomprarovender = (LinearLayout) findViewById(R.id.llaycomprarovender);
         llyestadisticas = (LinearLayout) findViewById(R.id.llyestadisticas);
-        llayingresar.setOnClickListener(v -> {
+        llayCerrarSesion = (LinearLayout) findViewById(R.id.llayCerrarSesion);
+        llynoticias = (LinearLayout) findViewById(R.id.llynoticias);
+        llyespacioalcliente = (LinearLayout) findViewById(R.id.llyespacioalcliente);
+        llyconfiguracion = (LinearLayout) findViewById(R.id.llyconfiguracion);
+        llaycomprarovender.setOnClickListener(v -> {
             Intent intent = new Intent(PrincipalActivity.this, IniciarSesionActivity.class);
             startActivity(intent);
         });
@@ -35,12 +36,16 @@ public class PrincipalActivity extends AppCompatActivity {
             Intent intent = new Intent(PrincipalActivity.this, EstadisticasGeneralActivity.class);
             startActivity(intent);
         });
-        llyubicanos.setOnClickListener(v -> {
+        llynoticias.setOnClickListener(v -> {
+            Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
+            startActivity(intent);
+        });
+        llyconfiguracion.setOnClickListener(v -> {
             Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
             startActivity(intent);
         });
         llyparati.setOnClickListener(v -> {
-            Intent intent = new Intent(PrincipalActivity.this, TutorialActivity.class);
+            Intent intent = new Intent(PrincipalActivity.this, ActivityEspacioalcliente.class);
             startActivity(intent);
         });
     }

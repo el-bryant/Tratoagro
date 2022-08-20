@@ -1,126 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:theme="@style/Material"
     android:background="@mipmap/machupichu2" >
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ya casi estas listo para que seas parte de esta espacio virtual, porfavor crea un usuario y contraseña para que puedas acceder a lo que tenemos preparado para tí"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/negro"
-        android:layout_marginBottom="20dp"
-        android:textAlignment="center"
-        android:gravity="start" />
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:text="Ya casi estas listo para que seas parte de esta espacio virtual, porfavor crea un usuario y contraseña para que puedas acceder a lo que tenemos preparado para tí"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="27dp"
             android:layout_marginTop="60dp"
-            android:layout_marginHorizontal="30dp" >
+            android:fontFamily="@font/aleo_bold"
+            android:textColor="@color/negro"
+            android:layout_marginBottom="20dp"
+            android:gravity="start" />
 
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/negro" >
-
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietUsuario"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Usuario"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:textColor="@color/blanco"
-                    android:drawableTint="@color/rojo"
-                    android:drawableEnd="@drawable/persona1" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/negro"
-                app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/negro" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietClave1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Contraseña"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableTint="@color/color20" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="@color/negro"
-                app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/negro" >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietClave2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Repetir Contraseña"
-                    android:textColor="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableTint="@color/color20" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-
-            <Button
-                android:id="@+id/btnaceptar"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:text="Listo"
-                android:background="@drawable/boton6"
-                android:textColor="@color/dorado1"
-                android:layout_marginTop="60dp"
-                android:layout_marginHorizontal="50dp"
-                android:fontFamily="@font/aleo_bold"
-                android:textSize="15sp"
-                android:textAllCaps="false"
-                android:drawablePadding="10dp"/>
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="15dp" >
+                android:orientation="vertical"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="60dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/negro"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Usuario"
+                        android:textColorHint="@color/negro"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableTint="@color/rojo"
+                        android:textColor="@color/blanco"
+                        android:drawableEnd="@drawable/persona1"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/negro"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/negro"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietClave1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contraseña"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableTint="@color/dorado1"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/negro"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/negro"
+                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundMode="none" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietClave2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Repetir Contraseña"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textSize="15sp"
+                        android:drawableTint="@color/verde"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Listo"
+                    android:background="@drawable/boton6"
+                    android:layout_marginStart="80dp"
+                    android:textColor="@color/dorado1"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnaceptar"
+                    android:drawablePadding="10dp"/>
 
 
             </LinearLayout>
 
-        </LinearLayout>
+        </ScrollView>
 
-    </ScrollView>
+    </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>

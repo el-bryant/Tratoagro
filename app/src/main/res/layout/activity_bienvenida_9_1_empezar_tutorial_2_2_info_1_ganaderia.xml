@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="18sp"
-        android:textColor="@color/negro"
+        android:textColor="@color/marron1"
         android:text="Estimado usuario esta categoría hace referencia en la cría de animales domésticos para el consumo humano y la obtención de carne, leche, lana, pieles, miel entre otros."
         android:layout_marginHorizontal="30dp"
         android:textAlignment="center"

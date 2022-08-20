@@ -68,7 +68,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:id="@+id/llayingresar"
+                        android:id="@+id/llaycomprarovender"
                         android:gravity="center">
 
                         <ImageView
@@ -93,7 +93,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:id="@+id/llyparati"
+                        android:id="@+id/llyestadisticas"
                         android:layout_marginTop="5dp">
 
                         <ImageView
@@ -159,7 +159,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:id="@+id/llyubicanos"
+                        android:id="@+id/llynoticias"
                         android:layout_marginTop="16dp" >
 
                         <ImageView
@@ -225,7 +225,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:gravity="center"
-                        android:id="@+id/llyestadisticas"
+                        android:id="@+id/llyconfiguracion"
                         android:layout_marginTop="16dp">
 
                         <ImageView

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".DatosJuridicoActivity"
     android:theme="@style/Material"
     android:background="@mipmap/machupichu2" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
 
 
 
@@ -19,7 +27,6 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="27dp"
         android:layout_marginTop="60dp"
-        android:textAlignment="center"
         android:fontFamily="@font/aleo_bold"
         android:textColor="@color/negro"
         android:layout_marginBottom="20dp"
@@ -37,14 +44,16 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="none" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietTipodecomerciante"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Tipo de Comerciante"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/ic_comerciante"
@@ -56,14 +65,16 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="none" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietDepartamento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Departameto"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableTint="@color/rojo"
@@ -75,14 +86,16 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="none" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietProvincia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Provincia"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableTint="@color/rojo"
@@ -94,7 +107,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="none" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietDistrito"
@@ -105,7 +120,7 @@
                     android:drawablePadding="10dp"
                     android:hint="Distrito"
                     android:drawableTint="@color/rojo"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/negro"
                     android:textSize="15sp"
                     android:inputType="phone" />
 
@@ -126,8 +141,10 @@
                 android:textSize="15sp"
                 android:drawablePadding="10dp"/>
 
-        </LinearLayout>
+             </LinearLayout>
 
-    </ScrollView>
+         </ScrollView>
 
-</LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

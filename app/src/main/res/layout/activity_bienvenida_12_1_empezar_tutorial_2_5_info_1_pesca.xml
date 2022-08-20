@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="18sp"
-        android:textColor="@color/negro"
+        android:textColor="@color/marron1"
         android:text="Estimado usuario esta categoría hace referencia a aquella actividad que se realiza para extraer peces. Puede realizarse en aguas continentales o marítimas. "
         android:layout_marginHorizontal="30dp"
         android:textAlignment="center"

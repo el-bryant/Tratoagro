@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".DatosNatural1Activity"
     android:theme="@style/Material"
     android:background="@mipmap/machupichu2" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
 
     <TextView
         android:layout_width="match_parent"
@@ -37,7 +45,9 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="@color/negro" >
+                android:textColorHint="@color/negro"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="none" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietUsuario"
@@ -59,7 +69,9 @@
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/negro"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/negro" >
+                app:passwordToggleTint="@color/negro"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="none" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietClave1"
@@ -79,7 +91,9 @@
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/negro"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/negro">
+                app:passwordToggleTint="@color/negro"
+                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxBackgroundMode="none" >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tietClave2"
@@ -110,8 +124,10 @@
                 android:drawablePadding="10dp"/>
 
 
-        </LinearLayout>
+             </LinearLayout>
 
-    </ScrollView>
+        </ScrollView>
 
-</LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

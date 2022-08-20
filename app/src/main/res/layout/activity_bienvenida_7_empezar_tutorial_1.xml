@@ -23,11 +23,12 @@
 
     <com.sinaseyfi.advancedcardview.AdvancedCardView
         android:id="@+id/acvPersonaNatural"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="500dp"
+        android:layout_height="140dp"
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="30dp"
         android:layout_weight="1"
+        android:textAlignment="center"
         app:background_ColorType="gradient_sweep"
         app:background_Gradient_Angle="-0"
         app:background_Gradient_Color0="@color/rojo"
@@ -49,7 +50,7 @@
                 android:gravity="center"
                 android:text="EMPEZAR TUTORIAL"
                 android:textColor="@color/color20"
-                android:textSize="30sp" />
+                android:textSize="22sp" />
 
         </LinearLayout>
 

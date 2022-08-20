@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
         android:textSize="18sp"
-        android:textColor="@color/negro"
+        android:textColor="@color/marron1"
         android:text="Estimado usuario esta categoría hace referencia a sustancias que contienen elementos o compuestos  químicos nutritivos para los vegetales, en forma tal que pueden ser absorbidos por las plantas. Se los utiliza para aumentar la producción, reponer y evitar deficiencias de nutrientes y propender al mejoramiento sanitario de las plantas."
         android:layout_marginHorizontal="30dp"
         android:textAlignment="center"
