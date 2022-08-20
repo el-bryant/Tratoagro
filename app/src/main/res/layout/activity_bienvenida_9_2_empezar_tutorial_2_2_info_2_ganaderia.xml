@@ -30,7 +30,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton6"
+        android:background="@drawable/boton_rojo"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnSubcategoriasGanaderia"
             android:text="sub cateogorías"
-            android:drawableEnd="@drawable/ic_flechaabajo"
+            android:drawableEnd="@drawable/ic_abajo_triangulo"
             android:drawablePadding="40dp"
             android:fontFamily="@font/aleo_bold"
             android:drawableTint="@color/blanco"
@@ -63,7 +63,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton6"
+        android:background="@drawable/boton_rojo"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnProductosGanaderia"
             android:text="productos"
-            android:drawableEnd="@drawable/ic_flechaabajo"
+            android:drawableEnd="@drawable/ic_abajo_triangulo"
             android:drawablePadding="40dp"
             android:fontFamily="@font/aleo_bold"
             android:drawableTint="@color/marron1"
@@ -100,7 +100,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/boton6"
+        android:background="@drawable/boton_rojo"
         android:fontFamily="@font/aleo_bold"
         android:text="Aceptar"
         android:textAllCaps="false"

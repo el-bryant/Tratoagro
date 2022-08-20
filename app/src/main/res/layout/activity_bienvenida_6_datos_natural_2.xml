@@ -42,26 +42,68 @@
             android:orientation="vertical"
             android:layout_marginHorizontal="30dp" >
 
-            <com.google.android.material.textfield.TextInputLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:boxBackgroundMode="none" >
+                android:text="Tipo de comerciante"
+                android:textColor="#5b5e60"
+                android:fontFamily="@font/aleo_bold"
+                android:textSize="15sp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="15dp" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tietTipodecomerciante"
-                    android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnMayoristaClaro"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:hint="Tipo de Comerciante"
-                    android:textColor="@color/negro"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
-                    android:drawableEnd="@drawable/ic_comerciante"
-                    android:drawableTint="@color/rojo"
-                    android:drawablePadding="10dp"
-                    android:inputType="phone" />
+                    android:layout_weight="1"
+                    android:text="Mayorista"
+                    android:textColor="@color/blanco"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_amarillo"
+                    android:layout_marginHorizontal="5dp"
+                    android:visibility="gone" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/btnMayoristaOscuro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mayorista"
+                    android:textColor="@color/blanco"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_rojo"
+                    android:layout_marginHorizontal="5dp" />
+
+                <Button
+                    android:id="@+id/btnMinoristaClaro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Minorista"
+                    android:textColor="@color/blanco"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_amarillo"
+                    android:layout_marginHorizontal="5dp" />
+
+                <Button
+                    android:id="@+id/btnMinoristaOscuro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Minorista"
+                    android:textColor="@color/blanco"
+                    android:textAllCaps="false"
+                    android:background="@drawable/boton_rojo"
+                    android:layout_marginHorizontal="5dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -122,18 +164,18 @@
                     android:drawableTint="@color/rojo"
                     android:textColor="@color/negro"
                     android:textSize="15sp"
-                    android:inputType="phone" />
+                    android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/btnaceptar"
+                android:id="@+id/btnContinuar"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
                 android:layout_marginHorizontal="50dp"
                 android:layout_marginTop="60dp"
-                android:background="@drawable/boton6"
+                android:background="@drawable/boton_rojo"
                 android:fontFamily="@font/aleo_bold"
                 android:text="Continuar"
                 android:textAllCaps="false"

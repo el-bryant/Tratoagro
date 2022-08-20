@@ -28,7 +28,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/boton6"
+        android:background="@drawable/boton_rojo"
         android:drawablePadding="10dp"
         android:fontFamily="@font/aleo_bold"
         android:text="Eliminar"

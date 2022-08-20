@@ -18,7 +18,7 @@ public class TipoUsuarioActivity extends AppCompatActivity {
         acvPersonaNatural = (FrameLayout) findViewById(R.id.flayPersonaNatural);
         acvPersonaJuridica = (FrameLayout) findViewById(R.id.flayPersonaJuridica);
         acvPersonaNatural.setOnClickListener(v -> {
-            Intent intent = new Intent(TipoUsuarioActivity.this, DatosNatural1Activity.class);
+            Intent intent = new Intent(TipoUsuarioActivity.this, Bienvenida6DatosNatural1Activity.class);
             intent.putExtra("tipo", "n");
             startActivity(intent);
             finish();

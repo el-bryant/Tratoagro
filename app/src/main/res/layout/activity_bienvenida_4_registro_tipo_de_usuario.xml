@@ -60,7 +60,7 @@
                     android:id="@+id/flayPersonaNatural"
                     android:layout_width="320dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginTop="15dp" >
 
@@ -102,7 +102,7 @@
                     android:id="@+id/flayPersonaJuridica"
                     android:layout_width="320dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginTop="15dp" >
 

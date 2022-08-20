@@ -21,12 +21,12 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Map;
 
+import empre.hoy.myapplication.Bienvenida6DatosNatural1Activity;
 import empre.hoy.myapplication.CarritoActivity;
 import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.DatosJuridico2Activity;
 import empre.hoy.myapplication.DatosJuridicoActivity;
 import empre.hoy.myapplication.DatosNatural2Activity;
-import empre.hoy.myapplication.DatosNatural1Activity;
 import empre.hoy.myapplication.EstadiFertilizantesActivity;
 import empre.hoy.myapplication.EstadiGanaderiaActivity;
 import empre.hoy.myapplication.EstadiInsumosActivity;
@@ -37,7 +37,6 @@ import empre.hoy.myapplication.IniciarSesionActivity;
 import empre.hoy.myapplication.Inicio2Activity;
 import empre.hoy.myapplication.ListaProveedoresActivity;
 import empre.hoy.myapplication.Comprar1Activity;
-import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.TutoFertilzantes;
 import empre.hoy.myapplication.TutoGanaderia;
 import empre.hoy.myapplication.TutoInsumos;
@@ -338,7 +337,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                 case "registro_natural":
                     if (correcto) {
                         Log.i("registro_natural", consulta);
-                        DatosNatural1Activity.registrado(activity);
+                        Bienvenida6DatosNatural1Activity.registrado(activity);
                     }
                     break;
                 case "registro_juridico":
@@ -491,7 +490,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                     Log.i("buscar_dni", consulta);
                     String apellidos = jsonObject.getString("apellido_paterno") + " " + jsonObject.getString("apellido_materno");
                     String nombres = jsonObject.getString("nombres");
-                    DatosNatural1Activity.cargarDatosDni(apellidos, nombres);
+                    Bienvenida6DatosNatural1Activity.cargarDatosDni(apellidos, nombres);
                     break;
                 case "buscar_departamentos":
                     if (correcto) {

@@ -42,7 +42,7 @@
                     android:id="@+id/flayGanaderia"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -71,7 +71,7 @@
                     android:id="@+id/flayPesca"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -100,7 +100,7 @@
                     android:id="@+id/flayMaquinaria"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -129,7 +129,7 @@
                     android:id="@+id/flayInsumos"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
 
                     android:layout_marginHorizontal="15dp" >
 
@@ -159,7 +159,7 @@
                     android:id="@+id/flayPesticidas"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView
@@ -188,7 +188,7 @@
                     android:id="@+id/flayFertilizantes"
                     android:layout_width="345dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
                     <ImageView

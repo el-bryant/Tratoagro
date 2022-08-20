@@ -198,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="50dp"
                     android:layout_marginTop="25dp"
-                    android:background="@drawable/boton6"
+                    android:background="@drawable/boton_rojo"
                     android:fontFamily="@font/aleo_bold"
                     android:text="Continuar"
                     android:textAllCaps="false"

@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="150dp"
-        android:src="@drawable/logo2"/>
+        android:tint="@color/logo"
+        android:src="@drawable/isotipo" />
 
     <Button
         android:id="@+id/btnRegistrar"
@@ -25,7 +26,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginHorizontal="75dp"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/boton6"
+        android:background="@drawable/boton_rojo"
         android:drawablePadding="10dp"
         android:fontFamily="@font/aleo_bold"
         android:text="Registrarse"

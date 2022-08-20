@@ -46,7 +46,7 @@
                 app:boxBackgroundMode="none" >
 
                 <EditText
-                    android:id="@+id/tietDni"
+                    android:id="@+id/etDni"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="DNI"
@@ -68,7 +68,7 @@
                 app:boxBackgroundMode="none" >
 
                 <EditText
-                    android:id="@+id/tietApellidos"
+                    android:id="@+id/etApellidos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableEnd="@drawable/representantelegal"
@@ -90,7 +90,7 @@
                 app:boxBackgroundMode="none" >
 
                 <EditText
-                    android:id="@+id/tietNombres"
+                    android:id="@+id/etNombres"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nombres"
@@ -112,7 +112,7 @@
                 app:boxBackgroundMode="none" >
 
                 <EditText
-                    android:id="@+id/tietCelular"
+                    android:id="@+id/etCelular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Celular"
@@ -134,7 +134,7 @@
                 app:boxBackgroundMode="none" >
 
                 <EditText
-                    android:id="@+id/tietCorreo"
+                    android:id="@+id/etCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Correo electrónico"
@@ -156,7 +156,7 @@
                 app:boxBackgroundMode="none" >
 
                 <EditText
-                    android:id="@+id/tietUbicacion"
+                    android:id="@+id/etUbicacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Ubicación"
@@ -171,12 +171,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/btnaceptar"
+                android:id="@+id/btnSiguiente"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
                 android:text="Siguiente"
-                android:background="@drawable/boton6"
+                android:background="@drawable/boton_rojo"
                 android:textColor="@color/dorado1"
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="50dp"

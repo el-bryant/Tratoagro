@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
                 android:text="Enviar código de acceso"
-                android:background="@drawable/boton6"
+                android:background="@drawable/boton_rojo"
                 android:textColor="@color/dorado1"
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="50dp"

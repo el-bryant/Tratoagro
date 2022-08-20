@@ -30,14 +30,15 @@
         <activity android:name=".Bienvenida5DatosJuridico2Activity" />
         <activity android:name=".Bienvenida5DatosJuridico3Activity"/>
         <activity android:name=".Bienvenida6DatosNatural1Activity" />
+        <activity android:name=".Bienvenida6DatosNatural2Activity" />
         <activity android:name=".CarritoActivity" />
         <activity android:name=".Comprar1Activity" />
         <activity android:name=".Comprar2Activity" />
         <activity android:name=".ComprarVenderActivity" />
         <activity android:name=".DatosJuridicoActivity" />
         <activity android:name=".DatosJuridico2Activity" />
-        <activity android:name=".DatosNatural1Activity" />
         <activity android:name=".DatosNatural2Activity" />
+        <activity android:name=".EspacioAlClienteActivity" />
         <activity android:name=".EspacioVentaActivity" />
         <activity android:name=".EstadiFertilizantesActivity" />
         <activity android:name=".EstadiGanaderiaActivity" />

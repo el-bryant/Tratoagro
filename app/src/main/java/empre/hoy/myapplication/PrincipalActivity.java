@@ -45,7 +45,7 @@ public class PrincipalActivity extends AppCompatActivity {
             startActivity(intent);
         });
         llyparati.setOnClickListener(v -> {
-            Intent intent = new Intent(PrincipalActivity.this, ActivityEspacioalcliente.class);
+            Intent intent = new Intent(PrincipalActivity.this, EspacioAlClienteActivity.class);
             startActivity(intent);
         });
     }
