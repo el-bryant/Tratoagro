@@ -1,110 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/fertilizantes2_tratoagro">
+    android:layout_height="match_parent" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/ivFondo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginEnd="170dp"
-        android:shadowColor="@color/negro"
-        android:layout_marginTop="50dp"
-        />
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
 
-
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aleo_bold"
-        android:textSize="15sp"
-        android:textColor="@color/negro"
-        android:text="Haz click para ver las diferentes subcategorías de fertilizantes"
-        android:layout_marginHorizontal="30dp"
-        android:textAlignment="textStart"
-        android:shadowColor="@color/negro"
-        android:layout_marginTop="5dp"
-        />
+        android:layout_height="match_parent"
+        android:background="#40000000" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/botonnegro"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="30dp" >
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnSucbategoriasFertilizantes"
-            android:text="SUB CATEGORÍAS"
-            android:drawableEnd="@drawable/ic_abajo"
-            android:drawablePadding="40dp"
-            android:fontFamily="@font/aleo_bold"
-            android:drawableTint="@color/dorado1"
-            android:textColor="@color/blanco"
-            android:textAllCaps="false"
-            android:background="@null"
-            android:textAlignment="textStart"
-            android:layout_marginHorizontal="15dp" />
+        android:gravity="center" >
 
-        <androidx.recyclerview.widget.RecyclerView
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rvSubcategoriasFertilizantes"
-            android:visibility="gone"
-            android:layout_marginBottom="15dp" />
+            android:fontFamily="@font/aleo_bold"
+            android:textSize="15sp"
+            android:textColor="@color/blanco"
+            android:text="Haz click para ver las diferentes subcategorías de fertilizantes"
+            android:layout_marginHorizontal="30dp"
+            android:textAlignment="center"
+            android:shadowColor="@color/negro"
+            android:shadowRadius="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botonnegro"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp" >
+
+            <Button
+                android:id="@+id/btnSucbategoriasFertilizantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBCATEGORÍAS"
+                android:drawableEnd="@drawable/ic_abajo"
+                android:drawablePadding="40dp"
+                android:fontFamily="@font/aleo_bold"
+                android:drawableTint="@color/dorado1"
+                android:textColor="@color/blanco"
+                android:textAllCaps="false"
+                android:background="@null"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="15dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSubcategoriasFertilizantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botonnegro"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="30dp" >
+
+            <Button
+                android:id="@+id/btnProductosFertilizantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRODUCTOS"
+                android:drawableEnd="@drawable/ic_abajo"
+                android:drawablePadding="40dp"
+                android:drawableTint="@color/blanco"
+                android:fontFamily="@font/aleo_bold"
+                android:textColor="@color/blanco"
+                android:textAllCaps="false"
+                android:background="@null"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="15dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductosFertilizantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/boton_rojo"
+            android:fontFamily="@font/aleo_bold"
+            android:text="Aceptar"
+            android:textAllCaps="false"
+            android:textColor="@color/dorado1"
+            android:textSize="15sp"
+            android:paddingHorizontal="50dp" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/botonnegro"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="30dp" >
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnProductosFertilizantes"
-            android:text="PRODUCTOS"
-            android:drawableEnd="@drawable/ic_abajo"
-            android:drawablePadding="40dp"
-            android:drawableTint="@color/blanco"
-            android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/blanco"
-            android:textAllCaps="false"
-            android:background="@null"
-            android:textAlignment="textStart"
-            android:layout_marginHorizontal="15dp" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rvProductosFertilizantes"
-            android:visibility="gone"
-            android:layout_marginBottom="15dp" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnaceptar"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/boton_rojo"
-        android:fontFamily="@font/aleo_bold"
-        android:text="Aceptar"
-        android:textAllCaps="false"
-        android:textColor="@color/dorado1"
-        android:textSize="15sp"
-        android:drawablePadding="10dp"
-        />
-
-</LinearLayout>
+</FrameLayout>

@@ -1,5 +1,6 @@
 package empre.hoy.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,13 +9,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Bienvenida6DatosNatural2Activity extends AppCompatActivity {
-    Button btnMayoristaClaro, btnMayoristaOscuro, btnMinoristaClaro, btnMinoristaOscuro;
+    Button btnMayoristaClaro, btnMayoristaOscuro, btnMinoristaClaro, btnMinoristaOscuro, btnContinuar;
     boolean mayorista = true, minorista = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_6_datos_natural_2);
+        btnContinuar = (Button) findViewById(R.id.btnContinuar);
         btnMayoristaClaro = (Button) findViewById(R.id.btnMayoristaClaro);
         btnMayoristaOscuro = (Button) findViewById(R.id.btnMayoristaOscuro);
         btnMinoristaClaro = (Button) findViewById(R.id.btnMinoristaClaro);
@@ -34,6 +36,10 @@ public class Bienvenida6DatosNatural2Activity extends AppCompatActivity {
             btnMayoristaOscuro.setVisibility(View.GONE);
             mayorista = false;
             minorista = true;
+        });
+        btnContinuar.setOnClickListener(v -> {
+            startActivity(new Intent(Bienvenida6DatosNatural2Activity.this, Bienvenida6DatosNatural3Activity.class));
+            finish();
         });
     }
 }

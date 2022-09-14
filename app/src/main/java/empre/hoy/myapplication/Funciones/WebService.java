@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import empre.hoy.myapplication.Bienvenida6DatosNatural1Activity;
+import empre.hoy.myapplication.Bienvenida7EmpezarTutorial11;
 import empre.hoy.myapplication.CarritoActivity;
 import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.DatosJuridico2Activity;
@@ -34,7 +35,6 @@ import empre.hoy.myapplication.EstadiMaquinariaActivity;
 import empre.hoy.myapplication.EstadiPescaActivity;
 import empre.hoy.myapplication.EstadiPesticidasActivity;
 import empre.hoy.myapplication.IniciarSesionActivity;
-import empre.hoy.myapplication.Inicio2Activity;
 import empre.hoy.myapplication.ListaProveedoresActivity;
 import empre.hoy.myapplication.Comprar1Activity;
 import empre.hoy.myapplication.TutoFertilzantes;
@@ -451,7 +451,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                                 prefUtil.saveGenericValue("id_usuario", idUsuario);
                                 prefUtil.saveGenericValue(PrefUtil.LOGIN_STATUS, "1");
                                 prefUtil.saveGenericValue("nombre", nombre);
-                                activity.startActivity(new Intent(activity, Inicio2Activity.class));
+                                activity.startActivity(new Intent(activity, Bienvenida7EmpezarTutorial11.class));
                                 activity.finish();
                             } else {
                                 Toast.makeText(activity, "Su cuenta ha sido suspendida, comuníquese con nosotros para recuperarla", Toast.LENGTH_LONG).show();
