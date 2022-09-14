@@ -65,7 +65,7 @@
                     android:text="Mayorista"
                     android:textColor="@color/blanco"
                     android:textAllCaps="false"
-                    android:background="@drawable/boton_amarillo"
+                    android:background="@drawable/botonnegro"
                     android:layout_marginHorizontal="5dp"
                     android:visibility="gone" />
 
@@ -75,9 +75,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Mayorista"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/rojo"
                     android:textAllCaps="false"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_amarillo"
                     android:layout_marginHorizontal="5dp" />
 
                 <Button
@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Minorista"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/rojo"
                     android:textAllCaps="false"
                     android:background="@drawable/boton_amarillo"
                     android:layout_marginHorizontal="5dp" />
@@ -99,7 +99,7 @@
                     android:text="Minorista"
                     android:textColor="@color/blanco"
                     android:textAllCaps="false"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/botonnegro"
                     android:layout_marginHorizontal="5dp"
                     android:visibility="gone" />
 

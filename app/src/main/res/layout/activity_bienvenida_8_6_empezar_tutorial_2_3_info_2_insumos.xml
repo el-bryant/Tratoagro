@@ -4,47 +4,47 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/ganaderia5">
+    android:background="@mipmap/insumos5">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginEnd="170dp"
         android:layout_marginTop="50dp"
-        android:shadowColor="@color/negro"
-        android:layout_marginEnd="170dp"/>
+       />
+
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aleo_bold"
-        android:textSize="15sp"
-        android:textColor="@color/marron1"
-        android:text="Haz click para ver las diferentes subcategorías y productos de ganadería"
         android:layout_marginHorizontal="30dp"
-        android:textAlignment="textStart"
-        android:shadowColor="@color/negro"
         android:layout_marginTop="5dp"
-        />
+        android:fontFamily="@font/aleo_bold"
+        android:shadowColor="@color/negro"
+        android:text="Haz click para ver las diferentes subcategorías de insumos que puedes comprar"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton_rojo"
+        android:background="@drawable/botonnegro"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSubcategoriasGanaderia"
-            android:text="sub cateogorías"
-            android:drawableEnd="@drawable/ic_abajo_triangulo"
+            android:id="@+id/btnSubcategoriasInsumos"
+            android:text="SUB CATEGORÍAS"
+            android:drawableEnd="@drawable/ic_abajo"
             android:drawablePadding="40dp"
             android:fontFamily="@font/aleo_bold"
-            android:drawableTint="@color/blanco"
-            android:textColor="@color/dorado1"
+            android:drawableTint="@color/dorado1"
+            android:textColor="@color/blanco"
             android:textAllCaps="false"
             android:background="@null"
             android:textAlignment="textStart"
@@ -53,32 +53,30 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rvSubcategoriasGanaderia"
+            android:id="@+id/rvSubcategoriasInsumos"
             android:visibility="gone"
             android:layout_marginBottom="15dp" />
-
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton_rojo"
+        android:background="@drawable/botonnegro"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnProductosGanaderia"
-            android:text="productos"
-            android:drawableEnd="@drawable/ic_abajo_triangulo"
+            android:id="@+id/btnProductosInsumos"
+            android:text="PRODUCTOS"
+            android:drawableEnd="@drawable/ic_abajo"
             android:drawablePadding="40dp"
-            android:fontFamily="@font/aleo_bold"
-            android:drawableTint="@color/marron1"
-            android:textColor="@color/dorado1"
+            android:drawableTint="@color/blanco"
+            android:textColor="@color/blanco"
             android:textAllCaps="false"
+            android:fontFamily="@font/aleo_bold"
             android:background="@null"
             android:textAlignment="textStart"
             android:layout_marginHorizontal="15dp" />
@@ -86,10 +84,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rvProductosGanaderia"
+            android:id="@+id/rvProductosInsumos"
             android:visibility="gone"
             android:layout_marginBottom="15dp" />
-
 
     </LinearLayout>
 
@@ -99,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/boton_rojo"
         android:fontFamily="@font/aleo_bold"
         android:text="Aceptar"

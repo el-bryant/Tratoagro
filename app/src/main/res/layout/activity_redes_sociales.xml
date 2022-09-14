@@ -28,7 +28,7 @@
             android:layout_marginTop="60dp"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:drawableEnd="@drawable/ic_ubicanos"
+            android:drawableEnd="@drawable/ubicacion1"
             android:drawableTint="@color/marron1"
             />
 

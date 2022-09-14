@@ -2,13 +2,9 @@ package empre.hoy.myapplication;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +21,7 @@ public class TutoGanaderia extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bienvenida_9_1_empezar_tutorial_2_2_info_1_ganaderia);
+        setContentView(R.layout.activity_bienvenida_8_3_empezar_tutorial_2_2_info_1_ganaderia);
         webservice = new WebService( this);
 //        btseleccionar3=(Button)findViewById(R.id.btseleccionar1);
 //        ruvcategoriasganaderia=(RecyclerView)findViewById(R.id.ruvcategoriasganaderia);

@@ -14,9 +14,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="150dp"
-        android:tint="@color/logo"
-        android:src="@drawable/isotipo" />
+        android:layout_marginTop="9dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/logo" />
 
     <Button
         android:id="@+id/btnRegistrar"

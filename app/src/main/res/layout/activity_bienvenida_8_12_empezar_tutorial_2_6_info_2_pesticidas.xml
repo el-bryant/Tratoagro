@@ -4,47 +4,47 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/insumos5">
+    android:background="@mipmap/pesticidas5">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
+        android:shadowColor="@color/negro"
         android:layout_marginEnd="170dp"
         android:layout_marginTop="50dp"
-       />
-
-
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="5dp"
         android:fontFamily="@font/aleo_bold"
-        android:shadowColor="@color/negro"
-        android:text="Haz click para ver las diferentes subcategorías de insumos que puedes comprar"
+        android:textSize="15sp"
+        android:textColor="@color/negro"
+        android:text="Haz click para ver las diferentes subcategorías y productos de fertilizantes"
+        android:layout_marginHorizontal="30dp"
         android:textAlignment="textStart"
-        android:textColor="@color/blanco"
-        android:textSize="15sp" />
+        android:shadowColor="@color/negro"
+        android:layout_marginTop="10dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton_rojo"
+        android:background="@drawable/botonnegro"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSubcategoriasInsumos"
-            android:text="sub categorías"
-            android:drawableEnd="@drawable/ic_abajo_triangulo"
+            android:id="@+id/btnSubcategoriasPesticidas"
+            android:text="SUBCATEGORÍAS"
+            android:drawableEnd="@drawable/ic_abajo"
             android:drawablePadding="40dp"
+            android:drawableTint="@color/dorado1"
             android:fontFamily="@font/aleo_bold"
-            android:drawableTint="@color/blanco"
-            android:textColor="@color/dorado1"
+            android:textColor="@color/blanco"
             android:textAllCaps="false"
             android:background="@null"
             android:textAlignment="textStart"
@@ -53,7 +53,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rvSubcategoriasInsumos"
+            android:id="@+id/rvSubcategoriasPesticidas"
             android:visibility="gone"
             android:layout_marginBottom="15dp" />
 
@@ -62,19 +62,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/boton_rojo"
+        android:background="@drawable/botonnegro"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="30dp" >
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnProductosInsumos"
-            android:text="productos"
-            android:drawableEnd="@drawable/ic_abajo_triangulo"
+            android:id="@+id/btnProductosPesticidas"
+            android:text="PRODUCTOS"
+            android:drawableEnd="@drawable/ic_abajo"
             android:drawablePadding="40dp"
-            android:drawableTint="@color/marron1"
-            android:textColor="@color/dorado1"
+            android:drawableTint="@color/blanco"
+            android:textColor="@color/blanco"
             android:textAllCaps="false"
             android:fontFamily="@font/aleo_bold"
             android:background="@null"
@@ -84,7 +84,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rvProductosInsumos"
+            android:id="@+id/rvProductosPesticidas"
             android:visibility="gone"
             android:layout_marginBottom="15dp" />
 
@@ -96,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/boton_rojo"
         android:fontFamily="@font/aleo_bold"
         android:text="Aceptar"
@@ -106,4 +106,4 @@
         android:drawablePadding="10dp"
         />
 
-</LinearLayout>
+    </LinearLayout>

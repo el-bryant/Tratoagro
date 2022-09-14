@@ -126,7 +126,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/ic_ico_pez"
+                        android:src="@drawable/ic_ico_pez3"
                         android:layout_gravity="center"
                         android:layout_margin="15dp"
                         android:padding="0dp" />

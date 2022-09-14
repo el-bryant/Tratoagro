@@ -52,7 +52,7 @@
     <com.github.mikephil.charting.charts.BarChart
         android:id="@+id/bchVentas"
         android:layout_width="match_parent"
-        android:background="@color/rojo"
+        android:background="@color/marron1"
         android:layout_height="250dp" />
 
 

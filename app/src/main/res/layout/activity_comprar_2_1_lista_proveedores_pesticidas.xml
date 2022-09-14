@@ -27,7 +27,8 @@
             android:layout_width="300dp"
             android:layout_height="120dp"
             android:layout_marginHorizontal="15dp"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:src="@mipmap/pesticidas3_tratoagro"/>
 
         <LinearLayout
             android:layout_width="280dp"
