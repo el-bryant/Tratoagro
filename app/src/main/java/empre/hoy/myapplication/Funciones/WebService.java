@@ -23,6 +23,12 @@ import java.util.Map;
 
 import empre.hoy.myapplication.Bienvenida6DatosNatural1Activity;
 import empre.hoy.myapplication.Bienvenida7EmpezarTutorial11;
+import empre.hoy.myapplication.Bienvenida810EmpezarTutorial25Info2PescaActivity;
+import empre.hoy.myapplication.Bienvenida812EmpezarTutorial26Info2PesticidasActivity;
+import empre.hoy.myapplication.Bienvenida82EmpezarTutorial21Info2FertilizantesActivity;
+import empre.hoy.myapplication.Bienvenida84EmpezarTutorial22Info2GanaderiaActivity;
+import empre.hoy.myapplication.Bienvenida86EmpezarTutorial23Info2InsumosActivity;
+import empre.hoy.myapplication.Bienvenida88mpezarTutorial24Info2MaquinariaActivity;
 import empre.hoy.myapplication.CarritoActivity;
 import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.DatosJuridico2Activity;
@@ -387,10 +393,11 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         Log.i("obtener_subcategorias", consulta);
                         subcategorias = new ArrayList<>();
                         jsonArray = jsonObject.getJSONArray("data");
+                        String idSubcategoria = "", nombre = "", idCategoria = "";
                         for (int i = 0; i < jsonArray.length(); i ++) {
-                            String idSubcategoria = jsonArray.getJSONObject(i).getString("id_subcategoria");
-                            String nombre = jsonArray.getJSONObject(i).getString("nombre");
-                            String idCategoria = jsonArray.getJSONObject(i).getString("id_categoria");
+                            idSubcategoria = jsonArray.getJSONObject(i).getString("id_subcategoria");
+                            nombre = jsonArray.getJSONObject(i).getString("nombre");
+                            idCategoria = jsonArray.getJSONObject(i).getString("id_categoria");
                             Subcategoria subcategoria = new Subcategoria();
                             subcategoria.setIdSubcategoria(idSubcategoria);
                             subcategoria.setNombre(nombre);
@@ -398,6 +405,32 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             subcategorias.add(subcategoria);
                         }
                         SubcategoriaAdapter subcategoriaAdapter = new SubcategoriaAdapter(activity, subcategorias);
+                        switch (idCategoria) {
+                            case "1":
+                                //Ganaderia
+                                Bienvenida84EmpezarTutorial22Info2GanaderiaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                break;
+                            case "2":
+                                //Maquinaria
+                                Bienvenida88mpezarTutorial24Info2MaquinariaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                break;
+                            case "3":
+                                //Insumos
+                                Bienvenida86EmpezarTutorial23Info2InsumosActivity.cargarSubcategorias(subcategoriaAdapter);
+                                break;
+                            case "4":
+                                //Pesticidas
+                                Bienvenida812EmpezarTutorial26Info2PesticidasActivity.cargarSubcategorias(subcategoriaAdapter);
+                                break;
+                            case "5":
+                                //Fertilizantes
+                                Bienvenida82EmpezarTutorial21Info2FertilizantesActivity.cargarSubcategorias(subcategoriaAdapter);
+                                break;
+                            case "6":
+                                //Pescados
+                                Bienvenida810EmpezarTutorial25Info2PescaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                break;
+                        }
 //                        PerfilVentaProductosActivity.cargarSubcategorias(subcategoriaAdapter);
                     }
                     break;
@@ -415,7 +448,24 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             productos.add(producto);
                         }
                         ProductoAdapter productoAdapter = new ProductoAdapter(activity, productos);
-//                        PerfilVentaProductosActivity.cargarProductos(productoAdapter);
+                        if (activity instanceof Bienvenida82EmpezarTutorial21Info2FertilizantesActivity) {
+                            Bienvenida82EmpezarTutorial21Info2FertilizantesActivity.cargarProductos(productoAdapter);
+                        }
+                        if (activity instanceof Bienvenida84EmpezarTutorial22Info2GanaderiaActivity) {
+                            Bienvenida84EmpezarTutorial22Info2GanaderiaActivity.cargarProductos(productoAdapter);
+                        }
+                        if (activity instanceof Bienvenida86EmpezarTutorial23Info2InsumosActivity) {
+                            Bienvenida86EmpezarTutorial23Info2InsumosActivity.cargarProductos(productoAdapter);
+                        }
+                        if (activity instanceof Bienvenida88mpezarTutorial24Info2MaquinariaActivity) {
+                            Bienvenida88mpezarTutorial24Info2MaquinariaActivity.cargarProductos(productoAdapter);
+                        }
+                        if (activity instanceof Bienvenida810EmpezarTutorial25Info2PescaActivity) {
+                            Bienvenida810EmpezarTutorial25Info2PescaActivity.cargarProductos(productoAdapter);
+                        }
+                        if (activity instanceof Bienvenida812EmpezarTutorial26Info2PesticidasActivity) {
+                            Bienvenida812EmpezarTutorial26Info2PesticidasActivity.cargarProductos(productoAdapter);
+                        }
                     }
                     break;
                 case "obtener_proveedores_producto":

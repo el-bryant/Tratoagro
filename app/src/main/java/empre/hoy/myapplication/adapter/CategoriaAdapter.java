@@ -71,7 +71,7 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.view
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            tuvnombrecategoria = (TextView) itemView.findViewById(R.id.tuvnombrecategoria);
+            tuvnombrecategoria = (TextView) itemView.findViewById(R.id.tvNombreCategoria);
         }
     }
 }

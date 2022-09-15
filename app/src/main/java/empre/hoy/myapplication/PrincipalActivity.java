@@ -10,7 +10,7 @@ import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.databinding.ActivityEspacioalclienteBinding;
 
 public class PrincipalActivity extends AppCompatActivity {
-    LinearLayout llaycomprarovender, llyparati, llynoticias, llyespacioalcliente, llyestadisticas, llyconfiguracion, llayCerrarSesion;
+    LinearLayout llaycomprarovender, llynoticias, llyespacioalcliente, llyestadisticas, llyconfiguracion, llayCerrarSesion;
     PrefUtil prefUtil;
 
     @Override
@@ -44,7 +44,7 @@ public class PrincipalActivity extends AppCompatActivity {
             Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
             startActivity(intent);
         });
-        llyparati.setOnClickListener(v -> {
+        llyespacioalcliente.setOnClickListener(v -> {
             Intent intent = new Intent(PrincipalActivity.this, EspacioAlClienteActivity.class);
             startActivity(intent);
         });

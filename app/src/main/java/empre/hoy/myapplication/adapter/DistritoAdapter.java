@@ -37,8 +37,8 @@ public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHo
         Categoria categoria = categorias.get(position);
         String idCategoria = categoria.getIdCategoria();
         String nombreCategoria = categoria.getNombre();
-        holder.tuvnombrecategoria.setText(nombreCategoria);
-        holder.tuvnombrecategoria.setOnClickListener(v -> {
+        holder.tvNombreCategoria.setText(nombreCategoria);
+        holder.tvNombreCategoria.setOnClickListener(v -> {
             Comprar2Activity.tvDistrito.setText(nombreCategoria);
             Comprar2Activity.rvDistrito.setVisibility(View.GONE);
         });
@@ -50,11 +50,11 @@ public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHo
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        TextView  tuvnombrecategoria;
+        TextView  tvNombreCategoria;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            tuvnombrecategoria = (TextView) itemView.findViewById(R.id.tuvnombrecategoria);
+            tvNombreCategoria = (TextView) itemView.findViewById(R.id.tvNombreCategoria);
         }
     }
 }

@@ -44,8 +44,8 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
         Categoria categoria = categorias.get(position);
         String idCategoria = categoria.getIdCategoria();
         String nombreCategoria = categoria.getNombre();
-        holder.tuvnombrecategoria.setText(nombreCategoria);
-        holder.tuvnombrecategoria.setOnClickListener(v -> {
+        holder.tvNombreCategoria.setText(nombreCategoria);
+        holder.tvNombreCategoria.setOnClickListener(v -> {
             Comprar2Activity.tvDepartamento.setText(nombreCategoria);
             Comprar2Activity.rvDepartamento.setVisibility(View.GONE);
             cargar(idCategoria);
@@ -67,11 +67,11 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        TextView  tuvnombrecategoria;
+        TextView  tvNombreCategoria;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            tuvnombrecategoria = (TextView) itemView.findViewById(R.id.tuvnombrecategoria);
+            tvNombreCategoria = (TextView) itemView.findViewById(R.id.tvNombreCategoria);
         }
     }
 }

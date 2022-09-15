@@ -175,7 +175,7 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_11_empezar_tutorial_2_6_info_1_pesticidas.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_12_empezar_tutorial_2_6_info_2_pesticidas.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_1_empezar_tutorial_2_1_info_1_fertilizantes.xml" value="0.20572916666666666" />
-        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_2_empezar_tutorial_2_1_info_2_fertilizantes.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_2_empezar_tutorial_2_1_info_2_fertilizantes.xml" value="0.3074074074074074" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_3_empezar_tutorial_2_2_info_1_ganaderia.xml" value="0.31296296296296294" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_4_empezar_tutorial_2_2_info_2_ganaderia.xml" value="0.31296296296296294" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_5_empezar_tutorial_2_3_info_1_insumos.xml" value="0.20572916666666666" />
@@ -212,6 +212,8 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadimaquinaria.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipesca.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadipestizidas.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticas_general_1.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticas_general_2.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticasgeneral.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticiasgeneral.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_estadisticiasgeneral2.xml" value="0.36666666666666664" />
@@ -252,7 +254,7 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventadeproductospesticidas.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductos.xml" value="0.2" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductosganaderia.xml" value="0.25" />
-        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_principal.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_principal.xml" value="0.3074074074074074" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_1.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_2.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_redes_sociales.xml" value="0.20572916666666666" />

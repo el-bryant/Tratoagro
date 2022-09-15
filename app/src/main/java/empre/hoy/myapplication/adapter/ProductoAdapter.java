@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -35,12 +37,12 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHo
         Producto producto = productos.get(position);
         String idProducto = producto.getIdProducto();
         String nombre = producto.getNombre();
-        holder.btnProducto.setText(nombre);
-        holder.btnProducto.setOnClickListener(v -> activity.startActivity(new
-                Intent(activity, ListaProveedoresActivity.class)
-                .putExtra("idProducto", idProducto)
-                .putExtra("nombreProducto", nombre)
-        ));
+        holder.tvNombreProducto.setText(nombre);
+//        holder.tvNombreProducto.setOnClickListener(v -> activity.startActivity(new
+//                Intent(activity, ListaProveedoresActivity.class)
+//                .putExtra("idProducto", idProducto)
+//                .putExtra("nombreProducto", nombre)
+//        ));
     }
 
     @Override
@@ -49,11 +51,11 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHo
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        Button btnProducto;
+        TextView tvNombreProducto;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            btnProducto = (Button) itemView.findViewById(R.id.btnNombreProducto);
+            tvNombreProducto = (TextView) itemView.findViewById(R.id.tvNombreProducto);
         }
     }
 }
