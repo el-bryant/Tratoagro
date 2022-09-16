@@ -62,9 +62,11 @@
         <activity android:name=".EstadiPescaActivity" />
         <activity android:name=".EstadiPesticidasActivity" />
         <activity android:name=".EstadisticasGeneralActivity" />
+        <activity android:name=".EstadisticasGeneral2Activity" />
         <activity android:name=".IniciarSesionActivity" />
         <activity android:name=".Inicio1Activity" />
         <activity android:name=".ListaProveedoresActivity" />
+        <activity android:name=".NoticiasGeneral2Activity" />
         <activity android:name=".PerfilUsuarioCompraActivity" />
         <activity android:name=".PerfilVentaProductosActivity" />
         <activity android:name=".PrincipalActivity" />

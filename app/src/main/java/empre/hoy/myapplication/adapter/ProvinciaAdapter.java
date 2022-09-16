@@ -19,30 +19,30 @@ import empre.hoy.myapplication.entity.Categoria;
 
 public class ProvinciaAdapter extends RecyclerView.Adapter<ProvinciaAdapter.viewHolder> {
     Activity activity;
-    ArrayList<Categoria> categorias;
+    ArrayList<Categoria> provincias;
     Map<String, String> params;
     WebService webService;
 
     public ProvinciaAdapter(Activity activity, ArrayList<Categoria> categorias) {
         this.activity = activity;
-        this.categorias = categorias;
+        this.provincias = categorias;
     }
 
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(activity).inflate(R.layout.item_tutorial, parent, false);
+        View v = LayoutInflater.from(activity).inflate(R.layout.item_departamento, parent, false);
         return new ProvinciaAdapter.viewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        Categoria categoria = categorias.get(position);
+        Categoria categoria = provincias.get(position);
         String idCategoria = categoria.getIdCategoria();
-        String nombreCategoria = categoria.getNombre();
-        holder.tvNombreCategoria.setText(nombreCategoria);
-        holder.tvNombreCategoria.setOnClickListener(v -> {
-            Comprar2Activity.tvProvincia.setText(nombreCategoria);
+        String nombreProvincia = categoria.getNombre();
+        holder.tvNombreProvincia.setText(nombreProvincia);
+        holder.tvNombreProvincia.setOnClickListener(v -> {
+            Comprar2Activity.tvProvincia.setText(nombreProvincia);
             Comprar2Activity.rvProvincia.setVisibility(View.GONE);
             cargar(idCategoria);
         });
@@ -59,15 +59,15 @@ public class ProvinciaAdapter extends RecyclerView.Adapter<ProvinciaAdapter.view
 
     @Override
     public int getItemCount() {
-        return categorias.size();
+        return provincias.size();
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        TextView  tvNombreCategoria;
+        TextView  tvNombreProvincia;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNombreCategoria = (TextView) itemView.findViewById(R.id.tvNombreCategoria);
+            tvNombreProvincia = (TextView) itemView.findViewById(R.id.tvNombreDepartamento);
         }
     }
 }

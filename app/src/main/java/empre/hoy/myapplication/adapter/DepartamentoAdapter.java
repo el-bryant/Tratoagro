@@ -23,30 +23,30 @@ import empre.hoy.myapplication.entity.Categoria;
 
 public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapter.viewHolder> {
     Activity activity;
-    ArrayList<Categoria> categorias;
+    ArrayList<Categoria> departamentos;
     Map<String, String> params;
     WebService webService;
 
     public DepartamentoAdapter(Activity activity, ArrayList<Categoria> categorias) {
         this.activity = activity;
-        this.categorias = categorias;
+        this.departamentos = categorias;
     }
 
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(activity).inflate(R.layout.item_tutorial, parent, false);
+        View v = LayoutInflater.from(activity).inflate(R.layout.item_departamento, parent, false);
         return new DepartamentoAdapter.viewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        Categoria categoria = categorias.get(position);
+        Categoria categoria = departamentos.get(position);
         String idCategoria = categoria.getIdCategoria();
-        String nombreCategoria = categoria.getNombre();
-        holder.tvNombreCategoria.setText(nombreCategoria);
-        holder.tvNombreCategoria.setOnClickListener(v -> {
-            Comprar2Activity.tvDepartamento.setText(nombreCategoria);
+        String nombreDepartamento = categoria.getNombre();
+        holder.tvNombreDepartamento.setText(nombreDepartamento);
+        holder.tvNombreDepartamento.setOnClickListener(v -> {
+            Comprar2Activity.tvDepartamento.setText(nombreDepartamento);
             Comprar2Activity.rvDepartamento.setVisibility(View.GONE);
             cargar(idCategoria);
         });
@@ -63,15 +63,15 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
 
     @Override
     public int getItemCount() {
-        return categorias.size();
+        return departamentos.size();
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        TextView  tvNombreCategoria;
+        TextView  tvNombreDepartamento;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNombreCategoria = (TextView) itemView.findViewById(R.id.tvNombreCategoria);
+            tvNombreDepartamento = (TextView) itemView.findViewById(R.id.tvNombreDepartamento);
         }
     }
 }

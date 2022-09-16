@@ -39,7 +39,7 @@
             android:background="@color/rojo"
             android:fontFamily="@font/aleo_bold"
             android:gravity="center"
-            android:text="Porfavor selecciona cualquier de las opciones"
+            android:text="Porfavor selecciona cualquiera de las opciones"
             android:textColor="@color/blanco"
             android:textSize="15dp"
             android:layout_marginTop="30dp" />
@@ -61,17 +61,18 @@
             android:layout_weight="1" >
 
             <LinearLayout
+                android:id="@+id/llayComprarVender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/llaycomprarovender"
                 android:gravity="center"
                 android:layout_marginBottom="30dp" >
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_ico_recurso_2" />
+                    android:src="@drawable/ic_ico_recurso_2"
+                    android:tint="@color/dorado1"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -86,21 +87,22 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/llayEstadisticas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:gravity="center"
-                android:id="@+id/llyestadisticas" >
+                android:gravity="center" >
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_estaganaderia2" />
+                    android:src="@drawable/ic_estaganaderia2"
+                    android:tint="@color/dorado1"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ESTADISTICAS"
+                    android:text="ESTADÍSTICAS"
                     android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
@@ -129,12 +131,12 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/ic_cerrarsesion"
-                    android:tint="@color/rojo" />
+                    android:tint="@color/dorado1" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CERRAR SESION"
+                    android:text="CERRAR SESIÓN"
                     android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
@@ -144,11 +146,11 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/llayNoticias"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/llynoticias"
                 android:layout_marginTop="16dp" >
 
                 <ImageView
@@ -177,10 +179,10 @@
             android:layout_weight="1" >
 
             <LinearLayout
+                android:id="@+id/llayEspacioCliente"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:id="@+id/llyespacioalcliente"
                 android:gravity="center"
                 android:layout_marginBottom="30dp" >
 
@@ -202,23 +204,23 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/llayConocenos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/llyconfiguracion"
                 android:layout_marginTop="16dp">
 
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_configuraciones"
-                    android:tint="@color/rojo" />
+                    android:src="@drawable/ubicacion1"
+                    android:tint="@color/dorado1" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CONFIGURACION"
+                    android:text="CONÓCENOS MÁS"
                     android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"

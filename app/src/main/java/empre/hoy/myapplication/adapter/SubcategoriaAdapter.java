@@ -20,6 +20,7 @@ import empre.hoy.myapplication.Bienvenida82EmpezarTutorial21Info2FertilizantesAc
 import empre.hoy.myapplication.Bienvenida84EmpezarTutorial22Info2GanaderiaActivity;
 import empre.hoy.myapplication.Bienvenida86EmpezarTutorial23Info2InsumosActivity;
 import empre.hoy.myapplication.Bienvenida88mpezarTutorial24Info2MaquinariaActivity;
+import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
@@ -79,6 +80,10 @@ public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapte
                 Bienvenida812EmpezarTutorial26Info2PesticidasActivity.rvSubcategoriasPesticidas.setVisibility(View.GONE);
                 Bienvenida812EmpezarTutorial26Info2PesticidasActivity.tvSubcategoria.setText(nombreCategoria);
                 Bienvenida812EmpezarTutorial26Info2PesticidasActivity.tvSubcategoria.setVisibility(View.VISIBLE);
+            }
+            if (activity instanceof Comprar2Activity) {
+                Comprar2Activity.rvSubcategoria.setVisibility(View.GONE);
+                Comprar2Activity.tvSubcategoria.setText(nombreCategoria);
             }
             cargar(idSubcategoria);
         });

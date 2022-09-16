@@ -27,11 +27,11 @@ public class SplashScreenActivity extends AppCompatActivity {
             }
             @Override
             public void onFinish() {
-                if (prefUtil.getStringValue(PrefUtil.LOGIN_STATUS).equals("1")) {
+//                if (prefUtil.getStringValue(PrefUtil.LOGIN_STATUS).equals("1")) {
                     startActivity(new Intent(SplashScreenActivity.this, Bienvenida2Activity.class));
-                } else {
-                    startActivity(new Intent(SplashScreenActivity.this, Inicio1Activity.class));
-                }
+//                } else {
+//                    startActivity(new Intent(SplashScreenActivity.this, Inicio1Activity.class));
+//                }
                 finish();
             }
         }.start();

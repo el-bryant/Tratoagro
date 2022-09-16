@@ -10,7 +10,7 @@ import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.databinding.ActivityEspacioalclienteBinding;
 
 public class PrincipalActivity extends AppCompatActivity {
-    LinearLayout llaycomprarovender, llynoticias, llyespacioalcliente, llyestadisticas, llyconfiguracion, llayCerrarSesion;
+    LinearLayout llayComprarVender, llayNoticias, llayEspacioCliente, llayEstadisticas, llayConocenos, llayCerrarSesion;
     PrefUtil prefUtil;
 
     @Override
@@ -18,35 +18,31 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         prefUtil = new PrefUtil(this);
-        llaycomprarovender = (LinearLayout) findViewById(R.id.llaycomprarovender);
-        llyestadisticas = (LinearLayout) findViewById(R.id.llyestadisticas);
+        llayComprarVender = (LinearLayout) findViewById(R.id.llayComprarVender);
+        llayEstadisticas = (LinearLayout) findViewById(R.id.llayEstadisticas);
         llayCerrarSesion = (LinearLayout) findViewById(R.id.llayCerrarSesion);
-        llynoticias = (LinearLayout) findViewById(R.id.llynoticias);
-        llyespacioalcliente = (LinearLayout) findViewById(R.id.llyespacioalcliente);
-        llyconfiguracion = (LinearLayout) findViewById(R.id.llyconfiguracion);
-        llaycomprarovender.setOnClickListener(v -> {
-            Intent intent = new Intent(PrincipalActivity.this, IniciarSesionActivity.class);
-            startActivity(intent);
+        llayNoticias = (LinearLayout) findViewById(R.id.llayNoticias);
+        llayEspacioCliente = (LinearLayout) findViewById(R.id.llayEspacioCliente);
+        llayConocenos = (LinearLayout) findViewById(R.id.llayConocenos);
+        llayComprarVender.setOnClickListener(v -> {
+            startActivity(new Intent(PrincipalActivity.this, ComprarVenderActivity.class));
         });
         llayCerrarSesion.setOnClickListener(v -> {
             prefUtil.clearAll();
             startActivity(new Intent(PrincipalActivity.this, IniciarSesionActivity.class));
+            finish();
         });
-        llyestadisticas.setOnClickListener(v -> {
-            Intent intent = new Intent(PrincipalActivity.this, EstadisticasGeneralActivity.class);
-            startActivity(intent);
+        llayEstadisticas.setOnClickListener(v -> {
+            startActivity(new Intent(PrincipalActivity.this, EstadisticasGeneral2Activity.class));
         });
-        llynoticias.setOnClickListener(v -> {
-            Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
-            startActivity(intent);
+        llayNoticias.setOnClickListener(v -> {
+            startActivity(new Intent(PrincipalActivity.this, NoticiasGeneral2Activity.class));
         });
-        llyconfiguracion.setOnClickListener(v -> {
-            Intent intent = new Intent(PrincipalActivity.this, UbicanosActivity.class);
-            startActivity(intent);
+        llayConocenos.setOnClickListener(v -> {
+//            startActivity(new Intent(PrincipalActivity.this, UbicanosActivity.class));
         });
-        llyespacioalcliente.setOnClickListener(v -> {
-            Intent intent = new Intent(PrincipalActivity.this, EspacioAlClienteActivity.class);
-            startActivity(intent);
+        llayEspacioCliente.setOnClickListener(v -> {
+            startActivity(new Intent(PrincipalActivity.this, EspacioAlClienteActivity.class));
         });
     }
 }

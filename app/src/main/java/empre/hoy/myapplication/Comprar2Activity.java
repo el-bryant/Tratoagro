@@ -14,6 +14,7 @@ import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.DepartamentoAdapter;
 import empre.hoy.myapplication.adapter.DistritoAdapter;
 import empre.hoy.myapplication.adapter.ProvinciaAdapter;
+import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Comprar2Activity extends AppCompatActivity {
     public static Map<String, String> params;
@@ -21,12 +22,16 @@ public class Comprar2Activity extends AppCompatActivity {
     TextView tvTipoComerciante, tvMinorista, tvMayorista;
     public static TextView tvDepartamento, tvProvincia, tvDistrito, tvSubcategoria, tvProducto;
     public static RecyclerView rvDepartamento, rvProvincia, rvDistrito, rvSubcategoria, rvProducto;
+    public static String idCategoria;
     public static WebService webService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comprar_2);
+        if (getIntent().getExtras() != null) {
+            idCategoria = getIntent().getStringExtra("categoria");
+        }
         webService = new WebService(this);
         tvTipoUsuario = (TextView) findViewById(R.id.tvTipoUsuario);
         tvPersonaNatural = (TextView) findViewById(R.id.tvPersonaNatural);
@@ -94,6 +99,7 @@ public class Comprar2Activity extends AppCompatActivity {
         });
         tvSubcategoria.setOnClickListener(v -> {
             rvSubcategoria.setVisibility(View.VISIBLE);
+            obtenerSubcategorias();
         });
         tvProducto.setOnClickListener(v -> {
             rvProducto.setVisibility(View.VISIBLE);
@@ -118,8 +124,15 @@ public class Comprar2Activity extends AppCompatActivity {
         rvDistrito.setAdapter(distritoAdapter);
     }
 
-    public static void buscarSubcategorias() {
+    public void obtenerSubcategorias() {
+        params = new HashMap<>();
+        params.put("categoria", idCategoria);
+        webService.consulta(params, "obtener_subcategorias.php");
+    }
 
+    public static void cargarSubcategorias(SubcategoriaAdapter subcategoriaAdapter) {
+        rvSubcategoria.setVisibility(View.VISIBLE);
+        rvSubcategoria.setAdapter(subcategoriaAdapter);
     }
 
     public static void buscarProductos() {

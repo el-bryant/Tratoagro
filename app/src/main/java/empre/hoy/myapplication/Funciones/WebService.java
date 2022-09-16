@@ -408,27 +408,57 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         switch (idCategoria) {
                             case "1":
                                 //Ganaderia
-                                Bienvenida84EmpezarTutorial22Info2GanaderiaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                if (activity instanceof Bienvenida84EmpezarTutorial22Info2GanaderiaActivity) {
+                                    Bienvenida84EmpezarTutorial22Info2GanaderiaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                }
+                                if (activity instanceof Comprar2Activity) {
+                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
+                                }
                                 break;
                             case "2":
                                 //Maquinaria
-                                Bienvenida88mpezarTutorial24Info2MaquinariaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                if (activity instanceof Bienvenida88mpezarTutorial24Info2MaquinariaActivity) {
+                                    Bienvenida88mpezarTutorial24Info2MaquinariaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                }
+                                if (activity instanceof Comprar2Activity) {
+                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
+                                }
                                 break;
                             case "3":
                                 //Insumos
-                                Bienvenida86EmpezarTutorial23Info2InsumosActivity.cargarSubcategorias(subcategoriaAdapter);
+                                if (activity instanceof Bienvenida86EmpezarTutorial23Info2InsumosActivity) {
+                                    Bienvenida86EmpezarTutorial23Info2InsumosActivity.cargarSubcategorias(subcategoriaAdapter);
+                                }
+                                if (activity instanceof Comprar2Activity) {
+                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
+                                }
                                 break;
                             case "4":
                                 //Pesticidas
-                                Bienvenida812EmpezarTutorial26Info2PesticidasActivity.cargarSubcategorias(subcategoriaAdapter);
+                                if (activity instanceof Bienvenida812EmpezarTutorial26Info2PesticidasActivity) {
+                                    Bienvenida812EmpezarTutorial26Info2PesticidasActivity.cargarSubcategorias(subcategoriaAdapter);
+                                }
+                                if (activity instanceof Comprar2Activity) {
+                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
+                                }
                                 break;
                             case "5":
                                 //Fertilizantes
-                                Bienvenida82EmpezarTutorial21Info2FertilizantesActivity.cargarSubcategorias(subcategoriaAdapter);
+                                if (activity instanceof Bienvenida82EmpezarTutorial21Info2FertilizantesActivity) {
+                                    Bienvenida82EmpezarTutorial21Info2FertilizantesActivity.cargarSubcategorias(subcategoriaAdapter);
+                                }
+                                if (activity instanceof Comprar2Activity) {
+                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
+                                }
                                 break;
                             case "6":
                                 //Pescados
-                                Bienvenida810EmpezarTutorial25Info2PescaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                if (activity instanceof Bienvenida810EmpezarTutorial25Info2PescaActivity) {
+                                    Bienvenida810EmpezarTutorial25Info2PescaActivity.cargarSubcategorias(subcategoriaAdapter);
+                                }
+                                if (activity instanceof Comprar2Activity) {
+                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
+                                }
                                 break;
                         }
 //                        PerfilVentaProductosActivity.cargarSubcategorias(subcategoriaAdapter);

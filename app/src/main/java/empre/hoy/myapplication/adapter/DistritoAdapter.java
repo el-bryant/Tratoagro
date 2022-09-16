@@ -16,45 +16,45 @@ import empre.hoy.myapplication.entity.Categoria;
 
 public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHolder> {
     Activity activity;
-    ArrayList<Categoria> categorias;
+    ArrayList<Categoria> distritos;
     Map<String, String> params;
     WebService webService;
 
     public DistritoAdapter(Activity activity, ArrayList<Categoria> categorias) {
         this.activity = activity;
-        this.categorias = categorias;
+        this.distritos = categorias;
     }
 
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(activity).inflate(R.layout.item_tutorial, parent, false);
+        View v = LayoutInflater.from(activity).inflate(R.layout.item_departamento, parent, false);
         return new DistritoAdapter.viewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        Categoria categoria = categorias.get(position);
+        Categoria categoria = distritos.get(position);
         String idCategoria = categoria.getIdCategoria();
-        String nombreCategoria = categoria.getNombre();
-        holder.tvNombreCategoria.setText(nombreCategoria);
-        holder.tvNombreCategoria.setOnClickListener(v -> {
-            Comprar2Activity.tvDistrito.setText(nombreCategoria);
+        String nombreDistrito = categoria.getNombre();
+        holder.tvNombreDistrito.setText(nombreDistrito);
+        holder.tvNombreDistrito.setOnClickListener(v -> {
+            Comprar2Activity.tvDistrito.setText(nombreDistrito);
             Comprar2Activity.rvDistrito.setVisibility(View.GONE);
         });
     }
 
     @Override
     public int getItemCount() {
-        return categorias.size();
+        return distritos.size();
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        TextView  tvNombreCategoria;
+        TextView  tvNombreDistrito;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            tvNombreCategoria = (TextView) itemView.findViewById(R.id.tvNombreCategoria);
+            tvNombreDistrito = (TextView) itemView.findViewById(R.id.tvNombreDepartamento);
         }
     }
 }

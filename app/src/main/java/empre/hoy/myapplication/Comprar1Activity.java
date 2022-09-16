@@ -31,34 +31,22 @@ public class Comprar1Activity extends AppCompatActivity {
         btnPesticidas = (FrameLayout) findViewById(R.id.flayPesticidas);
         btnFertilizantes = (FrameLayout) findViewById(R.id.flayFertilizantes);
         btnGanaderia.setOnClickListener(v -> {
-            Intent intent = new Intent(Comprar1Activity.this, Comprar2Activity.class);
-            intent.putExtra("categoria", "1");
-            startActivity(intent);
+            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "1"));
         });
         btnPesca.setOnClickListener(v -> {
-            Intent intent = new Intent(Comprar1Activity.this, Comprar2Activity.class);
-            intent.putExtra("categoria", "6");
-            startActivity(intent);
+            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "6"));
         });
         btnMaquinaria.setOnClickListener(v -> {
-            Intent intent = new Intent(Comprar1Activity.this, Comprar2Activity.class);
-            intent.putExtra("categoria", "2");
-            startActivity(intent);
+            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "2"));
         });
         btnInsumos.setOnClickListener(v -> {
-            Intent intent = new Intent(Comprar1Activity.this, Comprar2Activity.class);
-            intent.putExtra("categoria", "3");
-            startActivity(intent);
+            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "3"));
         });
         btnPesticidas.setOnClickListener(v -> {
-            Intent intent = new Intent(Comprar1Activity.this, Comprar2Activity.class);
-            intent.putExtra("categoria", "4");
-            startActivity(intent);
+            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "4"));
         });
         btnFertilizantes.setOnClickListener(v -> {
-            Intent intent = new Intent(Comprar1Activity.this, Comprar2Activity.class);
-            intent.putExtra("categoria", "5");
-            startActivity(intent);
+            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "5"));
         });
     }
 

@@ -18,28 +18,26 @@
             android:layout_margin="30dp"
             android:orientation="vertical">
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Porfavor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
                 android:fontFamily="@font/aleo_bold"
-                android:textSize="13sp"
+                android:text="Por favor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
+                android:textAlignment="center"
                 android:textColor="@color/marron1"
-                android:layout_marginTop="11.5dp"
-                android:textAlignment="center" />
+                android:textSize="13sp" />
 
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="20dp"
-                android:layout_marginStart="35dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="30dp" >
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="@drawable/boton_rojo"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
@@ -49,14 +47,13 @@
                         android:id="@+id/tvTipoUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/representantelegal"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
-                        android:text="TIPO DE USUARIO"
-                        android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
-                        android:drawableStart="@drawable/representantelegal"
-                        android:textColor="@color/color20"
-                        android:paddingStart="10dp"/>
+                        android:gravity="center"
+                        android:text="TIPO DE USUARIO"
+                        android:textColor="@color/color20" />
 
                     <TextView
                         android:id="@+id/tvPersonaNatural"
@@ -64,6 +61,7 @@
                         android:layout_height="wrap_content"
                         android:text="Persona natural"
                         android:textColor="@color/blanco"
+                        android:textAlignment="center"
                         android:visibility="gone" />
 
                     <TextView
@@ -72,6 +70,7 @@
                         android:layout_height="wrap_content"
                         android:text="Persona jurídica"
                         android:textColor="@color/blanco"
+                        android:textAlignment="center"
                         android:visibility="gone" />
 
                 </LinearLayout>
@@ -79,16 +78,15 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginVertical="2dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="@drawable/boton_rojo"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
@@ -98,14 +96,13 @@
                         android:id="@+id/tvTipoComerciante"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_comerciante"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text="MAYORITA/MINORISTA"
-                        android:drawableStart="@drawable/ic_comerciante"
-                        android:textColor="@color/color20"
-                        android:paddingStart="10dp"/>
+                        android:textColor="@color/color20" />
 
                     <TextView
                         android:id="@+id/tvMayorista"
@@ -113,6 +110,7 @@
                         android:layout_height="wrap_content"
                         android:text="Mayorista"
                         android:textColor="@color/blanco"
+                        android:textAlignment="center"
                         android:visibility="gone" />
 
                     <TextView
@@ -121,6 +119,7 @@
                         android:layout_height="wrap_content"
                         android:text="Minorista"
                         android:textColor="@color/blanco"
+                        android:textAlignment="center"
                         android:visibility="gone" />
 
                 </LinearLayout>
@@ -128,33 +127,31 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginVertical="12dp"
-                android:orientation="horizontal">
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal" >
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="@drawable/boton_rojo"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvDepartamento"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:drawableStart="@drawable/ic_peru"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
-                        android:text="DEPARTAMENTO"
                         android:fontFamily="@font/aleo_bold"
-                        android:drawableStart="@drawable/ic_peru"
-                        android:paddingStart="10dp"
                         android:gravity="center"
-                        android:textColor="@color/color20"
-                        android:layout_marginHorizontal="15dp" />
+                        android:text="DEPARTAMENTO"
+                        android:textColor="@color/color20" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvDepartamento"
@@ -167,33 +164,31 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginVertical="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="@drawable/boton_rojo"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvProvincia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:drawableStart="@drawable/ic_peru"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
-                        android:text="PROVINCIA"
                         android:fontFamily="@font/aleo_bold"
-                        android:paddingStart="10dp"
                         android:gravity="center"
-                        android:drawableStart="@drawable/ic_peru"
-                        android:textColor="@color/color20"
-                        android:layout_marginHorizontal="15dp" />
+                        android:text="PROVINCIA"
+                        android:textColor="@color/color20" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProvincia"
@@ -206,33 +201,31 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginVertical="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="@drawable/boton_rojo"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvDistrito"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:drawableStart="@drawable/ic_peru"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
-                        android:text="DISTRITO"
-                        android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
-                        android:paddingStart="10dp"
-                        android:drawableStart="@drawable/ic_peru"
-                        android:textColor="@color/color20"
-                        android:layout_marginHorizontal="15dp" />
+                        android:gravity="center"
+                        android:text="DISTRITO"
+                        android:textColor="@color/color20" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvDistrito"
@@ -245,55 +238,53 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginVertical="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="@drawable/boton_rojo"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvSubcategoria"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:drawableStart="@drawable/ic_ico_recurso_2"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
-                        android:text="  SUBCATEGORIA"
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
-                        android:paddingStart="10dp"
-                        android:drawableStart="@drawable/ic_ico_recurso_2"
-                        android:textColor="@color/color20"
-                        android:layout_marginHorizontal="15dp" />
+                        android:text="  SUBCATEGORIA"
+                        android:textColor="@color/color20" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvSubcategoria"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:visibility="gone" />
+                        android:visibility="gone"
+                        android:layout_marginHorizontal="15dp" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="280dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginVertical="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="30dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:background="@drawable/boton_rojo"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
@@ -302,15 +293,14 @@
                         android:id="@+id/tvProducto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:drawableStart="@drawable/ic_ico_recurso_1"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
-                        android:text=" PRODUCTO"
-                        android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
-                        android:paddingStart="10dp"
-                        android:drawableStart="@drawable/ic_ico_recurso_1"
-                        android:textColor="@color/color20"
-                        android:layout_marginHorizontal="15dp" />
+                        android:gravity="center"
+                        android:text=" PRODUCTO"
+                        android:textColor="@color/color20" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProducto"
@@ -320,13 +310,23 @@
 
                 </LinearLayout>
 
-
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivMenuPrincipal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:src="@drawable/ic_derecha"
+                android:tint="@color/dorado1"
+                android:background="@drawable/boton_rojo"
+                android:layout_gravity="end"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp" />
 
         </LinearLayout>
 
-
     </ScrollView>
-
 
 </RelativeLayout>

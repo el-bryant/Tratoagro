@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DatosNatural1Activity"
     android:theme="@style/Material"
     android:background="@mipmap/machupichu2" >
 
