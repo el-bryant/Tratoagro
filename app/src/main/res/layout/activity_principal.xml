@@ -36,13 +36,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/rojo"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/aleo_bold"
             android:gravity="center"
             android:text="Porfavor selecciona cualquiera de las opciones"
             android:textColor="@color/blanco"
-            android:textSize="15dp"
-            android:layout_marginTop="30dp" />
+            android:textSize="15dp" />
 
     </LinearLayout>
 

@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/hind"
+            android:fontFamily="@font/aleo_bold"
             android:textSize="15sp"
             android:textColor="@color/blanco"
             android:text="Estimado usuario esta categoría hace referencia a aquella actividad que se realiza para extraer peces. Puede realizarse en aguas continentales o marítimas. "

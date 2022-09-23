@@ -43,6 +43,19 @@
                     android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GANADERÍA"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="start" />
+
                     <ImageView
                         android:layout_width="75dp"
                         android:layout_gravity="center"
@@ -68,6 +81,19 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PESCA"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="start" />
 
                     <ImageView
                         android:layout_width="75dp"
@@ -95,6 +121,19 @@
                     android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MAQUINARIA"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="start" />
+
                     <ImageView
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -120,6 +159,19 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="INSUMOS"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="start" />
 
                     <ImageView
                         android:layout_width="75dp"
@@ -147,6 +199,19 @@
                     android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PESTICIDAS"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="start" />
+
                     <ImageView
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -172,6 +237,19 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/boton_rojo"
                     android:layout_marginHorizontal="15dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FERTILIZANTES"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="27dp"
+                        android:layout_marginTop="60dp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="textEnd"
+                        android:gravity="start" />
 
                     <ImageView
                         android:layout_width="75dp"

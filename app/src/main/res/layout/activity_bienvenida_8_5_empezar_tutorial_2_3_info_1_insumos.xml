@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/hind"
+            android:fontFamily="@font/aleo_bold"
             android:textSize="15sp"
             android:textColor="@color/blanco"
             android:text="Estimado usuario esta categoría hace referencia al insumo, que es toda aquella cosa susceptible de dar servicio y paliar necesidades del ser humano, es decir, nos referimos a todas las materias primas que son utilizadas para producir nuevos elementos."

@@ -28,9 +28,9 @@
         android:layout_marginEnd="27dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/negro"
+        android:textColor="@color/marron1"
         android:layout_marginBottom="20dp"
-        android:gravity="start" />
+        android:gravity="center" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Mayorista"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/dorado1"
                     android:textAllCaps="false"
                     android:background="@drawable/botonnegro"
                     android:layout_marginHorizontal="5dp" />
@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Minorista"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/dorado1"
                     android:textAllCaps="false"
                     android:background="@drawable/botonnegro"
                     android:layout_marginHorizontal="5dp"

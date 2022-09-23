@@ -31,9 +31,9 @@
             android:layout_marginEnd="27dp"
             android:layout_marginTop="60dp"
             android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/negro"
+            android:textColor="@color/marron1"
             android:layout_marginBottom="20dp"
-            android:gravity="start" />
+            android:gravity="center" />
 
         <ScrollView
             android:layout_width="match_parent"

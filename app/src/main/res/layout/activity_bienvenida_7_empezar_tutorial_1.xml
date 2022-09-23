@@ -29,18 +29,18 @@
         android:textAlignment="center"
         app:background_ColorType="gradient_sweep"
         app:background_Gradient_Angle="-0"
-        app:background_Gradient_Color0="@color/marron1"
-        app:background_Gradient_ColorEnd="@color/dorado1"
+        app:background_Gradient_Color0="@color/rojo"
+        app:background_Gradient_ColorEnd="@color/negro"
         app:cornerRadius="25dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:fontFamily="@font/aleo_bold"
             android:gravity="center"
-            android:layout_gravity="center"
             android:text="EMPEZAR TUTORIAL"
-            android:textColor="@color/marron1"
+            android:textColor="@color/dorado1"
             android:textSize="22sp" />
 
     </com.sinaseyfi.advancedcardview.AdvancedCardView>
