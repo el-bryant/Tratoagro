@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoFertilizantes;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +42,7 @@ public class Bienvenida82EmpezarTutorial21Info2FertilizantesActivity extends App
         tvSubcategoria = (TextView) findViewById(R.id.tvSubcategoria);
         rvProductosFertilizantes.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasFertilizantes.setLayoutManager(new LinearLayoutManager(this));
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/fertilizantes.jpg").into(ivFondo);
+        Picasso.get().load(fondoFertilizantes).into(ivFondo);
         btnSucbategoriasFertilizantes.setOnClickListener(v -> {
             obtenerSubcategorias();
         });

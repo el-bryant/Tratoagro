@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Map;
 import empre.hoy.myapplication.Comprar2Activity;
+import empre.hoy.myapplication.EstadisticasGeneral2Activity;
+import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.R;
 import empre.hoy.myapplication.entity.Categoria;
@@ -39,8 +41,14 @@ public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHo
         String nombreDistrito = categoria.getNombre();
         holder.tvNombreDistrito.setText(nombreDistrito);
         holder.tvNombreDistrito.setOnClickListener(v -> {
-            Comprar2Activity.tvDistrito.setText(nombreDistrito);
-            Comprar2Activity.rvDistrito.setVisibility(View.GONE);
+            if (activity instanceof Comprar2Activity) {
+                Comprar2Activity.tvDistrito.setText(nombreDistrito);
+                Comprar2Activity.rvDistrito.setVisibility(View.GONE);
+            }
+            if (activity instanceof EstadisticasGeneralActivity) {
+                EstadisticasGeneralActivity.tvDistrito.setText(nombreDistrito);
+                EstadisticasGeneralActivity.rvDistrito.setVisibility(View.GONE);
+            }
         });
     }
 

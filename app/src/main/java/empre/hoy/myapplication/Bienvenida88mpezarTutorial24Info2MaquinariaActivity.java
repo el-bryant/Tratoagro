@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoMaquinaria;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +42,7 @@ public class Bienvenida88mpezarTutorial24Info2MaquinariaActivity extends AppComp
         tvSubcategoria = (TextView) findViewById(R.id.tvSubcategoria);
         rvProductosMaquinaria.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasMaquinaria.setLayoutManager(new LinearLayoutManager(this));
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/maquinaria.jpg").into(ivFondo);
+        Picasso.get().load(fondoMaquinaria).into(ivFondo);
         btnSubcategoriasMaquinaria.setOnClickListener(v -> {
             obtenerSubcategorias();
         });

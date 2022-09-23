@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGeneral;
+
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
@@ -16,6 +18,7 @@ import android.provider.Settings;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -23,6 +26,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -37,6 +41,7 @@ public class Bienvenida6DatosNatural1Activity extends AppCompatActivity {
     boolean ubicacionObtenida;
     Button btnSiguiente;
     double latitud = 0.0, longitud = 0.0;
+    ImageView ivFondo;
     Map<String, String> params;
     PrefUtil prefUtil;
     public static EditText etDni, etApellidos, etNombres, etUbicacion;
@@ -53,6 +58,8 @@ public class Bienvenida6DatosNatural1Activity extends AppCompatActivity {
         etDni = (EditText) findViewById(R.id.etDni);
         etNombres = (EditText) findViewById(R.id.etNombres);
         etUbicacion = (EditText) findViewById(R.id.etUbicacion);
+        ivFondo = (ImageView) findViewById(R.id.ivFondo);
+        Picasso.get().load(fondoGeneral).into(ivFondo);
         btnSiguiente.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida6DatosNatural1Activity.this, Bienvenida6DatosNatural2Activity.class));
             finish();

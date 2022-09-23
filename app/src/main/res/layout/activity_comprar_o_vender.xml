@@ -6,9 +6,9 @@
     android:layout_height="match_parent" >
 
     <ImageView
+        android:id="@+id/ivFondo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/machupichu2"
         android:scaleType="centerCrop" />
 
     <LinearLayout

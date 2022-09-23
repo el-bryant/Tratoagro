@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
+import empre.hoy.myapplication.Comprar2Activity;
+import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.ListaProveedoresActivity;
 import empre.hoy.myapplication.R;
 import empre.hoy.myapplication.entity.Producto;
@@ -38,11 +40,20 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHo
         String idProducto = producto.getIdProducto();
         String nombre = producto.getNombre();
         holder.tvNombreProducto.setText(nombre);
-//        holder.tvNombreProducto.setOnClickListener(v -> activity.startActivity(new
+        holder.tvNombreProducto.setOnClickListener(v -> {
+            if (activity instanceof Comprar2Activity) {
+                Comprar2Activity.tvProducto.setText(nombre);
+                Comprar2Activity.rvProducto.setVisibility(View.GONE);
+            }
+            if (activity instanceof EstadisticasGeneralActivity) {
+                EstadisticasGeneralActivity.tvProducto.setText(nombre);
+                EstadisticasGeneralActivity.rvProducto.setVisibility(View.GONE);
+            }
+//                    activity.startActivity(new
 //                Intent(activity, ListaProveedoresActivity.class)
 //                .putExtra("idProducto", idProducto)
 //                .putExtra("nombreProducto", nombre)
-//        ));
+        });
     }
 
     @Override

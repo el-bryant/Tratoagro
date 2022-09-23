@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoInsumos;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +42,7 @@ public class Bienvenida86EmpezarTutorial23Info2InsumosActivity extends AppCompat
         tvSubcategoria = (TextView) findViewById(R.id.tvSubcategoria);
         rvProductosInsumos.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasInsumos.setLayoutManager(new LinearLayoutManager(this));
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/insumos.jpg").into(ivFondo);
+        Picasso.get().load(fondoInsumos).into(ivFondo);
         btnSubcategoriasInsumos.setOnClickListener(v -> {
             obtenerSubcategorias();
         });

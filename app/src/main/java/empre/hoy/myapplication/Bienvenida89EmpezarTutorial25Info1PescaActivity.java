@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoPesca;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,7 +22,7 @@ public class Bienvenida89EmpezarTutorial25Info1PescaActivity extends AppCompatAc
         setContentView(R.layout.activity_bienvenida_8_9_empezar_tutorial_2_5_info_1_pesca);
         btnContinuar = (Button) findViewById(R.id.btnContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/pesca.jpg").into(ivFondo);
+        Picasso.get().load(fondoPesca).into(ivFondo);
         btnContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida89EmpezarTutorial25Info1PescaActivity.this, Bienvenida810EmpezarTutorial25Info2PescaActivity.class));
             finish();

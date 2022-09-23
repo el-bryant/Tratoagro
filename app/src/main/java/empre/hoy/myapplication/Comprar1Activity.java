@@ -1,18 +1,25 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGeneral;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.entity.ItemCarrito;
 
 public class Comprar1Activity extends AppCompatActivity {
     FrameLayout btnGanaderia, btnPesca, btnMaquinaria, btnInsumos, btnPesticidas, btnFertilizantes;
+    ImageView ivFondo;
     public static ArrayList<ItemCarrito> itemsCarrito;
     public static double total;
     PrefUtil prefUtil;
@@ -30,6 +37,8 @@ public class Comprar1Activity extends AppCompatActivity {
         btnInsumos = (FrameLayout) findViewById(R.id.flayInsumos);
         btnPesticidas = (FrameLayout) findViewById(R.id.flayPesticidas);
         btnFertilizantes = (FrameLayout) findViewById(R.id.flayFertilizantes);
+        ivFondo = (ImageView) findViewById(R.id.ivFondo);
+        Picasso.get().load(fondoGeneral).into(ivFondo);
         btnGanaderia.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "1"));
         });
@@ -48,10 +57,5 @@ public class Comprar1Activity extends AppCompatActivity {
         btnFertilizantes.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "5"));
         });
-    }
-
-    @Override
-    public void onBackPressed() {
-        finishAffinity();
     }
 }

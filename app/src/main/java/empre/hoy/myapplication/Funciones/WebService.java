@@ -40,6 +40,7 @@ import empre.hoy.myapplication.EstadiInsumosActivity;
 import empre.hoy.myapplication.EstadiMaquinariaActivity;
 import empre.hoy.myapplication.EstadiPescaActivity;
 import empre.hoy.myapplication.EstadiPesticidasActivity;
+import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.IniciarSesionActivity;
 import empre.hoy.myapplication.ListaProveedoresActivity;
 import empre.hoy.myapplication.Comprar1Activity;
@@ -411,17 +412,11 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                                 if (activity instanceof Bienvenida84EmpezarTutorial22Info2GanaderiaActivity) {
                                     Bienvenida84EmpezarTutorial22Info2GanaderiaActivity.cargarSubcategorias(subcategoriaAdapter);
                                 }
-                                if (activity instanceof Comprar2Activity) {
-                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
-                                }
                                 break;
                             case "2":
                                 //Maquinaria
                                 if (activity instanceof Bienvenida88mpezarTutorial24Info2MaquinariaActivity) {
                                     Bienvenida88mpezarTutorial24Info2MaquinariaActivity.cargarSubcategorias(subcategoriaAdapter);
-                                }
-                                if (activity instanceof Comprar2Activity) {
-                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
                                 }
                                 break;
                             case "3":
@@ -429,17 +424,11 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                                 if (activity instanceof Bienvenida86EmpezarTutorial23Info2InsumosActivity) {
                                     Bienvenida86EmpezarTutorial23Info2InsumosActivity.cargarSubcategorias(subcategoriaAdapter);
                                 }
-                                if (activity instanceof Comprar2Activity) {
-                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
-                                }
                                 break;
                             case "4":
                                 //Pesticidas
                                 if (activity instanceof Bienvenida812EmpezarTutorial26Info2PesticidasActivity) {
                                     Bienvenida812EmpezarTutorial26Info2PesticidasActivity.cargarSubcategorias(subcategoriaAdapter);
-                                }
-                                if (activity instanceof Comprar2Activity) {
-                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
                                 }
                                 break;
                             case "5":
@@ -447,19 +436,19 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                                 if (activity instanceof Bienvenida82EmpezarTutorial21Info2FertilizantesActivity) {
                                     Bienvenida82EmpezarTutorial21Info2FertilizantesActivity.cargarSubcategorias(subcategoriaAdapter);
                                 }
-                                if (activity instanceof Comprar2Activity) {
-                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
-                                }
                                 break;
                             case "6":
                                 //Pescados
                                 if (activity instanceof Bienvenida810EmpezarTutorial25Info2PescaActivity) {
                                     Bienvenida810EmpezarTutorial25Info2PescaActivity.cargarSubcategorias(subcategoriaAdapter);
                                 }
-                                if (activity instanceof Comprar2Activity) {
-                                    Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
-                                }
                                 break;
+                        }
+                        if (activity instanceof Comprar2Activity) {
+                            Comprar2Activity.cargarSubcategorias(subcategoriaAdapter);
+                        }
+                        if (activity instanceof EstadisticasGeneralActivity) {
+                            EstadisticasGeneralActivity.cargarSubcategorias(subcategoriaAdapter);
                         }
 //                        PerfilVentaProductosActivity.cargarSubcategorias(subcategoriaAdapter);
                     }
@@ -495,6 +484,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                         if (activity instanceof Bienvenida812EmpezarTutorial26Info2PesticidasActivity) {
                             Bienvenida812EmpezarTutorial26Info2PesticidasActivity.cargarProductos(productoAdapter);
+                        }
+                        if (activity instanceof Comprar2Activity) {
+                            Comprar2Activity.buscarProductos(productoAdapter);
+                        }
+                        if (activity instanceof EstadisticasGeneralActivity) {
+                            EstadisticasGeneralActivity.buscarProductos(productoAdapter);
                         }
                     }
                     break;
@@ -584,7 +579,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             categorias.add(categoria);
                         }
                         DepartamentoAdapter departamentoAdapter = new DepartamentoAdapter(activity, categorias);
-                        Comprar2Activity.cargarDepartamentos(departamentoAdapter);
+                        if (activity instanceof Comprar2Activity) {
+                            Comprar2Activity.cargarDepartamentos(departamentoAdapter);
+                        }
+                        if (activity instanceof EstadisticasGeneralActivity) {
+                            EstadisticasGeneralActivity.cargarDepartamentos(departamentoAdapter);
+                        }
                     }
                     break;
                 case "buscar_provincias":
@@ -599,7 +599,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             categorias.add(categoria);
                         }
                         ProvinciaAdapter provinciaAdapter = new ProvinciaAdapter(activity, categorias);
-                        Comprar2Activity.cargarProvincias(provinciaAdapter);
+                        if (activity instanceof Comprar2Activity) {
+                            Comprar2Activity.cargarProvincias(provinciaAdapter);
+                        }
+                        if (activity instanceof EstadisticasGeneralActivity) {
+                            EstadisticasGeneralActivity.cargarProvincias(provinciaAdapter);
+                        }
                     }
                     break;
                 case "buscar_distritos":
@@ -615,7 +620,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                     }
                     DistritoAdapter distritoAdapter = new DistritoAdapter(activity, categorias);
-                    Comprar2Activity.cargarDistritos(distritoAdapter);
+                    if (activity instanceof Comprar2Activity) {
+                        Comprar2Activity.cargarDistritos(distritoAdapter);
+                    }
+                    if (activity instanceof EstadisticasGeneralActivity) {
+                        EstadisticasGeneralActivity.cargarDistritos(distritoAdapter);
+                    }
                     break;
             }
         } catch (Exception e) {

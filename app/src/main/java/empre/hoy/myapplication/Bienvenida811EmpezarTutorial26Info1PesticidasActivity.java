@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoPesticidas;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,7 +22,7 @@ public class Bienvenida811EmpezarTutorial26Info1PesticidasActivity extends AppCo
         setContentView(R.layout.activity_bienvenida_8_11_empezar_tutorial_2_6_info_1_pesticidas);
         btnContinuar = (Button) findViewById(R.id.btnContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/pesticidas.jpg").into(ivFondo);
+        Picasso.get().load(fondoPesticidas).into(ivFondo);
         btnContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida811EmpezarTutorial26Info1PesticidasActivity.this, Bienvenida812EmpezarTutorial26Info2PesticidasActivity.class));
             finish();

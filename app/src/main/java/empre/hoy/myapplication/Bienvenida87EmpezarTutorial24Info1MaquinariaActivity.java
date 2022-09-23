@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoMaquinaria;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,7 +22,7 @@ public class Bienvenida87EmpezarTutorial24Info1MaquinariaActivity extends AppCom
         setContentView(R.layout.activity_bienvenida_8_7_empezar_tutorial_2_4_info_1_maquinaria);
         btnContinuar = (Button) findViewById(R.id.btnContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/maquinaria.jpg").into(ivFondo);
+        Picasso.get().load(fondoMaquinaria).into(ivFondo);
         btnContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida87EmpezarTutorial24Info1MaquinariaActivity.this, Bienvenida88mpezarTutorial24Info2MaquinariaActivity.class));
             finish();

@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoFertilizantes;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,7 +22,7 @@ public class Bienvenida81EmpezarTutorial21Info1FertilizantesActivity extends App
         setContentView(R.layout.activity_bienvenida_8_1_empezar_tutorial_2_1_info_1_fertilizantes);
         btnContinuar = (Button) findViewById(R.id.btnContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/fertilizantes.jpg").into(ivFondo);
+        Picasso.get().load(fondoFertilizantes).into(ivFondo);
         btnContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida81EmpezarTutorial21Info1FertilizantesActivity.this, Bienvenida82EmpezarTutorial21Info2FertilizantesActivity.class));
             finish();

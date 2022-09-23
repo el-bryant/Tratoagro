@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import empre.hoy.myapplication.Comprar2Activity;
+import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
@@ -46,14 +47,20 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
         String nombreDepartamento = categoria.getNombre();
         holder.tvNombreDepartamento.setText(nombreDepartamento);
         holder.tvNombreDepartamento.setOnClickListener(v -> {
-            Comprar2Activity.tvDepartamento.setText(nombreDepartamento);
-            Comprar2Activity.rvDepartamento.setVisibility(View.GONE);
+            if (activity instanceof Comprar2Activity) {
+                Comprar2Activity.tvDepartamento.setText(nombreDepartamento);
+                Comprar2Activity.rvDepartamento.setVisibility(View.GONE);
+            }
+            if (activity instanceof EstadisticasGeneralActivity) {
+                EstadisticasGeneralActivity.tvDepartamento.setText(nombreDepartamento);
+                EstadisticasGeneralActivity.rvDepartamento.setVisibility(View.GONE);
+            }
             cargar(idCategoria);
         });
     }
 
     public void cargar(String idDepartamento) {
-        if (activity instanceof Comprar2Activity) {
+        if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity) {
             webService = new WebService(activity);
             params = new HashMap<>();
             params.put("id_departamento", idDepartamento);

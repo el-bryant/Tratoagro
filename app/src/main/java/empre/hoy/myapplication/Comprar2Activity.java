@@ -1,11 +1,18 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGeneral;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,10 +20,12 @@ import java.util.Map;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.DepartamentoAdapter;
 import empre.hoy.myapplication.adapter.DistritoAdapter;
+import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.ProvinciaAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Comprar2Activity extends AppCompatActivity {
+    ImageView ivFondo, ivSiguiente;
     public static Map<String, String> params;
     TextView tvTipoUsuario, tvPersonaNatural, tvPersonaJuridica;
     TextView tvTipoComerciante, tvMinorista, tvMayorista;
@@ -33,6 +42,8 @@ public class Comprar2Activity extends AppCompatActivity {
             idCategoria = getIntent().getStringExtra("categoria");
         }
         webService = new WebService(this);
+        ivFondo = (ImageView) findViewById(R.id.ivFondo);
+        ivSiguiente = (ImageView) findViewById(R.id.ivSiguiente);
         tvTipoUsuario = (TextView) findViewById(R.id.tvTipoUsuario);
         tvPersonaNatural = (TextView) findViewById(R.id.tvPersonaNatural);
         tvPersonaJuridica = (TextView) findViewById(R.id.tvPersonaJuridica);
@@ -49,6 +60,7 @@ public class Comprar2Activity extends AppCompatActivity {
         rvDistrito = (RecyclerView) findViewById(R.id.rvDistrito);
         rvSubcategoria = (RecyclerView) findViewById(R.id.rvSubcategoria);
         rvProducto = (RecyclerView) findViewById(R.id.rvProducto);
+        Picasso.get().load(fondoGeneral).into(ivFondo);
         rvDepartamento.setLayoutManager(new LinearLayoutManager(this));
         rvProvincia.setLayoutManager(new LinearLayoutManager(this));
         rvDistrito.setLayoutManager(new LinearLayoutManager(this));
@@ -105,6 +117,29 @@ public class Comprar2Activity extends AppCompatActivity {
             rvProducto.setVisibility(View.VISIBLE);
         });
         buscarDepartamentos();
+        ivSiguiente.setOnClickListener(v -> {
+            switch (idCategoria) {
+                case "1":
+                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresGanaderiaActivity.class));
+                    break;
+                case "2":
+                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresMaquinariaActivity.class));
+                    break;
+                case "3":
+                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresInsumosActivity.class));
+                    break;
+                case "4":
+                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresPesticidasActivity.class));
+                    break;
+                case "5":
+                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresFertilizantesActivity.class));
+                    break;
+                case "6":
+                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresPescaActivity.class));
+                    break;
+            }
+            finish();
+        });
     }
 
     public static void buscarDepartamentos() {
@@ -135,7 +170,7 @@ public class Comprar2Activity extends AppCompatActivity {
         rvSubcategoria.setAdapter(subcategoriaAdapter);
     }
 
-    public static void buscarProductos() {
-
+    public static void buscarProductos(ProductoAdapter productoAdapter) {
+        rvProducto.setAdapter(productoAdapter);
     }
 }

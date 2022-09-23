@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoPesticidas;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +42,7 @@ public class Bienvenida812EmpezarTutorial26Info2PesticidasActivity extends AppCo
         tvSubcategoria = (TextView) findViewById(R.id.tvSubcategoria);
         rvProductosPesticidas.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasPesticidas.setLayoutManager(new LinearLayoutManager(this));
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/pesticidas.jpg").into(ivFondo);
+        Picasso.get().load(fondoPesticidas).into(ivFondo);
         btnSubcategoriasPesticidas.setOnClickListener(v -> {
             obtenerSubcategorias();
         });

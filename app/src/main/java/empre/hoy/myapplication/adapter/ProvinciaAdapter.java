@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import empre.hoy.myapplication.Comprar2Activity;
+import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
@@ -42,14 +43,20 @@ public class ProvinciaAdapter extends RecyclerView.Adapter<ProvinciaAdapter.view
         String nombreProvincia = categoria.getNombre();
         holder.tvNombreProvincia.setText(nombreProvincia);
         holder.tvNombreProvincia.setOnClickListener(v -> {
-            Comprar2Activity.tvProvincia.setText(nombreProvincia);
-            Comprar2Activity.rvProvincia.setVisibility(View.GONE);
+            if (activity instanceof Comprar2Activity) {
+                Comprar2Activity.tvProvincia.setText(nombreProvincia);
+                Comprar2Activity.rvProvincia.setVisibility(View.GONE);
+            }
+            if (activity instanceof EstadisticasGeneralActivity) {
+                EstadisticasGeneralActivity.tvProvincia.setText(nombreProvincia);
+                EstadisticasGeneralActivity.rvProvincia.setVisibility(View.GONE);
+            }
             cargar(idCategoria);
         });
     }
 
     public void cargar(String idProvincia) {
-        if (activity instanceof Comprar2Activity) {
+        if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity) {
             webService = new WebService(activity);
             params = new HashMap<>();
             params.put("id_provincia", idProvincia);

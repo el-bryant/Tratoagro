@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGanaderia;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,7 +22,7 @@ public class Bienvenida83EmpezarTutorial22Info1GanaderiaActivity extends AppComp
         setContentView(R.layout.activity_bienvenida_8_3_empezar_tutorial_2_2_info_1_ganaderia);
         btnContinuar = (Button) findViewById(R.id.btnContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/ganader%C3%ADa.jpg").into(ivFondo);
+        Picasso.get().load(fondoGanaderia).into(ivFondo);
         btnContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida83EmpezarTutorial22Info1GanaderiaActivity.this, Bienvenida84EmpezarTutorial22Info2GanaderiaActivity.class));
             finish();

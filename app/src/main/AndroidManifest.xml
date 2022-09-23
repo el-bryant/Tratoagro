@@ -49,6 +49,12 @@
         <activity android:name=".CarritoActivity" />
         <activity android:name=".Comprar1Activity" />
         <activity android:name=".Comprar2Activity" />
+        <activity android:name=".Comprar21ListaProveedoresFertilizantesActivity" />
+        <activity android:name=".Comprar21ListaProveedoresGanaderiaActivity" />
+        <activity android:name=".Comprar21ListaProveedoresInsumosActivity" />
+        <activity android:name=".Comprar21ListaProveedoresMaquinariaActivity" />
+        <activity android:name=".Comprar21ListaProveedoresPescaActivity" />
+        <activity android:name=".Comprar21ListaProveedoresPesticidasActivity" />
         <activity android:name=".ComprarVenderActivity" />
         <activity android:name=".DatosJuridicoActivity" />
         <activity android:name=".DatosJuridico2Activity" />

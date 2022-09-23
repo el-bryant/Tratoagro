@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGanaderia;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +42,7 @@ public class Bienvenida84EmpezarTutorial22Info2GanaderiaActivity extends AppComp
         tvSubcategoria = (TextView) findViewById(R.id.tvSubcategoria);
         rvProductosGanaderia.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasGanaderia.setLayoutManager(new LinearLayoutManager(this));
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/ganader%C3%ADa.jpg").into(ivFondo);
+        Picasso.get().load(fondoGanaderia).into(ivFondo);
         btnSubcategoriasGanaderia.setOnClickListener(v -> {
             obtenerSubcategorias();
         });

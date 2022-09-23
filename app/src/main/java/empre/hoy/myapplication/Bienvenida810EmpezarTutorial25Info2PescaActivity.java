@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoPesca;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +42,7 @@ public class Bienvenida810EmpezarTutorial25Info2PescaActivity extends AppCompatA
         tvSubcategoria = (TextView) findViewById(R.id.tvSubcategoria);
         rvProductosPesca.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasPesca.setLayoutManager(new LinearLayoutManager(this));
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/pesca.jpg").into(ivFondo);
+        Picasso.get().load(fondoPesca).into(ivFondo);
         btnSubcategoriasPesca.setOnClickListener(v -> {
             obtenerSubcategorias();
         });

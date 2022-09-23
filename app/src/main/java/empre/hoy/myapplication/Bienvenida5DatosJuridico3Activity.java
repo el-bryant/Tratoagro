@@ -1,5 +1,7 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGeneral;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,7 +22,7 @@ public class Bienvenida5DatosJuridico3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_bienvenida_5_datos_juridico_3);
         btnListo = (Button) findViewById(R.id.btnListo);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load("https://tratoagro.com/tratoagro/fondos/machu_picchu.jpg").into(ivFondo);
+        Picasso.get().load(fondoGeneral).into(ivFondo);
         btnListo.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida5DatosJuridico3Activity.this, Bienvenida7EmpezarTutorial1.class));
         });

@@ -1,16 +1,22 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGeneral;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.squareup.picasso.Picasso;
+
 public class Bienvenida6DatosNatural2Activity extends AppCompatActivity {
     Button btnMayoristaClaro, btnMayoristaOscuro, btnMinoristaClaro, btnMinoristaOscuro, btnContinuar;
     boolean mayorista = true, minorista = false;
+    ImageView ivFondo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,6 +27,8 @@ public class Bienvenida6DatosNatural2Activity extends AppCompatActivity {
         btnMayoristaOscuro = (Button) findViewById(R.id.btnMayoristaOscuro);
         btnMinoristaClaro = (Button) findViewById(R.id.btnMinoristaClaro);
         btnMinoristaOscuro = (Button) findViewById(R.id.btnMinoristaOscuro);
+        ivFondo = (ImageView) findViewById(R.id.ivFondo);
+        Picasso.get().load(fondoGeneral).into(ivFondo);
         btnMayoristaClaro.setOnClickListener(v -> {
             btnMayoristaClaro.setVisibility(View.GONE);
             btnMayoristaOscuro.setVisibility(View.VISIBLE);

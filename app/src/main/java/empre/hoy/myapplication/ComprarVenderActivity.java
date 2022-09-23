@@ -1,16 +1,22 @@
 package empre.hoy.myapplication;
 
+import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGeneral;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.sinaseyfi.advancedcardview.AdvancedCardView;
+import com.squareup.picasso.Picasso;
+
 import empre.hoy.myapplication.Funciones.PrefUtil;
 
 public class ComprarVenderActivity extends AppCompatActivity {
     FrameLayout flayComprar, flayVender;
+    ImageView ivFondo;
     Intent intent;
     PrefUtil prefUtil;
 
@@ -21,6 +27,8 @@ public class ComprarVenderActivity extends AppCompatActivity {
         prefUtil = new PrefUtil(this);
         flayComprar = (FrameLayout) findViewById(R.id.flayComprar);
         flayVender = (FrameLayout) findViewById(R.id.flayVender);
+        ivFondo = (ImageView) findViewById(R.id.ivFondo);
+        Picasso.get().load(fondoGeneral).into(ivFondo);
         flayComprar.setOnClickListener(v -> {
             intent = new Intent(ComprarVenderActivity.this, Comprar1Activity.class);
             intent.putExtra("comprar_vender", "C");

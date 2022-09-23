@@ -1,214 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:theme="@style/Material"
-    android:background="@mipmap/machupichu2"
-    android:gravity="center">
+    android:theme="@style/Material" >
 
-
-    <TextView
+    <ImageView
+        android:id="@+id/ivFondo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aleo_bold"
-        android:textSize="15sp"
-        android:textColor="@color/marron1"
-        android:text="En este apartado te mostraremos las estadísticas de la demanda y oferta tu mercado digital"
-        android:layout_marginHorizontal="30dp"
-        android:textAlignment="textStart"
-        android:shadowColor="@color/negro"
-        android:layout_marginTop="30dp"
-        android:layout_marginVertical="15dp"/>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/aleo_bold"
+            android:text="En este apartado te mostraremos las estadísticas de la demanda y oferta tu mercado digital"
+            android:textAlignment="textStart"
+            android:textColor="@color/marron1"
+            android:textSize="15sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                android:orientation="vertical">
 
-                <FrameLayout
-                    android:id="@+id/flayGanaderia"
-                    android:layout_width="345dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
 
+                    <FrameLayout
+                        android:id="@+id/flayGanaderia"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/boton_rojo">
 
-                    <ImageView
-                        android:id="@+id/ivGanaderia"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_estaganaderia"
-                        android:padding="0dp" />
+                        <ImageView
+                            android:id="@+id/ivGanaderia"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_estaganaderia" />
 
-                </FrameLayout>
+                    </FrameLayout>
 
+                </LinearLayout>
 
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                    <FrameLayout
+                        android:id="@+id/flayPesca"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/boton_rojo">
 
-                <FrameLayout
-                    android:id="@+id/flayPesca"
-                    android:layout_width="345dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
+                        <ImageView
+                            android:id="@+id/ivPesca"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_estapesca" />
 
+                    </FrameLayout>
 
-                    <ImageView
-                        android:id="@+id/ivPesca"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_estapesca"
-                        android:padding="0dp" />
+                </LinearLayout>
 
-                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal" >
 
+                    <FrameLayout
+                        android:id="@+id/flayMaquinaria"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/boton_rojo" >
 
-            </LinearLayout>
+                        <ImageView
+                            android:id="@+id/ivMaquinaria"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_estamaquinaria" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                    </FrameLayout>
 
-                <FrameLayout
-                    android:id="@+id/flayMaquinaria"
-                    android:layout_width="345dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
+                </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/ivMaquinaria"
-                        android:layout_width="75dp"
-                        android:layout_gravity="center"
-                        android:layout_height="75dp"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_estamaquinaria"
-                        android:padding="0dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal" >
 
-                </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/flayInsumos"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/boton_rojo" >
 
+                        <ImageView
+                            android:id="@+id/ivInsumos"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_estainsumos" />
 
-            </LinearLayout>
+                    </FrameLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                </LinearLayout>
 
-                <FrameLayout
-                    android:id="@+id/flayInsumos"
-                    android:layout_width="345dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal" >
 
-                    <ImageView
-                        android:id="@+id/ivInsumos"
-                        android:layout_width="75dp"
-                        android:layout_gravity="center"
-                        android:layout_height="75dp"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_estainsumos"
-                        android:padding="0dp" />
+                    <FrameLayout
+                        android:id="@+id/flayPesticidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/boton_rojo" >
 
-                </FrameLayout>
+                        <ImageView
+                            android:id="@+id/ivPesticidas"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_estapesticidas" />
 
+                    </FrameLayout>
 
-            </LinearLayout>
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:orientation="horizontal" >
 
-                <FrameLayout
-                    android:id="@+id/flayPesticidas"
-                    android:layout_width="345dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
+                    <FrameLayout
+                        android:id="@+id/flayFertilizantes"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/boton_rojo" >
 
-                    <ImageView
-                        android:id="@+id/ivPesticidas"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_estapesticidas"
-                        android:padding="0dp" />
+                        <ImageView
+                            android:id="@+id/ivFertilizantes"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_estafertilizantes" />
 
-                </FrameLayout>
+                    </FrameLayout>
 
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
-
-                <FrameLayout
-                    android:id="@+id/flayFertilizantes"
-                    android:layout_width="345dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
-
-                    <ImageView
-                        android:id="@+id/ivFertilizantes"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_estafertilizantes"
-                        android:padding="0dp" />
-
-                </FrameLayout>
-
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+        </ScrollView>
 
-    </ScrollView>
+    </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
 

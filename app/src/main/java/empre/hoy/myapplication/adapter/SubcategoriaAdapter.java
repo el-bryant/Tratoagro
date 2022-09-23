@@ -21,6 +21,7 @@ import empre.hoy.myapplication.Bienvenida84EmpezarTutorial22Info2GanaderiaActivi
 import empre.hoy.myapplication.Bienvenida86EmpezarTutorial23Info2InsumosActivity;
 import empre.hoy.myapplication.Bienvenida88mpezarTutorial24Info2MaquinariaActivity;
 import empre.hoy.myapplication.Comprar2Activity;
+import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
@@ -84,6 +85,10 @@ public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapte
             if (activity instanceof Comprar2Activity) {
                 Comprar2Activity.rvSubcategoria.setVisibility(View.GONE);
                 Comprar2Activity.tvSubcategoria.setText(nombreCategoria);
+            }
+            if (activity instanceof EstadisticasGeneralActivity) {
+                EstadisticasGeneralActivity.rvSubcategoria.setVisibility(View.GONE);
+                EstadisticasGeneralActivity.tvSubcategoria.setText(nombreCategoria);
             }
             cargar(idSubcategoria);
         });
