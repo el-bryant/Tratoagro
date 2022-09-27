@@ -275,6 +275,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                             if (jsonArray.getJSONObject(i).getString("id_categoria").equals("1")) {
                                 VentasReporte venta = new VentasReporte();
                                 venta.setCantidad(jsonArray.getJSONObject(i).getInt("cant"));
+                                venta.setNombreProducto(jsonArray.getJSONObject(i).getString("nombre"));
                                 ventas.add(venta);
                             }
                         }

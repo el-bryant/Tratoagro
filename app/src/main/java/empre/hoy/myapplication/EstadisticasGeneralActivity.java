@@ -26,7 +26,7 @@ import empre.hoy.myapplication.adapter.ProvinciaAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class EstadisticasGeneralActivity extends AppCompatActivity {
-    ImageView ivFondo;
+    ImageView ivFondo, ivSiguiente;
     public static Map<String, String> params;
     public static RecyclerView rvDepartamento, rvDistrito, rvProducto, rvProvincia, rvSubcategoria;
     public static String idCategoria;
@@ -43,6 +43,7 @@ public class EstadisticasGeneralActivity extends AppCompatActivity {
         }
         webService = new WebService(this);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
+        ivSiguiente = (ImageView) findViewById(R.id.ivSiguiente);
         rvDepartamento = (RecyclerView) findViewById(R.id.rvDepartamento);
         rvDistrito = (RecyclerView) findViewById(R.id.rvDistrito);
         rvProducto = (RecyclerView) findViewById(R.id.rvProducto);
@@ -107,6 +108,12 @@ public class EstadisticasGeneralActivity extends AppCompatActivity {
         });
         tvProducto.setOnClickListener(v -> {
             rvProducto.setVisibility(View.VISIBLE);
+        });
+        ivSiguiente.setOnClickListener(v -> {
+            startActivity(new Intent(EstadisticasGeneralActivity.this, EstadiGanaderiaActivity.class)
+                    .putExtra()
+            );
+            finish();
         });
     }
 

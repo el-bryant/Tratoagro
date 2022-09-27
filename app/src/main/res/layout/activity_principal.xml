@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <ImageView
+        android:id="@+id/ivFondo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/machupichu2" />
+        android:scaleType="centerCrop" />
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@mipmap/machupichu2" />
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:background_ColorType="gradient_linear"
+            app:background_Gradient_Angle="180"
+            app:background_Gradient_Color0="#000000"
+            app:background_Gradient_ColorEnd="#00000000" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +45,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="-30dp"
             android:src="@drawable/isotipo"
-            android:tint="@color/logo" />
+            android:tint="@color/dorado1" />
 
         <TextView
             android:layout_width="match_parent"
@@ -41,7 +55,9 @@
             android:gravity="center"
             android:text="Porfavor selecciona cualquiera de las opciones"
             android:textColor="@color/blanco"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:shadowRadius="10"
+            android:shadowColor="#000000" />
 
     </LinearLayout>
 
@@ -70,7 +86,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_ico_recurso_2"
+                    android:src="@drawable/ic_carrito"
                     android:tint="@color/dorado1"/>
 
                 <TextView
@@ -95,7 +111,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_estaganaderia2"
+                    android:src="@drawable/ic_grafico"
                     android:tint="@color/dorado1"/>
 
                 <TextView
@@ -155,7 +171,8 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@mipmap/ganaderia_noticias" />
+                    android:src="@drawable/ic_campana"
+                    android:tint="@color/dorado1"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -188,7 +205,8 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ico_personblack" />
+                    android:src="@drawable/persona1"
+                    android:tint="@color/dorado1"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -213,7 +231,7 @@
                 <ImageView
                     android:layout_width="48dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ubicacion1"
+                    android:src="@drawable/ic_pregunta"
                     android:tint="@color/dorado1" />
 
                 <TextView
