@@ -70,7 +70,7 @@
                             android:layout_gravity="center"
                             android:layout_height="75dp"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_ico_vaca3"
+                            android:src="@drawable/ic_recortes_ganaderia_1"
                             android:padding="0dp" />
 
                     </FrameLayout>
@@ -110,7 +110,7 @@
                             android:layout_height="75dp"
                             android:layout_gravity="center"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_ico_pez3"
+                            android:src="@drawable/ic_recortes_pesca_1_preview_rev_1"
                             android:padding="0dp" />
 
                     </FrameLayout>
@@ -150,7 +150,7 @@
                             android:layout_height="75dp"
                             android:layout_gravity="center"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_ico_tractor3"
+                            android:src="@drawable/ic_recortes_maquinaria_1_preview_rev_1"
                             android:padding="0dp" />
 
                     </FrameLayout>
@@ -190,7 +190,7 @@
                             android:layout_gravity="center"
                             android:layout_height="75dp"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_ico_insumos3"
+                            android:src="@drawable/ic_recortes_insumos_1_preview_rev_1"
                             android:padding="0dp" />
 
                     </FrameLayout>
@@ -230,7 +230,7 @@
                             android:layout_height="75dp"
                             android:layout_gravity="center"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_ico_pesticidas3"
+                            android:src="@drawable/ic_recortes_pesticidas_1_preview_rev_1"
                             android:padding="0dp" />
 
                     </FrameLayout>
@@ -270,7 +270,7 @@
                             android:layout_height="75dp"
                             android:layout_gravity="center"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_ico_fertelizantes3"
+                            android:src="@drawable/ic_recortes_fertilizantes_1_preview_rev_1"
                             android:padding="0dp" />
 
                     </FrameLayout>

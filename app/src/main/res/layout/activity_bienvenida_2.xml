@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TratoAgro te da la bienvenida! Estamos muy contentos con tu llegada. Con TratoAgro podrás comprar,vender, ver estádisticas de la demanda, publicitar tu empresa, revista u otros. Y lo más importante a través de TratoAgro, formarás una red de contactos que te podrán ayudar para futuros negocios. Te ofrecemos todo en uno, 6 categorías que tenemos para tí son ganadería, pesca, pesticidas, maquinaria, insumos y fertilizates. Dejanos mostrarte como usar esta App diseñada para tí.  "
+            android:text="TratoAgro es una app exclusiva para el sector agroindustrial. Abarcamos 6 categorías, tales como la ganadería, la pesca, los pesticidas, los fertilizantes, los insumos y la maquinaria. Dejanos mostrarte lo que tenemos preparado para tí! "
             android:fontFamily="@font/aleo_bold"
             android:textColor="@color/marron1"
             android:textSize="15sp"
@@ -44,7 +44,7 @@
             android:background="@drawable/boton_rojo"
             android:fontFamily="@font/aleo_bold"
             android:textAlignment="center"
-            android:text="Continuar"
+            android:text="Siguiente"
             android:textAllCaps="false"
             android:textColor="@color/color20"
             android:textSize="15sp"
