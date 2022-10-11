@@ -111,7 +111,6 @@ public class EstadisticasGeneralActivity extends AppCompatActivity {
         });
         ivSiguiente.setOnClickListener(v -> {
             startActivity(new Intent(EstadisticasGeneralActivity.this, EstadiGanaderiaActivity.class)
-                    .putExtra()
             );
             finish();
         });

@@ -21,17 +21,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
-   <TextView
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:fontFamily="@font/aleo_bold"
-       android:textSize="15sp"
-       android:layout_marginTop="60dp"
-       android:textColor="@color/marron1"
-       android:text="Porfavor ingresa tus datos en los casilleros presentados a continuación"
-       android:layout_marginHorizontal="30dp"
-       android:textAlignment="center"/>
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -57,8 +48,9 @@
                     android:hint="DNI"
                     android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
-                    android:drawableTint="@color/rojo"
+                    android:drawableTint="@color/dorado1"
                     android:textSize="15sp"
+                    android:gravity="center"
                     android:drawableEnd="@drawable/ic_ruc"
                     android:drawablePadding="10dp"
                     android:inputType="number" />
@@ -79,8 +71,9 @@
                     android:drawableEnd="@drawable/representantelegal"
                     android:drawablePadding="10dp"
                     android:fontFamily="@font/aleo_bold"
-                    android:hint="Apellidos"
-                    android:drawableTint="@color/rojo"
+                    android:hint="APELLIDOS"
+                    android:gravity="center"
+                    android:drawableTint="@color/dorado1"
                     android:inputType="textCapWords"
                     android:textColor="@color/negro"
                     android:textSize="15sp" />
@@ -98,10 +91,11 @@
                     android:id="@+id/etNombres"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nombres"
+                    android:hint="NOMBRES"
+                    android:gravity="center"
                     android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
-                    android:drawableTint="@color/rojo"
+                    android:drawableTint="@color/dorado1"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/representantelegal"
                     android:drawablePadding="10dp"
@@ -120,11 +114,12 @@
                     android:id="@+id/etCelular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Celular"
+                    android:hint="CELULAR"
+                    android:gravity="center"
                     android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
-                    android:drawableTint="@color/rojo"
+                    android:drawableTint="@color/dorado1"
                     android:drawableEnd="@drawable/celular1"
                     android:drawablePadding="10dp"
                     android:inputType="phone" />
@@ -142,9 +137,10 @@
                     android:id="@+id/etCorreo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Correo electrónico"
+                    android:hint="CORREO ELECTRÓNICO"
+                    android:gravity="center"
                     android:textColor="@color/negro"
-                    android:drawableTint="@color/rojo"
+                    android:drawableTint="@color/dorado1"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/correo1"
@@ -164,10 +160,11 @@
                     android:id="@+id/etUbicacion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ubicación"
+                    android:hint="UBICACIÓN"
+                    android:gravity="center"
                     android:textColor="@color/negro"
                     android:fontFamily="@font/aleo_bold"
-                    android:drawableTint="@color/rojo"
+                    android:drawableTint="@color/dorado1"
                     android:textSize="15sp"
                     android:drawableEnd="@drawable/ubicacion1"
                     android:drawablePadding="10dp"
@@ -177,12 +174,13 @@
 
             <Button
                 android:id="@+id/btnSiguiente"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:text="Siguiente"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:layout_marginStart="110dp"
+                android:drawableBottom="@drawable/ic_derecha"
+                android:drawableTint="@color/dorado1"
                 android:background="@drawable/boton_rojo"
-                android:textColor="@color/dorado1"
                 android:layout_marginTop="30dp"
                 android:layout_marginHorizontal="50dp"
                 android:fontFamily="@font/aleo_bold"
@@ -196,5 +194,13 @@
          </ScrollView>
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="590dp"></ImageView>
 
 </FrameLayout>

@@ -74,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/negro"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/rojo"
+                app:passwordToggleTint="@color/dorado1"
                 android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:boxBackgroundMode="none" >
 
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:textColorHint="@color/negro"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/rojo"
+                app:passwordToggleTint="@color/dorado1"
                 android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 app:boxBackgroundMode="none" >
 
@@ -136,5 +136,13 @@
         </ScrollView>
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="590dp"></ImageView>
 
 </FrameLayout>

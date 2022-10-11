@@ -21,20 +21,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ingresa tus datos sociodemográficos en los casilleros presetandos  a continuación"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="27dp"
-            android:layout_marginTop="60dp"
-            android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/marron1"
-            android:layout_marginBottom="20dp"
-            android:textAlignment="center"
-            android:gravity="start" />
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -138,13 +126,15 @@
 
                 <Button
                     android:id="@+id/btnContinuar"
-                    android:layout_width="wrap_content"
+                    android:layout_width="120dp"
                     android:layout_height="40dp"
+                    android:padding="8dp"
                     android:layout_marginTop="60dp"
                     android:background="@drawable/boton_rojo"
                     android:fontFamily="@font/aleo_bold"
                     android:textAllCaps="false"
-                    android:text="Siguiente"
+                    android:drawableBottom="@drawable/ic_derecha"
+                    android:drawableTint="@color/dorado1"
                     android:textColor="@color/dorado1"
                     android:textSize="15sp"
                     android:drawablePadding="10dp"
@@ -157,5 +147,13 @@
         </ScrollView>
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="590dp"></ImageView>
 
 </FrameLayout>

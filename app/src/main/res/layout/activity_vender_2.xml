@@ -55,7 +55,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
                         android:drawableStart="@drawable/representantelegal"
-                        android:textColor="@color/color20"
+                        android:textColor="@color/blanco"
                         android:paddingStart="10dp"/>
 
                     <TextView
@@ -104,7 +104,7 @@
                         android:gravity="center"
                         android:text="MAYORITA/MINORISTA"
                         android:drawableStart="@drawable/ic_comerciante"
-                        android:textColor="@color/color20"
+                        android:textColor="@color/blanco"
                         android:paddingStart="10dp"/>
 
                     <TextView
@@ -153,7 +153,7 @@
                         android:drawableStart="@drawable/ic_peru"
                         android:paddingStart="10dp"
                         android:gravity="center"
-                        android:textColor="@color/color20"
+                        android:textColor="@color/blanco"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -192,7 +192,7 @@
                         android:paddingStart="10dp"
                         android:gravity="center"
                         android:drawableStart="@drawable/ic_peru"
-                        android:textColor="@color/color20"
+                        android:textColor="@color/blanco"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -231,7 +231,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
                         android:drawableStart="@drawable/ic_peru"
-                        android:textColor="@color/color20"
+                        android:textColor="@color/blanco"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -270,7 +270,7 @@
                         android:gravity="center"
                         android:paddingStart="10dp"
                         android:drawableStart="@drawable/ic_ico_recurso_2"
-                        android:textColor="@color/color20"
+                        android:textColor="@color/blanco"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -309,7 +309,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
                         android:drawableStart="@drawable/ic_ico_recurso_1"
-                        android:textColor="@color/color20"
+                        android:textColor="@color/blanco"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -322,6 +322,23 @@
 
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/btnContinuar"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="100dp"
+                android:background="@drawable/boton_flecha"
+                android:fontFamily="@font/aleo_bold"
+                android:drawableBottom="@drawable/ic_derecha"
+                android:drawableTint="@color/dorado1"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/color20"
+                />
 
         </LinearLayout>
 

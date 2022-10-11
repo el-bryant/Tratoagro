@@ -15,18 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center" >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Porfavor selecciona la categoría donde quieres ir a comprar"
-            android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/marron1"
-            android:textSize="15sp"
-            android:textAlignment="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginHorizontal="50dp" />
+        android:gravity="center"
+        android:layout_marginTop="30dp">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -57,9 +47,10 @@
                             android:text="GANADERÍA"
                             android:layout_marginStart="25dp"
                             android:layout_marginEnd="27dp"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="40dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/dorado1"
+                            android:textColor="@color/blanco"
                             android:layout_marginBottom="20dp"
                             android:textAlignment="textEnd"
                             android:gravity="start" />
@@ -88,6 +79,7 @@
                         android:id="@+id/flayPesca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/boton_rojo"
                         android:layout_marginHorizontal="15dp" >
 
@@ -97,9 +89,10 @@
                             android:text="PESCA"
                             android:layout_marginStart="25dp"
                             android:layout_marginEnd="27dp"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="40dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/dorado1"
+                            android:textColor="@color/blanco"
                             android:layout_marginBottom="20dp"
                             android:textAlignment="textEnd"
                             android:gravity="start" />
@@ -128,6 +121,7 @@
                         android:id="@+id/flayMaquinaria"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/boton_rojo"
                         android:layout_marginHorizontal="15dp" >
 
@@ -137,9 +131,10 @@
                             android:text="MAQUINARIA"
                             android:layout_marginStart="25dp"
                             android:layout_marginEnd="27dp"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="40dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/dorado1"
+                            android:textColor="@color/blanco"
                             android:layout_marginBottom="20dp"
                             android:textAlignment="textEnd"
                             android:gravity="start" />
@@ -168,6 +163,7 @@
                         android:id="@+id/flayInsumos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/boton_rojo"
                         android:layout_marginHorizontal="15dp" >
 
@@ -177,9 +173,10 @@
                             android:text="INSUMOS"
                             android:layout_marginStart="25dp"
                             android:layout_marginEnd="27dp"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="40dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/dorado1"
+                            android:textColor="@color/blanco"
                             android:layout_marginBottom="20dp"
                             android:textAlignment="textEnd"
                             android:gravity="start" />
@@ -208,6 +205,7 @@
                         android:id="@+id/flayPesticidas"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/boton_rojo"
                         android:layout_marginHorizontal="15dp" >
 
@@ -217,9 +215,10 @@
                             android:text="PESTICIDAS"
                             android:layout_marginStart="25dp"
                             android:layout_marginEnd="27dp"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="40dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/dorado1"
+                            android:textColor="@color/blanco"
                             android:layout_marginBottom="20dp"
                             android:textAlignment="textEnd"
                             android:gravity="start" />
@@ -248,6 +247,7 @@
                         android:id="@+id/flayFertilizantes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:background="@drawable/boton_rojo"
                         android:layout_marginHorizontal="15dp" >
 
@@ -257,9 +257,10 @@
                             android:text="FERTILIZANTES"
                             android:layout_marginStart="25dp"
                             android:layout_marginEnd="27dp"
-                            android:layout_marginTop="60dp"
+                            android:layout_marginTop="40dp"
+                            android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/dorado1"
+                            android:textColor="@color/blanco"
                             android:layout_marginBottom="20dp"
                             android:textAlignment="textEnd"
                             android:gravity="start" />
@@ -277,6 +278,14 @@
 
 
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/isotipo"
+                    android:tint="@color/dorado1"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="-35dp"></ImageView>
 
             </LinearLayout>
 

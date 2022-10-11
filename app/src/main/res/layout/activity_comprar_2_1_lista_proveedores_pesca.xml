@@ -42,7 +42,6 @@
                     android:text="USUARIO"
                     android:textAlignment="center"
                     android:textColor="@color/blanco"
-                    android:drawableStart="@drawable/ic_ico_vaca3"
                     android:textSize="18sp" />
 
                 <TextView

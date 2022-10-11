@@ -27,7 +27,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="120dp" />
+                android:layout_height="120dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,7 +42,6 @@
                     android:text="USUARIO"
                     android:textAlignment="center"
                     android:textColor="@color/blanco"
-                    android:drawableStart="@drawable/ic_ico_vaca3"
                     android:textSize="18sp" />
 
                 <TextView

@@ -35,7 +35,7 @@
         android:fontFamily="@font/aleo_bold"
         android:textSize="15sp"
         android:textColor="@color/negro"
-        android:text="En este apartado te mostraremos las fluctuaciones de la demanda y oferta"
+        android:text="En este apartado te mostraremos la demanda del producto que quieras comprar o vender, en base al stock del mismo de los usuarios."
         android:layout_marginHorizontal="30dp"
         android:textAlignment="center"
         android:shadowColor="@color/negro"

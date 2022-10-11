@@ -57,11 +57,12 @@
                         android:id="@+id/tietUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Usuario"
+                        android:hint="USUARIO"
                         android:textColorHint="@color/negro"
                         android:fontFamily="@font/aleo_bold"
                         android:textSize="15sp"
-                        android:drawableTint="@color/rojo"
+                        android:gravity="center"
+                        android:drawableTint="@color/dorado1"
                         android:textColor="@color/blanco"
                         android:drawableEnd="@drawable/persona1"
                         android:inputType="text" />
@@ -73,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/negro"
                     app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/rojo"
+                    app:passwordToggleTint="@color/dorado1"
                     android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     app:boxBackgroundMode="none" >
 
@@ -81,7 +82,8 @@
                         android:id="@+id/tietClave1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Contraseña"
+                        android:hint="CONTRASEÑA"
+                        android:gravity="center"
                         android:textColor="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:textSize="15sp"
@@ -94,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/negro"
                     app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/rojo"
+                    app:passwordToggleTint="@color/dorado1"
                     android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     app:boxBackgroundMode="none" >
 
@@ -102,7 +104,8 @@
                         android:id="@+id/tietClave2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Repetir Contraseña"
+                        android:hint="REPETIR CONTRASEÑA"
+                        android:gravity="center"
                         android:textColor="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:textSize="15sp"
@@ -131,5 +134,13 @@
         </ScrollView>
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="590dp"></ImageView>
 
 </FrameLayout>

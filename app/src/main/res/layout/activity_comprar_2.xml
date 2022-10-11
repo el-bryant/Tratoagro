@@ -23,15 +23,6 @@
             android:layout_margin="30dp"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/aleo_bold"
-                android:text="Por favor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
-                android:textAlignment="center"
-                android:textColor="@color/marron1"
-                android:textSize="13sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,7 +49,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text="TIPO DE USUARIO"
-                        android:textColor="@color/color20" />
+                        android:textColor="@color/blanco" />
 
                     <TextView
                         android:id="@+id/tvPersonaNatural"
@@ -107,7 +98,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text="MAYORITA/MINORISTA"
-                        android:textColor="@color/color20" />
+                        android:textColor="@color/blanco" />
 
                     <TextView
                         android:id="@+id/tvMayorista"
@@ -156,7 +147,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text="DEPARTAMENTO"
-                        android:textColor="@color/color20" />
+                        android:textColor="@color/blanco" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvDepartamento"
@@ -193,7 +184,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text="PROVINCIA"
-                        android:textColor="@color/color20" />
+                        android:textColor="@color/blanco" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProvincia"
@@ -230,7 +221,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text="DISTRITO"
-                        android:textColor="@color/color20" />
+                        android:textColor="@color/blanco" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvDistrito"
@@ -267,7 +258,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text="  SUBCATEGORIA"
-                        android:textColor="@color/color20" />
+                        android:textColor="@color/blanco" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvSubcategoria"
@@ -299,13 +290,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="15dp"
-                        android:drawableStart="@drawable/ic_ico_recurso_1"
+                        android:drawableStart="@drawable/ic_ico_recurso_2"
                         android:drawableEnd="@drawable/ic_abajo2"
                         android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:text=" PRODUCTO"
-                        android:textColor="@color/color20" />
+                        android:textColor="@color/blanco" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProducto"
@@ -320,14 +311,14 @@
 
             <ImageView
                 android:id="@+id/ivSiguiente"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:padding="12dp"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_derecha"
                 android:tint="@color/dorado1"
                 android:background="@drawable/boton_rojo"
                 android:layout_gravity="end"
-                android:layout_marginEnd="30dp"
+                android:layout_marginEnd="110dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="50dp" />
 
