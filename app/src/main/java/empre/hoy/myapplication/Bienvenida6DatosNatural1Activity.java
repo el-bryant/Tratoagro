@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -16,6 +17,8 @@ import android.location.LocationProvider;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -34,17 +37,18 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import eightbitlab.com.blurview.BlurView;
+import eightbitlab.com.blurview.RenderScriptBlur;
 import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.Funciones.WebService;
 
 public class Bienvenida6DatosNatural1Activity extends AppCompatActivity {
     boolean ubicacionObtenida;
-    Button btnSiguiente;
     double latitud = 0.0, longitud = 0.0;
-    ImageView ivFondo;
+    public static EditText etDni, etApellidos, etNombres, etUbicacion;
+    ImageView ivContinuar, ivFondo;
     Map<String, String> params;
     PrefUtil prefUtil;
-    public static EditText etDni, etApellidos, etNombres, etUbicacion;
     public static String dni;
     String direccion;
     WebService webService;
@@ -53,14 +57,14 @@ public class Bienvenida6DatosNatural1Activity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_6_datos_natural_1);
-        btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
+        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         etApellidos = (EditText) findViewById(R.id.etApellidos);
         etDni = (EditText) findViewById(R.id.etDni);
         etNombres = (EditText) findViewById(R.id.etNombres);
         etUbicacion = (EditText) findViewById(R.id.etUbicacion);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoGeneral).into(ivFondo);
-        btnSiguiente.setOnClickListener(v -> {
+        ivContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida6DatosNatural1Activity.this, Bienvenida6DatosNatural2Activity.class));
             finish();
         });
@@ -171,5 +175,12 @@ public class Bienvenida6DatosNatural1Activity extends AppCompatActivity {
         intent.putExtra("dni", dni);
         activity.startActivity(intent);
         activity.finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Bienvenida6DatosNatural1Activity.this, Bienvenida4Activity.class));
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        finish();
     }
 }

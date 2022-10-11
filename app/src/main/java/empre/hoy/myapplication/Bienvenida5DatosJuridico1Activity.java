@@ -13,18 +13,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.squareup.picasso.Picasso;
 
 public class Bienvenida5DatosJuridico1Activity extends AppCompatActivity {
-    ImageView ivFondo;
-    Button btnContinuar;
+    ImageView ivContinuar, ivFondo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_5_datos_juridico_1);
+        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoGeneral).into(ivFondo);
-        btnContinuar = (Button) findViewById(R.id.btnContinuar);
-        btnContinuar.setOnClickListener(v -> {
+        ivContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida5DatosJuridico1Activity.this, Bienvenida5DatosJuridico2Activity.class));
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
         });
     }

@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Map;
+
+import empre.hoy.myapplication.Bienvenida5DatosJuridico2Activity;
+import empre.hoy.myapplication.Bienvenida6DatosNatural2Activity;
 import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.EstadisticasGeneral2Activity;
 import empre.hoy.myapplication.EstadisticasGeneralActivity;
@@ -48,6 +51,14 @@ public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHo
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.tvDistrito.setText(nombreDistrito);
                 EstadisticasGeneralActivity.rvDistrito.setVisibility(View.GONE);
+            }
+            if (activity instanceof Bienvenida5DatosJuridico2Activity) {
+                Bienvenida5DatosJuridico2Activity.tvDistrito.setText(nombreDistrito);
+                Bienvenida5DatosJuridico2Activity.rvDistrito.setVisibility(View.GONE);
+            }
+            if (activity instanceof Bienvenida6DatosNatural2Activity) {
+                Bienvenida6DatosNatural2Activity.tvDistrito.setText(nombreDistrito);
+                Bienvenida6DatosNatural2Activity.rvDistrito.setVisibility(View.GONE);
             }
         });
     }

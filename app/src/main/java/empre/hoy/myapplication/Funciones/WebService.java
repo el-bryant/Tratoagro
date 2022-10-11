@@ -21,7 +21,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Map;
 
+import empre.hoy.myapplication.Bienvenida5DatosJuridico2Activity;
+import empre.hoy.myapplication.Bienvenida5DatosJuridico3Activity;
 import empre.hoy.myapplication.Bienvenida6DatosNatural1Activity;
+import empre.hoy.myapplication.Bienvenida6DatosNatural2Activity;
 import empre.hoy.myapplication.Bienvenida7EmpezarTutorial11;
 import empre.hoy.myapplication.Bienvenida810EmpezarTutorial25Info2PescaActivity;
 import empre.hoy.myapplication.Bienvenida812EmpezarTutorial26Info2PesticidasActivity;
@@ -586,6 +589,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         if (activity instanceof EstadisticasGeneralActivity) {
                             EstadisticasGeneralActivity.cargarDepartamentos(departamentoAdapter);
                         }
+                        if (activity instanceof Bienvenida5DatosJuridico2Activity) {
+                            Bienvenida5DatosJuridico2Activity.cargarDepartamentos(departamentoAdapter);
+                        }
+                        if (activity instanceof Bienvenida6DatosNatural2Activity) {
+                            Bienvenida6DatosNatural2Activity.cargarDepartamentos(departamentoAdapter);
+                        }
                     }
                     break;
                 case "buscar_provincias":
@@ -605,6 +614,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                         if (activity instanceof EstadisticasGeneralActivity) {
                             EstadisticasGeneralActivity.cargarProvincias(provinciaAdapter);
+                        }
+                        if (activity instanceof Bienvenida5DatosJuridico2Activity) {
+                            Bienvenida5DatosJuridico2Activity.cargarProvincias(provinciaAdapter);
+                        }
+                        if (activity instanceof Bienvenida6DatosNatural2Activity) {
+                            Bienvenida6DatosNatural2Activity.cargarProvincias(provinciaAdapter);
                         }
                     }
                     break;
@@ -626,6 +641,12 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                     }
                     if (activity instanceof EstadisticasGeneralActivity) {
                         EstadisticasGeneralActivity.cargarDistritos(distritoAdapter);
+                    }
+                    if (activity instanceof Bienvenida5DatosJuridico2Activity) {
+                        Bienvenida5DatosJuridico2Activity.cargarDistritos(distritoAdapter);
+                    }
+                    if (activity instanceof Bienvenida6DatosNatural2Activity) {
+                        Bienvenida6DatosNatural2Activity.cargarDistritos(distritoAdapter);
                     }
                     break;
             }

@@ -15,6 +15,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import empre.hoy.myapplication.Bienvenida5DatosJuridico2Activity;
+import empre.hoy.myapplication.Bienvenida6DatosNatural2Activity;
 import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
@@ -55,12 +57,21 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
                 EstadisticasGeneralActivity.tvDepartamento.setText(nombreDepartamento);
                 EstadisticasGeneralActivity.rvDepartamento.setVisibility(View.GONE);
             }
+            if (activity instanceof Bienvenida5DatosJuridico2Activity) {
+                Bienvenida5DatosJuridico2Activity.tvDepartamento.setText(nombreDepartamento);
+                Bienvenida5DatosJuridico2Activity.rvDepartamento.setVisibility(View.GONE);
+            }
+            if (activity instanceof Bienvenida6DatosNatural2Activity) {
+                Bienvenida6DatosNatural2Activity.tvDepartamento.setText(nombreDepartamento);
+                Bienvenida6DatosNatural2Activity.rvDepartamento.setVisibility(View.GONE);
+            }
             cargar(idCategoria);
         });
     }
 
     public void cargar(String idDepartamento) {
-        if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity) {
+        if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity || activity instanceof Bienvenida5DatosJuridico2Activity
+                || activity instanceof Bienvenida6DatosNatural2Activity) {
             webService = new WebService(activity);
             params = new HashMap<>();
             params.put("id_departamento", idDepartamento);

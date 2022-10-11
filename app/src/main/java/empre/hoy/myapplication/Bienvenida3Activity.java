@@ -25,7 +25,13 @@ public class Bienvenida3Activity extends AppCompatActivity {
         Picasso.get().load(fondoGeneral).into(ivFondo);
         btnRegistrar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida3Activity.this, Bienvenida4Activity.class));
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
     }
 }

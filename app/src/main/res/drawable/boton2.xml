@@ -10,6 +10,6 @@
         android:angle="90"/>
     <stroke
         android:color="@color/negro"
-        android:width="2dp"/>
+        android:width="0dp"/>
 
 </shape>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -9,117 +9,117 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@mipmap/machupichu2"
-        android:id="@+id/ivFondo"/>
+        android:id="@+id/ivFondo" />
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:background_ColorType="gradient_linear"
+            app:background_Gradient_Angle="180"
+            app:background_Gradient_Color0="#80000000"
+            app:background_Gradient_ColorEnd="#00000000" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivIsotipo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:transitionName="ivIsotipo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_centerInParent="true" >
 
-        <TextView
-            android:layout_width="412dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:text="Porfavor seleccione una de las opciones"
-            android:fontFamily="@font/aleo_bold"
-            android:textSize="15sp"
-            android:textColor="@color/marron1"
-            android:textAlignment="center"
-            android:layout_marginHorizontal="30dp"
-            android:shadowColor="@color/negro"
-            android:layout_marginTop="45dp"
-            android:id="@+id/tvSubtitulo" />
-
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp" >
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Porfavor seleccione una de las opciones"
+                android:fontFamily="@font/aleo_bold"
+                android:textSize="18sp"
+                android:textColor="@color/blanco"
+                android:shadowRadius="10"
+                android:shadowColor="@color/negro"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="30dp" />
 
             <LinearLayout
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="50dp"
-                android:layout_marginBottom="50dp"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:layout_margin="50dp" >
 
                 <FrameLayout
                     android:id="@+id/flayPersonaNatural"
-                    android:layout_width="320dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginTop="15dp" >
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boton_rojo" >
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginVertical="15dp" >
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="92dp"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="15dp"
-                            android:layout_marginVertical="15dp"
-                            android:padding="20dp"
-                            android:tint="@color/dorado1"
-                            android:src="@drawable/ic_persona_natural_new"/>
-
-
-
-                    </LinearLayout>
+                        android:text="Persona Natural"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:drawableTop="@drawable/ic_persona_natural_new"
+                        android:drawableTint="@color/dorado1"
+                        android:drawablePadding="10dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp"
+                        android:layout_gravity="center" />
 
                 </FrameLayout>
 
                 <FrameLayout
                     android:id="@+id/flayPersonaJuridica"
-                    android:layout_width="320dp"
-                    android:layout_height="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginTop="15dp" >
+                    android:layout_marginTop="30dp" >
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginVertical="15dp" >
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="92dp"
-                            android:layout_gravity="center"
-                            android:layout_margin="15dp"
-                            android:layout_marginHorizontal="15dp"
-                            android:layout_marginVertical="15dp"
-                            android:padding="20dp"
-                            android:tint="@color/dorado1"
-                            android:src="@drawable/ic_empresa_new" />
-
-
-                    </LinearLayout>
-
+                        android:text="Persona Jurídica"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/dorado1"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:drawableTop="@drawable/ic_empresa_new"
+                        android:drawableTint="@color/dorado1"
+                        android:drawablePadding="10dp"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginVertical="15dp"
+                        android:layout_gravity="center" />
 
                 </FrameLayout>
 
             </LinearLayout>
 
+        </LinearLayout>
 
-        </ScrollView>
+    </ScrollView>
 
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/isotipo"
-        android:tint="@color/dorado1"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="300dp"></ImageView>
-
-</FrameLayout>
+</RelativeLayout>

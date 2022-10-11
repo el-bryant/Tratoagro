@@ -28,4 +28,11 @@ public class Bienvenida6DatosNatural3Activity extends AppCompatActivity {
             finish();
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Bienvenida6DatosNatural3Activity.this, Bienvenida4Activity.class));
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        finish();
+    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,10 +13,34 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop" />
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@mipmap/machupichu2" />
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:background_ColorType="gradient_linear"
+            app:background_Gradient_Angle="180"
+            app:background_Gradient_Color0="#80000000"
+            app:background_Gradient_ColorEnd="#00000000" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivIsotipo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:transitionName="ivIsotipo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,95 +58,175 @@
                 android:orientation="vertical"
                 android:layout_marginHorizontal="30dp" >
 
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:textColorHint="@color/negro"
-                    app:boxBackgroundMode="none" >
+                    android:text="Llena la información solicitada:"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textColor="@color/marron1"
+                    android:textSize="18sp"
+                    android:layout_margin="30dp" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tietTipodecomerciante"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Tipo de Comerciante"
-                        android:textColor="@color/negro"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textSize="15sp"
-                        android:drawableEnd="@drawable/ic_comerciante"
-                        android:drawableTint="@color/rojo"
-                        android:drawablePadding="10dp"
-                        android:inputType="phone" />
+                        android:background="@drawable/boton_rojo"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:id="@+id/tvTipoComerciante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_comerciante"
+                            android:drawableEnd="@drawable/ic_abajo2"
+                            android:drawableTint="@color/blanco"
+                            android:fontFamily="@font/aleo_bold"
+                            android:gravity="center"
+                            android:text="MAYORITA/MINORISTA"
+                            android:textColor="@color/blanco" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                        <TextView
+                            android:id="@+id/tvMayorista"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mayorista"
+                            android:textColor="@color/blanco"
+                            android:textAlignment="center"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvMinorista"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Minorista"
+                            android:textColor="@color/blanco"
+                            android:textAlignment="center"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:textColorHint="@color/negro"
-                    app:boxBackgroundMode="none" >
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal" >
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tietDepartamento"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Departameto"
-                        android:textColor="@color/negro"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textSize="15sp"
-                        android:drawableTint="@color/rojo"
-                        android:drawableEnd="@drawable/ic_peru"
-                        android:drawablePadding="10dp"
-                        android:inputType="textCapWords" />
+                        android:background="@drawable/boton_rojo"
+                        android:orientation="vertical"
+                        android:paddingVertical="10dp">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:id="@+id/tvDepartamento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:drawableStart="@drawable/ic_peru"
+                            android:drawableEnd="@drawable/ic_abajo2"
+                            android:drawableTint="@color/blanco"
+                            android:fontFamily="@font/aleo_bold"
+                            android:gravity="center"
+                            android:text="DEPARTAMENTO"
+                            android:textColor="@color/blanco" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvDepartamento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:textColorHint="@color/negro"
-                    app:boxBackgroundMode="none" >
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tietProvincia"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Provincia"
-                        android:textColor="@color/negro"
-                        android:fontFamily="@font/aleo_bold"
-                        android:drawableTint="@color/rojo"
-                        android:textSize="15sp"
-                        android:drawableEnd="@drawable/ic_peru"
-                        android:drawablePadding="10dp"
-                        android:inputType="textCapWords" />
+                        android:background="@drawable/boton_rojo"
+                        android:orientation="vertical"
+                        android:paddingVertical="10dp">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:id="@+id/tvProvincia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:drawableStart="@drawable/ic_peru"
+                            android:drawableEnd="@drawable/ic_abajo2"
+                            android:drawableTint="@color/blanco"
+                            android:fontFamily="@font/aleo_bold"
+                            android:gravity="center"
+                            android:text="PROVINCIA"
+                            android:textColor="@color/blanco" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvProvincia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:textColorHint="@color/negro"
-                    app:boxBackgroundMode="none" >
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tietDistrito"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="55dp"
-                        android:fontFamily="@font/aleo_bold"
-                        android:drawableEnd="@drawable/ic_peru"
-                        android:drawablePadding="10dp"
-                        android:drawableTint="@color/rojo"
-                        android:hint="Distrito"
-                        android:textColor="@color/negro"
-                        android:textSize="15sp"
-                        android:inputType="phone" />
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boton_rojo"
+                        android:orientation="vertical"
+                        android:paddingVertical="10dp">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <TextView
+                            android:id="@+id/tvDistrito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:drawableStart="@drawable/ic_peru"
+                            android:drawableEnd="@drawable/ic_abajo2"
+                            android:drawableTint="@color/blanco"
+                            android:fontFamily="@font/aleo_bold"
+                            android:gravity="center"
+                            android:text="DISTRITO"
+                            android:textColor="@color/blanco" />
 
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvDistrito"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
 
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/btnContinuar"
@@ -148,12 +252,4 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/isotipo"
-        android:tint="@color/dorado1"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="590dp"></ImageView>
-
-</FrameLayout>
+</RelativeLayout>

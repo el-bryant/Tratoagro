@@ -27,11 +27,19 @@ public class Bienvenida4Activity extends AppCompatActivity {
         flayPersonaJuridica = (FrameLayout) findViewById(R.id.flayPersonaJuridica);
         flayPersonaNatural.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida4Activity.this, Bienvenida6DatosNatural1Activity.class));
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
         });
         flayPersonaJuridica.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida4Activity.this, Bienvenida5DatosJuridico1Activity.class));
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Bienvenida4Activity.this, Bienvenida3Activity.class));
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 }

@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent" >
 
     <ImageView
         android:id="@+id/ivFondo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/machupichu2" />
+        android:scaleType="centerCrop" />
+
+    <com.sinaseyfi.advancedcardview.AdvancedCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:background_ColorType="gradient_linear"
+        app:background_Gradient_Angle="360"
+        app:background_Gradient_Color0="#99000000"
+        app:background_Gradient_ColorEnd="#00000000" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:gravity="center">
+        android:layout_centerInParent="true"
+        android:gravity="center" >
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="150dp"
+            android:id="@+id/ivIsotipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/isotipo"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="10dp"
-            android:tint="@color/dorado1"></ImageView>
+            android:tint="@color/blanco"
+            android:transitionName="ivIsotipo" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TratoAgro es una app exclusiva para el sector agroindustrial. Abarcamos 6 categorías, tales como la ganadería, la pesca, los pesticidas, los fertilizantes, los insumos y la maquinaria. Dejanos mostrarte lo que tenemos preparado para tí! "
             android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/marron1"
+            android:textColor="@color/blanco"
             android:textSize="15sp"
             android:textAlignment="center"
+            android:shadowColor="@color/negro"
+            android:shadowRadius="10"
             android:layout_marginTop="5dp"
-            android:layout_marginHorizontal="50dp"/>
+            android:layout_marginHorizontal="30dp"/>
 
-
-
-        <Button
-            android:id="@+id/btnContinuar"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:padding="8dp"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginTop="150dp"
+        <ImageView
+            android:id="@+id/ivContinuar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:background="@drawable/boton_flecha"
             android:fontFamily="@font/aleo_bold"
-            android:drawableBottom="@drawable/ic_derecha"
-            android:drawableTint="@color/dorado1"
+            android:padding="12dp"
+            android:src="@drawable/ic_derecha"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/color20"
-            />
+            android:tint="@color/dorado1"
+            android:layout_marginTop="120dp" />
 
     </LinearLayout>
+
 </RelativeLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -10,17 +11,23 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"/>
 
-    <FrameLayout
+    <com.sinaseyfi.advancedcardview.AdvancedCardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#80000000" />
+        android:layout_gravity="center"
+        app:background_ColorType="gradient_radial"
+        app:background_Gradient_Color0="#80000000"
+        app:background_Gradient_ColorEnd="#00000000" >
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:src="@drawable/isotipo"
-        android:tint="@color/logo"
-        android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/ivIsotipo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/isotipo"
+            android:tint="@color/logo"
+            android:transitionName="ivIsotipo"
+            android:layout_gravity="center" />
+
+    </com.sinaseyfi.advancedcardview.AdvancedCardView>
 
 </FrameLayout>
