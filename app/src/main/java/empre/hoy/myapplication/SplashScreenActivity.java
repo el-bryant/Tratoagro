@@ -35,9 +35,10 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
 //                if (prefUtil.getStringValue(PrefUtil.LOGIN_STATUS).equals("1")) {
-                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(SplashScreenActivity.this, ivIsotipo,
-                        ivIsotipo.getTransitionName());
-                startActivity(new Intent(SplashScreenActivity.this, Bienvenida2Activity.class), options.toBundle());
+                ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(SplashScreenActivity.this,
+                        Pair.create(ivIsotipo, ivIsotipo.getTransitionName())
+                );
+                startActivity(new Intent(SplashScreenActivity.this, Bienvenida2Activity.class), activityOptions.toBundle());
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
 //                } else {

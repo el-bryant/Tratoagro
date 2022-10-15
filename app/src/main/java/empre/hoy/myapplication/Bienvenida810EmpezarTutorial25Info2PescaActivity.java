@@ -23,7 +23,6 @@ import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Bienvenida810EmpezarTutorial25Info2PescaActivity extends AppCompatActivity {
-    Button btnSubcategoriasPesca;
     ImageView ivFondo;
     Map<String, String> params;
     public static RecyclerView rvProductosPesca, rvSubcategoriasPesca;
@@ -35,7 +34,6 @@ public class Bienvenida810EmpezarTutorial25Info2PescaActivity extends AppCompatA
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_8_10_empezar_tutorial_2_5_info_2_pesca);
         webService = new WebService(this);
-        btnSubcategoriasPesca = (Button) findViewById(R.id.btnSubcategoriasPesca);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         rvProductosPesca = (RecyclerView) findViewById(R.id.rvProductosPesca);
         rvSubcategoriasPesca = (RecyclerView) findViewById(R.id.rvSubcategoriasPesca);
@@ -43,7 +41,7 @@ public class Bienvenida810EmpezarTutorial25Info2PescaActivity extends AppCompatA
         rvProductosPesca.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasPesca.setLayoutManager(new LinearLayoutManager(this));
         Picasso.get().load(fondoPesca).into(ivFondo);
-        btnSubcategoriasPesca.setOnClickListener(v -> {
+        tvSubcategoria.setOnClickListener(v -> {
             obtenerSubcategorias();
         });
     }
@@ -57,7 +55,6 @@ public class Bienvenida810EmpezarTutorial25Info2PescaActivity extends AppCompatA
     public static void cargarSubcategorias(SubcategoriaAdapter subcategoriaAdapter) {
         rvSubcategoriasPesca.setVisibility(View.VISIBLE);
         rvSubcategoriasPesca.setAdapter(subcategoriaAdapter);
-        tvSubcategoria.setVisibility(View.GONE);
     }
 
     public static void cargarProductos(ProductoAdapter productoAdapter) {

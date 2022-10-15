@@ -2,7 +2,7 @@
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <ImageView
         android:id="@+id/ivFondo"
@@ -26,7 +26,7 @@
             android:layout_height="150dp"
             android:src="@drawable/isotipo"
             android:layout_marginEnd="10dp"
-            android:tint="@color/dorado1"></ImageView>
+            android:tint="@color/dorado1" />
 
         <TextView
             android:layout_width="match_parent"

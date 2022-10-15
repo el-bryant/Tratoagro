@@ -1,286 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:theme="@style/Material"
-    android:gravity="center"
-    android:background="@mipmap/machupichu2">
+    style="@style/Material">
 
+    <ImageView
+        android:id="@+id/ivFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:background_ColorType="gradient_linear"
+            app:background_Gradient_Angle="180"
+            app:background_Gradient_Color0="#80000000"
+            app:background_Gradient_ColorEnd="#00000000" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivIsotipo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:transitionName="ivIsotipo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-40dp">
+        android:layout_height="wrap_content" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="30dp">
+            android:gravity="center"
+            android:layout_margin="30dp" >
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                android:text="Fotos de tu producto"
+                android:fontFamily="@font/hind"
+                android:textSize="15sp"
+                android:textColor="@color/negro"
+                android:textAlignment="center" />
 
-                <FrameLayout
-                    android:id="@+id/flayGanaderia"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/boton_flecha"
+                android:src="@drawable/ic_mas"
+                android:tint="@color/dorado1"
+                android:padding="25dp"
+                android:layout_margin="15dp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="GANADERÍA"
-                        android:textSize="12sp"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="27dp"
-                        android:layout_marginTop="40dp"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:layout_marginBottom="20dp"
-                        android:textAlignment="textEnd"
-                        android:gravity="start" />
-
-                    <ImageView
-                        android:id="@+id/ivGanaderia"
-                        android:layout_width="75dp"
-                        android:layout_gravity="center"
-                        android:layout_height="75dp"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_recortes_ganaderia_1"
-                        android:padding="0dp" />
-
-                </FrameLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                android:textAlignment="textStart"
+                android:text="Descripción"
+                android:fontFamily="@font/hind"
+                android:textSize="15sp"
+                android:textColor="@color/negro"
+                android:layout_marginStart="5dp" />
 
-                <FrameLayout
-                    android:id="@+id/flayPesca"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="PESCA"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="27dp"
-                        android:layout_marginTop="40dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:layout_marginBottom="20dp"
-                        android:textAlignment="textEnd"
-                        android:gravity="start" />
-
-                    <ImageView
-                        android:id="@+id/ivPesca"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_recortes_pesca_1_preview_rev_1"
-                        android:padding="0dp" />
-
-                </FrameLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
+                android:layout_height="120dp"
+                android:background="@drawable/boton_rojo">
 
-                <FrameLayout
-                    android:id="@+id/flayMaquinaria"
-                    android:layout_width="345dp"
+                <EditText
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
+                    android:hint="Digite una descripción"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:background="@null"
+                    android:layout_margin="10dp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="MAQUINARIA"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="27dp"
-                        android:layout_marginTop="40dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:layout_marginBottom="20dp"
-                        android:textAlignment="textEnd"
-                        android:gravity="start" />
-
-                    <ImageView
-                        android:id="@+id/ivMaquinaria"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_recortes_maquinaria_1_preview_rev_1"
-                        android:padding="0dp" />
-
-                </FrameLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
-
-                <FrameLayout
-                    android:id="@+id/flayInsumos"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="INSUMOS"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="27dp"
-                        android:layout_marginTop="40dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:layout_marginBottom="20dp"
-                        android:textAlignment="textEnd"
-                        android:gravity="start" />
-
-                    <ImageView
-                        android:id="@+id/ivInsumos"
-                        android:layout_width="75dp"
-                        android:layout_gravity="center"
-                        android:layout_height="75dp"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_recortes_insumos_1_preview_rev_1"
-                        android:padding="0dp" />
-
-                </FrameLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
-
-                <FrameLayout
-                    android:id="@+id/flayPesticidas"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="PESTICIDAS"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="27dp"
-                        android:layout_marginTop="40dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:layout_marginBottom="20dp"
-                        android:textAlignment="textEnd"
-                        android:gravity="start" />
-
-                    <ImageView
-                        android:id="@+id/ivPesticidas"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_recortes_pesticidas_1_preview_rev_1"
-                        android:padding="0dp" />
-
-                </FrameLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingStart="12dp"
-                android:paddingEnd="40dp"
-                android:layout_marginVertical="2dp" >
-
-                <FrameLayout
-                    android:id="@+id/flayFertilizantes"
-                    android:layout_width="345dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp" >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="FERTILIZANTES"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="27dp"
-                        android:layout_marginTop="40dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:layout_marginBottom="20dp"
-                        android:textAlignment="textEnd"
-                        android:gravity="start" />
-
-                    <ImageView
-                        android:id="@+id/ivFertilizantes"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:src="@drawable/ic_recortes_fertilizantes_1_preview_rev_1"
-                        android:padding="0dp" />
-
-                </FrameLayout>
-
-
-            </LinearLayout>
+            </FrameLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
-</LinearLayout>
-
+</RelativeLayout>

@@ -23,7 +23,6 @@ import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Bienvenida88mpezarTutorial24Info2MaquinariaActivity extends AppCompatActivity {
-    Button btnSubcategoriasMaquinaria;
     ImageView ivFondo;
     Map<String, String> params;
     public static RecyclerView rvProductosMaquinaria, rvSubcategoriasMaquinaria;
@@ -35,7 +34,6 @@ public class Bienvenida88mpezarTutorial24Info2MaquinariaActivity extends AppComp
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_8_8_empezar_tutorial_2_4_info_2_maquinaria);
         webService = new WebService(this);
-        btnSubcategoriasMaquinaria = (Button) findViewById(R.id.btnSubcategoriasMaquinaria);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         rvProductosMaquinaria = (RecyclerView) findViewById(R.id.rvProductosMaquinaria);
         rvSubcategoriasMaquinaria = (RecyclerView) findViewById(R.id.rvSubcategoriasMaquinaria);
@@ -43,7 +41,7 @@ public class Bienvenida88mpezarTutorial24Info2MaquinariaActivity extends AppComp
         rvProductosMaquinaria.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasMaquinaria.setLayoutManager(new LinearLayoutManager(this));
         Picasso.get().load(fondoMaquinaria).into(ivFondo);
-        btnSubcategoriasMaquinaria.setOnClickListener(v -> {
+        tvSubcategoria.setOnClickListener(v -> {
             obtenerSubcategorias();
         });
     }
@@ -57,7 +55,6 @@ public class Bienvenida88mpezarTutorial24Info2MaquinariaActivity extends AppComp
     public static void cargarSubcategorias(SubcategoriaAdapter subcategoriaAdapter) {
         rvSubcategoriasMaquinaria.setVisibility(View.VISIBLE);
         rvSubcategoriasMaquinaria.setAdapter(subcategoriaAdapter);
-        tvSubcategoria.setVisibility(View.GONE);
     }
 
     public static void cargarProductos(ProductoAdapter productoAdapter) {

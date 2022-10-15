@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,7 +19,7 @@ import empre.hoy.myapplication.Funciones.PrefUtil;
 import empre.hoy.myapplication.entity.ItemCarrito;
 
 public class Comprar1Activity extends AppCompatActivity {
-    FrameLayout btnGanaderia, btnPesca, btnMaquinaria, btnInsumos, btnPesticidas, btnFertilizantes;
+    LinearLayout llayGanaderia, llayPesca, llayMaquinaria, llayInsumos, llayPesticidas, llayFertilizantes;
     ImageView ivFondo;
     public static ArrayList<ItemCarrito> itemsCarrito;
     public static double total;
@@ -31,30 +32,30 @@ public class Comprar1Activity extends AppCompatActivity {
         prefUtil = new PrefUtil(this);
         itemsCarrito = new ArrayList<>();
         total = 0.0;
-        btnGanaderia = (FrameLayout) findViewById(R.id.flayGanaderia);
-        btnPesca = (FrameLayout) findViewById(R.id.flayPesca);
-        btnMaquinaria = (FrameLayout) findViewById(R.id.flayMaquinaria);
-        btnInsumos = (FrameLayout) findViewById(R.id.flayInsumos);
-        btnPesticidas = (FrameLayout) findViewById(R.id.flayPesticidas);
-        btnFertilizantes = (FrameLayout) findViewById(R.id.flayFertilizantes);
+        llayGanaderia = (LinearLayout) findViewById(R.id.llayGanaderia);
+        llayPesca = (LinearLayout) findViewById(R.id.llayPesca);
+        llayMaquinaria = (LinearLayout) findViewById(R.id.llayMaquinaria);
+        llayInsumos = (LinearLayout) findViewById(R.id.llayInsumos);
+        llayPesticidas = (LinearLayout) findViewById(R.id.llayPesticidas);
+        llayFertilizantes = (LinearLayout) findViewById(R.id.llayFertilizantes);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoGeneral).into(ivFondo);
-        btnGanaderia.setOnClickListener(v -> {
+        llayGanaderia.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "1"));
         });
-        btnPesca.setOnClickListener(v -> {
+        llayPesca.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "6"));
         });
-        btnMaquinaria.setOnClickListener(v -> {
+        llayMaquinaria.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "2"));
         });
-        btnInsumos.setOnClickListener(v -> {
+        llayInsumos.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "3"));
         });
-        btnPesticidas.setOnClickListener(v -> {
+        llayPesticidas.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "4"));
         });
-        btnFertilizantes.setOnClickListener(v -> {
+        llayFertilizantes.setOnClickListener(v -> {
             startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "5"));
         });
     }

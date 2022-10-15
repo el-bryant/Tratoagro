@@ -55,7 +55,7 @@
             android:gravity="center"
             android:text="Porfavor selecciona cualquiera de las opciones"
             android:textColor="@color/blanco"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:shadowRadius="10"
             android:shadowColor="#000000" />
 
@@ -73,15 +73,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:weightSum="2" >
 
             <LinearLayout
                 android:id="@+id/llayComprarVender"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_marginBottom="30dp" >
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1" >
 
                 <ImageView
                     android:layout_width="50dp"
@@ -92,8 +94,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="COMPRAR o\nVENDER"
-                    android:fontFamily="@font/aleo_bold"
+                    android:text="Comprar o Vender"
+                    android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -104,9 +106,10 @@
             <LinearLayout
                 android:id="@+id/llayEstadisticas"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="vertical"
-                android:gravity="center" >
+                android:gravity="center"
+                android:layout_weight="1" >
 
                 <ImageView
                     android:layout_width="50dp"
@@ -117,8 +120,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ESTADÍSTICAS"
-                    android:fontFamily="@font/aleo_bold"
+                    android:text="Estadísticas"
+                    android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -132,15 +135,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:weightSum="2" >
 
             <LinearLayout
                 android:id="@+id/llayCerrarSesion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_marginBottom="30dp" >
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1" >
 
                 <ImageView
                     android:layout_width="50dp"
@@ -151,8 +156,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CERRAR SESIÓN"
-                    android:fontFamily="@font/aleo_bold"
+                    android:text="Cerrar sesión"
+                    android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -163,10 +168,10 @@
             <LinearLayout
                 android:id="@+id/llayNoticias"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_marginTop="16dp" >
+                android:layout_weight="1" >
 
                 <ImageView
                     android:layout_width="50dp"
@@ -177,8 +182,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="NOTICIAS"
-                    android:fontFamily="@font/aleo_bold"
+                    android:text="Noticias"
+                    android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -192,27 +197,29 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1" >
+            android:layout_weight="1"
+            android:weightSum="2" >
 
             <LinearLayout
                 android:id="@+id/llayEspacioCliente"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_marginBottom="30dp" >
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1" >
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/persona1"
-                    android:tint="@color/dorado1"/>
+                    android:tint="@color/dorado1" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ESPACIO AL CLIENTE"
-                    android:fontFamily="@font/aleo_bold"
+                    android:text="Espacio al cliente"
+                    android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -223,10 +230,10 @@
             <LinearLayout
                 android:id="@+id/llayConocenos"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_marginTop="16dp">
+                android:layout_weight="1" >
 
                 <ImageView
                     android:layout_width="48dp"
@@ -237,8 +244,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CONÓCENOS MÁS"
-                    android:fontFamily="@font/aleo_bold"
+                    android:text="Conócenos más"
+                    android:fontFamily="@font/hind"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"

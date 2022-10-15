@@ -23,7 +23,6 @@ import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Bienvenida812EmpezarTutorial26Info2PesticidasActivity extends AppCompatActivity {
-    Button btnSubcategoriasPesticidas;
     ImageView ivFondo;
     Map<String, String> params;
     public static RecyclerView rvProductosPesticidas, rvSubcategoriasPesticidas;
@@ -35,7 +34,6 @@ public class Bienvenida812EmpezarTutorial26Info2PesticidasActivity extends AppCo
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_8_12_empezar_tutorial_2_6_info_2_pesticidas);
         webService = new WebService(this);
-        btnSubcategoriasPesticidas = (Button) findViewById(R.id.btnSubcategoriasPesticidas);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         rvProductosPesticidas = (RecyclerView) findViewById(R.id.rvProductosPesticidas);
         rvSubcategoriasPesticidas = (RecyclerView) findViewById(R.id.rvSubcategoriasPesticidas);
@@ -43,7 +41,7 @@ public class Bienvenida812EmpezarTutorial26Info2PesticidasActivity extends AppCo
         rvProductosPesticidas.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasPesticidas.setLayoutManager(new LinearLayoutManager(this));
         Picasso.get().load(fondoPesticidas).into(ivFondo);
-        btnSubcategoriasPesticidas.setOnClickListener(v -> {
+        tvSubcategoria.setOnClickListener(v -> {
             obtenerSubcategorias();
         });
     }
@@ -57,7 +55,6 @@ public class Bienvenida812EmpezarTutorial26Info2PesticidasActivity extends AppCo
     public static void cargarSubcategorias(SubcategoriaAdapter subcategoriaAdapter) {
         rvSubcategoriasPesticidas.setVisibility(View.VISIBLE);
         rvSubcategoriasPesticidas.setAdapter(subcategoriaAdapter);
-        tvSubcategoria.setVisibility(View.GONE);
     }
 
     public static void cargarProductos(ProductoAdapter productoAdapter) {

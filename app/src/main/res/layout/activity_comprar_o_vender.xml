@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -11,24 +11,52 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Porfavor haz click en cualquiera de las opciones"
-        android:layout_marginStart="25dp"
-        android:textAlignment="center"
-        android:layout_marginEnd="27dp"
-        android:layout_marginTop="60dp"
-        android:fontFamily="@font/aleo_bold"
-        android:textColor="@color/marron1"
-        android:layout_marginBottom="20dp" />
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="2">
 
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:background_ColorType="gradient_linear"
+            app:background_Gradient_Angle="180"
+            app:background_Gradient_Color0="#80000000"
+            app:background_Gradient_ColorEnd="#00000000" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivIsotipo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:transitionName="ivIsotipo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Por favor selecciona una de las opciones"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="30dp"
+            android:fontFamily="@font/aleo_bold"
+            android:textSize="18sp"
+            android:textColor="@color/blanco"
+            android:shadowColor="@color/negro"
+            android:shadowRadius="10"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -38,101 +66,64 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="15dp"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="30dp" >
 
-                <FrameLayout
-                    android:id="@+id/flayComprar"
+                <LinearLayout
+                    android:id="@+id/llayComprar"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
                     android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginTop="15dp" >
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
 
-
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic__comprar2" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="COMPRAR"
+                        android:text="Comprar"
                         android:textAlignment="textEnd"
-                        android:layout_marginTop="30dp"
-                        android:textSize="12sp"
-                        android:layout_marginEnd="70dp"
+                        android:layout_margin="10dp"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"></TextView>
+                        android:textSize="15sp"
+                        android:textColor="@color/blanco" />
 
+                </LinearLayout>
 
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginVertical="15dp">
-
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="92dp"
-                            android:layout_gravity="center"
-                            android:layout_marginHorizontal="15dp"
-                            android:layout_marginVertical="15dp"
-                            android:padding="20dp"
-                            android:src="@drawable/ic__comprar2" />
-
-                    </LinearLayout>
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:id="@+id/flayVender"
+                <LinearLayout
+                    android:id="@+id/llayVender"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
                     android:background="@drawable/boton_rojo"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginTop="15dp" >
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic__121_preview_rev_1" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="VENDER"
+                        android:text="Vender"
                         android:textAlignment="textEnd"
-                        android:layout_marginTop="30dp"
-                        android:textSize="12sp"
-                        android:layout_marginEnd="80dp"
+                        android:layout_margin="10dp"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"></TextView>
+                        android:textSize="15sp"
+                        android:textColor="@color/blanco" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginVertical="15dp" >
-
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="92dp"
-                            android:layout_gravity="center"
-                            android:layout_margin="15dp"
-                            android:layout_marginHorizontal="15dp"
-                            android:layout_marginVertical="15dp"
-                            android:padding="20dp"
-                            android:src="@drawable/ic__121_preview_rev_1" />
-
-
-                    </LinearLayout>
-
-                </FrameLayout>
-
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/isotipo"
-                    android:tint="@color/dorado1"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginTop="200dp"></ImageView>
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -140,4 +131,4 @@
 
     </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>
