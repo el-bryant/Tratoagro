@@ -56,7 +56,7 @@
             android:shadowRadius="10"
             android:text="Por favor, llena la información requerida:"
             android:textAlignment="center"
-            android:textColor="@color/blanco"
+            android:textColor="@color/dorado1"
             android:textSize="18sp" />
 
         <ScrollView
@@ -82,7 +82,7 @@
                         android:drawableEnd="@drawable/ic_ruc"
                         android:drawablePadding="10dp"
                         android:drawableTint="@color/rojo"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:hint="RUC"
                         android:inputType="number"
                         android:textColor="@color/negro"
@@ -102,7 +102,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/empresa1"
                         android:drawableTint="@color/rojo"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:hint="Razón social"
                         android:inputType="textCapWords"
                         android:textColor="@color/negro"
@@ -122,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/representantelegal"
                         android:drawableTint="@color/rojo"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:hint="Representante Legal"
                         android:inputType="textCapWords"
                         android:textColor="@color/negro"
@@ -142,7 +142,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/celular1"
                         android:drawableTint="@color/rojo"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:hint="Celular"
                         android:inputType="phone"
                         android:textColor="@color/negro"
@@ -162,10 +162,10 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_casa"
                         android:drawableTint="@color/rojo"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:hint="Domicilio Fiscal"
                         android:inputType="textPostalAddress"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -182,10 +182,10 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/correo1"
                         android:drawableTint="@color/rojo"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:hint="Correo Electrónico"
                         android:inputType="textEmailAddress"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -202,10 +202,10 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ubicacion1"
                         android:drawableTint="@color/rojo"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:hint="Ubicación"
                         android:inputType="textPostalAddress"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textSize="15sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
