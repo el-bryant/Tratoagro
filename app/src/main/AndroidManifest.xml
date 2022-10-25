@@ -87,6 +87,8 @@
         <activity android:name=".TutorialActivity" />
         <activity android:name=".UbicanosActivity" />
         <activity android:name=".Vender1Activity" />
+        <activity android:name=".Vender2Activity" />
+        <activity android:name=".Vender3Activity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -49,7 +49,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_margin="30dp" >
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp" >
 
             <TextView
                 android:layout_width="match_parent"
@@ -61,10 +63,10 @@
                 android:textAlignment="center" />
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:background="@drawable/boton_flecha"
-                android:src="@drawable/ic_mas"
+                android:src="@drawable/ic_camara"
                 android:tint="@color/dorado1"
                 android:padding="25dp"
                 android:layout_margin="15dp" />
@@ -81,21 +83,212 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:background="@drawable/boton_rojo">
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_rojo"
+                android:layout_marginBottom="15dp" >
 
                 <EditText
+                    android:id="@+id/etDescripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Digite una descripción"
+                    android:hint="Escriba una descripción"
                     android:fontFamily="@font/hind"
                     android:textSize="15sp"
                     android:textColor="@color/blanco"
                     android:textColorHint="@color/blanco"
                     android:background="@null"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
                     android:layout_margin="10dp" />
 
             </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginVertical="15dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stock: "
+                        android:fontFamily="@font/hind"
+                        android:textColor="@color/negro"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/etStock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="Ej: 00"
+                        android:fontFamily="@font/hind"
+                        android:textSize="15sp"
+                        android:textColor="@color/blanco"
+                        android:textColorHint="@color/blanco"
+                        android:background="@drawable/boton_rojo"
+                        android:textAlignment="center"
+                        android:paddingVertical="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unidad: "
+                        android:fontFamily="@font/hind"
+                        android:textColor="@color/negro"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/boton_rojo"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tvUnidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Seleccione..."
+                            android:fontFamily="@font/hind"
+                            android:textSize="15sp"
+                            android:textColor="@color/blanco"
+                            android:textAlignment="center"
+                            android:paddingVertical="5dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvUnidades"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precio: "
+                    android:fontFamily="@font/hind"
+                    android:textColor="@color/negro"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/etPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="Ej: 15.00"
+                    android:background="@drawable/boton_rojo"
+                    android:fontFamily="@font/hind"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:paddingVertical="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="15dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moneda: "
+                    android:fontFamily="@font/hind"
+                    android:textColor="@color/negro"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/boton_rojo"
+                    android:gravity="center"
+                    android:paddingVertical="5dp" >
+
+                    <TextView
+                        android:id="@+id/tvMoneda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccione..."
+                        android:fontFamily="@font/hind"
+                        android:textSize="15sp"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tvSoles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PEN"
+                        android:fontFamily="@font/hind"
+                        android:textSize="15sp"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="center"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvDolares"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="USD"
+                        android:fontFamily="@font/hind"
+                        android:textSize="15sp"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="center"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivContinuar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="50dp"
+                android:background="@drawable/boton_flecha"
+                android:fontFamily="@font/aleo_bold"
+                android:padding="12dp"
+                android:src="@drawable/ic_derecha"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/color20"
+                android:tint="@color/dorado1" />
 
         </LinearLayout>
 
