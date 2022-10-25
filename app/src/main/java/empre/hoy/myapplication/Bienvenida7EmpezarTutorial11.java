@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.squareup.picasso.Picasso;
 
 public class Bienvenida7EmpezarTutorial11 extends AppCompatActivity {
-    ImageView ivMenuPrincipal, ivFondo;
+    ImageView ivContinuar, ivFondo;
     LinearLayout llayFertilizantes, llayGanaderia, llayInsumos, llayMaquinaria, llayPesca, llayPesticidas;
 
     @Override
@@ -21,7 +21,7 @@ public class Bienvenida7EmpezarTutorial11 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_7_empezar_tutorial_1_1);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        ivMenuPrincipal = (ImageView) findViewById(R.id.ivMenuPrincipal);
+        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         llayFertilizantes = (LinearLayout) findViewById(R.id.llayFertilizantes);
         llayGanaderia = (LinearLayout) findViewById(R.id.llayGanaderia);
         llayInsumos = (LinearLayout) findViewById(R.id.llayInsumos);
@@ -29,7 +29,7 @@ public class Bienvenida7EmpezarTutorial11 extends AppCompatActivity {
         llayPesca = (LinearLayout) findViewById(R.id.llayPesca);
         llayPesticidas = (LinearLayout) findViewById(R.id.llayPesticidas);
         Picasso.get().load(fondoGeneral).into(ivFondo);
-        ivMenuPrincipal.setOnClickListener(v -> {
+        ivContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida7EmpezarTutorial11.this, PrincipalActivity.class));
             finish();
         });

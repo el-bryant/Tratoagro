@@ -25,7 +25,7 @@ import empre.hoy.myapplication.adapter.ProvinciaAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Comprar2Activity extends AppCompatActivity {
-    ImageView ivFondo, ivSiguiente;
+    ImageView ivContinuar, ivFondo;
     public static Map<String, String> params;
     TextView tvTipoUsuario, tvPersonaNatural, tvPersonaJuridica;
     TextView tvTipoComerciante, tvMinorista, tvMayorista;
@@ -43,7 +43,7 @@ public class Comprar2Activity extends AppCompatActivity {
         }
         webService = new WebService(this);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        ivSiguiente = (ImageView) findViewById(R.id.ivSiguiente);
+        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         tvTipoUsuario = (TextView) findViewById(R.id.tvTipoUsuario);
         tvPersonaNatural = (TextView) findViewById(R.id.tvPersonaNatural);
         tvPersonaJuridica = (TextView) findViewById(R.id.tvPersonaJuridica);
@@ -117,7 +117,7 @@ public class Comprar2Activity extends AppCompatActivity {
             rvProducto.setVisibility(View.VISIBLE);
         });
         buscarDepartamentos();
-        ivSiguiente.setOnClickListener(v -> {
+        ivContinuar.setOnClickListener(v -> {
             switch (idCategoria) {
                 case "1":
                     startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresGanaderiaActivity.class));
@@ -138,7 +138,7 @@ public class Comprar2Activity extends AppCompatActivity {
                     startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresPescaActivity.class));
                     break;
             }
-            finish();
+//            finish();
         });
     }
 

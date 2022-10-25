@@ -3,21 +3,17 @@ package empre.hoy.myapplication;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
-import empre.hoy.myapplication.entity.ItemCarrito;
 
 public class PerfilVentaProductosActivity extends AppCompatActivity {
 //    Button btnSeleccionar;
@@ -29,7 +25,7 @@ public class PerfilVentaProductosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vender_1);
+        setContentView(R.layout.activity_vender_2);
         if (getIntent().getExtras() != null) {
             categoria = getIntent().getStringExtra("categoria");
         }

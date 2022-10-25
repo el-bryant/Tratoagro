@@ -25,8 +25,7 @@ import empre.hoy.myapplication.adapter.DistritoAdapter;
 import empre.hoy.myapplication.adapter.ProvinciaAdapter;
 
 public class Bienvenida5DatosJuridico2Activity extends AppCompatActivity {
-    Button btnContinuar;
-    ImageView ivFondo;
+    ImageView ivContinuar, ivFondo;
     public static Map<String, String> params;
     public static RecyclerView rvDepartamento, rvDistrito, rvProvincia;
     public static TextView tvDepartamento, tvDistrito, tvMayorista, tvMinorista, tvProvincia, tvTipoComerciante;
@@ -37,7 +36,7 @@ public class Bienvenida5DatosJuridico2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_5_datos_juridico_2);
         webService = new WebService(this);
-        btnContinuar = (Button) findViewById(R.id.btnContinuar);
+        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         rvDepartamento = (RecyclerView) findViewById(R.id.rvDepartamento);
         rvProvincia = (RecyclerView) findViewById(R.id.rvProvincia);
@@ -76,7 +75,7 @@ public class Bienvenida5DatosJuridico2Activity extends AppCompatActivity {
             rvDistrito.setVisibility(View.VISIBLE);
         });
         buscarDepartamentos();
-        btnContinuar.setOnClickListener(v -> {
+        ivContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida5DatosJuridico2Activity.this, Bienvenida5DatosJuridico3Activity.class));
             finish();
         });

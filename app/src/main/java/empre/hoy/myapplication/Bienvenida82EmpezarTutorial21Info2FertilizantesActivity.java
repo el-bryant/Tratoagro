@@ -23,7 +23,6 @@ import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Bienvenida82EmpezarTutorial21Info2FertilizantesActivity extends AppCompatActivity {
-    Button btnSucbategoriasFertilizantes;
     ImageView ivFondo;
     Map<String, String> params;
     public static RecyclerView rvProductosFertilizantes, rvSubcategoriasFertilizantes;
@@ -35,7 +34,6 @@ public class Bienvenida82EmpezarTutorial21Info2FertilizantesActivity extends App
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_8_2_empezar_tutorial_2_1_info_2_fertilizantes);
         webService = new WebService(this);
-        btnSucbategoriasFertilizantes = (Button) findViewById(R.id.btnSucbategoriasFertilizantes);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         rvProductosFertilizantes = (RecyclerView) findViewById(R.id.rvProductosFertilizantes);
         rvSubcategoriasFertilizantes = (RecyclerView) findViewById(R.id.rvSubcategoriasFertilizantes);
@@ -43,7 +41,7 @@ public class Bienvenida82EmpezarTutorial21Info2FertilizantesActivity extends App
         rvProductosFertilizantes.setLayoutManager(new LinearLayoutManager(this));
         rvSubcategoriasFertilizantes.setLayoutManager(new LinearLayoutManager(this));
         Picasso.get().load(fondoFertilizantes).into(ivFondo);
-        btnSucbategoriasFertilizantes.setOnClickListener(v -> {
+        tvSubcategoria.setOnClickListener(v -> {
             obtenerSubcategorias();
         });
     }
@@ -57,7 +55,6 @@ public class Bienvenida82EmpezarTutorial21Info2FertilizantesActivity extends App
     public static void cargarSubcategorias(SubcategoriaAdapter subcategoriaAdapter) {
         rvSubcategoriasFertilizantes.setVisibility(View.VISIBLE);
         rvSubcategoriasFertilizantes.setAdapter(subcategoriaAdapter);
-        tvSubcategoria.setVisibility(View.GONE);
     }
 
     public static void cargarProductos(ProductoAdapter productoAdapter) {

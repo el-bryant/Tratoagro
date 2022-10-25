@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <ImageView
         android:id="@+id/ivFondo"
@@ -15,6 +15,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#40000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.sinaseyfi.advancedcardview.AdvancedCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:background_ColorType="gradient_linear"
+            app:background_Gradient_Angle="180"
+            app:background_Gradient_Color0="#80000000"
+            app:background_Gradient_ColorEnd="#00000000" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivIsotipo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/isotipo"
+        android:tint="@color/dorado1"
+        android:transitionName="ivIsotipo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -30,46 +59,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/aleo_bold"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:textColor="@color/blanco"
                 android:text="Haz click en las diferentes subcategorías y selecciona para que puedas ver los productos que puedes comprar o vender"
                 android:layout_marginHorizontal="30dp"
                 android:textAlignment="center"
                 android:shadowColor="@color/negro"
                 android:shadowRadius="10"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="50dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/botonnegro"
+                android:background="@drawable/boton_rojo"
                 android:orientation="vertical"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginHorizontal="30dp" >
-
-                <Button
-                    android:id="@+id/btnSubcategoriasPesca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="SUBCATEGORÍAS"
-                    android:drawableEnd="@drawable/ic_abajo"
-                    android:drawablePadding="40dp"
-                    android:fontFamily="@font/aleo_bold"
-                    android:drawableTint="@color/dorado1"
-                    android:textColor="@color/dorado1"
-                    android:textAllCaps="false"
-                    android:background="@null"
-                    android:textAlignment="textStart"
-                    android:layout_marginHorizontal="15dp" />
 
                 <TextView
                     android:id="@+id/tvSubcategoria"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="Subcategorías"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
                     android:textColor="@color/blanco"
+                    android:drawableEnd="@drawable/ic_abajo"
+                    android:drawableTint="@color/blanco"
                     android:layout_marginHorizontal="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:visibility="gone" />
+                    android:gravity="center_vertical" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvSubcategoriasPesca"
@@ -84,26 +102,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/botonnegro"
+                android:background="@drawable/boton_rojo"
                 android:orientation="vertical"
                 android:layout_marginTop="20dp"
                 android:layout_marginHorizontal="30dp"
-                 android:layout_marginBottom="50dp" >
+                android:layout_marginBottom="50dp" >
 
-                <Button
-                    android:id="@+id/btnProductosPesca"
+                <TextView
+                    android:id="@+id/tvProducto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="PRODUCTOS"
+                    android:text="Productos"
+                    android:fontFamily="@font/hind"
+                    android:textSize="15sp"
+                    android:textColor="@color/blanco"
                     android:drawableEnd="@drawable/ic_abajo"
                     android:drawablePadding="40dp"
                     android:drawableTint="@color/blanco"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textColor="@color/dorado1"
-                    android:textAllCaps="false"
-                    android:background="@null"
-                    android:textAlignment="textStart"
-                    android:layout_marginHorizontal="15dp" />
+                    android:layout_marginHorizontal="15dp"
+                    android:gravity="center_vertical" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvProductosPesca"
@@ -115,14 +132,8 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/isotipo"
-                android:tint="@color/dorado1"></ImageView>
-
         </LinearLayout>
 
     </ScrollView>
 
-</FrameLayout>
+</RelativeLayout>

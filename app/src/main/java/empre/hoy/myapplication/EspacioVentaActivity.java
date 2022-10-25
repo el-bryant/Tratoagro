@@ -1,6 +1,5 @@
 package empre.hoy.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
@@ -14,7 +13,7 @@ public class EspacioVentaActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vender_1);
+        setContentView(R.layout.activity_vender_2);
         prefUtil = new PrefUtil(this);
 //        tvCerrar = (TextView) findViewById(R.id.tvCerrar);
         tvRazonSocial = (TextView) findViewById(R.id.tvRazonSocial);

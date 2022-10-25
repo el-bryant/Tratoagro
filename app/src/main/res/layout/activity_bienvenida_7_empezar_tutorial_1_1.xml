@@ -37,45 +37,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginHorizontal="15dp" >
+                android:layout_marginHorizontal="30dp" >
 
                 <LinearLayout
                     android:id="@+id/llayGanaderia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginVertical="2dp" >
+                    android:background="@drawable/boton_rojo"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
 
-                    <FrameLayout
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_recortes_ganaderia_1"
+                        android:layout_margin="10dp" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
-                        android:layout_marginHorizontal="15dp" >
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="GANADERÍA"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="40dp"
-                            android:layout_marginTop="40dp"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/blanco"
-                            android:layout_marginBottom="20dp"
-                            android:textAlignment="textEnd"
-                            android:gravity="start" />
-
-                        <ImageView
-                            android:layout_width="75dp"
-                            android:layout_gravity="start"
-                            android:layout_height="75dp"
-                            android:layout_margin="10dp"
-                            android:src="@drawable/ic_recortes_ganaderia_1"
-                            android:padding="0dp" />
-
-                    </FrameLayout>
-
+                        android:text="Ganadería"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="textEnd"
+                        android:layout_margin="10dp" />
 
                 </LinearLayout>
 
@@ -84,38 +71,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginVertical="2dp" >
+                    android:background="@drawable/boton_rojo"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
 
-                    <FrameLayout
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_recortes_pesca_1_preview_rev_1"
+                        android:layout_margin="10dp" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
-                        android:layout_marginHorizontal="15dp" >
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="PESCA"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="80dp"
-                            android:layout_marginTop="40dp"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/blanco"
-                            android:layout_marginBottom="20dp"
-                            android:textAlignment="textEnd"
-                            android:gravity="start" />
-
-                        <ImageView
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="start"
-                            android:layout_margin="10dp"
-                            android:src="@drawable/ic_recortes_pesca_1_preview_rev_1"
-                            android:padding="0dp" />
-
-                    </FrameLayout>
-
+                        android:text="Pesca"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="textEnd"
+                        android:layout_margin="10dp" />
 
                 </LinearLayout>
 
@@ -124,38 +98,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginVertical="2dp" >
+                    android:background="@drawable/boton_rojo"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
 
-                    <FrameLayout
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_recortes_maquinaria_1_preview_rev_1"
+                        android:layout_margin="10dp" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
-                        android:layout_marginHorizontal="15dp" >
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="MAQUINARIA"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="40dp"
-                            android:layout_marginTop="40dp"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/blanco"
-                            android:layout_marginBottom="20dp"
-                            android:textAlignment="textEnd"
-                            android:gravity="start" />
-
-                        <ImageView
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="start"
-                            android:layout_margin="10dp"
-                            android:src="@drawable/ic_recortes_maquinaria_1_preview_rev_1"
-                            android:padding="0dp" />
-
-                    </FrameLayout>
-
+                        android:text="Maquinaria"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="textEnd"
+                        android:layout_margin="10dp" />
 
                 </LinearLayout>
 
@@ -164,38 +125,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginVertical="2dp" >
+                    android:background="@drawable/boton_rojo"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
 
-                    <FrameLayout
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_recortes_insumos_1_preview_rev_1"
+                        android:layout_margin="10dp" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
-                        android:layout_marginHorizontal="15dp" >
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="INSUMOS"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="70dp"
-                            android:layout_marginTop="40dp"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/blanco"
-                            android:layout_marginBottom="20dp"
-                            android:textAlignment="textEnd"
-                            android:gravity="start" />
-
-                        <ImageView
-                            android:layout_width="75dp"
-                            android:layout_gravity="start"
-                            android:layout_height="75dp"
-                            android:layout_margin="10dp"
-                            android:src="@drawable/ic_recortes_insumos_1_preview_rev_1"
-                            android:padding="0dp" />
-
-                    </FrameLayout>
-
+                        android:text="Insumos"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="textEnd"
+                        android:layout_margin="10dp" />
 
                 </LinearLayout>
 
@@ -204,38 +152,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginVertical="2dp" >
+                    android:background="@drawable/boton_rojo"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
 
-                    <FrameLayout
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_recortes_pesticidas_1_preview_rev_1"
+                        android:layout_margin="10dp" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
-                        android:layout_marginHorizontal="15dp" >
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="PESTICIDAS"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="55dp"
-                            android:layout_marginTop="40dp"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/blanco"
-                            android:layout_marginBottom="20dp"
-                            android:textAlignment="textEnd"
-                            android:gravity="start" />
-
-                        <ImageView
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="start"
-                            android:layout_margin="10dp"
-                            android:src="@drawable/ic_recortes_pesticidas_1_preview_rev_1"
-                            android:padding="0dp" />
-
-                    </FrameLayout>
-
+                        android:text="Pesticidas"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="textEnd"
+                        android:layout_margin="10dp" />
 
                 </LinearLayout>
 
@@ -244,54 +179,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginVertical="2dp" >
+                    android:background="@drawable/boton_rojo"
+                    android:gravity="center"
+                    android:layout_marginVertical="10dp" >
 
-                    <FrameLayout
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/ic_recortes_fertilizantes_1_preview_rev_1"
+                        android:layout_margin="10dp" />
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
-                        android:layout_marginHorizontal="15dp" >
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="FERTILIZANTES"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="27dp"
-                            android:layout_marginTop="40dp"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/aleo_bold"
-                            android:textColor="@color/blanco"
-                            android:layout_marginBottom="20dp"
-                            android:textAlignment="textEnd"
-                            android:gravity="start" />
-
-                        <ImageView
-                            android:layout_width="75dp"
-                            android:layout_height="75dp"
-                            android:layout_gravity="start"
-                            android:layout_margin="10dp"
-                            android:src="@drawable/ic_recortes_fertilizantes_1_preview_rev_1"
-                            android:padding="0dp" />
-
-                    </FrameLayout>
-
+                        android:text="Fertilizantes"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textAlignment="textEnd"
+                        android:layout_margin="10dp" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/ivMenuPrincipal"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:padding="8dp"
-                    android:layout_marginStart="110dp"
+                    android:id="@+id/ivContinuar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/boton_flecha"
+                    android:fontFamily="@font/aleo_bold"
+                    android:padding="12dp"
                     android:src="@drawable/ic_derecha"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color20"
                     android:tint="@color/dorado1"
-                    android:background="@drawable/boton_rojo"
-                    android:layout_gravity="end"
-                    android:layout_marginEnd="120dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="50dp" />
+                    android:layout_gravity="center"
+                    android:layout_marginVertical="50dp" />
 
             </LinearLayout>
 

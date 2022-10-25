@@ -86,6 +86,7 @@
         <activity android:name=".TutoPesticidas" />
         <activity android:name=".TutorialActivity" />
         <activity android:name=".UbicanosActivity" />
+        <activity android:name=".Vender1Activity" />
 
         <meta-data
             android:name="preloaded_fonts"
