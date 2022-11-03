@@ -53,6 +53,7 @@ import empre.hoy.myapplication.TutoInsumos;
 import empre.hoy.myapplication.TutoMaquinaria;
 import empre.hoy.myapplication.TutoPesca;
 import empre.hoy.myapplication.TutoPesticidas;
+import empre.hoy.myapplication.Vender1Activity;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
 import empre.hoy.myapplication.adapter.DepartamentoAdapter;
 import empre.hoy.myapplication.adapter.DistritoAdapter;
@@ -60,9 +61,11 @@ import empre.hoy.myapplication.adapter.ProductoAdapter;
 import empre.hoy.myapplication.adapter.ProveedorAdapter;
 import empre.hoy.myapplication.adapter.ProvinciaAdapter;
 import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
+import empre.hoy.myapplication.adapter.UnidadAdapter;
 import empre.hoy.myapplication.entity.Categoria;
 import empre.hoy.myapplication.entity.Producto;
 import empre.hoy.myapplication.entity.Subcategoria;
+import empre.hoy.myapplication.entity.Unidad;
 import empre.hoy.myapplication.entity.VentasReporte;
 
 public class WebService implements Response.Listener, Response.ErrorListener {
@@ -72,6 +75,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
     ArrayList<Categoria> categorias;
     ArrayList<Subcategoria> subcategorias;
     ArrayList<Producto> productos;
+    ArrayList<Unidad> unidades;
     ArrayList<VentasReporte> ventas;
     JSONObject jsonObject;
     JSONArray jsonArray;
@@ -648,6 +652,21 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                     if (activity instanceof Bienvenida6DatosNatural2Activity) {
                         Bienvenida6DatosNatural2Activity.cargarDistritos(distritoAdapter);
                     }
+                    break;
+                case "obtener_unidades":
+                    if (correcto) {
+                        Log.i("obtener_unidades", consulta);
+                        jsonArray = jsonObject.getJSONArray("data");
+                        unidades = new ArrayList<>();
+                        for (int i = 0; i < jsonArray.length(); i++) {
+                            Unidad unidad = new Unidad();
+                            unidad.setIdUnidad(jsonArray.getJSONObject(i).getInt("id_unidad"));
+                            unidad.setNombre(jsonArray.getJSONObject(i).getString("nombre"));
+                            unidades.add(unidad);
+                        }
+                    }
+                    UnidadAdapter unidadAdapter = new UnidadAdapter(activity, unidades);
+                    Vender1Activity.cargarUnidades(unidadAdapter);
                     break;
             }
         } catch (Exception e) {

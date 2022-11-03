@@ -62,14 +62,25 @@
                 android:textColor="@color/negro"
                 android:textAlignment="center" />
 
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:background="@drawable/boton_flecha"
-                android:src="@drawable/ic_camara"
-                android:tint="@color/dorado1"
-                android:padding="25dp"
-                android:layout_margin="15dp" />
+                android:layout_margin="15dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_camara"
+                    android:layout_margin="25dp" />
+
+                <ImageView
+                    android:id="@+id/ivFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp" />
+
+            </FrameLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -149,14 +160,6 @@
                     android:layout_weight="1"
                     android:layout_marginStart="10dp" >
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Unidad: "
-                        android:fontFamily="@font/hind"
-                        android:textColor="@color/negro"
-                        android:textSize="15sp" />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -168,17 +171,22 @@
                             android:id="@+id/tvUnidad"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Seleccione..."
+                            android:text="Seleccione la unidad"
                             android:fontFamily="@font/hind"
+                            android:drawableEnd="@drawable/ic_abajo"
+                            android:drawableTint="@color/blanco"
                             android:textSize="15sp"
                             android:textColor="@color/blanco"
                             android:textAlignment="center"
-                            android:paddingVertical="5dp" />
+                            android:paddingVertical="5dp"
+                            android:gravity="center" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvUnidades"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginBottom="10dp"
                             android:visibility="gone" />
 
                     </LinearLayout>
@@ -223,14 +231,6 @@
                 android:orientation="vertical"
                 android:layout_marginVertical="15dp" >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Moneda: "
-                    android:fontFamily="@font/hind"
-                    android:textColor="@color/negro"
-                    android:textSize="15sp" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -243,11 +243,14 @@
                         android:id="@+id/tvMoneda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Seleccione..."
+                        android:text="Seleccione la moneda"
+                        android:drawableEnd="@drawable/ic_abajo"
+                        android:drawableTint="@color/blanco"
                         android:fontFamily="@font/hind"
                         android:textSize="15sp"
                         android:textColor="@color/blanco"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:gravity="center"/>
 
                     <TextView
                         android:id="@+id/tvSoles"
