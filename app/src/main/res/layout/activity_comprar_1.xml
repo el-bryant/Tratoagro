@@ -90,7 +90,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ganadería"
+                        android:text="GANADERÍA"
                         android:textSize="15sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
@@ -119,7 +119,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Pesca"
+                        android:text="PESCA"
                         android:textSize="15sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
@@ -148,7 +148,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Maquinaria"
+                        android:text="MAQUINARIA"
                         android:textSize="15sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
@@ -177,7 +177,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Insumos"
+                        android:text="INSUMOS"
                         android:textSize="15sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
@@ -206,7 +206,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Pesticidas"
+                        android:text="PESTICIDAS"
                         android:textSize="15sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
@@ -236,7 +236,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Fertilizantes"
+                        android:text="FERTILIZANTES"
                         android:textSize="15sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"

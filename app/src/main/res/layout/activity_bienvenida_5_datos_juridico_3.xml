@@ -54,7 +54,7 @@
             android:layout_marginTop="50dp"
             android:fontFamily="@font/aleo_bold"
             android:textColor="@color/blanco"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:shadowColor="@color/negro"
             android:shadowRadius="10"
             android:layout_marginHorizontal="30dp"
@@ -82,9 +82,9 @@
                         android:layout_height="wrap_content"
                         android:hint="Usuario"
                         android:textColorHint="@color/negro"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:textSize="15sp"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:textColor="@color/negro"
                         android:textColorHighlight="@color/negro"
                         android:drawableEnd="@drawable/persona1"
@@ -106,9 +106,9 @@
                         android:layout_height="wrap_content"
                         android:hint="Contraseña"
                         android:textColor="@color/negro"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:textSize="15sp"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:inputType="textPassword" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -127,9 +127,9 @@
                         android:layout_height="wrap_content"
                         android:hint="Repita la contraseña"
                         android:textColor="@color/negro"
-                        android:fontFamily="@font/hind"
+                        android:fontFamily="@font/aleo_bold"
                         android:textSize="15sp"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:inputType="textPassword" />
 
                 </com.google.android.material.textfield.TextInputLayout>

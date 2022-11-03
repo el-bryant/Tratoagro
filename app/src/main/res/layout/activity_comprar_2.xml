@@ -62,11 +62,11 @@
                             android:drawableStart="@drawable/representantelegal"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Persona Natural / Jurídica"
-                            android:textColor="@color/blanco" />
+                            android:text="PERSONA NATURAL/JURÍDICA"
+                            android:textColor="@color/dorado1" />
 
                         <TextView
                             android:id="@+id/tvPersonaNatural"
@@ -115,11 +115,11 @@
                             android:drawableStart="@drawable/ic_comerciante"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Mayorista / Minorista"
-                            android:textColor="@color/blanco" />
+                            android:text="MAYORISTA/MINORISTA"
+                            android:textColor="@color/dorado1" />
 
                         <TextView
                             android:id="@+id/tvMayorista"
@@ -168,11 +168,11 @@
                             android:drawableStart="@drawable/ic_peru"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione el departamento"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONES EL DEPARTAMENTO"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDepartamento"
@@ -205,11 +205,11 @@
                             android:drawableStart="@drawable/ic_peru"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione la provincia"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONE LA PROVINCIA"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvProvincia"
@@ -242,11 +242,11 @@
                             android:drawableStart="@drawable/ic_peru"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione el distrito"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONE EL DISTRITO"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDistrito"
@@ -279,11 +279,11 @@
                             android:drawableStart="@drawable/ic_ico_recurso_2"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione la subcategoría"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONE LA SUBCATEGORÍA"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvSubcategoria"
@@ -317,11 +317,11 @@
                             android:drawableStart="@drawable/ic_ico_recurso_2"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione el producto"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONE EL PRODUCTO"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvProducto"

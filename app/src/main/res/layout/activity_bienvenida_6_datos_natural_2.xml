@@ -64,8 +64,8 @@
                     android:fontFamily="@font/aleo_bold"
                     android:text="Llena la información solicitada:"
                     android:textAlignment="center"
-                    android:textColor="@color/marron1"
-                    android:textSize="18sp" />
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -88,11 +88,11 @@
                             android:drawableStart="@drawable/ic_comerciante"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Mayorista / Minorista"
-                            android:textColor="@color/blanco" />
+                            android:text="MAYORISTA/MINORISTA"
+                            android:textColor="@color/dorado1" />
 
                         <TextView
                             android:id="@+id/tvMayorista"
@@ -141,11 +141,11 @@
                             android:drawableStart="@drawable/ic_peru"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione su departamento"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONE SU DEPARTAMENTO"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDepartamento"
@@ -178,11 +178,11 @@
                             android:drawableStart="@drawable/ic_peru"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione su provincia"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONE SU PROVINCIA"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvProvincia"
@@ -215,11 +215,11 @@
                             android:drawableStart="@drawable/ic_peru"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
-                            android:fontFamily="@font/hind"
+                            android:fontFamily="@font/aleo_bold"
                             android:textSize="15sp"
                             android:gravity="center"
-                            android:text="Seleccione su distrito"
-                            android:textColor="@color/blanco" />
+                            android:text="SELECCIONE SU DISTRITO"
+                            android:textColor="@color/dorado1" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDistrito"

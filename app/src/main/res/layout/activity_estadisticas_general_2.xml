@@ -43,7 +43,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ESTADISTICAS                              GANADERIA"
+                            android:text="                             GANADERIA"
                             android:textAlignment="textEnd"
                             android:layout_marginEnd="50dp"
                             android:layout_marginTop="30dp"
@@ -79,7 +79,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ESTADISTICAS                                              PESCA"
+                            android:text="                                              PESCA"
                             android:textAlignment="textEnd"
                             android:layout_marginEnd="50dp"
                             android:layout_marginTop="30dp"
@@ -115,7 +115,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ESTADISTICAS                              MAQUINARIA"
+                            android:text="                             MAQUINARIA"
                             android:textAlignment="textEnd"
                             android:layout_marginEnd="50dp"
                             android:layout_marginTop="30dp"
@@ -151,7 +151,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ESTADISTICAS                                       INSUMOS"
+                            android:text="                                       INSUMOS"
                             android:textAlignment="textEnd"
                             android:layout_marginEnd="50dp"
                             android:layout_marginTop="30dp"
@@ -187,7 +187,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ESTADISTICAS                                   PESTICIDAS"
+                            android:text="                                   PESTICIDAS"
                             android:textAlignment="textEnd"
                             android:layout_marginEnd="50dp"
                             android:layout_marginTop="30dp"
@@ -223,7 +223,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="ESTADISTICAS                           FERTILIZANTES"
+                            android:text="                           FERTILIZANTES"
                             android:textAlignment="textEnd"
                             android:layout_marginEnd="50dp"
                             android:layout_marginTop="30dp"

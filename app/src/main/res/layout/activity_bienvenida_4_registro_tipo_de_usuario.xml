@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="Porfavor seleccione una de las opciones"
                 android:fontFamily="@font/aleo_bold"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="@color/blanco"
                 android:shadowRadius="10"
                 android:shadowColor="@color/negro"
@@ -71,14 +71,14 @@
 
                 <FrameLayout
                     android:id="@+id/flayPersonaNatural"
-                    android:layout_width="130dp"
+                    android:layout_width="300dp"
                     android:layout_height="130dp"
                     android:background="@drawable/boton_rojo" >
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Persona Natural"
+                        android:text="PERSONA NATURAL"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
                         android:textSize="15sp"
@@ -94,7 +94,7 @@
 
                 <FrameLayout
                     android:id="@+id/flayPersonaJuridica"
-                    android:layout_width="130dp"
+                    android:layout_width="300dp"
                     android:layout_height="130dp"
                     android:background="@drawable/boton_rojo"
                     android:layout_marginTop="30dp" >
@@ -102,7 +102,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Persona Jurídica"
+                        android:text="PERSONA JURÍDICA"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/dorado1"
                         android:textSize="15sp"

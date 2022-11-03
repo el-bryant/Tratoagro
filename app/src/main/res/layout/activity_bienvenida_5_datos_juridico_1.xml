@@ -56,8 +56,8 @@
             android:shadowRadius="10"
             android:text="Por favor, llena la información requerida:"
             android:textAlignment="center"
-            android:textColor="@color/dorado1"
-            android:textSize="18sp" />
+            android:textColor="@color/blanco"
+            android:textSize="16sp" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_ruc"
                         android:drawablePadding="10dp"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="RUC"
                         android:inputType="number"
@@ -121,7 +121,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/representantelegal"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="Representante Legal"
                         android:inputType="textCapWords"
@@ -161,7 +161,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_casa"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="Domicilio Fiscal"
                         android:inputType="textPostalAddress"
@@ -201,7 +201,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ubicacion1"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="Ubicación"
                         android:inputType="textPostalAddress"

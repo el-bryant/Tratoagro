@@ -32,15 +32,15 @@
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:background="@drawable/boton_rojo"
-        android:text="Registrarse"
-        android:textAllCaps="false"
-        android:textColor="@color/color20"
-        android:textSize="15sp"
-        android:fontFamily="@font/aleo_bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="150dp"
-        android:paddingHorizontal="50dp" />
+        android:background="@drawable/boton_rojo"
+        android:fontFamily="@font/aleo_bold"
+        android:paddingHorizontal="50dp"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="@color/color20"
+        android:textSize="15sp" />
 
 </RelativeLayout>
