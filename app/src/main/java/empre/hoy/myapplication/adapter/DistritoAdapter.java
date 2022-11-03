@@ -40,13 +40,14 @@ public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHo
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         Categoria categoria = distritos.get(position);
-        String idCategoria = categoria.getIdCategoria();
+        int idDistrito = categoria.getIdCategoria();
         String nombreDistrito = categoria.getNombre();
         holder.tvNombreDistrito.setText(nombreDistrito);
         holder.tvNombreDistrito.setOnClickListener(v -> {
             if (activity instanceof Comprar2Activity) {
                 Comprar2Activity.tvDistrito.setText(nombreDistrito);
                 Comprar2Activity.rvDistrito.setVisibility(View.GONE);
+                Comprar2Activity.distrito = idDistrito;
             }
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.tvDistrito.setText(nombreDistrito);

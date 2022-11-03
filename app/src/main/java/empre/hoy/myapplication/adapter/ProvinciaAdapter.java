@@ -41,13 +41,14 @@ public class ProvinciaAdapter extends RecyclerView.Adapter<ProvinciaAdapter.view
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         Categoria categoria = provincias.get(position);
-        String idCategoria = categoria.getIdCategoria();
+        int idProvincia = categoria.getIdCategoria();
         String nombreProvincia = categoria.getNombre();
         holder.tvNombreProvincia.setText(nombreProvincia);
         holder.tvNombreProvincia.setOnClickListener(v -> {
             if (activity instanceof Comprar2Activity) {
                 Comprar2Activity.tvProvincia.setText(nombreProvincia);
                 Comprar2Activity.rvProvincia.setVisibility(View.GONE);
+                Comprar2Activity.provincia = idProvincia;
             }
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.tvProvincia.setText(nombreProvincia);
@@ -61,16 +62,16 @@ public class ProvinciaAdapter extends RecyclerView.Adapter<ProvinciaAdapter.view
                 Bienvenida6DatosNatural2Activity.tvProvincia.setText(nombreProvincia);
                 Bienvenida6DatosNatural2Activity.rvProvincia.setVisibility(View.GONE);
             }
-            cargar(idCategoria);
+            cargar(idProvincia);
         });
     }
 
-    public void cargar(String idProvincia) {
+    public void cargar(int idProvincia) {
         if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity || activity instanceof Bienvenida5DatosJuridico2Activity
         || activity instanceof Bienvenida6DatosNatural2Activity) {
             webService = new WebService(activity);
             params = new HashMap<>();
-            params.put("id_provincia", idProvincia);
+            params.put("id_provincia", "" + idProvincia);
             webService.consulta(params, "buscar_distritos.php");
         }
     }

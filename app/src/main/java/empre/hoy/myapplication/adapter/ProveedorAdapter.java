@@ -39,11 +39,11 @@ public class ProveedorAdapter extends RecyclerView.Adapter<ProveedorAdapter.view
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         Producto producto = productos.get(position);
-        String idProveedor = producto.getIdProducto();
+        int idProveedor = producto.getIdProducto();
         String nombre = producto.getNombre();
         double precio = producto.getPrecio();
         String imagen = producto.getImagen();
-        String idProducto = producto.getIdProducto();
+        int idProducto = producto.getIdProducto();
         if (imagen.equals("-") || imagen.equals("")) {
             imagen = "https://previews.123rf.com/images/alexwhite/alexwhite1609/alexwhite160908312/63119672-nuevo-producto-rojo-cuadrado-moderno-icono-del-dise%C3%B1o.jpg";
         }
@@ -53,8 +53,8 @@ public class ProveedorAdapter extends RecyclerView.Adapter<ProveedorAdapter.view
         String finalImagen = imagen;
         holder.ivMas.setOnClickListener(v -> {
             ItemCarrito itemCarrito = new ItemCarrito();
-            itemCarrito.setIdProducto(idProducto);
-            itemCarrito.setIdProveedor(idProveedor);
+            itemCarrito.setIdProducto("" + idProducto);
+            itemCarrito.setIdProveedor("" + idProveedor);
             itemCarrito.setFoto(finalImagen);
             itemCarrito.setNombreProveedor(nombre);
             itemCarrito.setNombreProducto(nombreProducto);

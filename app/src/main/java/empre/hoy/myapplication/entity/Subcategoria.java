@@ -1,24 +1,24 @@
 package empre.hoy.myapplication.entity;
 
 public class Subcategoria {
-    String idSubcategoria;
+    int idSubcategoria;
     String nombre;
     String idCategoria;
 
     public Subcategoria() {
     }
 
-    public Subcategoria(String idSubcategoria, String nombre, String idCategoria) {
+    public Subcategoria(int idSubcategoria, String nombre, String idCategoria) {
         this.idSubcategoria = idSubcategoria;
         this.nombre = nombre;
         this.idCategoria = idCategoria;
     }
 
-    public String getIdSubcategoria() {
+    public int getIdSubcategoria() {
         return idSubcategoria;
     }
 
-    public void setIdSubcategoria(String idSubcategoria) {
+    public void setIdSubcategoria(int idSubcategoria) {
         this.idSubcategoria = idSubcategoria;
     }
 

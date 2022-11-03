@@ -1,24 +1,24 @@
 package empre.hoy.myapplication.entity;
 
 public class Categoria {
-    String idCategoria;
+    int idCategoria;
     String nombre;
     String icono;
 
     public Categoria() {
     }
 
-    public Categoria(String idCategoria, String nombre, String icono) {
+    public Categoria(int idCategoria, String nombre, String icono) {
         this.idCategoria = idCategoria;
         this.nombre = nombre;
         this.icono = icono;
     }
 
-    public String getIdCategoria() {
+    public int getIdCategoria() {
         return idCategoria;
     }
 
-    public void setIdCategoria(String idCategoria) {
+    public void setIdCategoria(int idCategoria) {
         this.idCategoria = idCategoria;
     }
 

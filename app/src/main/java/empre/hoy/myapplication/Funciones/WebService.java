@@ -146,7 +146,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         jsonArray=jsonObject. getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i++ ) {
                             Categoria categoria = new Categoria();
-                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
+                            int id = jsonArray.getJSONObject(i). getInt("id_categoria");
                             String nombre= jsonArray.getJSONObject(i). getString("nombre");
                             String icono= jsonArray.getJSONObject(i). getString("icono");
                             categoria.setIdCategoria(id);
@@ -164,9 +164,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         jsonArray=jsonObject. getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i++ ) {
                             Categoria categoria = new Categoria();
-                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
-                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
-                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            int id = jsonArray.getJSONObject(i).getInt("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i).getString("nombre");
+                            String icono= jsonArray.getJSONObject(i).getString("icono");
                             categoria.setIdCategoria(id);
                             categoria.setNombre(nombre);
                             categoria.setIcono(icono);
@@ -182,9 +182,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         jsonArray=jsonObject. getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i++ ) {
                             Categoria categoria = new Categoria();
-                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
-                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
-                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            int id = jsonArray.getJSONObject(i).getInt("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i).getString("nombre");
+                            String icono= jsonArray.getJSONObject(i).getString("icono");
                             categoria.setIdCategoria(id);
                             categoria.setNombre(nombre);
                             categoria.setIcono(icono);
@@ -200,9 +200,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         jsonArray=jsonObject. getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i++ ) {
                             Categoria categoria = new Categoria();
-                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
-                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
-                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            int id = jsonArray.getJSONObject(i).getInt("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i).getString("nombre");
+                            String icono= jsonArray.getJSONObject(i).getString("icono");
                             categoria.setIdCategoria(id);
                             categoria.setNombre(nombre);
                             categoria.setIcono(icono);
@@ -218,9 +218,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         jsonArray=jsonObject. getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i++ ) {
                             Categoria categoria = new Categoria();
-                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
-                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
-                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            int id = jsonArray.getJSONObject(i).getInt("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i).getString("nombre");
+                            String icono= jsonArray.getJSONObject(i).getString("icono");
                             categoria.setIdCategoria(id);
                             categoria.setNombre(nombre);
                             categoria.setIcono(icono);
@@ -236,9 +236,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         jsonArray=jsonObject. getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i++ ) {
                             Categoria categoria = new Categoria();
-                            String id= jsonArray.getJSONObject(i). getString("id_categoria");
-                            String nombre= jsonArray.getJSONObject(i). getString("nombre");
-                            String icono= jsonArray.getJSONObject(i). getString("icono");
+                            int id = jsonArray.getJSONObject(i).getInt("id_categoria");
+                            String nombre= jsonArray.getJSONObject(i).getString("nombre");
+                            String icono= jsonArray.getJSONObject(i).getString("icono");
                             categoria.setIdCategoria(id);
                             categoria.setNombre(nombre);
                             categoria.setIcono(icono);
@@ -402,9 +402,10 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         Log.i("obtener_subcategorias", consulta);
                         subcategorias = new ArrayList<>();
                         jsonArray = jsonObject.getJSONArray("data");
-                        String idSubcategoria = "", nombre = "", idCategoria = "";
+                        int idSubcategoria = 0;
+                        String nombre = "", idCategoria = "";
                         for (int i = 0; i < jsonArray.length(); i ++) {
-                            idSubcategoria = jsonArray.getJSONObject(i).getString("id_subcategoria");
+                            idSubcategoria = jsonArray.getJSONObject(i).getInt("id_subcategoria");
                             nombre = jsonArray.getJSONObject(i).getString("nombre");
                             idCategoria = jsonArray.getJSONObject(i).getString("id_categoria");
                             Subcategoria subcategoria = new Subcategoria();
@@ -467,7 +468,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         productos = new ArrayList<>();
                         jsonArray = jsonObject.getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i ++) {
-                            String idProducto = jsonArray.getJSONObject(i).getString("id_producto");
+                            int idProducto = jsonArray.getJSONObject(i).getInt("id_producto");
                             String nombre = jsonArray.getJSONObject(i).getString("nombre");
                             Producto producto = new Producto();
                             producto.setIdProducto(idProducto);
@@ -507,7 +508,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         productos = new ArrayList<>();
                         jsonArray = jsonObject.getJSONArray("data");
                         for (int i = 0; i < jsonArray.length(); i ++) {
-                            String idStock = jsonArray.getJSONObject(i).getString("id_stock");
+                            int idStock = jsonArray.getJSONObject(i).getInt("id_stock");
                             String imagen = jsonArray.getJSONObject(i).getString("imagen");
                             String nombreProveedor = jsonArray.getJSONObject(i).getString("nombre");
                             Double precio = jsonArray.getJSONObject(i).getDouble("precio");
@@ -582,7 +583,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         categorias = new ArrayList<>();
                         for (int i = 0; i < jsonArray.length(); i++) {
                             Categoria categoria = new Categoria();
-                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getString("id_departamento"));
+                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getInt("id_departamento"));
                             categoria.setNombre(jsonArray.getJSONObject(i).getString("nombre"));
                             categorias.add(categoria);
                         }
@@ -608,7 +609,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         categorias = new ArrayList<>();
                         for (int i = 0; i < jsonArray.length(); i++) {
                             Categoria categoria = new Categoria();
-                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getString("id_provincia"));
+                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getInt("id_provincia"));
                             categoria.setNombre(jsonArray.getJSONObject(i).getString("nombre"));
                             categorias.add(categoria);
                         }
@@ -634,7 +635,7 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         categorias = new ArrayList<>();
                         for (int i = 0; i < jsonArray.length(); i++) {
                             Categoria categoria = new Categoria();
-                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getString("id_distrito"));
+                            categoria.setIdCategoria(jsonArray.getJSONObject(i).getInt("id_distrito"));
                             categoria.setNombre(jsonArray.getJSONObject(i).getString("nombre"));
                             categorias.add(categoria);
                         }

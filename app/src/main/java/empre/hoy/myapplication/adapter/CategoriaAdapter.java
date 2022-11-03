@@ -41,7 +41,7 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.view
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         Categoria categoria = categorias.get(position);
-        String idCategoria = categoria.getIdCategoria();
+        int idCategoria = categoria.getIdCategoria();
         String nombreCategoria = categoria.getNombre();
         holder.tuvnombrecategoria.setText(nombreCategoria);
         holder.tuvnombrecategoria.setOnClickListener(new View.OnClickListener() {
@@ -52,11 +52,11 @@ public class CategoriaAdapter extends RecyclerView.Adapter<CategoriaAdapter.view
         });
     }
 
-    public void cargar(String idProducto) {
+    public void cargar(int idProducto) {
         if (activity instanceof PerfilVentaProductosActivity) {
             webService = new WebService(activity);
             params = new HashMap<>();
-            params.put("categoria", idProducto);
+            params.put("categoria", "" + idProducto);
             webService.consulta(params, "obtener_productos_proveedor.php");
         }
     }

@@ -45,13 +45,14 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
         Categoria categoria = departamentos.get(position);
-        String idCategoria = categoria.getIdCategoria();
+        int idDepartamento = categoria.getIdCategoria();
         String nombreDepartamento = categoria.getNombre();
         holder.tvNombreDepartamento.setText(nombreDepartamento);
         holder.tvNombreDepartamento.setOnClickListener(v -> {
             if (activity instanceof Comprar2Activity) {
                 Comprar2Activity.tvDepartamento.setText(nombreDepartamento);
                 Comprar2Activity.rvDepartamento.setVisibility(View.GONE);
+                Comprar2Activity.departamento = idDepartamento;
             }
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.tvDepartamento.setText(nombreDepartamento);
@@ -65,16 +66,16 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
                 Bienvenida6DatosNatural2Activity.tvDepartamento.setText(nombreDepartamento);
                 Bienvenida6DatosNatural2Activity.rvDepartamento.setVisibility(View.GONE);
             }
-            cargar(idCategoria);
+            cargar(idDepartamento);
         });
     }
 
-    public void cargar(String idDepartamento) {
+    public void cargar(int idDepartamento) {
         if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity || activity instanceof Bienvenida5DatosJuridico2Activity
                 || activity instanceof Bienvenida6DatosNatural2Activity) {
             webService = new WebService(activity);
             params = new HashMap<>();
-            params.put("id_departamento", idDepartamento);
+            params.put("id_departamento", "" + idDepartamento);
             webService.consulta(params, "buscar_provincias.php");
         }
     }

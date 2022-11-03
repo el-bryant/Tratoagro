@@ -37,13 +37,14 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHo
     @Override
     public void onBindViewHolder(@NonNull ProductoAdapter.viewHolder holder, int position) {
         Producto producto = productos.get(position);
-        String idProducto = producto.getIdProducto();
+        int idProducto = producto.getIdProducto();
         String nombre = producto.getNombre();
         holder.tvNombreProducto.setText(nombre);
         holder.tvNombreProducto.setOnClickListener(v -> {
             if (activity instanceof Comprar2Activity) {
                 Comprar2Activity.tvProducto.setText(nombre);
                 Comprar2Activity.rvProducto.setVisibility(View.GONE);
+                Comprar2Activity.idProducto = idProducto;
             }
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.tvProducto.setText(nombre);

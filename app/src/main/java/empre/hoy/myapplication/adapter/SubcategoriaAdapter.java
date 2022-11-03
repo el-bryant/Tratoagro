@@ -48,7 +48,7 @@ public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapte
     @Override
     public void onBindViewHolder(@NonNull SubcategoriaAdapter.viewHolder holder, int position) {
         Subcategoria subcategoria = subcategorias.get(position);
-        String idSubcategoria = subcategoria.getIdSubcategoria();
+        int idSubcategoria = subcategoria.getIdSubcategoria();
         String nombreCategoria = subcategoria.getNombre();
         holder.tvNombreCategoria.setText(nombreCategoria);
         holder.tvNombreCategoria.setOnClickListener(v -> {
@@ -85,6 +85,7 @@ public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapte
             if (activity instanceof Comprar2Activity) {
                 Comprar2Activity.rvSubcategoria.setVisibility(View.GONE);
                 Comprar2Activity.tvSubcategoria.setText(nombreCategoria);
+                Comprar2Activity.idSubcategoria = idSubcategoria;
             }
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.rvSubcategoria.setVisibility(View.GONE);
@@ -94,10 +95,10 @@ public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapte
         });
     }
 
-    public void cargar(String idSubcategoria) {
+    public void cargar(int idSubcategoria) {
         webService = new WebService(activity);
         params = new HashMap<>();
-        params.put("subcategoria", idSubcategoria);
+        params.put("subcategoria", "" + idSubcategoria);
         webService.consulta(params, "obtener_productos_subcategoria.php");
     }
 

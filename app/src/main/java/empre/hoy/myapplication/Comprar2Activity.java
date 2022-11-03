@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,12 +27,13 @@ import empre.hoy.myapplication.adapter.SubcategoriaAdapter;
 
 public class Comprar2Activity extends AppCompatActivity {
     ImageView ivContinuar, ivFondo;
+    public static int departamento = 0, provincia = 0, distrito = 0, idProducto = 0, idSubcategoria = 0;
     public static Map<String, String> params;
     TextView tvTipoUsuario, tvPersonaNatural, tvPersonaJuridica;
     TextView tvTipoComerciante, tvMinorista, tvMayorista;
     public static TextView tvDepartamento, tvProvincia, tvDistrito, tvSubcategoria, tvProducto;
     public static RecyclerView rvDepartamento, rvProvincia, rvDistrito, rvSubcategoria, rvProducto;
-    public static String idCategoria;
+    public static String idCategoria = "", tipoPersona = "", tipoVendedor = "";
     public static WebService webService;
 
     @Override
@@ -74,11 +76,13 @@ public class Comprar2Activity extends AppCompatActivity {
             tvPersonaJuridica.setVisibility(View.VISIBLE);
         });
         tvPersonaNatural.setOnClickListener(v -> {
+            tipoPersona = "N";
             tvTipoUsuario.setText("Persona natural");
             tvPersonaNatural.setVisibility(View.GONE);
             tvPersonaJuridica.setVisibility(View.GONE);
         });
         tvPersonaJuridica.setOnClickListener(v -> {
+            tipoPersona = "J";
             tvTipoUsuario.setText("Persona jurídica");
             tvPersonaNatural.setVisibility(View.GONE);
             tvPersonaJuridica.setVisibility(View.GONE);
@@ -91,11 +95,13 @@ public class Comprar2Activity extends AppCompatActivity {
             tvMayorista.setVisibility(View.VISIBLE);
         });
         tvMinorista.setOnClickListener(v -> {
+            tipoVendedor = "MIN";
             tvTipoComerciante.setText("Minorista");
             tvMinorista.setVisibility(View.GONE);
             tvMayorista.setVisibility(View.GONE);
         });
         tvMayorista.setOnClickListener(v -> {
+            tipoVendedor = "MAY";
             tvTipoComerciante.setText("Mayorista");
             tvMinorista.setVisibility(View.GONE);
             tvMayorista.setVisibility(View.GONE);
@@ -118,6 +124,7 @@ public class Comprar2Activity extends AppCompatActivity {
         });
         buscarDepartamentos();
         ivContinuar.setOnClickListener(v -> {
+            aplicarFiltros();
             switch (idCategoria) {
                 case "1":
                     startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresGanaderiaActivity.class));
@@ -140,6 +147,42 @@ public class Comprar2Activity extends AppCompatActivity {
             }
 //            finish();
         });
+    }
+
+    public void aplicarFiltros() {
+        params = new HashMap<>();
+        String filtros = "WHERE s.id_usuario = u.id_usuario " +
+                "AND c.id_categoria = su.id_categoria " +
+                "AND su.id_subcategoria = p.id_subcategoria " +
+                "AND p.id_producto = s.id_producto " +
+                "AND (pj.id_usuario = u.id_usuario OR pn.id_usuario = u.id_usuario) " +
+                "AND su.id_subcategoria = p.id_subcategoria ";
+        if (!idCategoria.equals("")) {
+            filtros = filtros + "AND c.id_categoria = " + idCategoria + " ";
+        }
+        if (!tipoPersona.equals("")) {
+            filtros = filtros + "AND u.tipo_persona = '" + tipoPersona + "' ";
+        }
+        if (!tipoVendedor.equals("")) {
+            filtros = filtros + "AND u.tipo_vendedor = '" + tipoVendedor + "' ";
+        }
+        if (departamento > 0) {
+            filtros = filtros + "AND (pj.departamento = " + departamento + " OR pn.departamento = " + departamento + ") ";
+        }
+        if (provincia > 0) {
+            filtros = filtros + "AND (pj.provincia = " + provincia + " OR pn.provincia = " + provincia + ") ";
+        }
+        if (distrito > 0) {
+            filtros = filtros + "AND (pj.distrito = " + distrito + " OR pn.distrito = " + distrito + ") ";
+        }
+        if (idSubcategoria > 0) {
+            filtros = filtros + "AND su.id_subcategoria = " + idSubcategoria + " ";
+        }
+        if (idProducto > 0) {
+            filtros = filtros + "AND p.id_producto = " + idProducto;
+        }
+        filtros = filtros + ";";
+        Log.i("filtros", filtros);
     }
 
     public static void buscarDepartamentos() {
