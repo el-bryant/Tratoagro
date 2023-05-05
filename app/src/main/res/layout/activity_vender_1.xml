@@ -29,17 +29,6 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/ivIsotipo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/isotipo"
-        android:tint="@color/dorado1"
-        android:transitionName="ivIsotipo"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
@@ -56,8 +45,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fotos de tu producto"
-                android:fontFamily="@font/hind"
+                android:text="CONTENIDO MULTIMEDIA"
+                android:fontFamily="@font/aleo_bold"
                 android:textSize="15sp"
                 android:textColor="@color/negro"
                 android:textAlignment="center" />
@@ -65,13 +54,14 @@
             <FrameLayout
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:background="@drawable/boton_flecha"
+                android:background="@drawable/boton_categorias"
                 android:layout_margin="15dp" >
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/ic_camara"
+                    android:tint="@color/blanco"
                     android:layout_margin="25dp" />
 
                 <ImageView
@@ -82,29 +72,19 @@
 
             </FrameLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="textStart"
-                android:text="Descripción"
-                android:fontFamily="@font/hind"
-                android:textSize="15sp"
-                android:textColor="@color/negro"
-                android:layout_marginStart="5dp" />
-
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/boton_rojo"
+                android:background="@drawable/boton_categorias"
                 android:layout_marginBottom="15dp" >
 
                 <EditText
                     android:id="@+id/etDescripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Escriba una descripción"
-                    android:fontFamily="@font/hind"
-                    android:textSize="15sp"
+                    android:hint="BREVE DESCRIPCIÓN DEL PRODUCTO..."
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="12sp"
                     android:textColor="@color/blanco"
                     android:textColorHint="@color/blanco"
                     android:background="@null"
@@ -132,22 +112,25 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Stock: "
-                        android:fontFamily="@font/hind"
+                        android:text="STOCK"
+                        android:gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/negro"
                         android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/etStock"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
                         android:inputType="number"
-                        android:hint="Ej: 00"
-                        android:fontFamily="@font/hind"
+                        android:hint="0"
+                        android:fontFamily="@font/aleo_bold"
                         android:textSize="15sp"
                         android:textColor="@color/blanco"
                         android:textColorHint="@color/blanco"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_person"
                         android:textAlignment="center"
                         android:paddingVertical="5dp" />
 
@@ -164,15 +147,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:gravity="center" >
 
                         <TextView
                             android:id="@+id/tvUnidad"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Seleccione la unidad"
-                            android:fontFamily="@font/hind"
+                            android:text="UNIDAD"
+                            android:fontFamily="@font/aleo_bold"
                             android:drawableEnd="@drawable/ic_abajo"
                             android:drawableTint="@color/blanco"
                             android:textSize="15sp"
@@ -196,27 +179,31 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="100dp"
                 android:orientation="vertical"
                 android:layout_marginVertical="15dp" >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Precio: "
-                    android:fontFamily="@font/hind"
+                    android:text="PRECIO"
+                    android:gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/negro"
                     android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/etPrecio"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:inputType="numberDecimal"
-                    android:hint="Ej: 15.00"
-                    android:background="@drawable/boton_rojo"
-                    android:fontFamily="@font/hind"
+                    android:hint="0"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/boton_person"
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textColorHint="@color/blanco"
                     android:textSize="15sp"
@@ -226,16 +213,18 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
                 android:orientation="vertical"
-                android:layout_marginVertical="15dp" >
+                android:layout_marginVertical="25dp" >
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
                     android:orientation="vertical"
-                    android:background="@drawable/boton_rojo"
+                    android:layout_marginStart="179dp"
+                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
                     android:paddingVertical="5dp" >
 
@@ -243,14 +232,14 @@
                         android:id="@+id/tvMoneda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Seleccione la moneda"
                         android:drawableEnd="@drawable/ic_abajo"
                         android:drawableTint="@color/blanco"
-                        android:fontFamily="@font/hind"
-                        android:textSize="15sp"
-                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center"
+                        android:text="SOLES/DÓLARES"
                         android:textAlignment="center"
-                        android:gravity="center"/>
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/tvSoles"
@@ -283,7 +272,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginVertical="50dp"
+                android:layout_marginVertical="20dp"
                 android:background="@drawable/boton_flecha"
                 android:fontFamily="@font/aleo_bold"
                 android:padding="12dp"

@@ -47,17 +47,6 @@
             android:src="@drawable/isotipo"
             android:tint="@color/dorado1" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/aleo_bold"
-            android:gravity="center"
-            android:text="Porfavor selecciona cualquiera de las opciones"
-            android:textColor="@color/blanco"
-            android:textSize="15sp"
-            android:shadowRadius="10"
-            android:shadowColor="#000000" />
 
     </LinearLayout>
 
@@ -86,16 +75,16 @@
                 android:layout_weight="1" >
 
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:src="@drawable/ic_carrito"
                     android:tint="@color/dorado1"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Comprar o Vender"
-                    android:fontFamily="@font/hind"
+                    android:text="COMPRAR/ VENDER"
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -120,8 +109,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Estadísticas"
-                    android:fontFamily="@font/hind"
+                    android:text="DEMANDA PROD./ SERV."
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -156,8 +145,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cerrar sesión"
-                    android:fontFamily="@font/hind"
+                    android:text="CERRAR SESIÓN"
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -182,8 +171,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Noticias"
-                    android:fontFamily="@font/hind"
+                    android:text="TE INFORMAMOS"
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -218,8 +207,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Espacio al cliente"
-                    android:fontFamily="@font/hind"
+                    android:text="MI PERFIL"
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"
@@ -244,8 +233,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Conócenos más"
-                    android:fontFamily="@font/hind"
+                    android:text="CONTÁCTANOS"
+                    android:fontFamily="@font/aleo_bold"
                     android:textColor="@color/blanco"
                     android:textSize="12sp"
                     android:textAlignment="center"

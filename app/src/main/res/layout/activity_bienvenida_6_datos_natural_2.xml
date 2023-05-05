@@ -62,10 +62,10 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="30dp"
                     android:fontFamily="@font/aleo_bold"
-                    android:text="Llena la información solicitada:"
+                    android:text="Porfavor llena los siguientes datos sociodemográficos"
                     android:textAlignment="center"
-                    android:textColor="@color/blanco"
-                    android:textSize="16sp" />
+                    android:textColor="@color/negro"
+                    android:textSize="12sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -76,7 +76,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="10dp">
@@ -89,10 +89,10 @@
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
-                            android:textSize="15sp"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:text="MAYORISTA/MINORISTA"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <TextView
                             android:id="@+id/tvMayorista"
@@ -129,7 +129,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingVertical="10dp">
 
@@ -142,10 +142,10 @@
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
-                            android:textSize="15sp"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE SU DEPARTAMENTO"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDepartamento"
@@ -166,7 +166,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingVertical="10dp">
 
@@ -179,10 +179,10 @@
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
-                            android:textSize="15sp"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE SU PROVINCIA"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvProvincia"
@@ -203,7 +203,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingVertical="10dp">
 
@@ -216,10 +216,10 @@
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
-                            android:textSize="15sp"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE SU DISTRITO"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDistrito"

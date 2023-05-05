@@ -52,10 +52,8 @@
             android:layout_height="wrap_content"
             android:text="Por favor, seleccione una de las categorías:"
             android:fontFamily="@font/aleo_bold"
-            android:textSize="18sp"
-            android:textColor="@color/blanco"
-            android:shadowColor="@color/negro"
-            android:shadowRadius="10"
+            android:textSize="12sp"
+            android:textColor="@color/negro"
             android:textAlignment="center"
             android:layout_marginHorizontal="30dp" />
 
@@ -75,9 +73,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="3dp"
                     android:layout_marginHorizontal="30dp">
 
                     <ImageView
@@ -91,7 +89,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="GANADERÍA"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
                         android:textAlignment="textEnd"
@@ -104,10 +102,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="3dp" >
 
                     <ImageView
                         android:id="@+id/ivPesca"
@@ -120,7 +118,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="PESCA"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
                         android:textAlignment="textEnd"
@@ -133,10 +131,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="3dp" >
 
                     <ImageView
                         android:id="@+id/ivMaquinaria"
@@ -149,7 +147,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="MAQUINARIA"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
                         android:textAlignment="textEnd"
@@ -162,10 +160,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="3dp" >
 
                     <ImageView
                         android:id="@+id/ivInsumos"
@@ -178,7 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="INSUMOS"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
                         android:textAlignment="textEnd"
@@ -190,11 +188,11 @@
                     android:id="@+id/llayPesticidas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_categorias"
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="3dp" >
 
                     <ImageView
                         android:id="@+id/ivPesticidas"
@@ -207,7 +205,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="PESTICIDAS"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
                         android:textAlignment="textEnd"
@@ -221,10 +219,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="3dp" >
 
                     <ImageView
                         android:id="@+id/ivFertilizantes"
@@ -237,7 +235,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="FERTILIZANTES"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textColor="@color/blanco"
                         android:textAlignment="textEnd"

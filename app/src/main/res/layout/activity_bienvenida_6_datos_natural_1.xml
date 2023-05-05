@@ -49,18 +49,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
             android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/blanco"
-            android:text="Por favor, llena la información solicitada:"
+            android:textColor="@color/negro"
+            android:text="Por favor llena la información solicitada"
             android:textAlignment="center"
-            android:textSize="16sp" />
+            android:textSize="12sp" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="30dp"
-            android:layout_marginVertical="50dp" >
+            android:layout_marginVertical="30dp" >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -78,13 +78,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_ruc"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="DNI"
                         android:inputType="number"
                         android:textColor="@color/negro"
                         android:textColorHint="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/negro"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="1dp" >
 
                     <EditText
                         android:id="@+id/etApellidos"
@@ -101,11 +101,11 @@
                         android:drawableEnd="@drawable/representantelegal"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Apellidos"
+                        android:hint="APELLIDOS"
                         android:inputType="textCapWords"
                         android:textColor="@color/negro"
                         android:textColorHint="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,20 +113,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/negro"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="1dp" >
 
                     <EditText
                         android:id="@+id/etNombres"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/representantelegal"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Nombres"
+                        android:hint="NOMBRE(S)"
                         android:inputType="textCapWords"
                         android:textColor="@color/negro"
                         android:textColorHint="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -134,7 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/negro"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="1dp" >
 
                     <EditText
                         android:id="@+id/etCelular"
@@ -143,11 +143,11 @@
                         android:drawableEnd="@drawable/celular1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Celular"
+                        android:hint="CELULAR"
                         android:inputType="phone"
                         android:textColor="@color/negro"
                         android:textColorHint="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -155,20 +155,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/negro"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="1dp" >
 
                     <EditText
                         android:id="@+id/etCorreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/correo1"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Correo electrónico"
+                        android:hint="CORREO ELECTRÓNICO"
                         android:inputType="textEmailAddress"
                         android:textColor="@color/negro"
                         android:textColorHint="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -176,7 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/negro"
-                    android:layout_marginVertical="10dp" >
+                    android:layout_marginVertical="1dp" >
 
                     <EditText
                         android:id="@+id/etUbicacion"
@@ -185,11 +185,11 @@
                         android:drawableEnd="@drawable/ubicacion1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Ubicación"
+                        android:hint="UBICACIÓN"
                         android:inputType="textPostalAddress"
                         android:textColor="@color/negro"
                         android:textColorHint="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

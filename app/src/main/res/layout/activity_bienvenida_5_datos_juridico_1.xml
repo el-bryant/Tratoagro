@@ -24,21 +24,10 @@
             android:layout_weight="1"
             app:background_ColorType="gradient_linear"
             app:background_Gradient_Angle="180"
-            app:background_Gradient_Color0="#80000000"
+            app:background_Gradient_Color0="#8F000000"
             app:background_Gradient_ColorEnd="#00000000" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/ivIsotipo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/isotipo"
-        android:tint="@color/dorado1"
-        android:transitionName="ivIsotipo"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,12 +41,10 @@
             android:layout_marginTop="50dp"
             android:layout_marginBottom="30dp"
             android:fontFamily="@font/aleo_bold"
-            android:shadowColor="@color/negro"
-            android:shadowRadius="10"
-            android:text="Por favor, llena la información requerida:"
+            android:text="Por favor, llena la información requerida"
             android:textAlignment="center"
-            android:textColor="@color/blanco"
-            android:textSize="16sp" />
+            android:textColor="@color/negro"
+            android:textSize="12sp" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -86,14 +73,14 @@
                         android:hint="RUC"
                         android:inputType="number"
                         android:textColor="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="1dp"
                     android:textColorHint="@color/negro">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -101,19 +88,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/empresa1"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Razón social"
+                        android:hint="RAZÓN SOCIAL"
                         android:inputType="textCapWords"
                         android:textColor="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="1dp"
                     android:textColorHint="@color/negro">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -123,17 +110,17 @@
                         android:drawableEnd="@drawable/representantelegal"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Representante Legal"
+                        android:hint="REPRESENTANTE LEGAL"
                         android:inputType="textCapWords"
                         android:textColor="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="1dp"
                     android:textColorHint="@color/negro">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -141,19 +128,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/celular1"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Celular"
+                        android:hint="CELULAR"
                         android:inputType="phone"
                         android:textColor="@color/negro"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="1dp"
                     android:textColorHint="@color/negro">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -163,17 +150,17 @@
                         android:drawableEnd="@drawable/ic_casa"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Domicilio Fiscal"
+                        android:hint="DOMICILIO FISCAL"
                         android:inputType="textPostalAddress"
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="1dp"
                     android:textColorHint="@color/negro">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -181,19 +168,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/correo1"
-                        android:drawableTint="@color/rojo"
+                        android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Correo Electrónico"
+                        android:hint="CORREO ELECTRÓNICO"
                         android:inputType="textEmailAddress"
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="10dp"
+                    android:layout_marginVertical="1dp"
                     android:textColorHint="@color/negro">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -203,10 +190,10 @@
                         android:drawableEnd="@drawable/ubicacion1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
-                        android:hint="Ubicación"
+                        android:hint="UBICACIÓN"
                         android:inputType="textPostalAddress"
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

@@ -49,14 +49,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ya casi estas listo para que seas parte de esta espacio virtual, porfavor crea un usuario y contraseña para que puedas acceder a lo que tenemos preparado para tí"
+            android:text="Ya casi estas listo para que seas parte de esta espacio virtual, porfavor crea un usuario y contraseña."
             android:textAlignment="center"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/blanco"
-            android:textSize="16sp"
-            android:shadowColor="@color/negro"
-            android:shadowRadius="10"
+            android:textColor="@color/negro"
+            android:textSize="12sp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginBottom="40dp" />
 
@@ -80,10 +78,10 @@
                         android:id="@+id/tietUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Usuario"
+                        android:hint="USUARIO"
                         android:textColorHint="@color/negro"
                         android:fontFamily="@font/aleo_bold"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:drawableTint="@color/dorado1"
                         android:textColor="@color/negro"
                         android:textColorHighlight="@color/negro"
@@ -104,10 +102,10 @@
                         android:id="@+id/tietClave1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Contraseña"
+                        android:hint="CONTRASEÑA"
                         android:textColor="@color/negro"
                         android:fontFamily="@font/aleo_bold"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:drawableTint="@color/dorado1"
                         android:inputType="textPassword" />
 
@@ -125,10 +123,10 @@
                         android:id="@+id/tietClave2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Repita la contraseña"
+                        android:hint="REPITA LA CONTRASEÑA"
                         android:textColor="@color/negro"
                         android:fontFamily="@font/aleo_bold"
-                        android:textSize="15sp"
+                        android:textSize="12sp"
                         android:drawableTint="@color/dorado1"
                         android:inputType="textPassword" />
 
@@ -136,17 +134,16 @@
 
                 <Button
                     android:id="@+id/btnListo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="Listo"
-                    android:background="@drawable/boton_rojo"
-                    android:textColor="@color/dorado1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:text="Aceptar"
+                    android:background="@drawable/boton_flecha"
+                    android:textColor="@color/blanco"
                     android:layout_marginTop="50dp"
-                    android:paddingHorizontal="50dp"
                     android:fontFamily="@font/aleo_bold"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     android:textAllCaps="false"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"  />
 
             </LinearLayout>
 

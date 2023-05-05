@@ -16,31 +16,31 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         app:background_ColorType="gradient_radial"
-        app:background_Gradient_Color0="#80000000"
+        app:background_Gradient_Color0="#66000000"
         app:background_Gradient_ColorEnd="#00000000"  />
 
     <ImageView
         android:id="@+id/ivIsotipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/isotipo"
         android:tint="@color/logo"
         android:transitionName="ivIsotipo" />
 
     <Button
         android:id="@+id/btnRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="150dp"
-        android:background="@drawable/boton_rojo"
+        android:background="@drawable/boton_person"
         android:fontFamily="@font/aleo_bold"
-        android:paddingHorizontal="50dp"
         android:text="Registrarse"
         android:textAllCaps="false"
-        android:textColor="@color/color20"
-        android:textSize="15sp" />
+        android:textColor="@color/blanco"
+        android:textSize="12sp" />
 
 </RelativeLayout>

@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/boton3">
+            android:background="@drawable/boton_categorias">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/blanco"
-                    android:textColor="@color/color20"
+                    android:textColor="@color/negro"
                     android:text="COLOCAR MARCA"
                     android:gravity="center"
                     android:fontFamily="@font/aleo_bold"
@@ -63,27 +63,27 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/color20"
-                        android:textColor="@color/negro"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textSize="15sp"
-                        android:text="PRECIO"
-                        android:paddingHorizontal="10dp"
                         android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp" />
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/color20"
+                        android:fontFamily="@font/aleo_bold"
+                        android:paddingHorizontal="10dp"
+                        android:text="PRECIO"
+                        android:textColor="@color/negro"
+                        android:textSize="15sp" />
 
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:text=" + información"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
                         android:layout_marginTop="3dp"
-                        android:textSize="12sp"
                         android:background="@drawable/boton5"
-                        android:textColor="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
-                        android:textAllCaps="false"
                         android:paddingHorizontal="10dp"
-                        android:layout_alignParentEnd="true" />
+                        android:text="MÁS INFO."
+                        android:textAllCaps="false"
+                        android:textColor="@color/blanco"
+                        android:textSize="10sp" />
 
                 </RelativeLayout>
 

@@ -61,11 +61,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Porfavor llena los siguientes datos"
+                    android:text="Porfavor llena los siguientes datos sociodemográficos"
                     android:textAlignment="center"
                     android:fontFamily="@font/aleo_bold"
-                    android:textColor="@color/marron1"
-                    android:textSize="16sp"
+                    android:textColor="@color/negro"
+                    android:textSize="12sp"
                     android:layout_margin="30dp" />
 
                 <LinearLayout
@@ -78,7 +78,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingHorizontal="15dp"
                         android:paddingVertical="10dp">
@@ -91,15 +91,17 @@
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:text="MAYORITA/MINORISTA"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <TextView
                             android:id="@+id/tvMayorista"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Mayorista"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"
                             android:textAlignment="center"
                             android:visibility="gone" />
@@ -109,6 +111,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Minorista"
+                            android:fontFamily="@font/aleo_bold"
                             android:textColor="@color/blanco"
                             android:textAlignment="center"
                             android:visibility="gone" />
@@ -127,7 +130,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingVertical="10dp">
 
@@ -139,10 +142,11 @@
                             android:drawableStart="@drawable/ic_peru"
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
+                            android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
                             android:gravity="center"
                             android:text="SELECCIONE SU DEPARTAMENTO"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDepartamento"
@@ -164,7 +168,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingVertical="10dp">
 
@@ -177,9 +181,10 @@
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE SU PROVINCIA"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvProvincia"
@@ -201,7 +206,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_rojo"
+                        android:background="@drawable/boton_categorias"
                         android:orientation="vertical"
                         android:paddingVertical="10dp">
 
@@ -214,9 +219,10 @@
                             android:drawableEnd="@drawable/ic_abajo2"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
+                            android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE SU DISTRITO"
-                            android:textColor="@color/dorado1" />
+                            android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDistrito"

@@ -17,20 +17,6 @@
         />
 
     <TextView
-        android:layout_width="410dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:fontFamily="@font/aleo_bold"
-        android:textSize="15sp"
-        android:textColor="@color/blanco"
-        android:text="ESPACIO DE ANÁLISIS"
-        android:layout_marginHorizontal="30dp"
-        android:textAlignment="center"
-        android:shadowColor="@color/negro"
-        android:layout_marginTop="30dp"
-        android:background="@color/rojo"
-        android:layout_marginVertical="15dp"/>
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aleo_bold"
