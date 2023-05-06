@@ -22,6 +22,7 @@ import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
+import empre.hoy.myapplication.Vender3Activity;
 import empre.hoy.myapplication.entity.Categoria;
 
 public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapter.viewHolder> {
@@ -66,13 +67,17 @@ public class DepartamentoAdapter extends RecyclerView.Adapter<DepartamentoAdapte
                 Bienvenida6DatosNatural2Activity.tvDepartamento.setText(nombreDepartamento);
                 Bienvenida6DatosNatural2Activity.rvDepartamento.setVisibility(View.GONE);
             }
+            if (activity instanceof Vender3Activity) {
+                Vender3Activity.tvDepartamento.setText(nombreDepartamento);
+                Vender3Activity.rvDepartamento.setVisibility(View.GONE);
+            }
             cargar(idDepartamento);
         });
     }
 
     public void cargar(int idDepartamento) {
         if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity || activity instanceof Bienvenida5DatosJuridico2Activity
-                || activity instanceof Bienvenida6DatosNatural2Activity) {
+                || activity instanceof Bienvenida6DatosNatural2Activity || activity instanceof Vender3Activity) {
             webService = new WebService(activity);
             params = new HashMap<>();
             params.put("id_departamento", "" + idDepartamento);

@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.squareup.picasso.Picasso;
 
 public class Bienvenida811EmpezarTutorial26Info1PesticidasActivity extends AppCompatActivity {
-    Button btnContinuar;
+    Button btnContinuar, btnMenuPrincipal;
     ImageView ivFondo;
 
     @Override
@@ -21,10 +21,15 @@ public class Bienvenida811EmpezarTutorial26Info1PesticidasActivity extends AppCo
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_8_11_empezar_tutorial_2_6_info_1_pesticidas);
         btnContinuar = (Button) findViewById(R.id.btnContinuar);
+        btnMenuPrincipal = (Button) findViewById(R.id.btnMenuPrincipal);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoPesticidas).into(ivFondo);
         btnContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida811EmpezarTutorial26Info1PesticidasActivity.this, Bienvenida812EmpezarTutorial26Info2PesticidasActivity.class));
+            finish();
+        });
+        btnMenuPrincipal.setOnClickListener(v -> {
+            startActivity(new Intent(Bienvenida811EmpezarTutorial26Info1PesticidasActivity.this, PrincipalActivity.class));
             finish();
         });
     }

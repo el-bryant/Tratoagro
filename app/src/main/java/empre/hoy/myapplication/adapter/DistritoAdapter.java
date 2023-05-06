@@ -17,6 +17,7 @@ import empre.hoy.myapplication.EstadisticasGeneral2Activity;
 import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.R;
+import empre.hoy.myapplication.Vender3Activity;
 import empre.hoy.myapplication.entity.Categoria;
 
 public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHolder> {
@@ -60,6 +61,10 @@ public class DistritoAdapter extends RecyclerView.Adapter<DistritoAdapter.viewHo
             if (activity instanceof Bienvenida6DatosNatural2Activity) {
                 Bienvenida6DatosNatural2Activity.tvDistrito.setText(nombreDistrito);
                 Bienvenida6DatosNatural2Activity.rvDistrito.setVisibility(View.GONE);
+            }
+            if (activity instanceof Vender3Activity) {
+                Vender3Activity.tvDistrito.setText(nombreDistrito);
+                Vender3Activity.rvDistrito.setVisibility(View.GONE);
             }
         });
     }

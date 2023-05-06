@@ -25,6 +25,7 @@ import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
+import empre.hoy.myapplication.Vender3Activity;
 import empre.hoy.myapplication.entity.Subcategoria;
 
 public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapter.viewHolder> {
@@ -90,6 +91,10 @@ public class SubcategoriaAdapter extends RecyclerView.Adapter<SubcategoriaAdapte
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.rvSubcategoria.setVisibility(View.GONE);
                 EstadisticasGeneralActivity.tvSubcategoria.setText(nombreCategoria);
+            }
+            if (activity instanceof Vender3Activity) {
+                Vender3Activity.rvSubcategoria.setVisibility(View.GONE);
+                Vender3Activity.tvSubcategoria.setText(nombreCategoria);
             }
             cargar(idSubcategoria);
         });

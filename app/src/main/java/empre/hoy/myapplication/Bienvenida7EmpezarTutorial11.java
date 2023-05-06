@@ -21,7 +21,7 @@ public class Bienvenida7EmpezarTutorial11 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida_7_empezar_tutorial_1_1);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
+//        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         llayFertilizantes = (LinearLayout) findViewById(R.id.llayFertilizantes);
         llayGanaderia = (LinearLayout) findViewById(R.id.llayGanaderia);
         llayInsumos = (LinearLayout) findViewById(R.id.llayInsumos);
@@ -29,10 +29,10 @@ public class Bienvenida7EmpezarTutorial11 extends AppCompatActivity {
         llayPesca = (LinearLayout) findViewById(R.id.llayPesca);
         llayPesticidas = (LinearLayout) findViewById(R.id.llayPesticidas);
         Picasso.get().load(fondoGeneral).into(ivFondo);
-        ivContinuar.setOnClickListener(v -> {
-            startActivity(new Intent(Bienvenida7EmpezarTutorial11.this, PrincipalActivity.class));
-            finish();
-        });
+//        ivContinuar.setOnClickListener(v -> {
+//            startActivity(new Intent(Bienvenida7EmpezarTutorial11.this, PrincipalActivity.class));
+//            finish();
+//        });
         llayGanaderia.setOnClickListener(v -> {
             startActivity(new Intent(Bienvenida7EmpezarTutorial11.this, Bienvenida83EmpezarTutorial22Info1GanaderiaActivity.class));
 //            finish();

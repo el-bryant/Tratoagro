@@ -54,6 +54,19 @@
             android:textAlignment="center"
             android:layout_marginHorizontal="15dp" />
 
+        <Button
+            android:id="@+id/btnMenuPrincipal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:fontFamily="@font/aleo_bold"
+            android:text="Ir a menú principal"
+            android:textColor="@color/blanco"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/boton_flecha"
+            android:textAlignment="center" />
+
     </LinearLayout>
 
 </FrameLayout>

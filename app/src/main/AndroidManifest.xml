@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    package="empre.hoy.myapplication" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="empre.hoy.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -14,9 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true" >
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".SplashScreenActivity" >
+            android:name=".Vender4Activity"
+            android:exported="true" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +29,7 @@
         <activity android:name=".Bienvenida4Activity" />
         <activity android:name=".Bienvenida5DatosJuridico1Activity" />
         <activity android:name=".Bienvenida5DatosJuridico2Activity" />
-        <activity android:name=".Bienvenida5DatosJuridico3Activity"/>
+        <activity android:name=".Bienvenida5DatosJuridico3Activity" />
         <activity android:name=".Bienvenida6DatosNatural1Activity" />
         <activity android:name=".Bienvenida6DatosNatural2Activity" />
         <activity android:name=".Bienvenida6DatosNatural3Activity" />

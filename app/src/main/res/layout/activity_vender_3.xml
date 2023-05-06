@@ -179,7 +179,9 @@
                             android:id="@+id/rvSubcategoria"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginVertical="5dp" />
 
                     </LinearLayout>
 
@@ -217,7 +219,9 @@
                             android:id="@+id/rvProducto"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:visibility="gone" />
+                            android:visibility="gone"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginVertical="5dp" />
 
                     </LinearLayout>
 

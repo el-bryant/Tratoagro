@@ -16,6 +16,7 @@ import empre.hoy.myapplication.Comprar2Activity;
 import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.ListaProveedoresActivity;
 import empre.hoy.myapplication.R;
+import empre.hoy.myapplication.Vender3Activity;
 import empre.hoy.myapplication.entity.Producto;
 
 public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHolder> {
@@ -49,6 +50,10 @@ public class ProductoAdapter extends RecyclerView.Adapter<ProductoAdapter.viewHo
             if (activity instanceof EstadisticasGeneralActivity) {
                 EstadisticasGeneralActivity.tvProducto.setText(nombre);
                 EstadisticasGeneralActivity.rvProducto.setVisibility(View.GONE);
+            }
+            if (activity instanceof Vender3Activity) {
+                Vender3Activity.tvProducto.setText(nombre);
+                Vender3Activity.rvProducto.setVisibility(View.GONE);
             }
 //                    activity.startActivity(new
 //                Intent(activity, ListaProveedoresActivity.class)

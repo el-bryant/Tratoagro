@@ -54,6 +54,7 @@ import empre.hoy.myapplication.TutoMaquinaria;
 import empre.hoy.myapplication.TutoPesca;
 import empre.hoy.myapplication.TutoPesticidas;
 import empre.hoy.myapplication.Vender1Activity;
+import empre.hoy.myapplication.Vender3Activity;
 import empre.hoy.myapplication.adapter.CategoriaAdapter;
 import empre.hoy.myapplication.adapter.DepartamentoAdapter;
 import empre.hoy.myapplication.adapter.DistritoAdapter;
@@ -459,6 +460,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         if (activity instanceof EstadisticasGeneralActivity) {
                             EstadisticasGeneralActivity.cargarSubcategorias(subcategoriaAdapter);
                         }
+                        if (activity instanceof Vender3Activity) {
+                            Vender3Activity.cargarSubcategorias(subcategoriaAdapter);
+                        }
 //                        PerfilVentaProductosActivity.cargarSubcategorias(subcategoriaAdapter);
                     }
                     break;
@@ -499,6 +503,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                         if (activity instanceof EstadisticasGeneralActivity) {
                             EstadisticasGeneralActivity.buscarProductos(productoAdapter);
+                        }
+                        if (activity instanceof Vender3Activity) {
+                            Vender3Activity.cargarProductos(productoAdapter);
                         }
                     }
                     break;
@@ -600,6 +607,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         if (activity instanceof Bienvenida6DatosNatural2Activity) {
                             Bienvenida6DatosNatural2Activity.cargarDepartamentos(departamentoAdapter);
                         }
+                        if (activity instanceof Vender3Activity) {
+                            Vender3Activity.cargarDepartamentos(departamentoAdapter);
+                        }
                     }
                     break;
                 case "buscar_provincias":
@@ -625,6 +635,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                         }
                         if (activity instanceof Bienvenida6DatosNatural2Activity) {
                             Bienvenida6DatosNatural2Activity.cargarProvincias(provinciaAdapter);
+                        }
+                        if (activity instanceof Vender3Activity) {
+                            Vender3Activity.cargarProvincias(provinciaAdapter);
                         }
                     }
                     break;
@@ -652,6 +665,9 @@ public class WebService implements Response.Listener, Response.ErrorListener {
                     }
                     if (activity instanceof Bienvenida6DatosNatural2Activity) {
                         Bienvenida6DatosNatural2Activity.cargarDistritos(distritoAdapter);
+                    }
+                    if (activity instanceof Vender3Activity) {
+                        Vender3Activity.cargarDistritos(distritoAdapter);
                     }
                     break;
                 case "obtener_unidades":

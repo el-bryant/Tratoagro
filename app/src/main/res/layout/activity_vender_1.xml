@@ -9,7 +9,18 @@
         android:id="@+id/ivFondo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <com.sinaseyfi.advancedcardview.AdvancedCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:stroke_ColorType="gradient_linear"
+        app:stroke_Gradient_Color0="@color/dorado1"
+        app:stroke_Gradient_ColorEnd="@color/marron1"
+        app:stroke_Width="10dp"
+        app:background_Type="stroke" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,38 +42,30 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="match_parent" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
             android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="30dp"
-            android:layout_marginTop="50dp" >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CONTENIDO MULTIMEDIA"
-                android:fontFamily="@font/aleo_bold"
-                android:textSize="15sp"
-                android:textColor="@color/negro"
-                android:textAlignment="center" />
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:background="@drawable/boton_categorias"
-                android:layout_margin="15dp" >
+                android:layout_margin="15dp"
+                android:background="@drawable/boton_flecha">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="25dp"
                     android:src="@drawable/ic_camara"
-                    android:tint="@color/blanco"
-                    android:layout_margin="25dp" />
+                    android:tint="@color/blanco" />
 
                 <ImageView
                     android:id="@+id/ivFoto"
@@ -75,193 +78,192 @@
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/boton_categorias"
-                android:layout_marginBottom="15dp" >
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/boton_categorias">
 
                 <EditText
                     android:id="@+id/etDescripcion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="BREVE DESCRIPCIÓN DEL PRODUCTO..."
-                    android:fontFamily="@font/aleo_bold"
-                    android:textSize="12sp"
-                    android:textColor="@color/blanco"
-                    android:textColorHint="@color/blanco"
+                    android:layout_margin="15dp"
                     android:background="@null"
                     android:ems="10"
+                    android:fontFamily="@font/aleo_bold"
                     android:gravity="start|top"
+                    android:hint="Breve descripción del producto..."
                     android:inputType="textMultiLine"
-                    android:layout_margin="10dp" />
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="15sp" />
 
             </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginVertical="15dp"
                 android:gravity="center"
-                android:layout_marginVertical="15dp" >
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:layout_marginEnd="10dp" >
+                    android:background="@drawable/boton_categorias"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="STOCK"
-                        android:gravity="center"
-                        android:layout_marginStart="50dp"
+                        android:layout_marginStart="15dp"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/negro"
+                        android:text="Stock: "
+                        android:textColor="@color/blanco"
                         android:textSize="15sp" />
 
                     <EditText
                         android:id="@+id/etStock"
-                        android:layout_width="50dp"
+                        android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:layout_marginStart="50dp"
-                        android:inputType="number"
-                        android:hint="0"
+                        android:background="@null"
                         android:fontFamily="@font/aleo_bold"
-                        android:textSize="15sp"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:paddingVertical="5dp"
+                        android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textColorHint="@color/blanco"
-                        android:background="@drawable/boton_person"
-                        android:textAlignment="center"
-                        android:paddingVertical="5dp" />
+                        android:textSize="15sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
                     android:layout_weight="1"
-                    android:layout_marginStart="10dp" >
+                    android:background="@drawable/boton_categorias"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/tvUnidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_abajo"
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center"
+                        android:text="Unidad"
+                        android:textAlignment="center"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvUnidades"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:background="@drawable/boton_categorias"
-                        android:gravity="center" >
-
-                        <TextView
-                            android:id="@+id/tvUnidad"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="UNIDAD"
-                            android:fontFamily="@font/aleo_bold"
-                            android:drawableEnd="@drawable/ic_abajo"
-                            android:drawableTint="@color/blanco"
-                            android:textSize="15sp"
-                            android:textColor="@color/blanco"
-                            android:textAlignment="center"
-                            android:paddingVertical="5dp"
-                            android:gravity="center" />
-
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/rvUnidades"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginHorizontal="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:visibility="gone" />
-
-                    </LinearLayout>
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="150dp"
-                android:layout_height="70dp"
-                android:layout_marginEnd="100dp"
-                android:orientation="vertical"
-                android:layout_marginVertical="15dp" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="PRECIO"
-                    android:gravity="center"
-                    android:layout_marginStart="50dp"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textColor="@color/negro"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/etPrecio"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:inputType="numberDecimal"
-                    android:hint="0"
-                    android:layout_marginStart="50dp"
-                    android:background="@drawable/boton_person"
-                    android:fontFamily="@font/aleo_bold"
-                    android:textColor="@color/blanco"
-                    android:textColorHint="@color/blanco"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
-                    android:paddingVertical="5dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="20dp"
-                android:orientation="vertical"
-                android:layout_marginVertical="25dp" >
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="150dp"
-                    android:layout_height="60dp"
-                    android:orientation="vertical"
-                    android:layout_marginStart="179dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
                     android:background="@drawable/boton_categorias"
                     android:gravity="center"
-                    android:paddingVertical="5dp" >
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tvMoneda"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableEnd="@drawable/ic_abajo"
-                        android:drawableTint="@color/blanco"
+                        android:layout_marginStart="15dp"
                         android:fontFamily="@font/aleo_bold"
-                        android:gravity="center"
-                        android:text="SOLES/DÓLARES"
-                        android:textAlignment="center"
+                        android:text="Precio: "
                         android:textColor="@color/blanco"
                         android:textSize="15sp" />
 
-                    <TextView
-                        android:id="@+id/tvSoles"
+                    <EditText
+                        android:id="@+id/etPrecio"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="PEN"
-                        android:fontFamily="@font/hind"
-                        android:textSize="15sp"
-                        android:textColor="@color/blanco"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:fontFamily="@font/aleo_bold"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:paddingVertical="5dp"
                         android:textAlignment="center"
-                        android:visibility="gone" />
+                        android:textColor="@color/blanco"
+                        android:textColorHint="@color/blanco"
+                        android:textSize="15sp" />
 
-                    <TextView
-                        android:id="@+id/tvDolares"
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="USD"
-                        android:fontFamily="@font/hind"
-                        android:textSize="15sp"
-                        android:textColor="@color/blanco"
-                        android:textAlignment="center"
-                        android:visibility="gone" />
+                        android:background="@drawable/boton_categorias"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvMoneda"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="15dp"
+                            android:drawableEnd="@drawable/ic_abajo"
+                            android:drawableTint="@color/blanco"
+                            android:fontFamily="@font/aleo_bold"
+                            android:gravity="center"
+                            android:text="Soles / Dólares"
+                            android:textAlignment="center"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvSoles"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind"
+                            android:text="PEN"
+                            android:textAlignment="center"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvDolares"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/hind"
+                            android:text="USD"
+                            android:textAlignment="center"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 

@@ -18,6 +18,7 @@ import empre.hoy.myapplication.EstadisticasGeneralActivity;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.PerfilVentaProductosActivity;
 import empre.hoy.myapplication.R;
+import empre.hoy.myapplication.Vender3Activity;
 import empre.hoy.myapplication.entity.Categoria;
 
 public class ProvinciaAdapter extends RecyclerView.Adapter<ProvinciaAdapter.viewHolder> {
@@ -62,13 +63,17 @@ public class ProvinciaAdapter extends RecyclerView.Adapter<ProvinciaAdapter.view
                 Bienvenida6DatosNatural2Activity.tvProvincia.setText(nombreProvincia);
                 Bienvenida6DatosNatural2Activity.rvProvincia.setVisibility(View.GONE);
             }
+            if (activity instanceof Vender3Activity) {
+                Vender3Activity.tvProvincia.setText(nombreProvincia);
+                Vender3Activity.rvProvincia.setVisibility(View.GONE);
+            }
             cargar(idProvincia);
         });
     }
 
     public void cargar(int idProvincia) {
         if (activity instanceof Comprar2Activity || activity instanceof EstadisticasGeneralActivity || activity instanceof Bienvenida5DatosJuridico2Activity
-        || activity instanceof Bienvenida6DatosNatural2Activity) {
+        || activity instanceof Bienvenida6DatosNatural2Activity || activity instanceof Vender3Activity) {
             webService = new WebService(activity);
             params = new HashMap<>();
             params.put("id_provincia", "" + idProvincia);

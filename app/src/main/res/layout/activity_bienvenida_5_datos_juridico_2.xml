@@ -31,17 +31,6 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/ivIsotipo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/isotipo"
-        android:tint="@color/dorado1"
-        android:transitionName="ivIsotipo"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
