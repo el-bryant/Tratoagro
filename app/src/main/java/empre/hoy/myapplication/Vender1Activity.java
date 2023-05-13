@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,6 +35,7 @@ import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.UnidadAdapter;
 
 public class Vender1Activity extends AppCompatActivity {
+    Button btnPublicaciones;
     ImageView ivContinuar, ivFondo, ivFoto;
     Map<String, String> params;
     public static RecyclerView rvUnidades;
@@ -47,6 +49,7 @@ public class Vender1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vender_1);
         webService = new WebService(this);
+        btnPublicaciones = (Button) findViewById(R.id.btnPublicaciones);
         ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         ivFoto = (ImageView) findViewById(R.id.ivFoto);
@@ -58,6 +61,11 @@ public class Vender1Activity extends AppCompatActivity {
         rvUnidades.setLayoutManager(new LinearLayoutManager(this));
         Picasso.get().load(fondoGeneral).into(ivFondo);
         obtenerUnidades();
+        btnPublicaciones.setOnClickListener(v -> {
+            startActivity(new Intent(Vender1Activity.this, PublicacionesActivity.class));
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            finish();
+        });
         tvMoneda.setOnClickListener(v -> {
             tvSoles.setVisibility(View.VISIBLE);
             tvDolares.setVisibility(View.VISIBLE);

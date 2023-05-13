@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublicacionesActivity" >
+
+    <ImageView
+        android:id="@+id/ivFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dale seguimiento a tus publicaciones"
+            android:fontFamily="@font/aleo_bold"
+            android:textColor="@color/blanco"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:shadowColor="@color/negro"
+            android:shadowRadius="5"
+            android:layout_margin="30dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/llayGanaderia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boton_categorias"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/ic_recortes_ganaderia_1"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tienes 2 publicaciones"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_campana"
+                                android:tint="@color/blanco"
+                                android:padding="10dp" />
+
+                            <FrameLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="bottom|end"
+                                android:background="@drawable/redondo_rojo">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:fontFamily="@font/hind"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center" />
+
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/llayPesca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boton_categorias"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/ic_recortes_pesca_1_preview_rev_1"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tienes 2 publicaciones"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_campana"
+                                android:tint="@color/blanco"
+                                android:padding="10dp" />
+
+                            <FrameLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="bottom|end"
+                                android:background="@drawable/redondo_rojo">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:fontFamily="@font/hind"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center" />
+
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/llayMaquinaria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boton_categorias"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/ic_recortes_maquinaria_1_preview_rev_1"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tienes 2 publicaciones"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_campana"
+                                android:tint="@color/blanco"
+                                android:padding="10dp" />
+
+                            <FrameLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="bottom|end"
+                                android:background="@drawable/redondo_rojo">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:fontFamily="@font/hind"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center" />
+
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/llayInsumos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boton_categorias"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/ic_recortes_insumos_1_preview_rev_1"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tienes 2 publicaciones"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_campana"
+                                android:tint="@color/blanco"
+                                android:padding="10dp" />
+
+                            <FrameLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="bottom|end"
+                                android:background="@drawable/redondo_rojo">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:fontFamily="@font/hind"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center" />
+
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/llayPesticidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boton_categorias"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/ic_recortes_pesticidas_1_preview_rev_1"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tienes 2 publicaciones"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_campana"
+                                android:tint="@color/blanco"
+                                android:padding="10dp" />
+
+                            <FrameLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="bottom|end"
+                                android:background="@drawable/redondo_rojo">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:fontFamily="@font/hind"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center" />
+
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/llayFertilizantes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boton_categorias"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/ic_recortes_fertilizantes_1_preview_rev_1"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tienes 2 publicaciones"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/blanco"
+                            android:textSize="15sp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp" >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:src="@drawable/ic_campana"
+                                android:tint="@color/blanco"
+                                android:padding="10dp" />
+
+                            <FrameLayout
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="bottom|end"
+                                android:background="@drawable/redondo_rojo">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:fontFamily="@font/hind"
+                                    android:textColor="@color/blanco"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center" />
+
+                            </FrameLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -9,6 +9,7 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton5.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton7.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton_amarillo.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton_blanco.xml" value="0.24581939799331104" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton_categorias.xml" value="0.24581939799331104" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton_flecha.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/boton_rojo.xml" value="0.36018518518518516" />
@@ -148,6 +149,7 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/pesca2.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/pesticida.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/redondo_blanco.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/redondo_rojo.xml" value="0.24581939799331104" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/representante.xml" value="0.221875" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/representantelegal.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/drawable/ruccc.xml" value="0.221875" />
@@ -190,14 +192,16 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_8_9_empezar_tutorial_2_5_info_1_pesca.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_9_1_empezar_tutorial_2_2_info_1_ganaderia.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_bienvenida_9_2_empezar_tutorial_2_2_info_2_ganaderia.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_buzon.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_carrito.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_carrito_1.xml" value="0.2354515050167224" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_chat.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar1.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar2.xml" value="0.3490740740740741" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_0.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_1.xml" value="0.3453703703703704" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2.xml" value="0.2354515050167224" />
-        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_1_lista_proveedores_fertilizantes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_1_lista_proveedores_fertilizantes.xml" value="0.23472222222222222" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_1_lista_proveedores_ganaderia.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_1_lista_proveedores_insumos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_comprar_2_1_lista_proveedores_maquinaria.xml" value="0.36666666666666664" />
@@ -266,6 +270,7 @@
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductos.xml" value="0.2" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_perfilventaproductosganaderia.xml" value="0.25" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_principal.xml" value="0.3074074074074074" />
+        <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_publicaciones.xml" value="0.23783783783783785" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_1.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_recuperar_contra_2.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/byacilav/StudioProjects/Tratoagro/app/src/main/res/layout/activity_redes_sociales.xml" value="0.20572916666666666" />

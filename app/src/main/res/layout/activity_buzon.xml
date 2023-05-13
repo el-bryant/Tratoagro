@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuzonActivity" >
+
+    <ImageView
+        android:id="@+id/ivFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginVertical="10dp" >
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/persona1"
+                    android:tint="@color/blanco"
+                    android:layout_margin="10dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginEnd="10dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:text="¿Aún está a la venta?"
+                        android:singleLine="true"
+                        android:layout_marginHorizontal="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp" >
+
+                        <Button
+                            android:id="@+id/btnResponder"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Responder"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/marron1"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/boton_blanco"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="10dp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Eliminar"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/marron1"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/boton_blanco"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginVertical="10dp" >
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/persona1"
+                    android:tint="@color/blanco"
+                    android:layout_margin="10dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginEnd="10dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:text="¿Podrías dejármelo a otro precio?"
+                        android:singleLine="true"
+                        android:layout_marginHorizontal="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp" >
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Responder"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/marron1"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/boton_blanco"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="10dp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Eliminar"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/marron1"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/boton_blanco"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginVertical="10dp" >
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/persona1"
+                    android:tint="@color/blanco"
+                    android:layout_margin="10dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginEnd="10dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aleo_bold"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:text="¿No tendrás de otra marca?"
+                        android:singleLine="true"
+                        android:layout_marginHorizontal="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginHorizontal="10dp" >
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Responder"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/marron1"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/boton_blanco"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="10dp" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Eliminar"
+                            android:fontFamily="@font/aleo_bold"
+                            android:textColor="@color/marron1"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:background="@drawable/boton_blanco"
+                            android:layout_weight="1"
+                            android:layout_marginStart="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
