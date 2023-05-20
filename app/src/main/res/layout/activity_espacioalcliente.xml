@@ -41,7 +41,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="10dp">
@@ -54,7 +54,7 @@
                         android:gravity="center"
                         android:text="EDITAR MI PERFIL"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:paddingStart="10dp"
                         android:drawableEnd="@drawable/persona1"/>
 
@@ -89,7 +89,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="10dp">
@@ -102,7 +102,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:text="MIS TRATOCOMPRAS"
                         android:gravity="center"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:paddingStart="10dp"
                         android:drawableEnd="@drawable/ic_carrito"/>
 
@@ -137,7 +137,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -150,7 +150,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
                         android:gravity="center"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_dolar"/>
 
@@ -175,7 +175,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -189,7 +189,7 @@
                         android:paddingStart="10dp"
                         android:gravity="center"
                         android:drawableEnd="@drawable/ic_noticias2"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView
@@ -213,7 +213,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -226,7 +226,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:drawableEnd="@drawable/ic_me_gusta"
                         android:layout_marginHorizontal="15dp" />
 
@@ -251,7 +251,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -264,7 +264,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/aleo_bold"
                         android:paddingStart="10dp"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_bandera"/>
 
@@ -289,7 +289,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_rojo"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingVertical="10dp" >
 
@@ -303,7 +303,7 @@
                         android:drawableEnd="@drawable/ic_deslizar_hacia_abajo"
                         android:gravity="center"
                         android:paddingStart="10dp"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:layout_marginHorizontal="15dp" />
 
                     <androidx.recyclerview.widget.RecyclerView

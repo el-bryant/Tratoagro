@@ -21,12 +21,12 @@
 
         <ImageView
             android:id="@+id/ivIsotipo"
-            android:layout_width="300dp"
+            android:layout_width="430dp"
             android:layout_height="300dp"
             android:src="@drawable/isotipo"
             android:tint="@color/logo"
             android:transitionName="ivIsotipo"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"/>
 
     </com.sinaseyfi.advancedcardview.AdvancedCardView>
 

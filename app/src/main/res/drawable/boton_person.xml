@@ -9,10 +9,10 @@
     <gradient
         android:startColor="@color/dorado1"
         android:endColor="@color/marron1"
-        android:angle="90"/>
+        android:angle="180"/>
 
     <stroke
-        android:color="@color/marron1"
+        android:color="@color/dorado"
         android:width="3dp"/>
 
 </shape>

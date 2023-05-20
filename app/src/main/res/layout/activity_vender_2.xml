@@ -58,7 +58,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="GANADERÍA"
+                        android:text="QUIERO VENDER AQUI!
+                        GANADERÍA"
                         android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textSize="12sp"
@@ -86,7 +87,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="PESCA"
+                        android:text="QUIERO VENDER AQUI!
+                        PESCA"
                         android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textSize="12sp"
@@ -114,7 +116,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="MAQUINARIA"
+                        android:text="QUIERO VENDER AQUI!
+                        MAQUINARIA"
                         android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textSize="12sp"
@@ -142,7 +145,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="INSUMOS"
+                        android:text="QUIERO VENDER AQUI!
+                        INSUMOS"
                         android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textSize="12sp"
@@ -170,7 +174,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="PESTICIDAS"
+                        android:text="QUIERO VENDER AQUI!
+                        PESTICIDAS"
                         android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textSize="12sp"
@@ -198,7 +203,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="FERTILIZANTES"
+                        android:text="QUIERO VENDER AQUI!
+                        FERTILIZANTES"
                         android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textSize="12sp"

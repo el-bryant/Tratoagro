@@ -22,9 +22,9 @@
         <com.sinaseyfi.advancedcardview.AdvancedCardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             app:background_ColorType="gradient_linear"
-            app:background_Gradient_Angle="180"
+            app:background_Gradient_Angle="300"
             app:background_Gradient_Color0="#80000000"
             app:background_Gradient_ColorEnd="#00000000" />
 
@@ -40,10 +40,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/negro"
+            android:textColor="@color/blanco"
             android:text="Por favor llena la información solicitada"
             android:textAlignment="center"
-            android:textSize="12sp" />
+            android:textSize="13sp" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="10dp" >
 
                     <EditText
@@ -69,6 +69,7 @@
                         android:drawableEnd="@drawable/ic_ruc"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
+                        android:textStyle="bold"
                         android:hint="DNI"
                         android:inputType="number"
                         android:textColor="@color/negro"
@@ -80,11 +81,12 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="1dp" >
 
                     <EditText
                         android:id="@+id/etApellidos"
+                        android:textStyle="bold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/representantelegal"
@@ -101,7 +103,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="1dp" >
 
                     <EditText
@@ -110,6 +112,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/representantelegal"
                         android:drawableTint="@color/dorado1"
+                        android:textStyle="bold"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="NOMBRE(S)"
                         android:inputType="textCapWords"
@@ -122,7 +125,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="1dp" >
 
                     <EditText
@@ -132,6 +135,7 @@
                         android:drawableEnd="@drawable/celular1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
+                        android:textStyle="bold"
                         android:hint="CELULAR"
                         android:inputType="phone"
                         android:textColor="@color/negro"
@@ -143,13 +147,14 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="1dp" >
 
                     <EditText
                         android:id="@+id/etCorreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:drawableEnd="@drawable/correo1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
@@ -164,7 +169,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="1dp" >
 
                     <EditText
@@ -174,6 +179,7 @@
                         android:drawableEnd="@drawable/ubicacion1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
+                        android:textStyle="bold"
                         android:hint="UBICACIÓN"
                         android:inputType="textPostalAddress"
                         android:textColor="@color/negro"
@@ -186,10 +192,10 @@
                     android:id="@+id/ivContinuar"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/boton_flecha"
+                    android:background="@drawable/boton_menuprincipal"
                     android:fontFamily="@font/aleo_bold"
                     android:padding="12dp"
-                    android:src="@drawable/ic_derecha"
+                    android:src="@drawable/ic_cheque"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="@color/color20"

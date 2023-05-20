@@ -21,9 +21,9 @@
         <com.sinaseyfi.advancedcardview.AdvancedCardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             app:background_ColorType="gradient_linear"
-            app:background_Gradient_Angle="180"
+            app:background_Gradient_Angle="300"
             app:background_Gradient_Color0="#8F000000"
             app:background_Gradient_ColorEnd="#00000000" />
 
@@ -43,8 +43,8 @@
             android:fontFamily="@font/aleo_bold"
             android:text="Por favor, llena la información requerida"
             android:textAlignment="center"
-            android:textColor="@color/negro"
-            android:textSize="12sp" />
+            android:textColor="@color/blanco"
+            android:textSize="13sp" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="10dp"
-                    android:textColorHint="@color/negro">
+                    android:textColorHint="@color/blanco">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tietRuc"
@@ -69,6 +69,7 @@
                         android:drawableEnd="@drawable/ic_ruc"
                         android:drawablePadding="10dp"
                         android:drawableTint="@color/dorado1"
+                        android:textStyle="bold"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="RUC"
                         android:inputType="number"
@@ -81,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                    android:textColorHint="@color/negro">
+                    android:textColorHint="@color/blanco">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tietRazonSocial"
@@ -89,6 +90,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/empresa1"
                         android:drawableTint="@color/dorado1"
+                        android:textStyle="bold"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="RAZÓN SOCIAL"
                         android:inputType="textCapWords"
@@ -101,12 +103,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                    android:textColorHint="@color/negro">
+                    android:textColorHint="@color/blanco">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tietRepresentanteLegal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:drawableEnd="@drawable/representantelegal"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
@@ -121,18 +124,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                    android:textColorHint="@color/negro">
+                    android:textColorHint="@color/blanco">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tietCelular"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/celular1"
+                        android:textStyle="bold"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="CELULAR"
                         android:inputType="phone"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textSize="12sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -141,7 +145,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                    android:textColorHint="@color/negro">
+                    android:textColorHint="@color/blanco">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tietDomicilioFiscal"
@@ -149,6 +153,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@drawable/ic_casa"
                         android:drawableTint="@color/dorado1"
+                        android:textStyle="bold"
                         android:fontFamily="@font/aleo_bold"
                         android:hint="DOMICILIO FISCAL"
                         android:inputType="textPostalAddress"
@@ -161,12 +166,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                    android:textColorHint="@color/negro">
+                    android:textColorHint="@color/blanco">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tietCorreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:drawableEnd="@drawable/correo1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
@@ -181,12 +187,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                    android:textColorHint="@color/negro">
+                    android:textColorHint="@color/blanco">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tietUbicacion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:drawableEnd="@drawable/ubicacion1"
                         android:drawableTint="@color/dorado1"
                         android:fontFamily="@font/aleo_bold"
@@ -203,10 +210,10 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginVertical="50dp"
-                    android:background="@drawable/boton_flecha"
+                    android:background="@drawable/boton_menuprincipal"
                     android:fontFamily="@font/aleo_bold"
                     android:padding="12dp"
-                    android:src="@drawable/ic_derecha"
+                    android:src="@drawable/ic_cheque"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="@color/color20"

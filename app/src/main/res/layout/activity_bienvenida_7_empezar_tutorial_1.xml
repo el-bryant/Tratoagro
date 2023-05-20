@@ -21,9 +21,9 @@
         <com.sinaseyfi.advancedcardview.AdvancedCardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             app:background_ColorType="gradient_linear"
-            app:background_Gradient_Angle="180"
+            app:background_Gradient_Angle="300"
             app:background_Gradient_Color0="#60000000"
             app:background_Gradient_ColorEnd="#00000000" />
 
@@ -33,14 +33,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="160dp"
+        android:textStyle="bold"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/aleo_bold"
-        android:text="Para que puedas saber explorar en esta App, te tenemos preparado este TUTORIAL. Porfavor haz click y adentrate en lo que tenemos preparado para tí"
+        android:text="¿No sabes como fuciona TratoAgro? No te preocupes!. Para que puedas saber explorar en esta App, te tenemos preparado este TUTORIAL."
         android:textAlignment="center"
-        android:textColor="@color/negro"
-        android:textSize="12sp" />
+        android:textColor="@color/blanco"
+        android:textSize="13sp" />
 
     <com.sinaseyfi.advancedcardview.AdvancedCardView
         android:id="@+id/acvEmpezarTutorial"
@@ -49,19 +50,24 @@
         android:layout_centerInParent="true"
         android:layout_marginHorizontal="30dp"
         app:background_ColorType="gradient_linear"
-        app:background_Gradient_Angle="90"
+        app:background_Gradient_Angle="20"
         app:background_Gradient_Color0="@color/dorado1"
         app:background_Gradient_ColorEnd="@color/marron1"
-        app:cornerRadius="70dp" >
+        app:cornerRadius="750dp" >
 
-        <ImageView
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="1dp"
-            android:padding="20dp"
-            android:tint="@color/blanco"
-            android:src="@drawable/ic_peru" />
+            android:text="Empezar"
+            android:textSize="12sp"
+            android:fontFamily="@font/aleo_bold"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:layout_marginTop="55dp">
+
+        </TextView>
+
 
     </com.sinaseyfi.advancedcardview.AdvancedCardView>
 

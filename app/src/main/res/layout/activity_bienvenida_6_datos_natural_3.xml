@@ -22,9 +22,9 @@
         <com.sinaseyfi.advancedcardview.AdvancedCardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             app:background_ColorType="gradient_linear"
-            app:background_Gradient_Angle="180"
+            app:background_Gradient_Angle="300"
             app:background_Gradient_Color0="#80000000"
             app:background_Gradient_ColorEnd="#00000000" />
 
@@ -42,8 +42,8 @@
             android:textAlignment="center"
             android:layout_marginTop="50dp"
             android:fontFamily="@font/aleo_bold"
-            android:textColor="@color/negro"
-            android:textSize="12sp"
+            android:textColor="@color/blanco"
+            android:textSize="13sp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginBottom="40dp" />
 
@@ -60,16 +60,17 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="10dp">
 
                     <EditText
                         android:id="@+id/tietUsuario"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="USUARIO"
+                        android:hint="CREA UN USUARIO"
                         android:textColorHint="@color/negro"
                         android:fontFamily="@font/aleo_bold"
+                        android:textStyle="bold"
                         android:textSize="12sp"
                         android:drawableTint="@color/dorado1"
                         android:textColor="@color/negro"
@@ -82,7 +83,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="1dp"
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@color/dorado1">
@@ -91,8 +92,9 @@
                         android:id="@+id/tietClave1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="CONTRASEÑA"
-                        android:textColor="@color/negro"
+                        android:hint="CREA UNA CONTRASEÑA"
+                        android:textStyle="bold"
+                        android:textColor="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:textSize="12sp"
                         android:drawableTint="@color/rojo"
@@ -103,7 +105,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/negro"
+                    android:textColorHint="@color/blanco"
                     android:layout_marginVertical="10dp"
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@color/dorado1">
@@ -113,7 +115,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="REPITE LA CONTRASEÑA"
-                        android:textColor="@color/negro"
+                        android:textStyle="bold"
+                        android:textColor="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:textSize="12sp"
                         android:drawableTint="@color/rojo"
@@ -123,11 +126,11 @@
 
                 <Button
                     android:id="@+id/btnListo"
-                    android:layout_width="80dp"
+                    android:layout_width="200dp"
                     android:layout_height="80dp"
                     android:text="Aceptar"
-                    android:background="@drawable/boton_flecha"
-                    android:textColor="@color/blanco"
+                    android:background="@drawable/boton_menuprincipal"
+                    android:textColor="@color/dorado"
                     android:layout_marginTop="50dp"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="12sp"

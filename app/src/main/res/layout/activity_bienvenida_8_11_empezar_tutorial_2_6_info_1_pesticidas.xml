@@ -21,18 +21,11 @@
         android:orientation="vertical"
         android:gravity="center" >
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/isotipo"
-            android:layout_marginEnd="10dp"
-            android:tint="@color/dorado1" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aleo_bold"
-            android:textSize="12sp"
+            android:textSize="15sp"
             android:textColor="@color/blanco"
             android:text="Estimado(a) cliente esta categoría hace referencia un plaguicida o pesticida, es cualquier sustancia destinada a prevenir, destruir, atraer, repeler o combatir cualquier plaga, incluidas las especies indeseadas de plantas o animales, durante la producción, almacenamiento, transporte, distribución y elaboración de alimentos, productos agrícolas o alimentos para animales, o que pueda administrarse a los animales para combatir ectoparásitos."
             android:layout_marginHorizontal="30dp"
@@ -49,22 +42,22 @@
             android:textSize="12sp"
             android:textColor="@color/blanco"
             android:textAllCaps="false"
-            android:layout_marginTop="150dp"
-            android:background="@drawable/boton_flecha"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/boton_person"
             android:textAlignment="center"
             android:layout_marginHorizontal="15dp" />
 
         <Button
             android:id="@+id/btnMenuPrincipal"
-            android:layout_width="80dp"
+            android:layout_width="200dp"
             android:layout_height="80dp"
             android:fontFamily="@font/aleo_bold"
-            android:text="Ir a menú principal"
-            android:textColor="@color/blanco"
+            android:text="MENÚ PRINCIPAL"
+            android:textColor="@color/dorado"
             android:textAllCaps="false"
             android:textSize="12sp"
             android:layout_marginTop="50dp"
-            android:background="@drawable/boton_flecha"
+            android:background="@drawable/boton_menuprincipal"
             android:textAlignment="center" />
 
     </LinearLayout>

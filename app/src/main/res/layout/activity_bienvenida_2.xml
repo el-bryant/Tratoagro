@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:background_ColorType="gradient_linear"
-        app:background_Gradient_Angle="360"
+        app:background_Gradient_Angle="300"
         app:background_Gradient_Color0="#99000000"
         app:background_Gradient_ColorEnd="#00000000" />
 
@@ -29,8 +29,8 @@
 
         <ImageView
             android:id="@+id/ivIsotipo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:src="@drawable/isotipo"
             android:tint="@color/dorado1"
             android:transitionName="ivIsotipo" />
@@ -38,10 +38,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TratoAgro es una app exclusiva para el sector agroindustrial. Abarcamos 6 categorías, tales como la ganadería, la pesca, los pesticidas, los fertilizantes, los insumos y la maquinaria. Dejanos mostrarte lo que tenemos preparado para tí! "
+            android:text="Bienvenidos. Te presentamos a TratoAgro. Aquí podrás vender, comprar, ver estádisticas de demanda de tu producto predilecto, publicitar tu revista o anuncio, generar una red de contactos, y estar informado de las noticias agroindustriales del sector de tu preferencia"
             android:fontFamily="@font/aleo_bold"
             android:textColor="@color/blanco"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:textAlignment="center"
             android:shadowColor="@color/negro"
             android:shadowRadius="10"
@@ -52,15 +52,15 @@
             android:id="@+id/ivContinuar"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/boton_flecha"
+            android:background="@drawable/boton_menuprincipal"
             android:fontFamily="@font/aleo_bold"
             android:padding="12dp"
-            android:src="@drawable/ic_derecha"
+            android:src="@drawable/ic_cheque"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/color20"
             android:tint="@color/dorado1"
-            android:layout_marginTop="120dp" />
+            android:layout_marginTop="80dp" />
 
     </LinearLayout>
 

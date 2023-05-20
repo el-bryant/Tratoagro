@@ -22,9 +22,9 @@
         <com.sinaseyfi.advancedcardview.AdvancedCardView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             app:background_ColorType="gradient_linear"
-            app:background_Gradient_Angle="180"
+            app:background_Gradient_Angle="300"
             app:background_Gradient_Color0="#80000000"
             app:background_Gradient_ColorEnd="#00000000" />
 
@@ -53,8 +53,8 @@
                     android:fontFamily="@font/aleo_bold"
                     android:text="Porfavor llena los siguientes datos sociodemográficos"
                     android:textAlignment="center"
-                    android:textColor="@color/negro"
-                    android:textSize="12sp" />
+                    android:textColor="@color/blanco"
+                    android:textSize="13sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -80,7 +80,7 @@
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="12sp"
                             android:gravity="center"
-                            android:text="MAYORISTA/MINORISTA"
+                            android:text="¿ERES UN MAYORISTA/MINORISTA?"
                             android:textColor="@color/blanco" />
 
                         <TextView
@@ -133,7 +133,7 @@
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="12sp"
                             android:gravity="center"
-                            android:text="SELECCIONE SU DEPARTAMENTO"
+                            android:text="¿DE QUÉ DEPARTAMENTO?"
                             android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
@@ -170,7 +170,7 @@
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="12sp"
                             android:gravity="center"
-                            android:text="SELECCIONE SU PROVINCIA"
+                            android:text="¿DE QUÉ PROVINCIA?"
                             android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
@@ -207,7 +207,7 @@
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="12sp"
                             android:gravity="center"
-                            android:text="SELECCIONE SU DISTRITO"
+                            android:text="¿DE QUÉ DISTRITO?"
                             android:textColor="@color/blanco" />
 
                         <androidx.recyclerview.widget.RecyclerView
@@ -224,10 +224,10 @@
                     android:id="@+id/ivContinuar"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/boton_flecha"
+                    android:background="@drawable/boton_menuprincipal"
                     android:fontFamily="@font/aleo_bold"
                     android:padding="12dp"
-                    android:src="@drawable/ic_derecha"
+                    android:src="@drawable/ic_cheque"
                     android:textAlignment="center"
                     android:textAllCaps="false"
                     android:textColor="@color/color20"

@@ -24,7 +24,7 @@
             android:text="Dale seguimiento a tus publicaciones"
             android:fontFamily="@font/aleo_bold"
             android:textColor="@color/blanco"
-            android:textSize="25sp"
+            android:textSize="15sp"
             android:textAlignment="center"
             android:shadowColor="@color/negro"
             android:shadowRadius="5"
@@ -81,7 +81,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:src="@drawable/ic_campana"
-                                android:tint="@color/blanco"
+                                android:tint="@color/dorado1"
                                 android:padding="10dp" />
 
                             <FrameLayout
@@ -148,7 +148,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:src="@drawable/ic_campana"
-                                android:tint="@color/blanco"
+                                android:tint="@color/dorado1"
                                 android:padding="10dp" />
 
                             <FrameLayout
@@ -215,7 +215,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:src="@drawable/ic_campana"
-                                android:tint="@color/blanco"
+                                android:tint="@color/dorado1"
                                 android:padding="10dp" />
 
                             <FrameLayout
@@ -282,7 +282,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:src="@drawable/ic_campana"
-                                android:tint="@color/blanco"
+                                android:tint="@color/dorado1"
                                 android:padding="10dp" />
 
                             <FrameLayout
@@ -349,7 +349,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:src="@drawable/ic_campana"
-                                android:tint="@color/blanco"
+                                android:tint="@color/dorado1"
                                 android:padding="10dp" />
 
                             <FrameLayout
@@ -416,7 +416,7 @@
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
                                 android:src="@drawable/ic_campana"
-                                android:tint="@color/blanco"
+                                android:tint="@color/dorado1"
                                 android:padding="10dp" />
 
                             <FrameLayout

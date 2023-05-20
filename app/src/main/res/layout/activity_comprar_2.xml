@@ -64,7 +64,7 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:text="PERS. NATURAL/JURÍDICA"
-                            android:textColor="@color/blanco" />
+                            android:textColor="@color/dorado" />
 
                         <TextView
                             android:id="@+id/tvPersonaNatural"
@@ -117,7 +117,7 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:text="MAYORISTA/MINORISTA"
-                            android:textColor="@color/blanco" />
+                            android:textColor="@color/dorado" />
 
                         <TextView
                             android:id="@+id/tvMayorista"
@@ -170,7 +170,7 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONES EL DEPARTAMENTO"
-                            android:textColor="@color/blanco" />
+                            android:textColor="@color/dorado" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDepartamento"
@@ -207,7 +207,7 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE LA PROVINCIA"
-                            android:textColor="@color/blanco" />
+                            android:textColor="@color/dorado" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvProvincia"
@@ -244,7 +244,7 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE EL DISTRITO"
-                            android:textColor="@color/blanco" />
+                            android:textColor="@color/dorado" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvDistrito"
@@ -281,7 +281,7 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE LA SUBCATEGORÍA"
-                            android:textColor="@color/blanco" />
+                            android:textColor="@color/dorado" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvSubcategoria"
@@ -319,7 +319,7 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:text="SELECCIONE EL PRODUCTO"
-                            android:textColor="@color/blanco" />
+                            android:textColor="@color/dorado" />
 
                         <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/rvProducto"
@@ -338,7 +338,7 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginVertical="50dp"
-                    android:background="@drawable/boton_flecha"
+                    android:background="@drawable/boton_menuprincipal"
                     android:fontFamily="@font/aleo_bold"
                     android:padding="12dp"
                     android:src="@drawable/ic_derecha"
