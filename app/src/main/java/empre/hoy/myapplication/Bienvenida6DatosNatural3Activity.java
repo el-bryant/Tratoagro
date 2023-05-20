@@ -24,7 +24,7 @@ public class Bienvenida6DatosNatural3Activity extends AppCompatActivity {
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoGeneral).into(ivFondo);
         btnListo.setOnClickListener(v -> {
-            startActivity(new Intent(Bienvenida6DatosNatural3Activity.this, Bienvenida7EmpezarTutorial1.class));
+            startActivity(new Intent(Bienvenida6DatosNatural3Activity.this, Bienvenida7EmpezarTutorial11.class));
             finish();
         });
     }

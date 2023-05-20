@@ -24,7 +24,7 @@ public class Bienvenida5DatosJuridico3Activity extends AppCompatActivity {
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoGeneral).into(ivFondo);
         btnListo.setOnClickListener(v -> {
-            startActivity(new Intent(Bienvenida5DatosJuridico3Activity.this, Bienvenida7EmpezarTutorial1.class));
+            startActivity(new Intent(Bienvenida5DatosJuridico3Activity.this, Bienvenida7EmpezarTutorial11.class));
         });
     }
 }
