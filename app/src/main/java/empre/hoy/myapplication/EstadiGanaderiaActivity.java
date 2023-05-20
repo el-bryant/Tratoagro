@@ -47,7 +47,6 @@ public class EstadiGanaderiaActivity extends AppCompatActivity {
     static BarChart bchVentas;
     BlurView blurView;
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-    ImageView ivFondo;
     String fecha;
     WebService webService;
     Map<String, String> params;
@@ -60,8 +59,6 @@ public class EstadiGanaderiaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_estadiganaderia);
         bchVentas = (BarChart) findViewById(R.id.bchVentas);
         blurView = (BlurView) findViewById(R.id.blurView);
-        ivFondo = (ImageView) findViewById(R.id.ivFondo);
-        Picasso.get().load(fondoGeneral).into(ivFondo);
         View decorView = getWindow().getDecorView();
         ViewGroup rootView = (ViewGroup) decorView.findViewById(android.R.id.content);
         Drawable windowBackground = decorView.getBackground();

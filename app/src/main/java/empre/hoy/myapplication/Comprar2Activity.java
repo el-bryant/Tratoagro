@@ -127,25 +127,25 @@ public class Comprar2Activity extends AppCompatActivity {
             aplicarFiltros();
             switch (idCategoria) {
                 case "1":
-                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresGanaderiaActivity.class));
+                    startActivity(new Intent(Comprar2Activity.this, Comprar22Activity.class).putExtra("categoria", "1"));
                     break;
                 case "2":
-                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresMaquinariaActivity.class));
+                    startActivity(new Intent(Comprar2Activity.this, Comprar22Activity.class).putExtra("categoria", "2"));
                     break;
                 case "3":
-                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresInsumosActivity.class));
+                    startActivity(new Intent(Comprar2Activity.this, Comprar22Activity.class).putExtra("categoria", "3"));
                     break;
                 case "4":
-                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresPesticidasActivity.class));
+                    startActivity(new Intent(Comprar2Activity.this, Comprar22Activity.class).putExtra("categoria", "4"));
                     break;
                 case "5":
-                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresFertilizantesActivity.class));
+                    startActivity(new Intent(Comprar2Activity.this, Comprar22Activity.class).putExtra("categoria", "5"));
                     break;
                 case "6":
-                    startActivity(new Intent(Comprar2Activity.this, Comprar21ListaProveedoresPescaActivity.class));
+                    startActivity(new Intent(Comprar2Activity.this, Comprar22Activity.class).putExtra("categoria", "6"));
                     break;
             }
-//            finish();
+            finish();
         });
     }
 

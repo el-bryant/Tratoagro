@@ -1,8 +1,11 @@
 package empre.hoy.myapplication;
 
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,12 +30,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import eightbitlab.com.blurview.BlurView;
+import eightbitlab.com.blurview.RenderScriptBlur;
 import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.entity.VentasReporte;
 
 public class EstadiPesticidasActivity extends AppCompatActivity {
     static XAxis xAxis;
     static BarChart bchVentas;
+    BlurView blurView;
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     String fecha;
     WebService webService;
@@ -45,7 +51,17 @@ public class EstadiPesticidasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estadipestizidas);
         bchVentas = (BarChart) findViewById(R.id.bchVentas);
+        blurView = (BlurView) findViewById(R.id.blurView);
         webService = new WebService(this);
+        View decorView = getWindow().getDecorView();
+        ViewGroup rootView = (ViewGroup) decorView.findViewById(android.R.id.content);
+        Drawable windowBackground = decorView.getBackground();
+        blurView.setupWith(rootView)
+                .setFrameClearDrawable(windowBackground)
+                .setBlurAlgorithm(new RenderScriptBlur(this))
+                .setBlurRadius(2.5f)
+                .setBlurAutoUpdate(true)
+                .setHasFixedTransformationMatrix(false);
         Date date = new Date();
         fecha = dateFormat.format(date);
         colores.add(Color.rgb(2, 124, 130));

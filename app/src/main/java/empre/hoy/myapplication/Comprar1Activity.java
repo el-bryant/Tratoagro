@@ -41,22 +41,22 @@ public class Comprar1Activity extends AppCompatActivity {
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoGeneral).into(ivFondo);
         llayGanaderia.setOnClickListener(v -> {
-            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "1"));
+            startActivity(new Intent(Comprar1Activity.this, Comprar21ListaProveedoresGanaderiaActivity.class));
         });
         llayPesca.setOnClickListener(v -> {
-            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "6"));
+            startActivity(new Intent(Comprar1Activity.this, Comprar21ListaProveedoresPescaActivity.class));
         });
         llayMaquinaria.setOnClickListener(v -> {
-            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "2"));
+            startActivity(new Intent(Comprar1Activity.this, Comprar21ListaProveedoresMaquinariaActivity.class));
         });
         llayInsumos.setOnClickListener(v -> {
-            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "3"));
+            startActivity(new Intent(Comprar1Activity.this, Comprar21ListaProveedoresInsumosActivity.class));
         });
         llayPesticidas.setOnClickListener(v -> {
-            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "4"));
+            startActivity(new Intent(Comprar1Activity.this, Comprar21ListaProveedoresPesticidasActivity.class));
         });
         llayFertilizantes.setOnClickListener(v -> {
-            startActivity(new Intent(Comprar1Activity.this, Comprar2Activity.class).putExtra("categoria", "5"));
+            startActivity(new Intent(Comprar1Activity.this, Comprar21ListaProveedoresFertilizantesActivity.class));
         });
     }
 }

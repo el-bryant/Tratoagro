@@ -29,27 +29,27 @@ public class EstadisticasGeneral2Activity extends AppCompatActivity {
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         Picasso.get().load(fondoGeneral).into(ivFondo);
         flayFertilizantes.setOnClickListener(v -> {
-            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadisticasGeneralActivity.class).putExtra("categoria", "5"));
+            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadiFertilizantesActivity.class).putExtra("categoria", "5"));
             finish();
         });
         flayGanaderia.setOnClickListener(v -> {
-            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadisticasGeneralActivity.class).putExtra("categoria", "1"));
+            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadiGanaderiaActivity.class).putExtra("categoria", "1"));
             finish();
         });
         flayInsumos.setOnClickListener(v -> {
-            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadisticasGeneralActivity.class).putExtra("categoria", "3"));
+            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadiInsumosActivity.class).putExtra("categoria", "3"));
             finish();
         });
         flayMaquinaria.setOnClickListener(v -> {
-            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadisticasGeneralActivity.class).putExtra("categoria", "2"));
+            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadiMaquinariaActivity.class).putExtra("categoria", "2"));
             finish();
         });
         flayPesca.setOnClickListener(v -> {
-            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadisticasGeneralActivity.class).putExtra("categoria", "6"));
+            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadiPescaActivity.class).putExtra("categoria", "6"));
             finish();
         });
         flayPesticidas.setOnClickListener(v -> {
-            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadisticasGeneralActivity.class).putExtra("categoria", "4"));
+            startActivity(new Intent(EstadisticasGeneral2Activity.this, EstadiPesticidasActivity.class).putExtra("categoria", "4"));
             finish();
         });
     }

@@ -16,6 +16,10 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Comprar22Activity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true" />
+        <activity
             android:name=".OpcionesRespuestaActivity"
             android:exported="true" />
         <activity
@@ -37,10 +41,12 @@
         <activity android:name=".Bienvenida2Activity" />
         <activity android:name=".Bienvenida3Activity" />
         <activity android:name=".Bienvenida4Activity" />
-        <activity android:name=".Bienvenida5DatosJuridico1Activity" />
+        <activity android:name=".Bienvenida5DatosJuridico1Activity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".Bienvenida5DatosJuridico2Activity" />
         <activity android:name=".Bienvenida5DatosJuridico3Activity" />
-        <activity android:name=".Bienvenida6DatosNatural1Activity" />
+        <activity android:name=".Bienvenida6DatosNatural1Activity"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".Bienvenida6DatosNatural2Activity" />
         <activity android:name=".Bienvenida6DatosNatural3Activity" />
         <activity android:name=".Bienvenida7EmpezarTutorial1" />
