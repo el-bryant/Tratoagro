@@ -13,14 +13,14 @@
         android:scaleType="centerCrop"
         android:visibility="visible" />
 
-    <com.sinaseyfi.advancedcardview.AdvancedCardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:stroke_ColorType="gradient_linear"
-        app:stroke_Gradient_Color0="@color/dorado1"
-        app:stroke_Gradient_ColorEnd="@color/marron1"
-        app:stroke_Width="10dp"
-        app:background_Type="stroke" />
+<!--    <com.sinaseyfi.advancedcardview.AdvancedCardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:stroke_ColorType="gradient_linear"-->
+<!--        app:stroke_Gradient_Color0="@color/dorado1"-->
+<!--        app:stroke_Gradient_ColorEnd="@color/marron1"-->
+<!--        app:stroke_Width="10dp"-->
+<!--        app:background_Type="stroke" />-->
 
 
     <LinearLayout
@@ -43,68 +43,58 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="30dp"
             android:gravity="center"
-            android:layout_gravity="center"
             android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_margin="15dp"
-                android:background="@drawable/boton_flecha">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="25dp"
-                    android:src="@drawable/ic_camara"
-                    android:tint="@color/blanco" />
-
-                <ImageView
-                    android:id="@+id/ivFoto"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp" />
-
-            </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/boton_categorias">
+                android:background="#E6E6E6" >
 
-                <EditText
-                    android:id="@+id/etDescripcion"
+                <FrameLayout
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@drawable/boton_flecha"
+                    android:layout_marginVertical="30dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="25dp"
+                        android:src="@drawable/ic_camara"
+                        android:tint="@color/blanco" />
+
+                    <ImageView
+                        android:id="@+id/ivFoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
-                    android:background="@null"
-                    android:ems="10"
-                    android:fontFamily="@font/aleo_bold"
-                    android:gravity="start|top"
-                    android:hint="Breve descripción del producto..."
-                    android:inputType="textMultiLine"
-                    android:textColor="@color/blanco"
-                    android:textColorHint="@color/blanco"
-                    android:textSize="15sp" />
+                    android:layout_height="5dp"
+                    android:background="@color/dorado1"
+                    android:layout_gravity="bottom" />
 
             </FrameLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="15dp"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginHorizontal="20dp" >
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -112,6 +102,78 @@
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/boton_categorias"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp">
+
+                    <TextView
+                        android:id="@+id/tvSubcategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_abajo"
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center_vertical"
+                        android:text="Subcategoría"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSubcategoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_categorias"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp">
+
+                    <TextView
+                        android:id="@+id/tvProducto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_abajo"
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center_vertical"
+                        android:text="Producto"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvProducto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/boton_categorias"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -143,22 +205,22 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
                     android:layout_marginStart="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/tvUnidad"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_abajo"
                         android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
-                        android:gravity="center"
+                        android:gravity="center_vertical"
                         android:text="Unidad"
-                        android:textAlignment="center"
                         android:textColor="@color/blanco"
                         android:textSize="15sp" />
 
@@ -166,8 +228,7 @@
                         android:id="@+id/rvUnidades"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginHorizontal="15dp"
                         android:visibility="gone" />
 
                 </LinearLayout>
@@ -177,15 +238,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="15dp"
-                android:orientation="horizontal">
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/boton_categorias"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_categorias"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -224,21 +287,20 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_categorias"
+                        android:layout_marginVertical="15dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/tvMoneda"
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginHorizontal="15dp"
                             android:drawableEnd="@drawable/ic_abajo"
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
-                            android:gravity="center"
+                            android:gravity="center_vertical"
                             android:text="Soles / Dólares"
-                            android:textAlignment="center"
                             android:textColor="@color/blanco"
                             android:textSize="15sp" />
 
@@ -246,9 +308,10 @@
                             android:id="@+id/tvSoles"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
                             android:fontFamily="@font/hind"
                             android:text="PEN"
-                            android:textAlignment="center"
+                            android:textAlignment="textStart"
                             android:textColor="@color/blanco"
                             android:textSize="15sp"
                             android:visibility="gone" />
@@ -257,9 +320,10 @@
                             android:id="@+id/tvDolares"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
                             android:fontFamily="@font/hind"
                             android:text="USD"
-                            android:textAlignment="center"
+                            android:textAlignment="textStart"
                             android:textColor="@color/blanco"
                             android:textSize="15sp"
                             android:visibility="gone" />
@@ -270,31 +334,132 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/ivContinuar"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginVertical="20dp"
-                android:background="@drawable/boton_flecha"
-                android:fontFamily="@font/aleo_bold"
-                android:padding="12dp"
-                android:src="@drawable/ic_derecha"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/color20"
-                android:tint="@color/dorado1" />
-
-            <Button
-                android:id="@+id/btnPublicaciones"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Seguimiento de mis publicaciones"
-                android:textAllCaps="false"
-                android:fontFamily="@font/aleo_bold"
-                android:textColor="@color/blanco"
-                android:textSize="15sp"
-                android:background="@drawable/boton_categorias" />
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginHorizontal="20dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/aleo_bold"
+                    android:paddingStart="20dp"
+                    android:shadowColor="@color/negro"
+                    android:shadowRadius="15"
+                    android:text="Recibir ofertas de rebaja de precio"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_categorias"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/aleo_bold"
+                        android:text="No"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp" />
+
+                    <Switch
+                        android:id="@+id/swOfertas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/aleo_bold"
+                        android:text="Sí"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="20dp" >
+
+                <EditText
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:ems="10"
+                    android:fontFamily="@font/aleo_bold"
+                    android:gravity="start|top"
+                    android:hint="Breve descripción del producto..."
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginHorizontal="20dp" >
+
+                <Button
+                    android:id="@+id/btnContinuar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_categorias"
+                    android:fontFamily="@font/aleo_bold"
+                    android:text="Listo"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnPublicaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boton_categorias"
+                    android:fontFamily="@font/aleo_bold"
+                    android:text="Seguimiento a mis publicaciones"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 

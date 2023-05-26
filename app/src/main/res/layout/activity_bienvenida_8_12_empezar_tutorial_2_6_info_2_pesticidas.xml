@@ -59,20 +59,20 @@
 
             <LinearLayout
                 android:layout_width="200dp"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/boton_categorias2"
                 android:orientation="vertical"
                 android:layout_marginTop="50dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="70dp"
-                android:layout_marginHorizontal="30dp" >
+                android:layout_marginHorizontal="30dp"
+                android:paddingVertical="15dp" >
 
                 <TextView
                     android:id="@+id/tvSubcategoria"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="SELECCIÓN DE SUBCATEGORÍAS"
-                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="12sp"
                     android:textColor="@color/blanco"
@@ -87,27 +87,27 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone"
                     android:layout_marginHorizontal="15dp"
-                    android:layout_marginBottom="15dp" />
+                    android:layout_marginTop="15dp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="200dp"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/boton_categorias"
                 android:orientation="vertical"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginEnd="70dp"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginBottom="50dp" >
+                android:layout_marginBottom="50dp"
+                android:paddingVertical="15dp" >
 
                 <TextView
                     android:id="@+id/tvProducto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="PRODUCTOS"
-                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="12sp"
                     android:textColor="@color/blanco"
@@ -123,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone"
                     android:layout_marginHorizontal="15dp"
-                    android:layout_marginBottom="15dp" />
+                    android:layout_marginTop="15dp" />
 
             </LinearLayout>
 

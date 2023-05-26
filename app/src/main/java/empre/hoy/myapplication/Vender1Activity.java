@@ -35,8 +35,8 @@ import empre.hoy.myapplication.Funciones.WebService;
 import empre.hoy.myapplication.adapter.UnidadAdapter;
 
 public class Vender1Activity extends AppCompatActivity {
-    Button btnPublicaciones;
-    ImageView ivContinuar, ivFondo, ivFoto;
+    Button btnContinuar, btnPublicaciones;
+    ImageView ivFondo, ivFoto;
     Map<String, String> params;
     public static RecyclerView rvUnidades;
     String contenidoImagen = "";
@@ -49,8 +49,8 @@ public class Vender1Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vender_1);
         webService = new WebService(this);
+        btnContinuar = (Button) findViewById(R.id.btnContinuar);
         btnPublicaciones = (Button) findViewById(R.id.btnPublicaciones);
-        ivContinuar = (ImageView) findViewById(R.id.ivContinuar);
         ivFondo = (ImageView) findViewById(R.id.ivFondo);
         ivFoto = (ImageView) findViewById(R.id.ivFoto);
         rvUnidades = (RecyclerView) findViewById(R.id.rvUnidades);
@@ -81,7 +81,7 @@ public class Vender1Activity extends AppCompatActivity {
             tvDolares.setVisibility(View.GONE);
             tvMoneda.setText("USD");
         });
-        ivContinuar.setOnClickListener(v -> {
+        btnContinuar.setOnClickListener(v -> {
             startActivity(new Intent(Vender1Activity.this, Vender2Activity.class));
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
