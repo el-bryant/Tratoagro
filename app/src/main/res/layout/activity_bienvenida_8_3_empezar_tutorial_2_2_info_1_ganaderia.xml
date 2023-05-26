@@ -29,21 +29,19 @@
             android:textColor="@color/blanco"
             android:text="Estimado(a) cliente esta categoría hace referencia en la cría de animales domésticos para el consumo humano y la obtención de carne, leche, lana, pieles, miel entre otros."
             android:layout_marginHorizontal="30dp"
-            android:textAlignment="center"
-            android:shadowColor="@color/negro"
-            android:shadowRadius="10" />
+            android:textAlignment="center" />
 
         <Button
             android:id="@+id/btnContinuar"
-            android:layout_width="80dp"
+            android:layout_width="200dp"
             android:layout_height="80dp"
             android:fontFamily="@font/aleo_bold"
-            android:text="Siguiente"
-            android:textColor="@color/blanco"
+            android:text="LISTO"
+            android:textColor="@color/dorado"
             android:textAllCaps="false"
             android:textSize="12sp"
-            android:layout_marginTop="150dp"
-            android:background="@drawable/boton_person"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/boton_categorias2"
             android:textAlignment="center" />
 
         <Button

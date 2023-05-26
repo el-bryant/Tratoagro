@@ -70,10 +70,11 @@
 
                 <LinearLayout
                     android:id="@+id/llayGanaderia"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="280dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="60dp"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_categorias2"
                     android:gravity="center"
                     android:layout_marginVertical="3dp"
                     android:layout_marginHorizontal="30dp">
@@ -88,22 +89,25 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="GANADERÍA"
+                        android:text="IR A GANADERÍA"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:textAlignment="center"
-                        android:layout_margin="10dp" />
+                        android:textColor="@color/dorado"
+                        android:textAlignment="textStart"
+                        android:layout_margin="10dp"
+                        android:drawableEnd="@drawable/ic_carrito"
+                        android:drawableTint="@color/dorado1"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llayPesca"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="280dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="60dp"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_categorias2"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginVertical="3dp" >
@@ -118,22 +122,25 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PESCA"
+                        android:text="IR A PESCA"
                         android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:textAlignment="center"
+                        android:textColor="@color/dorado"
+                        android:textAlignment="textStart"
                         android:textStyle="bold"
-                        android:layout_margin="10dp" />
+                        android:layout_margin="10dp"
+                        android:drawableEnd="@drawable/ic_carrito"
+                        android:drawableTint="@color/dorado1"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llayMaquinaria"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="280dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="60dp"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_menuprincipal"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginVertical="3dp" >
@@ -148,22 +155,25 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="MAQUINARIA"
+                        android:text="IR A MAQUINARIA"
                         android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
                         android:textStyle="bold"
-                        android:textColor="@color/blanco"
-                        android:textAlignment="center"
-                        android:layout_margin="10dp" />
+                        android:textColor="@color/dorado"
+                        android:textAlignment="textStart"
+                        android:layout_margin="10dp"
+                        android:drawableEnd="@drawable/ic_carrito"
+                        android:drawableTint="@color/dorado1"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llayInsumos"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="280dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="60dp"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_menuprincipal"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginVertical="3dp" >
@@ -178,21 +188,24 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="INSUMOS"
+                        android:text="IR A INSUMOS"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:textAlignment="center"
-                        android:layout_margin="10dp" />
+                        android:textColor="@color/dorado"
+                        android:textAlignment="textStart"
+                        android:layout_margin="10dp"
+                        android:drawableEnd="@drawable/ic_carrito"
+                        android:drawableTint="@color/dorado1"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llayPesticidas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/boton_categorias"
+                    android:layout_width="280dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="60dp"
+                    android:background="@drawable/boton_person"
                     android:orientation="horizontal"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
@@ -208,23 +221,26 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PESTICIDAS"
+                        android:text="IR A PESTICIDAS"
                         android:textSize="12sp"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
+                        android:textColor="@color/dorado"
                         android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:layout_margin="10dp" />
+                        android:textAlignment="textStart"
+                        android:layout_margin="10dp"
+                        android:drawableEnd="@drawable/ic_carrito"
+                        android:drawableTint="@color/dorado1"/>
 
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/llayFertilizantes"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="280dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="60dp"
                     android:orientation="horizontal"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_person"
                     android:gravity="center"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginVertical="3dp" >
@@ -239,12 +255,14 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="FERTILIZANTES"
+                        android:text="IR A FERTILIZANTES"
                         android:textSize="12sp"
                         android:textStyle="bold"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/blanco"
-                        android:textAlignment="center"
+                        android:textColor="@color/dorado"
+                        android:textAlignment="textStart"
+                        android:drawableEnd="@drawable/ic_carrito"
+                        android:drawableTint="@color/dorado1"
                         android:layout_margin="10dp" />
 
                 </LinearLayout>

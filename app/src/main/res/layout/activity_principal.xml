@@ -24,7 +24,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             app:background_ColorType="gradient_linear"
-            app:background_Gradient_Angle="180"
+            app:background_Gradient_Angle="186"
             app:background_Gradient_Color0="#000000"
             app:background_Gradient_ColorEnd="#00000000" />
 

@@ -32,8 +32,8 @@
             android:layout_height="50dp"
             android:padding="10dp"
             android:src="@drawable/ic_filtro"
-            android:tint="@color/blanco"
-            android:background="@drawable/boton_flecha"
+            android:tint="@color/dorado1"
+            android:background="@drawable/boton_menuprincipal"
             android:layout_marginVertical="15dp"
             android:layout_marginEnd="30dp"/>
 

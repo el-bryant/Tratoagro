@@ -40,20 +40,20 @@
             <Button
                 android:id="@+id/btnSi"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="SÍ, ESTOY SEGURO"
                 android:fontFamily="@font/aleo_bold"
                 android:textColor="@color/dorado"
                 android:textSize="15sp"
                 android:textAllCaps="false"
-                android:background="@drawable/boton_categorias"
+                android:background="@drawable/boton_categorias2"
                 android:layout_marginHorizontal="15dp" />
 
             <Button
                 android:id="@+id/btnNo"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 android:text="NO ESTOY SEGURO"
                 android:fontFamily="@font/aleo_bold"

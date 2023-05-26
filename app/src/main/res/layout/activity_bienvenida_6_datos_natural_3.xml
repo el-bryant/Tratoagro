@@ -73,7 +73,7 @@
                         android:textStyle="bold"
                         android:textSize="12sp"
                         android:drawableTint="@color/dorado1"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textColorHighlight="@color/negro"
                         android:drawableEnd="@drawable/persona1"
                         android:inputType="text" />
@@ -128,7 +128,7 @@
                     android:id="@+id/btnListo"
                     android:layout_width="200dp"
                     android:layout_height="80dp"
-                    android:text="Aceptar"
+                    android:text="ACEPTAR"
                     android:background="@drawable/boton_menuprincipal"
                     android:textColor="@color/dorado"
                     android:layout_marginTop="50dp"

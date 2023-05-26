@@ -29,7 +29,7 @@
                 android:layout_weight="1"
                 android:text="Por favor selecciona el vendedor de tu preferencia:"
                 android:fontFamily="@font/aleo_bold"
-                android:textSize="18sp"
+                android:textSize="13sp"
                 android:textColor="@color/blanco"
                 android:shadowRadius="10"
                 android:shadowColor="@color/negro"
@@ -40,8 +40,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/ic_filtro"
-                android:tint="@color/blanco"
-                android:background="@drawable/boton_flecha"
+                android:tint="@color/dorado"
                 android:padding="10dp"
                 android:layout_marginEnd="20dp" />
 

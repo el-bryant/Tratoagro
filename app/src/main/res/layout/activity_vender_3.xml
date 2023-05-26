@@ -43,7 +43,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_categorias2"
                         android:orientation="vertical"
                         android:paddingVertical="3dp" >
 
@@ -56,7 +56,6 @@
                             android:text="SELECCIONE DEPARTAMENTO"
                             android:textSize="12sp"
                             android:fontFamily="@font/aleo_bold"
-                            android:drawableStart="@drawable/ic_peru"
                             android:gravity="center"
                             android:textColor="@color/blanco"
                             android:layout_marginHorizontal="15dp" />
@@ -81,7 +80,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_categorias2"
                         android:orientation="vertical"
                         android:paddingVertical="3dp" >
 
@@ -95,7 +94,6 @@
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="12sp"
                             android:gravity="center"
-                            android:drawableStart="@drawable/ic_peru"
                             android:textColor="@color/blanco"
                             android:layout_marginHorizontal="15dp" />
 
@@ -119,7 +117,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_categorias2"
                         android:orientation="vertical"
                         android:paddingVertical="3dp" >
 
@@ -133,7 +131,6 @@
                             android:textSize="12sp"
                             android:gravity="center"
                             android:fontFamily="@font/aleo_bold"
-                            android:drawableStart="@drawable/ic_peru"
                             android:textColor="@color/blanco"
                             android:layout_marginHorizontal="15dp" />
 
@@ -157,7 +154,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_categorias2"
                         android:orientation="vertical"
                         android:paddingVertical="3dp" >
 
@@ -171,7 +168,6 @@
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="12sp"
                             android:gravity="center"
-                            android:drawableStart="@drawable/ic_ico_recurso_2"
                             android:textColor="@color/blanco"
                             android:layout_marginHorizontal="15dp" />
 
@@ -197,7 +193,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_categorias2"
                         android:orientation="vertical"
                         android:paddingVertical="3dp" >
 
@@ -211,7 +207,6 @@
                             android:gravity="center"
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="12sp"
-                            android:drawableStart="@drawable/ic_ico_recurso_1"
                             android:textColor="@color/blanco"
                             android:layout_marginHorizontal="15dp" />
 

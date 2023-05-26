@@ -73,7 +73,7 @@
                         android:textStyle="bold"
                         android:hint="DNI"
                         android:inputType="number"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textColorHint="@color/negro"
                         android:textSize="12sp" />
 
@@ -95,7 +95,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:hint="APELLIDOS"
                         android:inputType="textCapWords"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textColorHint="@color/negro"
                         android:textSize="12sp" />
 
@@ -117,7 +117,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:hint="NOMBRE(S)"
                         android:inputType="textCapWords"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textColorHint="@color/negro"
                         android:textSize="12sp" />
 
@@ -139,7 +139,7 @@
                         android:textStyle="bold"
                         android:hint="CELULAR"
                         android:inputType="phone"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textColorHint="@color/negro"
                         android:textSize="12sp" />
 
@@ -161,7 +161,7 @@
                         android:fontFamily="@font/aleo_bold"
                         android:hint="CORREO ELECTRÓNICO"
                         android:inputType="textEmailAddress"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textColorHint="@color/negro"
                         android:textSize="12sp" />
 
@@ -183,7 +183,7 @@
                         android:textStyle="bold"
                         android:hint="UBICACIÓN"
                         android:inputType="textPostalAddress"
-                        android:textColor="@color/negro"
+                        android:textColor="@color/blanco"
                         android:textColorHint="@color/negro"
                         android:textSize="12sp" />
 

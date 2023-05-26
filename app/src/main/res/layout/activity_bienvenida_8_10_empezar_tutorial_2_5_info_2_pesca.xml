@@ -50,7 +50,7 @@
                 android:fontFamily="@font/aleo_bold"
                 android:textSize="15sp"
                 android:textColor="@color/blanco"
-                android:text="Porfavor haz click en cualquier subcategoría, para que pueda ver los productos que contiene"
+                android:text="Cada sector agroindustrial contiene subcategorías. Dentro de cada una de ellas, podrá ver el producto que quiere encontrar de una forma más fácil"
                 android:layout_marginHorizontal="30dp"
                 android:textAlignment="center"
                 android:shadowColor="@color/negro"
@@ -58,12 +58,12 @@
                 android:layout_marginTop="50dp" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/boton_categorias"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:background="@drawable/boton_categorias2"
                 android:orientation="vertical"
                 android:layout_marginTop="50dp"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginEnd="70dp"
                 android:layout_marginHorizontal="30dp" >
 
@@ -71,12 +71,13 @@
                     android:id="@+id/tvSubcategoria"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="SUBCATEGORÍAS"
+                    android:text="SELECCIÓN DE SUBCATEGORÍAS"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="12sp"
+                    android:layout_marginTop="30dp"
                     android:textColor="@color/blanco"
                     android:drawableEnd="@drawable/ic_abajo"
-                    android:drawableTint="@color/blanco"
+                    android:drawableTint="@color/dorado"
                     android:layout_marginHorizontal="15dp"
                     android:gravity="center_vertical" />
 
@@ -91,12 +92,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
                 android:background="@drawable/boton_categorias"
                 android:orientation="vertical"
                 android:layout_marginTop="20dp"
-                android:layout_marginStart="70dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginEnd="70dp"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginBottom="50dp" >
@@ -108,10 +109,11 @@
                     android:text="PRODUCTOS"
                     android:fontFamily="@font/aleo_bold"
                     android:textSize="12sp"
+                    android:layout_marginTop="30dp"
                     android:textColor="@color/blanco"
                     android:drawableEnd="@drawable/ic_abajo"
                     android:drawablePadding="40dp"
-                    android:drawableTint="@color/blanco"
+                    android:drawableTint="@color/dorado"
                     android:layout_marginHorizontal="15dp"
                     android:gravity="center_vertical" />
 

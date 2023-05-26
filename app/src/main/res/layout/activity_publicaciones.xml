@@ -51,7 +51,7 @@
                         android:id="@+id/llayGanaderia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_categorias2"
                         android:gravity="center"
                         android:orientation="horizontal" >
 
@@ -118,7 +118,7 @@
                         android:id="@+id/llayPesca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_categorias2"
                         android:gravity="center"
                         android:orientation="horizontal" >
 
@@ -319,7 +319,7 @@
                         android:id="@+id/llayPesticidas"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_person"
                         android:gravity="center"
                         android:orientation="horizontal" >
 
@@ -386,7 +386,7 @@
                         android:id="@+id/llayFertilizantes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boton_categorias"
+                        android:background="@drawable/boton_person"
                         android:gravity="center"
                         android:orientation="horizontal" >
 
