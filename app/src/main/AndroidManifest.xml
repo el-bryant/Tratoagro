@@ -16,9 +16,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Comprar22Activity"
-            android:windowSoftInputMode="adjustResize"
+            android:name=".NoticiasFertilizantes2Activity"
             android:exported="true" />
+        <activity
+            android:name=".Comprar22Activity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".OpcionesRespuestaActivity"
             android:exported="true" />
@@ -41,11 +44,13 @@
         <activity android:name=".Bienvenida2Activity" />
         <activity android:name=".Bienvenida3Activity" />
         <activity android:name=".Bienvenida4Activity" />
-        <activity android:name=".Bienvenida5DatosJuridico1Activity"
+        <activity
+            android:name=".Bienvenida5DatosJuridico1Activity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".Bienvenida5DatosJuridico2Activity" />
         <activity android:name=".Bienvenida5DatosJuridico3Activity" />
-        <activity android:name=".Bienvenida6DatosNatural1Activity"
+        <activity
+            android:name=".Bienvenida6DatosNatural1Activity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".Bienvenida6DatosNatural2Activity" />
         <activity android:name=".Bienvenida6DatosNatural3Activity" />
@@ -89,7 +94,13 @@
         <activity android:name=".IniciarSesionActivity" />
         <activity android:name=".Inicio1Activity" />
         <activity android:name=".ListaProveedoresActivity" />
+        <activity android:name=".NoticiasFertilizantes1Activity" />
+        <activity android:name=".NoticiasGanaderia1Activity" />
         <activity android:name=".NoticiasGeneral2Activity" />
+        <activity android:name=".NoticiasInsumos1Activity" />
+        <activity android:name=".NoticiasMaquinaria1Activity" />
+        <activity android:name=".NoticiasPesca1Activity" />
+        <activity android:name=".NoticiasPesticidas1Activity" />
         <activity android:name=".PerfilUsuarioCompraActivity" />
         <activity android:name=".PerfilVentaProductosActivity" />
         <activity android:name=".PrincipalActivity" />

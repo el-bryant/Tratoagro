@@ -1,11 +1,13 @@
 package empre.hoy.myapplication;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,6 +42,7 @@ public class EstadiFertilizantesActivity extends AppCompatActivity {
     static BarChart bchVentas;
     BlurView blurView;
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    ImageView ivFiltro;
     String fecha;
     WebService webService;
     Map<String, String> params;
@@ -51,6 +54,7 @@ public class EstadiFertilizantesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_estadifertilizantes);
         bchVentas = (BarChart) findViewById(R.id.bchVentas);
         blurView = (BlurView) findViewById(R.id.blurView);
+        ivFiltro = (ImageView) findViewById(R.id.ivFiltro);
         webService = new WebService(this);
         View decorView = getWindow().getDecorView();
         ViewGroup rootView = (ViewGroup) decorView.findViewById(android.R.id.content);
@@ -73,6 +77,9 @@ public class EstadiFertilizantesActivity extends AppCompatActivity {
         colores.add(Color.rgb(25, 100, 35));
         colores.add(Color.rgb(36, 20, 75));
         mostrarCuadro();
+        ivFiltro.setOnClickListener(v -> {
+            startActivity(new Intent(EstadiFertilizantesActivity.this, EstadisticasGeneralActivity.class));
+        });
     }
 
     public void mostrarCuadro() {

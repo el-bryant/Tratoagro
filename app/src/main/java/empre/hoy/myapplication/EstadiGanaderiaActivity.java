@@ -2,6 +2,7 @@ package empre.hoy.myapplication;
 
 import static empre.hoy.myapplication.Funciones.PrefUtil.fondoGeneral;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -47,6 +48,7 @@ public class EstadiGanaderiaActivity extends AppCompatActivity {
     static BarChart bchVentas;
     BlurView blurView;
     DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    ImageView ivFiltro;
     String fecha;
     WebService webService;
     Map<String, String> params;
@@ -59,6 +61,7 @@ public class EstadiGanaderiaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_estadiganaderia);
         bchVentas = (BarChart) findViewById(R.id.bchVentas);
         blurView = (BlurView) findViewById(R.id.blurView);
+        ivFiltro = (ImageView) findViewById(R.id.ivFiltro);
         View decorView = getWindow().getDecorView();
         ViewGroup rootView = (ViewGroup) decorView.findViewById(android.R.id.content);
         Drawable windowBackground = decorView.getBackground();
@@ -83,6 +86,9 @@ public class EstadiGanaderiaActivity extends AppCompatActivity {
             colores.add(Color.rgb(36, 20, 75));
         }
         mostrarCuadro();
+        ivFiltro.setOnClickListener(v -> {
+            startActivity(new Intent(EstadiGanaderiaActivity.this, EstadisticasGeneralActivity.class));
+        });
     }
 
     public void mostrarCuadro() {

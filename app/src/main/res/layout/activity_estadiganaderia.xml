@@ -45,7 +45,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="350dp"
             android:src="@mipmap/ganaderia_tratoagro"
             android:scaleType="centerCrop" />
 
@@ -55,10 +55,15 @@
             android:layout_height="match_parent"
             app:blurOverlayColor="#1A000000" />
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40E6E6E6" />
+
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/bchVentas"
             android:layout_width="match_parent"
-            android:layout_height="250dp" />
+            android:layout_height="350dp" />
 
     </FrameLayout>
 

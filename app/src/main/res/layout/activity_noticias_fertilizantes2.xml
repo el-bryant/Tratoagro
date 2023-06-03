@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/fertilizantes2_tratoagro" >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llayVideos" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <FrameLayout
+                android:id="@+id/flayNoticias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 01"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayRevistas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 02"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flayPublicidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 03"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 04"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 05"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 06"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 07"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_categorias"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="50dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Noticia 08"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:layout_margin="15dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llayVideos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true" >
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/ytpvVideo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/ytpvVideo2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
