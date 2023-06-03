@@ -50,7 +50,7 @@
                             android:fontFamily="@font/aleo_bold"
                             android:text="GANADERIA"
                             android:textAlignment="center"
-                            android:textColor="@color/dorado"
+                            android:textColor="@color/blanco"
                             android:textSize="16sp"
                             android:textStyle="bold">
 
@@ -101,7 +101,7 @@
                             android:layout_marginStart="70dp"
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="16sp"
-                            android:textColor="@color/dorado">
+                            android:textColor="@color/blanco">
 
                         </TextView>
 
@@ -151,7 +151,7 @@
                             android:layout_marginTop="30dp"
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="16sp"
-                            android:textColor="@color/dorado">
+                            android:textColor="@color/blanco">
 
                         </TextView>
 
@@ -201,7 +201,7 @@
                             android:layout_marginTop="30dp"
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="16sp"
-                            android:textColor="@color/dorado">
+                            android:textColor="@color/blanco">
 
                         </TextView>
 
@@ -251,7 +251,7 @@
                             android:layout_marginStart="50dp"
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="16sp"
-                            android:textColor="@color/dorado">
+                            android:textColor="@color/blanco">
 
                         </TextView>
 
@@ -301,7 +301,7 @@
                             android:layout_marginStart="40dp"
                             android:fontFamily="@font/aleo_bold"
                             android:textSize="16sp"
-                            android:textColor="@color/dorado">
+                            android:textColor="@color/blanco">
 
                         </TextView>
 

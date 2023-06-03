@@ -35,7 +35,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             app:background_ColorType="gradient_linear"
-            app:background_Gradient_Angle="180"
+            app:background_Gradient_Angle="230"
             app:background_Gradient_Color0="#80000000"
             app:background_Gradient_ColorEnd="#00000000" />
 
@@ -55,14 +55,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:background="#E6E6E6" >
+                android:background="@color/negro" >
 
                 <FrameLayout
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="15dp"
-                    android:background="@drawable/boton_flecha"
+                    android:background="@drawable/boton_menuprincipal"
                     android:layout_marginVertical="30dp">
 
                     <ImageView
@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_categorias2"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="15dp">
@@ -114,9 +114,9 @@
                         android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center_vertical"
-                        android:text="Subcategoría"
+                        android:text="SUBCATEGORÍA"
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvSubcategoria"
@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
                     android:paddingHorizontal="15dp"
                     android:paddingVertical="15dp">
@@ -145,9 +145,9 @@
                         android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center_vertical"
-                        android:text="Producto"
+                        android:text="PRODUCTO"
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProducto"
@@ -164,7 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10dp"
-                android:background="@drawable/boton_categorias"
+                android:background="@drawable/boton_menuprincipal"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:layout_marginHorizontal="20dp" >
@@ -182,9 +182,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="Stock: "
+                        android:text="STOCK: "
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
                     <EditText
                         android:id="@+id/etStock"
@@ -220,9 +220,9 @@
                         android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
                         android:gravity="center_vertical"
-                        android:text="Unidad"
+                        android:text="UNIDAD"
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvUnidades"
@@ -239,7 +239,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10dp"
-                android:background="@drawable/boton_categorias"
+                android:background="@drawable/boton_categorias2"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:layout_marginHorizontal="20dp">
@@ -257,9 +257,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="Precio: "
+                        android:text="PRECIO: "
                         android:textColor="@color/blanco"
-                        android:textSize="15sp" />
+                        android:textSize="13sp" />
 
                     <EditText
                         android:id="@+id/etPrecio"
@@ -300,9 +300,9 @@
                             android:drawableTint="@color/blanco"
                             android:fontFamily="@font/aleo_bold"
                             android:gravity="center_vertical"
-                            android:text="Soles / Dólares"
+                            android:text="SOLES / DÓLARES"
                             android:textColor="@color/blanco"
-                            android:textSize="15sp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:id="@+id/tvSoles"
@@ -351,7 +351,7 @@
                     android:paddingStart="20dp"
                     android:shadowColor="@color/negro"
                     android:shadowRadius="15"
-                    android:text="Recibir ofertas de rebaja de precio"
+                    android:text="RECIBIR OFERRAS DE REBAJA DE PRECIO"
                     android:textColor="@color/blanco"
                     android:textSize="15sp" />
 
@@ -360,7 +360,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_menuprincipal"
                     android:gravity="center"
                     android:orientation="horizontal"
                     android:weightSum="3">
@@ -417,7 +417,7 @@
                     android:ems="10"
                     android:fontFamily="@font/aleo_bold"
                     android:gravity="start|top"
-                    android:hint="Breve descripción del producto..."
+                    android:hint="Agrega una breve descripción..."
                     android:inputType="textMultiLine"
                     android:textColor="@color/blanco"
                     android:textColorHint="@color/blanco"
@@ -436,25 +436,25 @@
                 <Button
                     android:id="@+id/btnContinuar"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_person"
                     android:fontFamily="@font/aleo_bold"
-                    android:text="Listo"
+                    android:text="LISTO"
                     android:textAllCaps="false"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/dorado"
                     android:textSize="15sp" />
 
                 <Button
                     android:id="@+id/btnPublicaciones"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:background="@drawable/boton_categorias"
+                    android:background="@drawable/boton_menuprincipal"
                     android:fontFamily="@font/aleo_bold"
-                    android:text="Seguimiento a mis publicaciones"
+                    android:text="MIS PUBLICACIONES"
                     android:textAllCaps="false"
                     android:textColor="@color/blanco"
                     android:textSize="15sp" />
