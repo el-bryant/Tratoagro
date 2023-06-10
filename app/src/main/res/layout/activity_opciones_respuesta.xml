@@ -47,6 +47,7 @@
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:drawableBottom="@drawable/ic_baseline_phone_24"
+                android:paddingVertical="30dp"
                 android:background="@drawable/boton_categorias2"
                 android:layout_marginVertical="10dp" />
 
@@ -62,7 +63,8 @@
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:background="@drawable/boton_menuprincipal"
-                android:layout_marginVertical="10dp" />
+                android:layout_marginVertical="10dp"
+                android:paddingVertical="30dp" />
 
             <Button
                 android:id="@+id/btnCorreo"
@@ -76,7 +78,8 @@
                 android:textSize="15sp"
                 android:textAllCaps="false"
                 android:background="@drawable/boton_person"
-                android:layout_marginVertical="10dp" />
+                android:layout_marginVertical="10dp"
+                android:paddingVertical="30dp" />
 
         </LinearLayout>
 

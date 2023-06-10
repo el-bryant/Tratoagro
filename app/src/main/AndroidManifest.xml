@@ -16,6 +16,21 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".NoticiasPesticidas2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".NoticiasPesca2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".NoticiasMaquinaria2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".NoticiasInsumos2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".NoticiasGanaderia2Activity"
+            android:exported="true" />
+        <activity
             android:name=".NoticiasFertilizantes2Activity"
             android:exported="true" />
         <activity
@@ -106,6 +121,7 @@
         <activity android:name=".PrincipalActivity" />
         <activity android:name=".TipodeAccionActivity" />
         <activity android:name=".TipoUsuarioActivity" />
+        <activity android:name=".TratoventasActivity" />
         <activity android:name=".TutoFertilzantes" />
         <activity android:name=".TutoGanaderia" />
         <activity android:name=".TutoInsumos" />
