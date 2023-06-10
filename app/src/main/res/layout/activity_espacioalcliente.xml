@@ -19,22 +19,11 @@
             android:orientation="vertical">
 
 
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Porfavor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
-                android:fontFamily="@font/aleo_bold"
-                android:textSize="13sp"
-                android:gravity="center"
-                android:textColor="@color/marron1"
-                android:layout_marginTop="11.5dp"/>
-
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -50,13 +39,13 @@
                         android:id="@+id/tvEditarmiperfil"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/persona1"
                         android:drawableTint="@color/blanco"
-                        android:gravity="center"
-                        android:text="EDITAR MI PERFIL"
                         android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/dorado"
+                        android:gravity="center"
                         android:paddingStart="10dp"
-                        android:drawableEnd="@drawable/persona1"/>
+                        android:text="EDITAR MI PERFIL"
+                        android:textColor="@color/dorado" />
 
                     <TextView
                         android:id="@+id/tvPersonaNatural"
@@ -81,8 +70,8 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginVertical="2dp"
+                android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -98,13 +87,13 @@
                         android:id="@+id/tvMistratocompras"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_carrito"
                         android:drawableTint="@color/blanco"
                         android:fontFamily="@font/aleo_bold"
-                        android:text="MIS TRATOCOMPRAS"
                         android:gravity="center"
-                        android:textColor="@color/dorado"
                         android:paddingStart="10dp"
-                        android:drawableEnd="@drawable/ic_carrito"/>
+                        android:text="MIS TRATOCOMPRAS"
+                        android:textColor="@color/dorado" />
 
                     <TextView
                         android:id="@+id/tvMinorista"
@@ -129,8 +118,8 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
+                android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -139,20 +128,20 @@
                     android:layout_weight="1"
                     android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvMistratoventas"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/blanco"
-                        android:text="MIS TRATOVENTAS"
-                        android:fontFamily="@font/aleo_bold"
-                        android:paddingStart="10dp"
-                        android:gravity="center"
-                        android:textColor="@color/dorado"
                         android:layout_marginHorizontal="15dp"
-                        android:drawableEnd="@drawable/ic_dolar"/>
+                        android:drawableEnd="@drawable/ic_dolar"
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:text="MIS TRATOVENTAS"
+                        android:textColor="@color/dorado" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvDepartamento"
@@ -167,8 +156,8 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
+                android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -177,20 +166,20 @@
                     android:layout_weight="1"
                     android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvPublicaranuncio"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/blanco"
-                        android:text="MIS TRATOANUNCIOS"
-                        android:fontFamily="@font/aleo_bold"
-                        android:paddingStart="10dp"
-                        android:gravity="center"
+                        android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_noticias2"
-                        android:textColor="@color/dorado"
-                        android:layout_marginHorizontal="15dp" />
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:text="MIS TRATOANUNCIOS"
+                        android:textColor="@color/dorado" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProvincia"
@@ -205,8 +194,8 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
+                android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -215,20 +204,20 @@
                     android:layout_weight="1"
                     android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvContactosfavoritos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/blanco"
-                        android:text="CONTACTOS FAVORITOS"
-                        android:gravity="center"
-                        android:fontFamily="@font/aleo_bold"
-                        android:paddingStart="10dp"
-                        android:textColor="@color/dorado"
+                        android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_me_gusta"
-                        android:layout_marginHorizontal="15dp" />
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:text="CONTACTOS FAVORITOS"
+                        android:textColor="@color/dorado" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvDistrito"
@@ -243,8 +232,8 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
+                android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -253,20 +242,20 @@
                     android:layout_weight="1"
                     android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvDenunciar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/blanco"
-                        android:text="DENUNCIAR"
-                        android:gravity="center"
-                        android:fontFamily="@font/aleo_bold"
-                        android:paddingStart="10dp"
-                        android:textColor="@color/dorado"
                         android:layout_marginHorizontal="15dp"
-                        android:drawableEnd="@drawable/ic_bandera"/>
+                        android:drawableEnd="@drawable/ic_bandera"
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:text="DENUNCIAR"
+                        android:textColor="@color/dorado" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvSubcategoria"
@@ -281,8 +270,8 @@
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="20dp"
                 android:layout_marginVertical="12dp"
+                android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -291,20 +280,20 @@
                     android:layout_weight="1"
                     android:background="@drawable/boton_menuprincipal"
                     android:orientation="vertical"
-                    android:paddingVertical="10dp" >
+                    android:paddingVertical="10dp">
 
                     <TextView
                         android:id="@+id/tvDesactivarmicuenta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableTint="@color/blanco"
-                        android:text="DESACTIVAR MI CUENTA"
-                        android:fontFamily="@font/aleo_bold"
+                        android:layout_marginHorizontal="15dp"
                         android:drawableEnd="@drawable/ic_deslizar_hacia_abajo"
+                        android:drawableTint="@color/blanco"
+                        android:fontFamily="@font/aleo_bold"
                         android:gravity="center"
                         android:paddingStart="10dp"
-                        android:textColor="@color/dorado"
-                        android:layout_marginHorizontal="15dp" />
+                        android:text="DESACTIVAR MI CUENTA"
+                        android:textColor="@color/dorado" />
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/rvProducto"
@@ -316,6 +305,16 @@
 
 
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.5dp"
+                android:fontFamily="@font/aleo_bold"
+                android:gravity="center"
+                android:text="Porfavor selecciona las siguientes para que puedas encontrar con mayor facilidad lo que buscas"
+                android:textColor="@color/marron1"
+                android:textSize="13sp" />
 
         </LinearLayout>
 

@@ -61,22 +61,22 @@
                     android:id="@+id/flayPersonaNatural"
                     android:layout_width="200dp"
                     android:layout_height="220dp"
-                    android:background="@drawable/boton_categorias2" >
+                    android:background="@drawable/boton_categorias2">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="PERSONA NATURAL"
-                        android:fontFamily="@font/aleo_bold"
-                        android:textColor="@color/dorado"
-                        android:textSize="12sp"
-                        android:textAlignment="center"
-                        android:drawableTop="@drawable/ic_persona_natural_new"
-                        android:drawableTint="@color/dorado"
-                        android:drawablePadding="10dp"
+                        android:layout_gravity="center"
                         android:layout_marginHorizontal="30dp"
                         android:layout_marginVertical="15dp"
-                        android:layout_gravity="center" />
+                        android:drawableTop="@drawable/ic_persona_natural_new"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/dorado"
+                        android:fontFamily="@font/aleo_bold"
+                        android:text="PERSONA NATURAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/dorado"
+                        android:textSize="12sp" />
 
                 </FrameLayout>
 

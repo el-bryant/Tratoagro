@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@mipmap/fertilizantes2_tratoagro" >
+    android:background="@mipmap/fertilizantes_tratoagro" >
 
 
     <ScrollView
@@ -20,8 +20,8 @@
 
             <FrameLayout
                 android:id="@+id/flayNoticias"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:background="@drawable/boton_categorias"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="50dp" >
@@ -31,50 +31,77 @@
                     android:layout_height="wrap_content"
                     android:text="Noticias"
                     android:fontFamily="@font/aleo_bold"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:textColor="@color/blanco"
                     android:gravity="center"
                     android:layout_margin="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_noticias"
+                    android:layout_marginTop="60dp"
+                    android:tint="@color/blanco">
+
+                </ImageView>
 
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/flayRevistas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/boton_categorias"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/boton_categorias2"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="50dp" >
+                android:layout_marginTop="15dp" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Revistas"
                     android:fontFamily="@font/aleo_bold"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:textColor="@color/blanco"
                     android:gravity="center"
                     android:layout_margin="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_revista"
+                    android:layout_marginTop="60dp"
+                    android:tint="@color/blanco">
+
+                </ImageView>
 
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/flayPublicidad"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/boton_categorias"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/boton_person"
                 android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="50dp" >
+                android:layout_marginTop="15dp" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Publicidad"
                     android:fontFamily="@font/aleo_bold"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:textColor="@color/blanco"
                     android:gravity="center"
                     android:layout_margin="15dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_publicidad"
+                    android:layout_marginTop="60dp"
+                    android:tint="@color/blanco">
+
+                </ImageView>
 
             </FrameLayout>
 
